@@ -1,0 +1,6 @@
+name = "aibtc-dashboard"
+pages_build_output_dir = "./public"
+
+[[kv_namespaces]]
+binding = "PULSE_KV"
+id = "2a8b5d25d5984d1c8a7218a411afce72"
