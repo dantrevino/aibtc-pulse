@@ -7,6 +7,14 @@ const WORKER_URL = 'https://aibtc-pulse-cron.c3dar.workers.dev';
 const LOOKBACK_MS = 60 * 60 * 1000; // 1 hour
 const FETCH_TIMEOUT = 8000;
 
+// Taproot (bc1p…) addresses break /agents/ profile pages — use stxAddress instead
+function profileAddr(agent) {
+  if (agent.btcAddress && agent.btcAddress.startsWith('bc1p') && agent.stxAddress) {
+    return agent.stxAddress;
+  }
+  return agent.btcAddress;
+}
+
 // ── OAuth 1.0a (shared pattern) ──
 async function hmacSha1(key, data) {
   const enc = new TextEncoder();
@@ -253,10 +261,11 @@ function scoreEvent(event) {
 }
 
 // ── Build single-line tweet text ──
-function buildActivityTweet(event, title) {
+function buildActivityTweet(event, title, profileAddrs) {
   const { agentName, peerName, agentAddress, type, sats, messageCount } = event;
   const lowerTitle = title.toLowerCase();
-  const url = `https://aibtc.com/agents/${agentAddress}`;
+  const resolvedAddr = (profileAddrs && profileAddrs[agentAddress]) || agentAddress;
+  const url = `https://aibtc.com/agents/${resolvedAddr}`;
 
   // Build context snippet based on event type
   let context = '';
@@ -317,10 +326,14 @@ export async function onRequest(context) {
       return Response.json({ message: 'No agents found' });
     }
 
-    // Build agent name lookup
+    // Build agent name + profile address lookups
     const agentNames = {};
+    const agentProfileAddrs = {};
     for (const a of allAgents) {
-      if (a.btcAddress) agentNames[a.btcAddress] = a.displayName || 'Unknown';
+      if (a.btcAddress) {
+        agentNames[a.btcAddress] = a.displayName || 'Unknown';
+        agentProfileAddrs[a.btcAddress] = profileAddr(a);
+      }
     }
 
     // Cap inbox checks to 35 most recently active agents (Cloudflare 50-subrequest limit)
@@ -436,7 +449,7 @@ export async function onRequest(context) {
     freshEvents.sort((a, b) => scoreEvent(b) - scoreEvent(a));
     const best = freshEvents[0];
     const title = generateTitle(best.content);
-    const tweet = buildActivityTweet(best, title);
+    const tweet = buildActivityTweet(best, title, agentProfileAddrs);
 
     // Resolve peer BTC address for card
     const peerAddr = best.peerAddress || '';

@@ -189,6 +189,14 @@ function isOnCooldown(state, btcAddress) {
   return Date.now() < cooldownEnd;
 }
 
+// ── Resolve profile address (taproot bc1p… breaks /agents/ page, use stxAddress instead) ──
+function profileAddress(agent) {
+  if (agent.btcAddress && agent.btcAddress.startsWith('bc1p') && agent.stxAddress) {
+    return agent.stxAddress;
+  }
+  return agent.btcAddress;
+}
+
 // ── Build pulse tweet text ──
 function buildPulseTweet(agent, xHandle, unreadCount, totalSats) {
   const name = agent.displayName || 'Unknown Agent';
@@ -198,7 +206,7 @@ function buildPulseTweet(agent, xHandle, unreadCount, totalSats) {
     ``,
     `@${xHandle} make sure ${name} replies to it's ${unreadCount} unread message${plural} to keep building reputation and earning more btc!`,
     ``,
-    `https://aibtc.com/agents/${agent.btcAddress}`,
+    `https://aibtc.com/agents/${profileAddress(agent)}`,
   ].join('\n');
 }
 
@@ -309,7 +317,7 @@ export async function onRequest(context) {
       const tweet = buildPulseTweet(agent, xHandle, unreadCount, totalSats);
 
       if (isDryRun) {
-        const imageBuffer = await fetchAgentScreenshot(agent.btcAddress);
+        const imageBuffer = await fetchAgentScreenshot(profileAddress(agent));
         results.push({
           agent: agent.displayName,
           btcAddress: agent.btcAddress,
@@ -325,7 +333,7 @@ export async function onRequest(context) {
 
       try {
         // Fetch OG image
-        const imageBuffer = await fetchAgentScreenshot(agent.btcAddress);
+        const imageBuffer = await fetchAgentScreenshot(profileAddress(agent));
         let mediaId = null;
         if (imageBuffer) {
           const upload = await uploadMedia(imageBuffer, env);

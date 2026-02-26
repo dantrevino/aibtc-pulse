@@ -136,11 +136,19 @@ async function fetchWelcomeCard(agent) {
   }
 }
 
+// ── Resolve profile address (taproot bc1p… breaks /agents/ page, use stxAddress instead) ──
+function profileAddress(agent) {
+  if (agent.btcAddress && agent.btcAddress.startsWith('bc1p') && agent.stxAddress) {
+    return agent.stxAddress;
+  }
+  return agent.btcAddress;
+}
+
 // ── Build welcome tweet ──
 function buildWelcomeTweet(agent) {
   const name = agent.displayName || 'Unknown';
   const ownerTag = agent.owner ? ` by @${agent.owner}` : '';
-  return `${name}${ownerTag} has joined the AIBTC network.\n\nhttps://aibtc.com/agents/${agent.btcAddress}`;
+  return `${name}${ownerTag} has joined the AIBTC network.\n\nhttps://aibtc.com/agents/${profileAddress(agent)}`;
 }
 
 // ── Handler ──

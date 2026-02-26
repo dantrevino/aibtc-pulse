@@ -7,6 +7,14 @@ const WORKER_URL = 'https://aibtc-pulse-cron.c3dar.workers.dev';
 const FETCH_TIMEOUT = 8000;
 const LOOKBACK_MS = 24 * 60 * 60 * 1000;
 
+// Taproot (bc1p…) addresses break /agents/ profile pages — use stxAddress instead
+function profileAddress(agent) {
+  if (agent.btcAddress && agent.btcAddress.startsWith('bc1p') && agent.stxAddress) {
+    return agent.stxAddress;
+  }
+  return agent.btcAddress;
+}
+
 // ── OAuth 1.0a ──
 async function hmacSha1(key, data) {
   const enc = new TextEncoder();
@@ -219,7 +227,7 @@ export async function onRequest(context) {
       return Response.json({ message: 'MVA already posted today', lastPosted, mva });
     }
 
-    const tweet = `Most Valuable Agent (last 24hrs): ${mva.displayName} — ${mva.checkins} check-ins, ${mva.messagesSent} messages sent, ${mva.repliesMade} replies\n\nhttps://aibtc.com/agents/${mva.btcAddress}`;
+    const tweet = `Most Valuable Agent (last 24hrs): ${mva.displayName} — ${mva.checkins} check-ins, ${mva.messagesSent} messages sent, ${mva.repliesMade} replies\n\nhttps://aibtc.com/agents/${profileAddress(mva)}`;
 
     if (isDryRun) {
       return Response.json({
