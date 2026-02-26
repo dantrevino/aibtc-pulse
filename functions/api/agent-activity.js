@@ -120,48 +120,114 @@ async function postTweet(text, env, mediaId) {
   return { status: res.status, body: resBody };
 }
 
-// ── Generate descriptive title from message content ──
-function generateTitle(content) {
-  if (!content) return 'AGENTS COLLABORATING ON CHAIN';
-  const lc = content.toLowerCase();
+// ── Title bank: multiple alternatives per category, picked randomly ──
+// Titles are gerund phrases that work in "X and Y are {title}" and as card headlines
+const TITLE_BANK = [
+  { re: /\b(yield|apy|interest|lending).*\b(engine|strat|optim|compound)/i,
+    titles: ['wiring up a live yield engine', 'auto-compounding sats in real time', 'tuning a DeFi yield pipeline'] },
+  { re: /\b(yield|apy|interest|lending)\b/i,
+    titles: ['chasing the best APY on Stacks', 'dialing in a yield strategy', 'putting idle sats to work'] },
+  { re: /\b(escrow).*\b(spec|design|build)/i,
+    titles: ['architecting trustless escrow', 'drafting an escrow protocol', 'designing programmable escrow on chain'] },
+  { re: /\b(escrow|payment|settle)\w*/i,
+    titles: ['settling payments on chain', 'coordinating programmable payments', 'routing sats through smart contracts'] },
+  { re: /\b(swap|trade|dex)\w*.*\b(pool|liquidity)/i,
+    titles: ['spinning up a liquidity pool', 'wiring DEX infrastructure together', 'seeding a new trading pool'] },
+  { re: /\b(swap|trade|dex|pool|liquidity)\w*/i,
+    titles: ['executing swaps on chain', 'running live DEX trades', 'moving tokens through the orderbook'] },
+  { re: /\b(nft|ordinal|inscri)\w*.*\b(mint|creat|launch)/i,
+    titles: ['minting fresh ordinals', 'dropping a new inscription', 'inscribing on Bitcoin together'] },
+  { re: /\b(nft|ordinal|inscri)\w*/i,
+    titles: ['working the ordinals pipeline', 'coordinating an NFT operation', 'handling inscriptions on chain'] },
+  { re: /\b(contract|clarity)\w*.*\b(deploy|ship|launch)/i,
+    titles: ['shipping a contract to mainnet', 'deploying Clarity code live', 'pushing a smart contract on chain'] },
+  { re: /\b(contract|clarity)\w*.*\b(review|audit)/i,
+    titles: ['auditing smart contract code', 'peer-reviewing a Clarity contract', 'running a contract security check'] },
+  { re: /\b(contract|clarity)\w*/i,
+    titles: ['writing Clarity logic together', 'hacking on a smart contract', 'iterating on contract code'] },
+  { re: /\b(reputation|score|rank|trust)\w*/i,
+    titles: ['climbing the reputation ladder', 'leveling up on-chain trust', 'grinding toward Genesis rank'] },
+  { re: /\b(description|profile|bio|identity|first.?impression)/i,
+    titles: ['forging an on-chain identity', 'dialing in their agent profile', 'sharpening their first impression'] },
+  { re: /\b(design)\w*.*\b(tip|advice|feedback)/i,
+    titles: ['trading design feedback', 'peer-reviewing each other\'s work', 'sharpening the design together'] },
+  { re: /\b(skill|tool|endpoint|capability)\w*.*\b(build|creat|new|ship)/i,
+    titles: ['shipping a new agent skill', 'unlocking a fresh capability', 'wiring up new tooling'] },
+  { re: /\b(skill|tool|endpoint|api|service)\w*/i,
+    titles: ['plugging in new capabilities', 'testing agent tooling live', 'expanding their skill set on chain'] },
+  { re: /\bsbtc\b.*\b(deposit|bridge|peg)/i,
+    titles: ['bridging BTC into Stacks', 'moving sBTC across the bridge', 'depositing Bitcoin on L2'] },
+  { re: /\b(wallet|balance|fund|sbtc|stx)\w*/i,
+    titles: ['managing their on-chain treasury', 'moving assets across Stacks', 'handling wallet operations live'] },
+  { re: /\b(data|chart|analytic|metric|dashboard)\w*/i,
+    titles: ['crunching on-chain data together', 'assembling a data pipeline', 'building analytics from raw blocks'] },
+  { re: /\b(market|price|signal|sentiment)\w*/i,
+    titles: ['reading live market signals', 'tracking price action on Stacks', 'running market intelligence'] },
+  { re: /\b(collab|partner|team|together|cooperat)\w*/i,
+    titles: ['teaming up on a joint operation', 'coordinating across agents', 'running a cross-agent collab'] },
+  { re: /\b(review|audit|analyz|evaluat)\w*/i,
+    titles: ['running a deep analysis together', 'peer-reviewing on chain', 'evaluating the data side by side'] },
+  { re: /\b(integrat|connect|bridg|link)\w*/i,
+    titles: ['hooking up a new integration', 'connecting services on chain', 'linking systems together live'] },
+  { re: /\b(fix|debug|patch|resolv|troubleshoot)\w*/i,
+    titles: ['squashing bugs on chain', 'debugging live together', 'patching and shipping a fix'] },
+  { re: /\b(test|verif|validat)\w*/i,
+    titles: ['validating the build together', 'running tests on chain', 'verifying before they ship'] },
+  { re: /\b(x402|micropay|pay.?per)\w*/i,
+    titles: ['wiring up micropayment rails', 'testing x402 payments live', 'getting pay-per-call running'] },
+  { re: /\b(stack|pox|cycle|reward)\w*/i,
+    titles: ['stacking STX for BTC rewards', 'locking in PoX yield', 'earning through the stacking cycle'] },
+  { re: /\b(build|built|deploy|ship|launch|creat)\w*/i,
+    titles: ['building something new on Bitcoin', 'shipping in real time', 'putting code on chain together'] },
+];
 
-  // Specific phrase matches first (most descriptive)
-  const phrases = [
-    [/\b(yield|apy|interest|lending).*\b(engine|strat|optim|compound)/i, 'BUILDING A LIVE YIELD ENGINE'],
-    [/\b(yield|apy|interest|lending)\b/i, 'EXPLORING YIELD STRATEGIES'],
-    [/\b(escrow).*\b(spec|design|build)/i, 'DESIGNING AN ESCROW PROTOCOL'],
-    [/\b(escrow|payment|settle)\w*/i, 'COORDINATING ON-CHAIN PAYMENTS'],
-    [/\b(swap|trade|dex)\w*.*\b(pool|liquidity)/i, 'SETTING UP A TRADING POOL'],
-    [/\b(swap|trade|dex|pool|liquidity)\w*/i, 'EXPLORING DEX TRADING'],
-    [/\b(nft|ordinal|inscri)\w*.*\b(mint|creat|launch)/i, 'MINTING NEW ORDINALS'],
-    [/\b(nft|ordinal|inscri)\w*/i, 'WORKING WITH ORDINALS'],
-    [/\b(contract|clarity)\w*.*\b(deploy|ship|launch)/i, 'DEPLOYING A SMART CONTRACT'],
-    [/\b(contract|clarity)\w*.*\b(review|audit)/i, 'AUDITING A SMART CONTRACT'],
-    [/\b(contract|clarity)\w*/i, 'BUILDING A SMART CONTRACT'],
-    [/\b(reputation|score|rank|trust)\w*/i, 'GROWING AGENT REPUTATION'],
-    [/\b(description|profile|bio|identity|first.?impression)/i, 'CRAFTING AGENT IDENTITY'],
-    [/\b(design)\w*.*\b(tip|advice|feedback)/i, 'SHARING DESIGN FEEDBACK'],
-    [/\b(skill|tool|endpoint|capability)\w*.*\b(build|creat|new|ship)/i, 'SHIPPING A NEW AGENT SKILL'],
-    [/\b(skill|tool|endpoint|api|service)\w*/i, 'EXPLORING NEW CAPABILITIES'],
-    [/\bsbtc\b.*\b(deposit|bridge|peg)/i, 'BRIDGING BTC TO STACKS'],
-    [/\b(wallet|balance|fund|sbtc|stx)\w*/i, 'MANAGING ON-CHAIN ASSETS'],
-    [/\b(data|chart|analytic|metric|dashboard)\w*/i, 'BUILDING DATA ANALYTICS'],
-    [/\b(market|price|signal|sentiment)\w*/i, 'TRACKING MARKET SIGNALS'],
-    [/\b(collab|partner|team|together|cooperat)\w*/i, 'AGENTS JOINING FORCES'],
-    [/\b(review|audit|analyz|evaluat)\w*/i, 'REVIEWING AND ANALYZING'],
-    [/\b(integrat|connect|bridg|link)\w*/i, 'INTEGRATING NEW SERVICES'],
-    [/\b(fix|debug|patch|resolv|troubleshoot)\w*/i, 'DEBUGGING TOGETHER'],
-    [/\b(test|verif|validat)\w*/i, 'TESTING AND VALIDATING'],
-    [/\b(x402|micropay|pay.?per)\w*/i, 'EXPLORING MICROPAYMENTS'],
-    [/\b(stack|pox|cycle|reward)\w*/i, 'STACKING FOR REWARDS'],
-    [/\b(build|built|deploy|ship|launch|creat)\w*/i, 'BUILDING SOMETHING NEW'],
-  ];
+const FALLBACK_TITLES = [
+  'coordinating live on chain',
+  'working together on Stacks',
+  'running an on-chain operation',
+  'making moves on Bitcoin L2',
+  'getting things done on chain',
+];
 
-  for (const [re, label] of phrases) {
-    if (re.test(lc)) return label;
+// Pick a random element, preferring ones not in the avoid set
+function pickFresh(options, avoid) {
+  const fresh = options.filter(t => !avoid.has(t.toUpperCase()));
+  const pool = fresh.length > 0 ? fresh : options;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// Generate title from content, avoiding recently used titles
+// Returns { title: 'lowercase action phrase', card: 'UPPERCASE FOR CARD' }
+function generateTitle(content, recentTitles) {
+  const avoid = new Set((recentTitles || []).map(t => t.toUpperCase()));
+
+  if (!content) {
+    const t = pickFresh(FALLBACK_TITLES, avoid);
+    return { title: t, card: t.toUpperCase() };
   }
 
-  return 'AGENTS COLLABORATING ON CHAIN';
+  const lc = content.toLowerCase();
+  for (const { re, titles } of TITLE_BANK) {
+    if (re.test(lc)) {
+      const t = pickFresh(titles, avoid);
+      return { title: t, card: t.toUpperCase() };
+    }
+  }
+
+  const t = pickFresh(FALLBACK_TITLES, avoid);
+  return { title: t, card: t.toUpperCase() };
+}
+
+// ── Tweet templates for sentence variety ──
+function buildActivityTweetText(agentName, peerName, title, context, url) {
+  const templates = [
+    () => `${agentName} and ${peerName} are ${title}${context}\n\n${url}`,
+    () => `${agentName} x ${peerName} — ${title}${context}\n\n${url}`,
+    () => `on chain right now: ${agentName} and ${peerName}, ${title}${context}\n\n${url}`,
+    () => `${agentName} and ${peerName}: ${title}${context}\n\n${url}`,
+    () => `${title} — ${agentName} and ${peerName}${context}\n\n${url}`,
+  ];
+  return templates[Math.floor(Math.random() * templates.length)]();
 }
 
 // ── Fetch activity card from worker ──
@@ -260,10 +326,9 @@ function scoreEvent(event) {
   return score;
 }
 
-// ── Build single-line tweet text ──
-function buildActivityTweet(event, title, profileAddrs) {
+// ── Build tweet text with variety ──
+function buildActivityTweet(event, titleObj, profileAddrs) {
   const { agentName, peerName, agentAddress, type, sats, messageCount } = event;
-  const lowerTitle = title.toLowerCase();
   const resolvedAddr = (profileAddrs && profileAddrs[agentAddress]) || agentAddress;
   const url = `https://aibtc.com/agents/${resolvedAddr}`;
 
@@ -278,7 +343,7 @@ function buildActivityTweet(event, title, profileAddrs) {
     context += context ? `, ${sats} sats exchanged` : ` — ${sats} sats exchanged`;
   }
 
-  return `Agents ${agentName} and ${peerName} are ${lowerTitle}${context}\n\n${url}`;
+  return buildActivityTweetText(agentName, peerName, titleObj.title, context, url);
 }
 
 // ── Handler ──
@@ -312,13 +377,15 @@ export async function onRequest(context) {
   const lookbackMs = Math.min(lookbackHours, 24) * 60 * 60 * 1000;
 
   try {
-    // Load previously posted event IDs and pair history from KV
-    const [postedRaw, pairRaw] = await Promise.all([
+    // Load previously posted event IDs, pair history, and recent titles from KV
+    const [postedRaw, pairRaw, titlesRaw] = await Promise.all([
       kv.get('activity_posted_ids'),
       kv.get('activity_pair_history'),
+      kv.get('activity_recent_titles'),
     ]);
     const postedIds = new Set(postedRaw ? JSON.parse(postedRaw) : []);
     const pairHistory = pairRaw ? JSON.parse(pairRaw) : {};
+    const recentTitles = titlesRaw ? JSON.parse(titlesRaw) : []; // last N card titles
 
     // Fetch all agents
     const allAgents = await fetchAllAgents();
@@ -445,11 +512,27 @@ export async function onRequest(context) {
       });
     }
 
-    // Score and pick the best event
+    // Score and pick the best event, preferring title diversity
     freshEvents.sort((a, b) => scoreEvent(b) - scoreEvent(a));
-    const best = freshEvents[0];
-    const title = generateTitle(best.content);
-    const tweet = buildActivityTweet(best, title, agentProfileAddrs);
+
+    // Try top candidates — prefer one whose title category differs from recent posts
+    const recentCardSet = new Set(recentTitles.map(t => t.toUpperCase()));
+    let best = freshEvents[0];
+    let titleObj = generateTitle(best.content, recentTitles);
+
+    // If the top pick's title was recently used, scan the next few for a fresh one
+    for (let i = 1; i < Math.min(freshEvents.length, 8); i++) {
+      if (!recentCardSet.has(titleObj.card)) break; // current pick is fresh
+      const alt = freshEvents[i];
+      const altTitle = generateTitle(alt.content, recentTitles);
+      if (!recentCardSet.has(altTitle.card)) {
+        best = alt;
+        titleObj = altTitle;
+        break;
+      }
+    }
+
+    const tweet = buildActivityTweet(best, titleObj, agentProfileAddrs);
 
     // Resolve peer BTC address for card
     const peerAddr = best.peerAddress || '';
@@ -461,13 +544,14 @@ export async function onRequest(context) {
         freshEvents: freshEvents.length,
         filteredOut: events.length - freshEvents.length,
         selected: best,
-        title,
+        title: titleObj.card,
         tweet,
         score: scoreEvent(best),
+        recentTitles,
         topEvents: freshEvents.slice(0, 5).map(e => ({
           id: e.id, type: e.type, score: scoreEvent(e),
           agentName: e.agentName, peerName: e.peerName,
-          title: generateTitle(e.content),
+          title: generateTitle(e.content, recentTitles).card,
         })),
       });
     }
@@ -479,7 +563,7 @@ export async function onRequest(context) {
       const cardImage = await fetchActivityCard(
         best.agentName, best.peerName,
         best.agentAddress, peerAddr,
-        title
+        titleObj.card
       );
       if (cardImage) {
         const upload = await uploadMedia(cardImage, env);
@@ -514,9 +598,13 @@ export async function onRequest(context) {
         peerName: best.peerName,
       };
 
+      // Track recent titles (keep last 10 for variety)
+      const updatedTitles = [titleObj.card, ...recentTitles].slice(0, 10);
+
       await Promise.all([
         kv.put('activity_posted_ids', JSON.stringify(trimmed)),
         kv.put('activity_pair_history', JSON.stringify(pairHistory)),
+        kv.put('activity_recent_titles', JSON.stringify(updatedTitles)),
       ]);
     }
 
@@ -528,7 +616,7 @@ export async function onRequest(context) {
         agentName: best.agentName,
         peerName: best.peerName,
       },
-      title,
+      title: titleObj.card,
       tweet,
       hasImage: !!mediaId,
       cardError: cardError || undefined,
