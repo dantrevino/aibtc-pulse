@@ -120,3 +120,33 @@ Started: 2026-03-11T22:50:00.783Z
 [2026-03-11T22:50:11.364Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T22:50:11.365Z] [WRITE] Updated health.json
 [2026-03-11T22:50:11.365Z] [WRITE] Updated STATE.md
+[2026-03-11T22:50:11.371Z] [SYNC] git add: ...
+[2026-03-11T22:50:11.446Z] [SYNC] git commit: [main adffcce] Cycle 15019: ok
+ 3 files changed, 40 insertions(+), 6 deletions(-)
+...
+[2026-03-11T22:50:11.446Z] [SYNC] ✓ Git committed changes
+[2026-03-11T22:50:11.447Z] [SUMMARY] Cycle 15020 completed. Next at 2026-03-11T22:55:11.364Z
+[2026-03-11T22:50:11.447Z] [FINAL] ✓ Loop completed in 10.66s
+
+[2026-03-11T22:50:11.447Z] [HEARTBEAT] ✗ API Connection error: socket hang up
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-11T22:55:00.784Z
+[2026-03-11T22:55:00.788Z] [HEALTH] Cycle 15020 | Status: ok
+[2026-03-11T22:55:00.788Z] [HEARTBEAT] Signing message...
+[2026-03-11T22:55:00.788Z] [HEARTBEAT] Message: AIBTC Check-In | 2026-03-11T22:55:00.000Z...
+[2026-03-11T22:55:00.789Z] [MCP] Requesting btc_sign_message (ID: 1773269700789)
+[2026-03-11T22:55:00.895Z] [MCP] Request accepted (200 OK)
+[2026-03-11T22:55:21.077Z] [SSE] ✗ Timeout after 20000ms (1 events)
+[2026-03-11T22:55:21.078Z] [HEARTBEAT] Failed: Timeout after 20000ms
+[2026-03-11T22:55:21.318Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-11T22:55:21.318Z] [INBOX] No messages array in response
+[2026-03-11T22:55:21.319Z] [DECIDE] Cycle 15020 % 6 = 2 → Track AIBTC
+[2026-03-11T22:55:21.319Z] [DECIDE] Discovery already ran today (2026-03-11)
+[2026-03-11T22:55:21.319Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-11T22:55:21.319Z] [DELIVER] No replies pending
+[2026-03-11T22:55:21.320Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-11T22:55:21.321Z] [WRITE] Updated health.json
+[2026-03-11T22:55:21.321Z] [WRITE] Updated STATE.md
