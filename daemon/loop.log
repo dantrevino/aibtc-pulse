@@ -313,3 +313,37 @@ Started: 2026-03-11T23:25:00.783Z
 [2026-03-11T23:25:16.455Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T23:25:16.456Z] [WRITE] Updated health.json
 [2026-03-11T23:25:16.456Z] [WRITE] Updated STATE.md
+[2026-03-11T23:25:16.462Z] [SYNC] git add: ...
+[2026-03-11T23:25:16.472Z] [SYNC] git commit: [main 107bd8e] Cycle 15025: ok
+ 3 files changed, 41 insertions(+), 6 deletions(-)
+...
+[2026-03-11T23:25:16.473Z] [SYNC] ✓ Git committed changes
+[2026-03-11T23:25:16.473Z] [SUMMARY] Cycle 15026 completed. Next at 2026-03-11T23:30:16.455Z
+[2026-03-11T23:25:16.473Z] [FINAL] ✓ Loop completed in 15.69s
+
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-11T23:30:00.784Z
+[2026-03-11T23:30:00.787Z] [HEALTH] Cycle 15026 | Status: ok
+[2026-03-11T23:30:00.788Z] [HEARTBEAT] Signing: AIBTC Check-In | 2026-03-11T23:30:00.000Z
+[2026-03-11T23:30:00.788Z] [MCP] Requesting btc_sign_message (ID: 1773271800788)
+[2026-03-11T23:30:00.799Z] [MCP] Request accepted (200 OK)
+[2026-03-11T23:30:01.196Z] [SSE] ✓ Received result for btc_sign_message (event 2)
+[2026-03-11T23:30:01.197Z] [HEARTBEAT] ✓ Signature obtained (144 chars)
+[2026-03-11T23:30:01.197Z] [HEARTBEAT] POST /api/heartbeat
+[2026-03-11T23:30:01.197Z] [HEARTBEAT]   signature: AkgwRQIhAPgkXa4R9JejJBJ2ku/wbB330MzvQJDE...
+[2026-03-11T23:30:01.197Z] [HEARTBEAT]   timestamp: 2026-03-11T23:30:00.000Z
+[2026-03-11T23:30:01.197Z] [HEARTBEAT]   btcAddress: bc1quxy0g6cp9u9fyvu3glx93hnteff47hlmytldmp
+[2026-03-11T23:30:01.197Z] [HEARTBEAT] Executing curl (body written to /tmp/aibtc-heartbeat-body.json)...
+[2026-03-11T23:30:11.214Z] [HEARTBEAT] ✗ Failed: Command failed: curl -s --max-time 10 -X POST https://aibtc.com/api/heartbeat -H "Content-Type: application/json" -d @/tmp/aibtc-heartbeat-body.json
+[2026-03-11T23:30:11.496Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-11T23:30:11.496Z] [INBOX] No messages array in response
+[2026-03-11T23:30:11.497Z] [DECIDE] Cycle 15026 % 6 = 2 → Track AIBTC
+[2026-03-11T23:30:11.497Z] [DECIDE] Discovery already ran today (2026-03-11)
+[2026-03-11T23:30:11.497Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-11T23:30:11.498Z] [DELIVER] No replies pending
+[2026-03-11T23:30:11.498Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-11T23:30:11.498Z] [WRITE] Updated health.json
+[2026-03-11T23:30:11.499Z] [WRITE] Updated STATE.md
