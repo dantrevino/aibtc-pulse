@@ -150,3 +150,38 @@ Started: 2026-03-11T22:55:00.784Z
 [2026-03-11T22:55:21.320Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T22:55:21.321Z] [WRITE] Updated health.json
 [2026-03-11T22:55:21.321Z] [WRITE] Updated STATE.md
+[2026-03-11T22:55:21.327Z] [SYNC] git add: ...
+[2026-03-11T22:55:21.336Z] [SYNC] git commit: [main e642d67] Cycle 15020: ok
+ 3 files changed, 35 insertions(+), 5 deletions(-)
+...
+[2026-03-11T22:55:21.336Z] [SYNC] ✓ Git committed changes
+[2026-03-11T22:55:21.337Z] [SUMMARY] Cycle 15021 completed. Next at 2026-03-11T23:00:21.320Z
+[2026-03-11T22:55:21.337Z] [FINAL] ✓ Loop completed in 20.55s
+
+[2026-03-11T22:55:21.338Z] [SSE] ✗ SSE error: aborted
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-11T23:00:00.783Z
+[2026-03-11T23:00:00.786Z] [HEALTH] Cycle 15021 | Status: ok
+[2026-03-11T23:00:00.787Z] [HEARTBEAT] Signing message...
+[2026-03-11T23:00:00.787Z] [HEARTBEAT] Message: AIBTC Check-In | 2026-03-11T23:00:00.000Z...
+[2026-03-11T23:00:00.788Z] [MCP] Requesting btc_sign_message (ID: 1773270000788)
+[2026-03-11T23:00:00.831Z] [MCP] Request accepted (200 OK)
+[2026-03-11T23:00:00.941Z] [SSE] ✓ Received result for btc_sign_message (event 2)
+[2026-03-11T23:00:00.942Z] [HEARTBEAT] Received response text: {
+  "success": true,
+  "signatureBase64": "AkgwRQIhALKWcXGyKWXjCxFm8VcMcLJ+GSje/bSQw+etXlPqeMyZAiBTM...
+[2026-03-11T23:00:00.942Z] [HEARTBEAT] Signature extracted: AkgwRQIhALKWcXGyKWXjCxFm8VcMcL... (144 chars)
+[2026-03-11T23:00:00.942Z] [HEARTBEAT] Posting to aibtc.com/api/heartbeat...
+[2026-03-11T23:00:10.954Z] [HEARTBEAT] Failed: API timeout
+[2026-03-11T23:00:11.775Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-11T23:00:11.775Z] [INBOX] No messages array in response
+[2026-03-11T23:00:11.777Z] [DECIDE] Cycle 15021 % 6 = 3 → Contribute
+[2026-03-11T23:00:11.778Z] [DECIDE] Discovery already ran today (2026-03-11)
+[2026-03-11T23:00:11.778Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-11T23:00:11.778Z] [DELIVER] No replies pending
+[2026-03-11T23:00:11.778Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-11T23:00:11.779Z] [WRITE] Updated health.json
+[2026-03-11T23:00:11.779Z] [WRITE] Updated STATE.md
