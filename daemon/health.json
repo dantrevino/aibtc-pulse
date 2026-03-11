@@ -23,7 +23,7 @@
   "circuit_breaker": {
     "heartbeat_fail_count": 80
   },
-  "next_cycle_at": "2026-03-11T22:12:40.278Z",
+  "next_cycle_at": "2026-03-11T22:39:51.721Z",
   "last_discovery_date": "2026-03-11",
   "critical_issue": "nonce conflict incident aibtcdev/x402-sponsor-relay#151 may explain relay API instability"
 }
