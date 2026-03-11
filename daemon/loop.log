@@ -220,3 +220,33 @@ Started: 2026-03-11T23:05:00.780Z
 [2026-03-11T23:05:11.278Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T23:05:11.279Z] [WRITE] Updated health.json
 [2026-03-11T23:05:11.279Z] [WRITE] Updated STATE.md
+[2026-03-11T23:05:11.286Z] [SYNC] git add: ...
+[2026-03-11T23:05:11.295Z] [SYNC] git commit: [main 03ef9a7] Cycle 15022: ok
+ 3 files changed, 40 insertions(+), 5 deletions(-)
+...
+[2026-03-11T23:05:11.295Z] [SYNC] ✓ Git committed changes
+[2026-03-11T23:05:11.296Z] [SUMMARY] Cycle 15023 completed. Next at 2026-03-11T23:10:11.279Z
+[2026-03-11T23:05:11.296Z] [FINAL] ✓ Loop completed in 10.52s
+
+[2026-03-11T23:05:11.297Z] [HEARTBEAT] ✗ API Connection error: socket hang up
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-11T23:10:00.782Z
+[2026-03-11T23:10:00.785Z] [HEALTH] Cycle 15023 | Status: ok
+[2026-03-11T23:10:00.785Z] [HEARTBEAT] Signing: AIBTC Check-In | 2026-03-11T23:10:00.000Z
+[2026-03-11T23:10:00.786Z] [MCP] Requesting btc_sign_message (ID: 1773270600786)
+[2026-03-11T23:10:00.860Z] [MCP] Request accepted (200 OK)
+[2026-03-11T23:10:00.932Z] [SSE] ✓ Received result for btc_sign_message (event 2)
+[2026-03-11T23:10:00.933Z] [HEARTBEAT] ✓ Signed. Posting to /api/heartbeat...
+[2026-03-11T23:10:15.952Z] [HEARTBEAT] ✗ Failed: spawnSync /bin/sh ETIMEDOUT
+[2026-03-11T23:10:16.647Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-11T23:10:16.647Z] [INBOX] No messages array in response
+[2026-03-11T23:10:16.647Z] [DECIDE] Cycle 15023 % 6 = 5 → Self-audit
+[2026-03-11T23:10:16.648Z] [DECIDE] Discovery already ran today (2026-03-11)
+[2026-03-11T23:10:16.648Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-11T23:10:16.648Z] [DELIVER] No replies pending
+[2026-03-11T23:10:16.648Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-11T23:10:16.649Z] [WRITE] Updated health.json
+[2026-03-11T23:10:16.649Z] [WRITE] Updated STATE.md
