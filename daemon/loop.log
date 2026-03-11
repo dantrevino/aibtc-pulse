@@ -250,3 +250,31 @@ Started: 2026-03-11T23:10:00.782Z
 [2026-03-11T23:10:16.648Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T23:10:16.649Z] [WRITE] Updated health.json
 [2026-03-11T23:10:16.649Z] [WRITE] Updated STATE.md
+[2026-03-11T23:10:16.655Z] [SYNC] git add: ...
+[2026-03-11T23:10:16.664Z] [SYNC] git commit: [main 8312097] Cycle 15023: ok
+ 3 files changed, 35 insertions(+), 5 deletions(-)
+...
+[2026-03-11T23:10:16.664Z] [SYNC] ✓ Git committed changes
+[2026-03-11T23:10:16.665Z] [SUMMARY] Cycle 15024 completed. Next at 2026-03-11T23:15:16.648Z
+[2026-03-11T23:10:16.665Z] [FINAL] ✓ Loop completed in 15.88s
+
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-11T23:15:00.784Z
+[2026-03-11T23:15:00.788Z] [HEALTH] Cycle 15024 | Status: ok
+[2026-03-11T23:15:00.788Z] [HEARTBEAT] Signing: AIBTC Check-In | 2026-03-11T23:15:00.000Z
+[2026-03-11T23:15:00.789Z] [MCP] Requesting btc_sign_message (ID: 1773270900789)
+[2026-03-11T23:15:00.868Z] [MCP] Request accepted (200 OK)
+[2026-03-11T23:15:20.904Z] [SSE] ✗ Timeout after 20000ms (1 events)
+[2026-03-11T23:15:20.905Z] [HEARTBEAT] ✗ Failed: Timeout after 20000ms
+[2026-03-11T23:15:21.794Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-11T23:15:21.795Z] [INBOX] No messages array in response
+[2026-03-11T23:15:21.795Z] [DECIDE] Cycle 15024 % 6 = 0 → PR review
+[2026-03-11T23:15:21.796Z] [DECIDE] Discovery already ran today (2026-03-11)
+[2026-03-11T23:15:21.796Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-11T23:15:21.796Z] [DELIVER] No replies pending
+[2026-03-11T23:15:21.796Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-11T23:15:21.797Z] [WRITE] Updated health.json
+[2026-03-11T23:15:21.798Z] [WRITE] Updated STATE.md
