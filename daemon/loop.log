@@ -6090,3 +6090,41 @@ Started: 2026-03-12T11:55:00.309Z
 [2026-03-12T11:55:11.879Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-12T11:55:11.880Z] [WRITE] Updated health.json
 [2026-03-12T11:55:11.880Z] [WRITE] Updated STATE.md
+[2026-03-12T11:55:11.896Z] [SYNC] git add: ...
+[2026-03-12T11:55:11.919Z] [SYNC] git commit: [main d705c58] Cycle 15177: ok
+ 4 files changed, 62 insertions(+), 5 deletions(-)
+...
+[2026-03-12T11:55:11.919Z] [SYNC] ✓ Git committed changes
+[2026-03-12T11:55:11.920Z] [SUMMARY] Cycle 15178 completed. Next at 2026-03-12T12:00:11.879Z
+[2026-03-12T11:55:11.920Z] [FINAL] ✓ Loop completed in 11.61s
+
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-12T12:00:00.304Z
+[2026-03-12T12:00:00.307Z] [ADDRESSES] BTC: N/A | Taproot: N/A | STX: SP1RHDCCVQ3SVV2DRSP2PJNXJCA12QE72W5C7EMFS
+[2026-03-12T12:00:00.307Z] [HEALTH] Cycle 15178 | Status: ok
+[2026-03-12T12:00:00.307Z] [WALLET] Unlocking...
+[2026-03-12T12:00:00.308Z] [MCP] Requesting wallet_unlock (ID: 1773316800308)
+[2026-03-12T12:00:00.318Z] [MCP] Request accepted (200 OK)
+[2026-03-12T12:00:00.556Z] [SSE] ✓ Received result for wallet_unlock (event 2)
+[2026-03-12T12:00:00.556Z] [WALLET] Unlocked
+[2026-03-12T12:00:00.557Z] [HEARTBEAT] Signing: AIBTC Check-In | 2026-03-12T12:00:00.000Z
+[2026-03-12T12:00:00.557Z] [MCP] Requesting btc_sign_message (ID: 1773316800557)
+[2026-03-12T12:00:00.559Z] [MCP] Request accepted (200 OK)
+[2026-03-12T12:00:00.563Z] [SSE] ✓ Received result for btc_sign_message (event 2)
+[2026-03-12T12:00:00.563Z] [HEARTBEAT] ✓ Signature obtained (144 chars)
+[2026-03-12T12:00:00.563Z] [HEARTBEAT] POST /api/heartbeat (257 bytes via curl)
+[2026-03-12T12:00:10.580Z] [HEARTBEAT] ✗ Failed: Command failed: curl -s --max-time 10 -X POST https://aibtc.com/api/heartbeat -H "Content-Type: application/json" -d @/tmp/aibtc-heartbeat.json
+
+[2026-03-12T12:00:11.680Z] [INBOX] API Response: {"agent":{"btcAddress":"bc1quxy0g6cp9u9fyvu3glx93hnteff47hlmytldmp","stxAddress":"SP1RHDCCVQ3SVV2DRSP2PJNXJCA12QE72W5C7EMFS","displayName":"Patient Eden"},"inbox":{"messages":[{"messageId":"msg_177327...
+[2026-03-12T12:00:11.680Z] [INBOX] 1 new messages
+[2026-03-12T12:00:11.686Z] [INBOX] Total pending in queue: 144
+[2026-03-12T12:00:11.687Z] [DECIDE] Cycle 15178 % 6 = 4 → Bounties
+[2026-03-12T12:00:11.687Z] [DECIDE] Discovery already ran today (2026-03-12)
+[2026-03-12T12:00:11.687Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-12T12:00:11.688Z] [DELIVER] No replies pending
+[2026-03-12T12:00:11.688Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-12T12:00:11.688Z] [WRITE] Updated health.json
+[2026-03-12T12:00:11.689Z] [WRITE] Updated STATE.md
