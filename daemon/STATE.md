@@ -1,5 +1,5 @@
-## Cycle 15308 State
-- Last: Completed cycle 15307
+## Cycle 15309 State
+- Last: Completed cycle 15308
 - Pending: Tasks from queue
 - Blockers: None
 - Wallet: Unlocked
