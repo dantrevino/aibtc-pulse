@@ -622,3 +622,39 @@ Started: 2026-03-11T23:55:00.780Z
 [2026-03-11T23:55:11.581Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
 [2026-03-11T23:55:11.581Z] [WRITE] Updated health.json
 [2026-03-11T23:55:11.581Z] [WRITE] Updated STATE.md
+[2026-03-11T23:55:11.586Z] [SYNC] git add: ...
+[2026-03-11T23:55:11.593Z] [SYNC] git commit: [main c665951] Cycle 15033: ok
+ 3 files changed, 47 insertions(+), 5 deletions(-)
+...
+[2026-03-11T23:55:11.593Z] [SYNC] ✓ Git committed changes
+[2026-03-11T23:55:11.594Z] [SUMMARY] Cycle 15034 completed. Next at 2026-03-12T00:00:11.581Z
+[2026-03-11T23:55:11.594Z] [FINAL] ✓ Loop completed in 10.81s
+
+[2026-03-11T23:55:11.595Z] [HEARTBEAT] req error: socket hang up
+
+╔══════════════════════════════════════╗
+║   AIBTC Autonomous Loop (Enhanced Logging)    ║
+╚════════════════════════════════════╝
+Started: 2026-03-12T00:00:00.780Z
+[2026-03-12T00:00:00.783Z] [HEALTH] Cycle 15034 | Status: ok
+[2026-03-12T00:00:00.783Z] [WALLET] Unlocking...
+[2026-03-12T00:00:00.783Z] [MCP] Requesting wallet_unlock (ID: 1773273600783)
+[2026-03-12T00:00:00.794Z] [MCP] Request accepted (200 OK)
+[2026-03-12T00:00:01.011Z] [SSE] ✓ Received result for wallet_unlock (event 2)
+[2026-03-12T00:00:01.012Z] [WALLET] Unlocked
+[2026-03-12T00:00:01.012Z] [HEARTBEAT] Signing: AIBTC Check-In | 2026-03-12T00:00:01.000Z
+[2026-03-12T00:00:01.012Z] [MCP] Requesting btc_sign_message (ID: 1773273601012)
+[2026-03-12T00:00:01.015Z] [MCP] Request accepted (200 OK)
+[2026-03-12T00:00:01.020Z] [SSE] ✓ Received result for btc_sign_message (event 2)
+[2026-03-12T00:00:01.020Z] [HEARTBEAT] ✓ Signature obtained (144 chars)
+[2026-03-12T00:00:01.020Z] [HEARTBEAT] POST /api/heartbeat (257 bytes via curl)
+[2026-03-12T00:00:11.034Z] [HEARTBEAT] ✗ Failed: Command failed: curl -s --max-time 10 -X POST https://aibtc.com/api/heartbeat -H "Content-Type: application/json" -d @/tmp/aibtc-heartbeat.json
+[2026-03-12T00:00:11.375Z] [INBOX] API Response: {"endpoint":"/api/inbox/[address]","description":"Public inbox for agent. Anyone can send messages via x402 sBTC payment.","error":"Agent not found","address":"undefined","howToFind":{"agentDirectory"...
+[2026-03-12T00:00:11.375Z] [INBOX] No messages array in response
+[2026-03-12T00:00:11.376Z] [DECIDE] Cycle 15034 % 6 = 4 → Bounties
+[2026-03-12T00:00:11.376Z] [DECIDE] Running agent discovery (daily check)
+[2026-03-12T00:00:11.376Z] [EXECUTE] Placeholder - no pending tasks in queue
+[2026-03-12T00:00:11.376Z] [DELIVER] No replies pending
+[2026-03-12T00:00:11.377Z] [OUTREACH] Budget: 300 sats | No pending follow-ups
+[2026-03-12T00:00:11.377Z] [WRITE] Updated health.json
+[2026-03-12T00:00:11.378Z] [WRITE] Updated STATE.md
