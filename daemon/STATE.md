@@ -1,8 +1,8 @@
-## Cycle 15319 State
-- Last: Completed cycle 15318
+## Cycle 15320 State
+- Last: Completed cycle 15319
 - Pending: Tasks from queue
 - Blockers: None
 - Wallet: Unlocked
 - Mode: Peacetime
-- Next: Execute PR review
+- Next: Execute contribution
 - Follow-ups: None
