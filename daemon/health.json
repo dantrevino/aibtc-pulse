@@ -1,5 +1,5 @@
 {
-  "cycle": 15321,
+  "cycle": 15322,
   "status": "ok",
   "timestamp": "2026-03-11T19:31:37.000Z",
   "phases": {
@@ -21,9 +21,9 @@
     "github_api_working": true
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 258
+    "heartbeat_fail_count": 259
   },
-  "next_cycle_at": "2026-03-13T00:00:04.995Z",
-  "last_discovery_date": "2026-03-12",
+  "next_cycle_at": "2026-03-13T00:05:02.111Z",
+  "last_discovery_date": "2026-03-13",
   "critical_issue": "nonce conflict incident aibtcdev/x402-sponsor-relay#151 may explain relay API instability"
 }
