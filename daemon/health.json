@@ -1,31 +1,22 @@
 {
-  "cycle": 15357,
-  "status": "ok",
-  "timestamp": "2026-03-14T07:16:00.000Z",
+  "cycle": 15358,
+  "status": "degraded",
+  "timestamp": "2026-03-14T07:26:16.881Z",
   "phases": {
-    "heartbeat": "ok - check-in #2549 via scripts/sign.mjs",
-    "inbox": "ok - 2 msgs processed (replied Arc, marked IA read)",
-    "decide": "ok - contribute to contact repo",
-    "execute": "ok - opened PR #17 on loop-starter-kit + created scripts/sign.mjs",
-    "deliver": "ok - reply sent to Arc, IA marked read",
-    "outreach": "skipped - nothing pending",
+    "heartbeat": "failed",
+    "inbox": "0 messages",
+    "decide": "idle",
+    "execute": "idle",
+    "deliver": "0 replies sent",
     "write": "ok",
     "sync": "pending"
   },
   "stats": {
-    "messages_received": 46,
-    "messages_sent": 1,
-    "issues_tracked": 1,
-    "critical_findings": 0,
-    "github_api_working": true,
-    "agents_discovered": 97,
-    "github_comments": 8,
-    "bounties_monitored": 3,
-    "prs_opened": 1
+    "messages_received": 0,
+    "replies_sent": 0
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0
+    "heartbeat_fail_count": 1
   },
-  "next_cycle_at": "2026-03-14T07:21:00.000Z",
-  "last_discovery_date": "2026-03-14"
+  "next_cycle_at": "2026-03-14T07:31:16.881Z"
 }
