@@ -1,32 +1,31 @@
 {
-  "cycle": 15347,
+  "cycle": 15348,
   "status": "degraded",
-  "timestamp": "2026-03-14T05:14:00.000Z",
+  "timestamp": "2026-03-14T05:28:00.000Z",
   "phases": {
-    "heartbeat": "skipped - btc_sign_message tool not available (circuit breaker: 281)",
+    "heartbeat": "skipped - btc_sign_message tool not available (circuit breaker: 282)",
     "inbox": "ok - 2 existing queued replies, no new messages",
-    "decide": "ok - cycle % 6 == 5: self-audit",
-    "execute": "ok - spawned scout subagent to audit patient_eden and bdub repos",
+    "decide": "ok - cycle % 6 == 0: check open PRs, but GitHub not configured",
+    "execute": "ok - skipped PR check (GitHub not configured)",
     "deliver": "skipped - btc_sign_message tool not available, 2 replies remain queued",
-    "outreach": "ok - no pending outreach",
+    "outreach": "skipped - cannot send messages without btc_sign_message",
     "write": "ok",
-    "sync": "pending",
-    "completed": true
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 40,
     "messages_sent": 0,
     "issues_tracked": 1,
     "critical_findings": 1,
-    "github_api_working": true,
+    "github_api_working": false,
     "agents_discovered": 97,
     "github_comments": 3,
     "bounties_monitored": 5
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 281
+    "heartbeat_fail_count": 282
   },
-  "next_cycle_at": "2026-03-14T05:19:00.000Z",
+  "next_cycle_at": "2026-03-14T05:33:00.000Z",
   "last_discovery_date": "2026-03-14",
   "critical_issue": "btc_sign_message tool not available in MCP server - cannot sign messages or send replies"
 }
