@@ -13,7 +13,9 @@
  *   WALLET_PASSWORD  — required
  *   NETWORK          — mainnet (default) | testnet
  *   CYCLE_INTERVAL   — ms between cycles (default: 300000 = 5 min)
- *   OPENCODE_MODEL   — model for opencode run (default: auto)
+ *   MODEL_HEAVY      — model for coding/PRs (default: opencode-go/glm-5)
+ *   MODEL_MEDIUM     — model for decisions/replies (default: opencode-go/kimi-k2.5)
+ *   MODEL_LIGHT      — model for simple tasks (default: opencode-go/minimax-m2.5)
  */
 
 import { execSync, spawnSync } from "node:child_process";
@@ -35,7 +37,13 @@ if (!PASSWORD) { console.error("WALLET_PASSWORD required"); process.exit(1); }
 
 const SINGLE_CYCLE = process.argv.includes("--once");
 const CYCLE_INTERVAL = parseInt(process.env.CYCLE_INTERVAL || "300000", 10);
-const OPENCODE_MODEL = process.env.OPENCODE_MODEL || "";
+
+// Model tiers: heavy (coding), medium (decisions/replies), light (simple tasks)
+const MODELS = {
+  heavy:  process.env.MODEL_HEAVY  || "opencode-go/glm-5",
+  medium: process.env.MODEL_MEDIUM || "opencode-go/kimi-k2.5",
+  light:  process.env.MODEL_LIGHT  || "opencode-go/minimax-m2.5",
+};
 
 // Read CLAUDE.md for addresses
 const claudeMd = fs.readFileSync(path.join(ROOT, "CLAUDE.md"), "utf8");
@@ -93,10 +101,17 @@ function stxSign(message) {
   return result?.signature || null;
 }
 
-/** Call opencode run with a prompt, return the text response */
+/**
+ * Call opencode run with a prompt, return the text response.
+ * @param {string} prompt
+ * @param {object} opts
+ * @param {"heavy"|"medium"|"light"} opts.tier - model tier (default: "medium")
+ */
 function llm(prompt, opts = {}) {
+  const tier = opts.tier || "medium";
+  const model = MODELS[tier];
   const args = ["run", prompt, "--format", "json", "--dir", ROOT];
-  if (OPENCODE_MODEL) args.push("-m", OPENCODE_MODEL);
+  if (model) args.push("-m", model);
 
   const result = spawnSync("opencode", args, {
     encoding: "utf8",
@@ -239,14 +254,16 @@ ${contactsMd}
    Return as: ACTION|<description of what to do>
 3. If the action requires GitHub work, include the specific gh commands.
    Return as: GITHUB|<gh command to run>
-4. Write a one-line journal entry.
+4. If the action requires writing code, building features, or opening PRs, write a detailed prompt
+   for a coding agent. Return as: HEAVY|<detailed prompt for the coding task>
+5. Write a one-line journal entry.
    Return as: JOURNAL|<entry>
-5. Write the next STATE.md content (max 10 lines).
+6. Write the next STATE.md content (max 10 lines).
    Return as: STATE|<full STATE.md content>
 
 Return ONLY these tagged lines, one per line. No other text.`;
 
-  const response = llm(prompt, { timeout: 180000 });
+  const response = llm(prompt, { tier: "medium", timeout: 180000 });
   if (!response) {
     log("decide", "LLM returned nothing");
     return { replies: [], action: null, github: [], journal: null, state: null };
@@ -256,6 +273,7 @@ Return ONLY these tagged lines, one per line. No other text.`;
   const replies = [];
   let action = null;
   const github = [];
+  let heavyPrompt = null;
   let journal = null;
   let state = null;
 
@@ -270,6 +288,8 @@ Return ONLY these tagged lines, one per line. No other text.`;
       action = trimmed.substring(7);
     } else if (trimmed.startsWith("GITHUB|")) {
       github.push(trimmed.substring(7));
+    } else if (trimmed.startsWith("HEAVY|")) {
+      heavyPrompt = trimmed.substring(6);
     } else if (trimmed.startsWith("JOURNAL|")) {
       journal = trimmed.substring(8);
     } else if (trimmed.startsWith("STATE|")) {
@@ -277,7 +297,7 @@ Return ONLY these tagged lines, one per line. No other text.`;
     }
   }
 
-  return { replies, action, github, journal, state };
+  return { replies, action, github, heavyPrompt, journal, state };
 }
 
 // ---------------------------------------------------------------------------
@@ -429,9 +449,16 @@ async function runCycle(cycle) {
 
   // Phase 3-4
   const health = readJson(path.join(DAEMON, "health.json")) || {};
-  log("decide", "calling LLM...");
+  log("decide", "calling LLM (medium)...");
   const result = decideAndExecute(cycle, messages, health);
   if (result.action) log("execute", result.action.slice(0, 100));
+
+  // If action requires heavy coding, delegate to heavy model
+  if (result.heavyPrompt) {
+    log("execute", "delegating to heavy model...");
+    const heavyResult = llm(result.heavyPrompt, { tier: "heavy", timeout: 300000 });
+    if (heavyResult) log("execute", `heavy: ${heavyResult.slice(0, 100)}`);
+  }
 
   // Phase 5
   let repliesSent = 0;
