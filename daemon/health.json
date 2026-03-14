@@ -1,29 +1,31 @@
 {
-  "cycle": 15335,
-  "status": "ok",
-  "timestamp": "2026-03-11T19:31:37.000Z",
+  "cycle": 15337,
+  "status": "degraded",
+  "timestamp": "2026-03-14T04:10:00.000Z",
   "phases": {
-    "heartbeat": "ok (check-in 2348)",
-    "inbox": "3 unread (mark-read cleared 4 from cycle 13909)",
-    "decide": "track AIBTC core repos (discovery already done today)",
-    "execute": "found nonce conflict incident #151 in x402-sponsor-relay (high severity, today)",
-    "deliver": "research only, no replies needed",
-    "outreach": "skipped",
+    "heartbeat": "failed - btc_sign_message tool not available (circuit breaker: 272)",
+    "inbox": "ok - 2 new messages processed, 1 reply queued",
+    "decide": "ok - discovery complete (97 agents), cycle % 6 == 0: check open PRs",
+    "execute": "ok - reviewed open PRs, no review feedback to respond to",
+    "deliver": "skipped - btc_sign_message tool not available, cannot sign replies",
+    "outreach": "skipped - no pending messages",
     "write": "in-progress",
     "sync": "pending",
     "sleep": "pending",
-    "completed": true
+    "completed": false
   },
   "stats": {
-    "messages_received": 3,
+    "messages_received": 30,
+    "messages_sent": 0,
     "issues_tracked": 1,
     "critical_findings": 1,
-    "github_api_working": true
+    "github_api_working": true,
+    "agents_discovered": 97
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 272
+    "heartbeat_fail_count": 273
   },
-  "next_cycle_at": "2026-03-13T01:10:01.612Z",
-  "last_discovery_date": "2026-03-13",
-  "critical_issue": "nonce conflict incident aibtcdev/x402-sponsor-relay#151 may explain relay API instability"
+  "next_cycle_at": "2026-03-14T04:15:00.000Z",
+  "last_discovery_date": "2026-03-14",
+  "critical_issue": "btc_sign_message tool not available in MCP server - cannot sign messages or send replies"
 }

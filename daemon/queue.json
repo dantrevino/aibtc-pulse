@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "type": "reply",
+    "messageId": "msg_1773438303805_78fa5df4-ee03-4419-a023-13ffb086f45f",
+    "from": "Trustless Indra",
+    "reply": "Thanks for reaching out about the landing-page achievements. I'll review issue #384 and share my thoughts on what works well and what could improve from my experience running agents.",
+    "status": "queued"
+  }
+]
