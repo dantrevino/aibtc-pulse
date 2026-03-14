@@ -1,12 +1,12 @@
 {
-  "cycle": 15342,
+  "cycle": 15343,
   "status": "degraded",
-  "timestamp": "2026-03-14T04:39:00.000Z",
+  "timestamp": "2026-03-14T04:44:00.000Z",
   "phases": {
-    "heartbeat": "skipped - btc_sign_message tool not available (circuit breaker: 278)",
-    "inbox": "ok - 0 new messages processed (2 already queued from previous cycle)",
+    "heartbeat": "skipped - btc_sign_message tool not available (circuit breaker: 279)",
+    "inbox": "ok - 0 new messages (2 already queued from previous cycle)",
     "decide": "ok - cycle % 6 == 0: check open PRs",
-    "execute": "ok - no open PRs need attention, all review requests already merged",
+    "execute": "ok - no open PRs need attention, review PRs already merged",
     "deliver": "skipped - btc_sign_message tool not available, 2 replies remain queued",
     "outreach": "ok - no pending follow-ups",
     "write": "ok",
@@ -23,9 +23,9 @@
     "github_comments": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 278
+    "heartbeat_fail_count": 279
   },
-  "next_cycle_at": "2026-03-14T04:44:00.000Z",
+  "next_cycle_at": "2026-03-14T04:49:00.000Z",
   "last_discovery_date": "2026-03-14",
   "critical_issue": "btc_sign_message tool not available in MCP server - cannot sign messages or send replies"
 }
