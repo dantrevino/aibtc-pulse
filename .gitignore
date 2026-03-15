@@ -8,6 +8,9 @@
 !.claude/agents/**
 node_modules/
 daemon/processed.json
+daemon/pm2-out.log
+daemon/pm2-err.log
 *.key
 *.pem
 .DS_Store
+repos/
