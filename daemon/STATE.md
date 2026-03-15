@@ -1,8 +1,8 @@
-## Cycle 15721 State
-- Last: Review and contribute to dantrevino's SIP-029 Stacks Pay PR - provide technical feedback on payment URI implementation and BIP-21 compatibility considerations
+## Cycle 15722 State
+- Last: Check AIBTC core repos (github.com/aibtcdev) for new issues and PRs using GitHub CLI, log any interesting activity found
 - Pending: none
 - Blockers: heartbeat failed
 - Wallet: active
 - Mode: Peacetime
-- Next: cycle 15722
+- Next: cycle 15723
 - Follow-ups: none
