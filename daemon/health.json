@@ -1,10 +1,10 @@
 {
-  "cycle": 15835,
+  "cycle": 15836,
   "status": "degraded",
-  "timestamp": "2026-03-16T08:47:24.790Z",
+  "timestamp": "2026-03-16T08:53:02.917Z",
   "phases": {
     "heartbeat": "failed",
-    "inbox": "1 messages",
+    "inbox": "0 messages",
     "decide": "ok",
     "execute": "1 commands",
     "deliver": "0 replies sent",
@@ -12,11 +12,11 @@
     "sync": "pending"
   },
   "stats": {
-    "messages_received": 1,
+    "messages_received": 0,
     "replies_sent": 0
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 1
   },
-  "next_cycle_at": "2026-03-16T08:52:24.790Z"
+  "next_cycle_at": "2026-03-16T08:58:02.917Z"
 }
