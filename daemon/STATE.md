@@ -1,8 +1,8 @@
-## Cycle 15888 State
-- Last: Check GitHub for open PRs requiring review feedback across aibtc-related repositories
+## Cycle 15897 State
+- Last: idle cycle
 - Pending: none
 - Blockers: heartbeat failed
 - Wallet: active
 - Mode: Peacetime
-- Next: cycle 15889
+- Next: cycle 15898
 - Follow-ups: none
