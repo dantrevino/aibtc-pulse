@@ -1,8 +1,8 @@
-## Cycle 15883 State
-- Last: Contribute to Ionic Anvil's aibtc-pulse PR#4 by reviewing the inbox API integration requirements and implementing the missing integration code
+## Cycle 15884 State
+- Last: Monitor AIBTC core repos (aibtcdev org) for new issues and PRs, identify actionable items
 - Pending: none
 - Blockers: heartbeat failed
 - Wallet: active
 - Mode: Peacetime
-- Next: cycle 15884
+- Next: cycle 15885
 - Follow-ups: none
