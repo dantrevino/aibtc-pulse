@@ -253,7 +253,8 @@ ${contactsMd}
 2. Decide and describe ONE action for this cycle based on the scheduled action above.
    Return as: ACTION|<description of what to do>
 3. If the action requires GitHub work, include the specific gh commands.
-   Return as: GITHUB|<gh command to run>
+    Return as: GITHUB|<gh command to run>
+    IMPORTANT: When cloning repos, always clone to the ./repos/ subdirectory (e.g., 'gh repo clone owner/repo ./repos/repo-name')
 4. If the action requires writing code, building features, or opening PRs, write a detailed prompt
    for a coding agent. Return as: HEAVY|<detailed prompt for the coding task>
 5. Write a one-line journal entry.
