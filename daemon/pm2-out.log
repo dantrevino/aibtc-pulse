@@ -5636,3 +5636,25 @@
 2026-03-17 19:15:47:   [19:15:47] deliver: reply failed (400), marking as read
 2026-03-17 19:15:47:   [19:15:47] github: gh repo clone aibtcdev/aibtc-pulse ./repos/aibtc-pulse && cd ./repos/aibtc-pulse
 2026-03-17 19:15:48:   [19:15:48] github: (failed)
+2026-03-17 19:15:49:   [19:15:49] sync: committed + pushed
+2026-03-17 19:15:49:   [19:15:49] done: cycle 16081 complete
+2026-03-17 19:15:49:   [19:15:49] sleep: 300s until cycle 16082
+2026-03-17 19:20:49: 
+2026-03-17 19:20:49: === Cycle 16082 ===
+2026-03-17 19:21:05:   [19:21:05] heartbeat: curl failed
+2026-03-17 19:21:06:   [19:21:06] inbox: 0 unread
+2026-03-17 19:21:06:   [19:21:06] decide: calling LLM (medium)...
+2026-03-17 19:21:50:   [19:21:50] execute: Fetch latest issues and PRs from aibtcdev core repos (aibtc-mcp-server, aibtc-projects, agent-tools-
+2026-03-17 19:21:50:   [19:21:50] deliver: reply failed (400), marking as read
+2026-03-17 19:21:51:   [19:21:51] github: gh issue list --repo aibtcdev/aibtc-mcp-server --state open --limit 20 --json nu
+2026-03-17 19:21:52:   [19:21:52] github: [{"createdAt":"2026-03-16T20:46:13Z","labels":[],"number":337,"title":"Decide on .quest/ directory: gitignore or keep as planning artifacts","updatedAt":"2026-03-16T21:45:00Z"},{"createdAt":"2026-03-1
+2026-03-17 19:21:52:   [19:21:52] github: gh pr list --repo aibtcdev/aibtc-mcp-server --state open --limit 20 --json numbe
+2026-03-17 19:21:52:   [19:21:52] github: [{"createdAt":"2026-03-16T23:16:39Z","labels":[],"number":344,"title":"fix(stacking-lottery): register stackspot tools in tools/index (closes #308)","updatedAt":"2026-03-17T18:02:58Z"},{"createdAt":"2
+2026-03-17 19:21:52:   [19:21:52] github: gh issue list --repo aibtcdev/aibtc-projects --state open --limit 20 --json numb
+2026-03-17 19:21:53:   [19:21:53] github: [{"createdAt":"2026-03-07T06:46:44Z","labels":[{"id":"LA_kwDORVrRO88AAAACY5VzBg","name":"enhancement","description":"New feature or request","color":"a2eeef"},{"id":"LA_kwDORVrRO88AAAACZ7pkGw","name":
+2026-03-17 19:21:53:   [19:21:53] github: gh pr list --repo aibtcdev/aibtc-projects --state open --limit 20 --json number,
+2026-03-17 19:21:53:   [19:21:53] github: []
+2026-03-17 19:21:53:   [19:21:53] github: gh issue list --repo aibtcdev/agent-tools-ts --state open --limit 20 --json numb
+2026-03-17 19:21:53:   [19:21:53] github: [{"createdAt":"2026-03-09T11:12:18Z","labels":[],"number":246,"title":"security: path traversal in save-contract.ts file generation","updatedAt":"2026-03-09T11:12:18Z"},{"createdAt":"2026-03-09T11:12:
+2026-03-17 19:21:53:   [19:21:53] github: gh pr list --repo aibtcdev/agent-tools-ts --state open --limit 20 --json number,
+2026-03-17 19:21:54:   [19:21:54] github: [{"createdAt":"2026-03-17T18:47:55Z","labels":[],"number":256,"title":"feat: integrate token metadata API to reduce contract calls","updatedAt":"2026-03-17T18:47:55Z"},{"createdAt":"2026-03-17T03:50:2
