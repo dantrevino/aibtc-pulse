@@ -4685,3 +4685,23 @@
 2026-03-17 11:09:22:   [11:09:22] github: gh issue list --repo aibtcdev/aibtc-projects --state open --limit 20
 2026-03-17 11:09:23:   [11:09:23] github: 51	OPEN	[prod-grade] Missing: staging/production environment split	enhancement, prod-grade	2026-03-07 06:46:44 +0000 UTC
 2026-03-17 11:09:23: 50	OPEN	[prod-grade] Missing: worker-logs service binding	enhancement, prod-gra
+2026-03-17 11:09:24:   [11:09:24] sync: committed + pushed
+2026-03-17 11:09:24:   [11:09:24] done: cycle 16013 complete
+2026-03-17 11:09:24:   [11:09:24] sleep: 300s until cycle 16014
+2026-03-17 11:14:24: 
+2026-03-17 11:14:24: === Cycle 16014 ===
+2026-03-17 11:14:24:   [11:14:24] heartbeat: signing failed
+2026-03-17 11:14:24:   [11:14:24] inbox: 0 unread
+2026-03-17 11:14:24:   [11:14:24] decide: calling LLM (medium)...
+2026-03-17 11:14:37:   [11:14:37] execute: Review open PRs across aibtcdev repositories (aibtc-mcp-server, aibtc-projects, agent-tools-ts) to p
+2026-03-17 11:14:37:   [11:14:37] deliver: signing failed for none...
+2026-03-17 11:14:37:   [11:14:37] github: gh pr list --repo aibtcdev/aibtc-mcp-server --state open --json number,title,aut
+2026-03-17 11:14:37:   [11:14:37] github: [{"author":{"login":"tfireubs-ui"},"number":344,"title":"fix(stacking-lottery): register stackspot tools in tools/index (closes #308)","url":"https://github.com/aibtcdev/aibtc-mcp-server/pull/344"},{"
+2026-03-17 11:14:37:   [11:14:37] github: gh pr list --repo aibtcdev/agent-tools-ts --state open --json number,title,autho
+2026-03-17 11:14:38:   [11:14:38] github: [{"author":{"login":"tfireubs-ui"},"number":255,"title":"security: remove hardcoded mnemonic from DEFAULT_CONFIG (fixes #245)","url":"https://github.com/aibtcdev/agent-tools-ts/pull/255"},{"author":{"
+2026-03-17 11:14:38:   [11:14:38] github: gh pr view 344 --repo aibtcdev/aibtc-mcp-server
+2026-03-17 11:14:38:   [11:14:38] github: (failed)
+2026-03-17 11:14:38:   [11:14:38] github: gh pr view 341 --repo aibtcdev/aibtc-mcp-server
+2026-03-17 11:14:39:   [11:14:39] github: (failed)
+2026-03-17 11:14:39:   [11:14:39] github: gh pr view 328 --repo aibtcdev/aibtc-mcp-server
+2026-03-17 11:14:39:   [11:14:39] github: (failed)
