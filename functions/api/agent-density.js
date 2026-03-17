@@ -22,6 +22,16 @@ const HEADERS = {
   'Access-Control-Allow-Origin': '*',
 };
 
+function parseTimestamp(ts) {
+  if (!ts) return 0;
+  try {
+    const d = new Date(ts);
+    return isNaN(d.getTime()) ? 0 : d.getTime();
+  } catch {
+    return 0;
+  }
+}
+
 async function fetchJSON(url) {
   const res = await fetch(url, {
     headers: { 'Accept': 'application/json', 'User-Agent': 'aibtc-dashboard/1.0' },
@@ -44,9 +54,10 @@ async function getBtcBalance(btcAddress) {
 }
 
 function calculateRecencyScore(agent) {
-  if (!agent.lastActiveAt) return 0;
+  const lastActive = parseTimestamp(agent.lastActiveAt);
+  if (lastActive === 0) return 0;
   
-  const hoursSinceActive = (Date.now() - new Date(agent.lastActiveAt).getTime()) / (60 * 60 * 1000);
+  const hoursSinceActive = (Date.now() - lastActive) / (60 * 60 * 1000);
   
   if (hoursSinceActive < 24) return 1.0;
   if (hoursSinceActive < 72) return 0.7;
@@ -143,11 +154,11 @@ export async function onRequest(context) {
     const now = Date.now();
     const SEVEN_DAYS = 7 * 86400000;
 
-    const activeAgents = agents.filter(a =>
-      a.btcAddress &&
-      a.lastActiveAt &&
-      (now - new Date(a.lastActiveAt).getTime()) < SEVEN_DAYS
-    );
+    const activeAgents = agents.filter(a => {
+      if (!a.btcAddress || !a.lastActiveAt) return false;
+      const lastActive = parseTimestamp(a.lastActiveAt);
+      return lastActive > 0 && (now - lastActive) < SEVEN_DAYS;
+    });
 
     let inboxStatsMap = new Map();
     let inboxError = null;
