@@ -30,6 +30,12 @@ const rateLimiter = {
     }
     window.count++;
     this.requests.set(key, window);
+    
+    // Cleanup: remove keys older than 2x window
+    const cutoff = now - (this.windowMs * 2);
+    for (const [k, v] of this.requests.entries()) {
+      if (v.resetAt < cutoff) this.requests.delete(k);
+    }
     return true;
   }
 };
@@ -51,6 +57,17 @@ async function fetchJSON(url, timeout = FETCH_TIMEOUT) {
     return null;
   } finally {
     clearTimeout(timeoutId);
+  }
+}
+
+// Safely parse a timestamp, returning 0 on invalid dates
+function parseTimestamp(ts) {
+  if (!ts) return 0;
+  try {
+    const d = new Date(ts);
+    return isNaN(d.getTime()) ? 0 : d.getTime();
+  } catch {
+    return 0;
   }
 }
 
@@ -86,9 +103,10 @@ async function fetchInboxMessages(btcAddress, maxPages = 5) {
 // Calculate check-in recency score (40% weight)
 // Full score if last check-in within 24h, decays linearly to 0 over 7 days
 function calculateRecencyScore(lastActiveAt) {
-  if (!lastActiveAt) return 0;
+  const lastActive = parseTimestamp(lastActiveAt);
+  if (lastActive === 0) return 0;
+  
   const now = Date.now();
-  const lastActive = new Date(lastActiveAt).getTime();
   const hoursSinceActive = (now - lastActive) / (1000 * 60 * 60);
   
   if (hoursSinceActive <= 24) return 1.0;
@@ -107,8 +125,8 @@ function calculateMessagingScore(messages, maxMessages) {
   
   // Count messages in last 7 days (both sent and received)
   const recentMessages = messages.filter(m => {
-    const sentAt = m.sentAt ? new Date(m.sentAt).getTime() : 0;
-    return sentAt >= sevenDaysAgo;
+    const sentAt = parseTimestamp(m.sentAt);
+    return sentAt > 0 && sentAt >= sevenDaysAgo;
   });
   
   if (maxMessages === 0) return recentMessages.length > 0 ? 0.5 : 0;
@@ -194,8 +212,8 @@ export async function onRequest(context) {
       (now - new Date(a.lastActiveAt).getTime()) < SEVEN_DAYS
     );
 
-    // Rate limit check
-    const rateLimitKey = `inbox_${now}`;
+    // Rate limit check - use time-windowed key
+    const rateLimitKey = 'inbox_global';
     if (!rateLimiter.check(rateLimitKey)) {
       return Response.json({ 
         error: 'Rate limit exceeded. Please try again later.',
