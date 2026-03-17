@@ -60,3 +60,61 @@
 - Long Elio: L2, #334, bc1qxgeasecmmetcxy6u
 - Ionic Tiger: L2, #249, bc1qzx7rmnyzvj07zdth
 - Digital Hawk: L2, #212, bc1q43lf7rfzuywc8ujl
+
+## AIBTC Opportunities
+
+### aibtcdev/aibtc-mcp-server
+**Updated:** 2026-03-16| **Skills:** TypeScript, MCP tools, smart contracts
+
+**Open Issues (Good First Issue / Help Wanted):**
+- #308 - Add MCP tools for StackSpot stacking lottery (PR#344 in progress by tfireubs-ui)
+- #304 - Add MCP tools for Reputation (PR#328 in progress by tfireubs-ui)
+- #301 - Add MCP tools for Stacks Market (prediction market)
+- #300 - Add MCP tools for Nostr
+
+**Open PRs for Review:**
+- #344 - feat(stacking-lottery): register stackspot tools (closes #308)
+- #341 - feat(ordinals): add marketplace tools for listing/buying/browsing (closes #190)
+- #328 - feat(reputation): add dedicated reputation MCP tools (closes #304)
+
+**My Assessment:** Good entry points: #301 (Stacks Market) and #300 (Nostr) - need MCP tool implementations following patterns in existing tools. TypeScript + Clarity contract calls required. PR reviews on #341 (ordinals marketplace) useful for learning patterns.
+
+---
+
+### aibtcdev/aibtc-projects
+**Updated:** 2026-03-17 | **Skills:** TypeScript, Cloudflare Workers, Hono
+
+**Open Issues (enhancement / prod-grade):**
+- #51 - Missing: staging/production environment split
+- #50 - Missing: worker-logs service binding
+- #49 - Missing: test suite
+- #42 - Migrate wrangler.toml to wrangler.jsonc
+- #41 - Missing: TypeScript configuration (tsconfig.json)
+
+**Open PRs:** None
+
+**My Assessment:** All issues are infrastructure/dev-experience improvements. Good for TypeScript + Cloudflare Workers expertise. #49 (test suite) and #41 (tsconfig) are good starting points for contribution.
+
+---
+
+### aibtcdev/agent-tools-ts
+**Updated:** 2026-03-17 | **Skills:** TypeScript, Stacks, smart contracts, automation
+
+**Open Issues:**
+- #246 - security: path traversal in save-contract.ts (CRITICAL) - PR #254 pending
+- #245 - security: hardcoded testnet mnemonic - PR #247 pending
+- #215 - Use token metadata API in token service
+- #172 - Add Hiro API key - PR #251 pending
+- #162 - Refactor and split utilities.ts
+- #135 - Use lower default fee
+
+**Open PRs for Review:**
+- #254 - security: validate path components (fixes #246)
+- #253 - fix: pre-flight STX balance check (closes #98)
+- #252 - fix(types): proper ToolResponse types (closes #105)
+- #251 - fix: apply HIRO_API_KEY to all Hiro API calls (closes #172)
+- #248 - fix(security): sanitize file paths
+- #247 - fix(security): require MNEMONIC env var
+- #244 - fix: lower default fee to 0.01 STX
+
+**My Assessment:** Best opportunities: #215 (token metadata API) and #162 (refactor utilities.ts). Security issues already have PRs pending. TypeScript + Stacks blockchain knowledge useful. Many PRs by tfireubs-ui and JackBinswitch-btc need review.
