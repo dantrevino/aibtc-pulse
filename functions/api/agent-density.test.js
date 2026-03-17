@@ -6,10 +6,22 @@ import assert from 'assert';
 // Mock the scoring functions by extracting them for testing
 // These are pure functions that can be tested independently
 
+// Safely parse a timestamp, returning 0 on invalid dates
+function parseTimestamp(ts) {
+  if (!ts) return 0;
+  try {
+    const d = new Date(ts);
+    return isNaN(d.getTime()) ? 0 : d.getTime();
+  } catch {
+    return 0;
+  }
+}
+
 function calculateRecencyScore(lastActiveAt) {
-  if (!lastActiveAt) return 0;
+  const lastActive = parseTimestamp(lastActiveAt);
+  if (lastActive === 0) return 0;
+  
   const now = Date.now();
-  const lastActive = new Date(lastActiveAt).getTime();
   const hoursSinceActive = (now - lastActive) / (1000 * 60 * 60);
   
   if (hoursSinceActive <= 24) return 1.0;
@@ -24,8 +36,8 @@ function calculateMessagingScore(messages, maxMessages) {
   const sevenDaysAgo = now - (7 * 24 * 60 * 60 * 1000);
   
   const recentMessages = messages.filter(m => {
-    const sentAt = m.sentAt ? new Date(m.sentAt).getTime() : 0;
-    return sentAt >= sevenDaysAgo;
+    const sentAt = parseTimestamp(m.sentAt);
+    return sentAt > 0 && sentAt >= sevenDaysAgo;
   });
   
   if (maxMessages === 0) return recentMessages.length > 0 ? 0.5 : 0;
@@ -69,6 +81,28 @@ function calculateAgentScore(agent, balance, messages, maxBalance, maxMessages) 
 
 // Test suite
 const tests = {
+  'parseTimestamp: valid ISO date returns timestamp': () => {
+    const ts = '2026-03-17T12:00:00.000Z';
+    const result = parseTimestamp(ts);
+    assert.strictEqual(result, new Date(ts).getTime());
+  },
+
+  'parseTimestamp: null returns 0': () => {
+    assert.strictEqual(parseTimestamp(null), 0);
+    assert.strictEqual(parseTimestamp(undefined), 0);
+    assert.strictEqual(parseTimestamp(''), 0);
+  },
+
+  'parseTimestamp: invalid date returns 0': () => {
+    assert.strictEqual(parseTimestamp('not-a-date'), 0);
+    assert.strictEqual(parseTimestamp('2026-13-45'), 0);
+  },
+
+  'parseTimestamp: number returns timestamp': () => {
+    const ts = Date.now();
+    assert.strictEqual(parseTimestamp(ts), ts);
+  },
+
   'Recency score: within 24h should be 1.0': () => {
     const now = new Date().toISOString();
     assert.strictEqual(calculateRecencyScore(now), 1.0);
