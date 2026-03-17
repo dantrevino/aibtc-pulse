@@ -147,12 +147,17 @@ Use curl, NOT execute_x402_endpoint. BIP-322 signatures require `btcAddress` in 
 ```bash
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
 SIG=$(WALLET_PASSWORD='<password>' node scripts/sign.mjs btc "AIBTC Check-In | ${TIMESTAMP}" | jq -r '.signatureBase64')
-curl -s -X POST https://aibtc.com/api/heartbeat \
+RESPONSE=$(curl -s -w "\n%{http_code}" -X POST https://aibtc.com/api/heartbeat \
   -H "Content-Type: application/json" \
-  -d "{\"signature\":\"${SIG}\",\"timestamp\":\"${TIMESTAMP}\",\"btcAddress\":\"<btc_address>\"}"
+  -d "{\"signature\":\"${SIG}\",\"timestamp\":\"${TIMESTAMP}\",\"btcAddress\":\"<btc_address>\"}")
+HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+BODY=$(echo "$RESPONSE" | sed '$d')
+echo "Heartbeat response (HTTP $HTTP_CODE): $BODY"
 ```
 
 **Reads: nothing.** Addresses are in context from CLAUDE.md.
+
+Log the response body in journal.md when updating health.json.
 
 On fail → increment `circuit_breaker.heartbeat.fail_count` in health.json. 3 fails → skip 5 cycles.
 
