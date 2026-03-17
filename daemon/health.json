@@ -1,11 +1,11 @@
 {
-  "cycle": 16028,
+  "cycle": 16029,
   "status": "degraded",
-  "timestamp": "2026-03-17T12:51:20.212Z",
+  "timestamp": "2026-03-17T13:02:04.970Z",
   "phases": {
     "heartbeat": "failed",
     "inbox": "0 messages",
-    "decide": "ok",
+    "decide": "idle",
     "execute": "1 commands",
     "deliver": "0 replies sent",
     "write": "ok",
@@ -18,5 +18,5 @@
   "circuit_breaker": {
     "heartbeat_fail_count": 1
   },
-  "next_cycle_at": "2026-03-17T12:56:20.212Z"
+  "next_cycle_at": "2026-03-17T13:07:04.970Z"
 }
