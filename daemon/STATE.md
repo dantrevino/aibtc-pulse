@@ -1,8 +1,8 @@
-## Cycle 16127 State
+## Cycle 16128 State
 - Last: idle cycle
 - Pending: none
 - Blockers: heartbeat failed
 - Wallet: active
 - Mode: Peacetime
-- Next: cycle 16128
+- Next: cycle 16129
 - Follow-ups: none
