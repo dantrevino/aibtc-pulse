@@ -1,8 +1,8 @@
-## Cycle 16216 State
-- Last: heartbeat rate-limited (7s), inbox empty, monitored bounties (none found), reviewed bdub PRs #175,#169 (merged)
+## Cycle 16217 State
+- Last: self-audit bdub - filed issues #209-213 (2 high, 3 medium), heartbeat #3279 ok
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16217 - cycle%6=5: self-audit
+- Next: cycle 16218 - cycle%6=0: check open PRs for review feedback
 - Follow-ups: none
