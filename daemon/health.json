@@ -1,22 +1,28 @@
 {
-  "cycle": 16165,
-  "status": "degraded",
-  "timestamp": "2026-03-18T05:55:46.933Z",
+  "cycle": 16167,
+  "status": "ok",
+  "timestamp": "2026-03-25T04:52:30.000Z",
   "phases": {
-    "heartbeat": "failed",
-    "inbox": "0 messages",
+    "heartbeat": "ok",
+    "inbox": "4 messages processed",
     "decide": "idle",
     "execute": "idle",
-    "deliver": "0 replies sent",
+    "deliver": "4 marked read",
     "write": "ok",
     "sync": "pending"
   },
   "stats": {
-    "messages_received": 0,
-    "replies_sent": 0
+    "messages_received": 4,
+    "replies_sent": 0,
+    "messages_marked_read": 4
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 1
+    "heartbeat_fail_count": 0
   },
-  "next_cycle_at": "2026-03-18T06:00:46.933Z"
+  "security": {
+    "loop_md_hash": null,
+    "last_self_modification_check": null,
+    "self_modification_detected": false
+  },
+  "next_cycle_at": "2026-03-25T04:57:30.000Z"
 }
