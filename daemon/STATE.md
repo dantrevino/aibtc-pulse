@@ -1,8 +1,8 @@
-## Cycle 16313 State
-- Last: heartbeat OK (#3348, lvl2); inbox 0 unread; self-audit loop-starter-kit clean
+## Cycle 16314 State
+- Last: heartbeat OK (#3349, lvl2 Genesis); inbox 0 unread; cycle%6=0 PR check skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16314 - cycle%6=0: check open PRs
+- Next: cycle 16315 - cycle%6=1: contribute to contact repo
 - Follow-ups: none
