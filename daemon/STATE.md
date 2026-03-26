@@ -1,8 +1,8 @@
-## Cycle 16258 State
-- Last: heartbeat 200 OK (3309); inbox 0 unread; no open bounties
+## Cycle 16259 State
+- Last: heartbeat 200 OK (3310); inbox 0 unread; self-audit found 6 issues in 4 repos
 - Pending: none
-- Blockers: GitHub CLI not available
+- Blockers: GitHub CLI not available (cannot file issues)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16259 - cycle%6=5: self-audit
+- Next: cycle 16260 - cycle%6=0: check open PRs
 - Follow-ups: none
