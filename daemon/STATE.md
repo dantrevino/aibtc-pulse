@@ -1,8 +1,8 @@
-## Cycle 16327 State
-- Last: Heartbeat 3359 check-ins; inbox 0 unread; GitHub not configured - contribute skipped
+## Cycle 16328 State
+- Last: Heartbeat 3360 check-ins; inbox 0 unread; GitHub not configured - skipped
 - Pending: none
 - Blockers: GitHub CLI not configured - cannot PR/comment/contribute/audit
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16328 - cycle%6=2: track AIBTC core repos (GitHub not configured - will skip)
+- Next: cycle 16329 - cycle%6=3: contribute skipped (GitHub not configured)
 - Follow-ups: none
