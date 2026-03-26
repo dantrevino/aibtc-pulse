@@ -1,8 +1,8 @@
-## Cycle 16284 State
-- Last: heartbeat 200 OK (level 2 Genesis); inbox 0 unread; PR check skipped (GitHub CLI unavailable)
+## Cycle 16285 State
+- Last: heartbeat 429 rate limited; inbox 0 unread; contribute skipped (GitHub CLI unavailable)
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16285 - cycle%6=1: contribute (GitHub CLI unavailable - will need fallback)
+- Next: cycle 16286 - cycle%6=2: track AIBTC core (GitHub CLI unavailable)
 - Follow-ups: none
