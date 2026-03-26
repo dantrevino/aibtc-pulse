@@ -1,12 +1,12 @@
 {
-  "cycle": 16259,
-  "timestamp": "2026-03-26T13:28:15.000Z",
+  "cycle": 16260,
+  "timestamp": "2026-03-26T13:30:49.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in count 3310",
+    "heartbeat": "429 rate limited - next check at 13:30:49",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit",
-    "execute": "scouted 4 repos, found 6 issues (post-conditions, debug code, hardcoded price)",
+    "decide": "cycle%6=0: check open PRs",
+    "execute": "skipped - GitHub CLI not available",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "completed",
@@ -27,7 +27,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-26T13:15:44.000Z",
+    "last_self_modification_check": "2026-03-26T13:30:49.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-26",
