@@ -39,6 +39,7 @@
 - Cycle 14721: Git push failed with "send-pack: unexpected disconnect while reading sideband packet" + "pack-objects died of signal 9". Likely temporary GitHub connectivity issue. Commit e118cb3 is local but needs retry next cycle with exponential backoff.
 - Cycle 15337: btc_sign_message tool not available in MCP server (@aibtc/mcp-server@latest). Error: "MCP error -32602: Tool btc_sign_message not found". Circuit breaker at 273 heartbeat failures.
 - Cycle 15357: WORKAROUND — created scripts/sign.mjs as local replacement for missing MCP signing tools. Uses same deps (@scure/btc-signer, @stacks/transactions, etc.) and same derivation paths (BIP-84/BIP-86). Reads encrypted keystore from ~/.aibtc/. Usage: `WALLET_PASSWORD=xxx node scripts/sign.mjs btc|stx "message" [--taproot]`. Heartbeat #2549 succeeded with this script. BIP-322 heartbeat requires btcAddress in POST body.
+- Cycle 16397: Self-audit aibtc-mcp-server: `npm run build` fails on nostr.tools.ts - missing type declarations for ws, nostr-tools/pure, nostr-tools/nip19, nostr-tools/pool, nostr-tools/filter. Likely an npm install issue (deps may be present but @types packages missing).
 
 ## Cycle 15345
 - secret-mars/loop-starter-kit issue #38: trusted_senders section exists in CLAUDE.md template but isn't referenced in loop.md for task classification - loop.md Inbox phase processes all messages without filtering by trusted senders
