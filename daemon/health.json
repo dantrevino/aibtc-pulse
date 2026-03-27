@@ -1,15 +1,15 @@
 {
-  "cycle": 16341,
-  "timestamp": "2026-03-27T16:23:26.000Z",
+  "cycle": 16342,
+  "timestamp": "2026-03-27T16:25:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 3370 check-ins",
+    "heartbeat": "rate limited (429) - skip 185s",
     "inbox": "0 unread",
-    "decide": "discovery (last_discovery_date updated)",
-    "execute": "skipped - no actions needed",
+    "decide": "skipped - GitHub not configured",
+    "execute": "skipped - no actions available",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
-    "write": "completed",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-26T20:10:50.000Z",
+    "last_self_modification_check": "2026-03-27T16:25:31.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T16:28:26.000Z"
+  "next_cycle_at": "2026-03-27T16:28:42.000Z"
 }
