@@ -1,11 +1,11 @@
 {
-  "cycle": 16391,
-  "timestamp": "2026-03-27T20:30:38.000Z",
+  "cycle": 16392,
+  "timestamp": "2026-03-27T20:35:30.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit (skipped - GH not configured)",
+    "decide": "cycle%6=0: check open PRs (skipped - GH not configured)",
     "execute": "skipped - no repos configured",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T20:35:38.000Z"
+  "next_cycle_at": "2026-03-27T20:40:30.000Z"
 }
