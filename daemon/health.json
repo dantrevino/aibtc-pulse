@@ -1,12 +1,12 @@
 {
-  "cycle": 16379,
-  "timestamp": "2026-03-27T19:35:40.000Z",
+  "cycle": 16380,
+  "timestamp": "2026-03-27T19:35:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (3401 check-ins)",
+    "heartbeat": "rate-limited (429, retry in 7s)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit (GitHub unavailable - skipped)",
-    "execute": "skipped - no tasks",
+    "decide": "cycle%6=0 PR check (GitHub unavailable - skipped)",
+    "execute": "skipped - no tasks (gh blocked)",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T19:40:40.000Z"
+  "next_cycle_at": "2026-03-27T19:40:48.000Z"
 }
