@@ -1,8 +1,8 @@
-## Cycle 16397 State
-- Last: Heartbeat OK (3413); 0 inbox; self-audit: nostr.tools.ts missing type deps
+## Cycle 16398 State
+- Last: Heartbeat OK (3414); 0 inbox; PR check skipped (GH unconfigured)
 - Pending: none
 - Blockers: GH not configured (SSH key: unconfigured)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16398 - cycle%6=0: check open PRs
+- Next: cycle 16399 - cycle%6=1: contribute to contact repo
 - Follow-ups: none
