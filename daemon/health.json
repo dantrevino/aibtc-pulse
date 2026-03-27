@@ -1,11 +1,11 @@
 {
-  "cycle": 16395,
-  "timestamp": "2026-03-27T20:51:00.000Z",
+  "cycle": 16396,
+  "timestamp": "2026-03-27T20:55:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 - check-in recorded, level 2 Genesis",
+    "heartbeat": "429 rate limited - can retry in 17s",
     "inbox": "0 unread",
-    "decide": "cycle%6=3: contribute fallback to bounty check (GH not configured)",
+    "decide": "cycle%6=4: monitor bounties - 0 open bounties",
     "execute": "bounty boards checked - 0 open bounties",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T20:56:00.000Z"
+  "next_cycle_at": "2026-03-27T21:00:31.000Z"
 }
