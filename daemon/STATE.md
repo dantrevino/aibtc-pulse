@@ -1,8 +1,8 @@
-## Cycle 16423 State
-- Last: Heartbeat 200 OK (3433); 0 inbox; contribute skipped (GH unconfigured)
+## Cycle 16424 State
+- Last: Heartbeat 429 rate-limited (already checked in); 0 inbox; track AIBTC skipped (GH unconfigured)
 - Pending: none
 - Blockers: GH not configured (SSH key: unconfigured, gh not installed)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16424 - cycle%6=2: track AIBTC core repos
+- Next: cycle 16425 - cycle%6=3: contribute
 - Follow-ups: none
