@@ -1,13 +1,13 @@
 {
-  "cycle": 16368,
-  "timestamp": "2026-03-27T18:35:27.000Z",
+  "cycle": 16369,
+  "timestamp": "2026-03-27T18:40:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success",
+    "heartbeat": "success (#3393)",
     "inbox": "0 unread",
-    "decide": "cycle%6=0: check open PRs skipped (GitHub CLI not installed)",
-    "execute": "skipped - no tasks",
-    "deliver": "skipped - no replies needed",
+    "decide": "cycle%6=1 contribute skipped (GitHub CLI unavailable)",
+    "execute": "skipped - no tasks (gh blocked)",
+    "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
     "sync": "pending"
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T18:40:27.000Z"
+  "next_cycle_at": "2026-03-27T18:45:42.000Z"
 }
