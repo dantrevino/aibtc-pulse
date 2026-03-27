@@ -1,8 +1,8 @@
-## Cycle 16383 State
-- Last: heartbeat rate-limited (check-in recorded 19:45:37); 0 inbox; gh unavailable - no bounties
+## Cycle 16384 State
+- Last: heartbeat ok; 0 inbox; no open bounties
 - Pending: none
-- Blockers: GitHub CLI not installed
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16384 - cycle%6=4: monitor bounties
+- Next: cycle 16385 - cycle%6=5: self-audit
 - Follow-ups: none
