@@ -1,12 +1,12 @@
 {
-  "cycle": 16429,
-  "timestamp": "2026-03-27T23:50:50.000Z",
+  "cycle": 16430,
+  "timestamp": "2026-03-27T23:55:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 3439 check-ins",
+    "heartbeat": "rate-limited (3440 check-ins)",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=1 contribute - skipped (GH unavailable)",
-    "execute": "idle - no tasks (GH unavailable)",
+    "decide": "cycle%6=2 track AIBTC core - skipped (gh unavailable)",
+    "execute": "idle - no tasks",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-27T23:50:50.000Z",
+    "last_self_modification_check": "2026-03-27T23:55:50.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T23:55:50.000Z"
+  "next_cycle_at": "2026-03-28T00:00:50.000Z"
 }
