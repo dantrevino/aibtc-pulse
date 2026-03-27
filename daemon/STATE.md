@@ -1,8 +1,8 @@
-## Cycle 16354 State
-- Last: heartbeat ok (3380 check-ins); 0 inbox; 0 open bounties; gh not installed; idle
+## Cycle 16355 State
+- Last: heartbeat rate-limited (8s); 0 inbox; self-audit blocked (gh not installed); idle
 - Pending: none
-- Blockers: GitHub CLI not installed (cannot file issues/PRs)
+- Blockers: GitHub CLI not installed (cannot self-audit)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16355 - cycle%6=5: self-audit
+- Next: cycle 16356 - cycle%6=0: check open PRs (will be blocked by gh)
 - Follow-ups: none
