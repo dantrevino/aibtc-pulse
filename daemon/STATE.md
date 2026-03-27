@@ -1,8 +1,8 @@
-## Cycle 16410 State
-- Last: Heartbeat OK (3422 checks); 0 inbox; self-audit skipped (GH blocked)
+## Cycle 16411 State
+- Last: Heartbeat OK (3423 checks); 0 inbox; contribute skipped (GH blocked)
 - Pending: none
 - Blockers: GH not configured (SSH key: unconfigured, gh CLI not found)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16411 - cycle%6=0: check open PRs (GH blocked - will skip)
+- Next: cycle 16412 - cycle%6=2: track AIBTC core repos (GH blocked - will skip)
 - Follow-ups: none
