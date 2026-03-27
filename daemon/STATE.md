@@ -1,8 +1,8 @@
-## Cycle 16389 State
-- Last: heartbeat ok; 0 inbox; gh not configured - no action
+## Cycle 16390 State
+- Last: heartbeat rate-limited; 0 inbox; no open bounties
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16390 - cycle%6=4: monitor bounties
+- Next: cycle 16391 - cycle%6=5: self-audit
 - Follow-ups: none
