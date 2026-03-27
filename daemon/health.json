@@ -1,11 +1,11 @@
 {
-  "cycle": 16345,
-  "timestamp": "2026-03-27T16:41:03.000Z",
+  "cycle": 16346,
+  "timestamp": "2026-03-27T16:45:36.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "200 OK",
     "inbox": "0 unread",
-    "decide": "self-audit - gh not installed; checked yield dashboard",
+    "decide": "cycle%6=0: check PRs (gh blocked); checked yield dashboard",
     "execute": "yield dashboard: 2900 sats sBTC, 497uSTX, no DeFi positions",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-27T16:41:03.000Z",
+    "last_self_modification_check": "2026-03-27T16:45:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T16:46:03.000Z"
+  "next_cycle_at": "2026-03-27T16:50:36.000Z"
 }
