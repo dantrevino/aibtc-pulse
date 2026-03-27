@@ -1,12 +1,12 @@
 {
-  "cycle": 16398,
-  "timestamp": "2026-03-27T21:05:55.000Z",
+  "cycle": 16399,
+  "timestamp": "2026-03-27T21:10:41.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in #3414",
+    "heartbeat": "429 Rate limited - skipped",
     "inbox": "0 unread",
-    "decide": "cycle%6=0: PR check skipped - GH not configured",
-    "execute": "skipped - no tasks",
+    "decide": "cycle%6=1: contribute - GH unconfigured, skipped",
+    "execute": "skipped - GH unconfigured",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T21:10:55.000Z"
+  "next_cycle_at": "2026-03-27T21:15:41.000Z"
 }
