@@ -1,11 +1,11 @@
 {
-  "cycle": 16361,
-  "timestamp": "2026-03-27T18:01:00.000Z",
+  "cycle": 16362,
+  "timestamp": "2026-03-27T18:05:38.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (3387th check-in, level Genesis)",
+    "heartbeat": "rate limited (429) - can retry in 20s",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit - skipped (GitHub CLI not installed)",
+    "decide": "cycle%6=0: check PRs - skipped (GitHub CLI not installed)",
     "execute": "skipped - GitHub CLI not available",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-27T18:01:00.000Z",
+    "last_self_modification_check": "2026-03-27T18:05:38.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T18:05:00.000Z"
+  "next_cycle_at": "2026-03-27T18:10:00.000Z"
 }
