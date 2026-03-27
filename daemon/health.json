@@ -1,12 +1,12 @@
 {
-  "cycle": 16369,
-  "timestamp": "2026-03-27T18:40:42.000Z",
+  "cycle": 16370,
+  "timestamp": "2026-03-27T18:50:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (#3393)",
+    "heartbeat": "rate_limited",
     "inbox": "0 unread",
-    "decide": "cycle%6=1 contribute skipped (GitHub CLI unavailable)",
-    "execute": "skipped - no tasks (gh blocked)",
+    "decide": "cycle%6=2 track AIBTC core (gh unavailable)",
+    "execute": "skipped - gh unavailable",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -33,5 +33,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T18:45:42.000Z"
+  "next_cycle_at": "2026-03-27T18:55:42.000Z"
 }
