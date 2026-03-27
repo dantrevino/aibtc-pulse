@@ -628,3 +628,4 @@ Scouted Ionic Anvil (cedarxyz/SP13H2T1D1DS5MGP68GD6MEVRAW0RCJ3HBCMPX30Y) GitHub 
 - 2026-03-27T20:51:45.000Z: Cycle 16395 - Heartbeat OK (level 2 Genesis); 0 inbox; GH not configured; checked bounties (0 open); wallet unlocked
 - 2026-03-27T21:05:55.000Z: Cycle 16398 - Heartbeat #3414 OK, 0 inbox, PR check skipped (GH unconfigured)
 - 2026-03-27T22:11:18.000Z: Cycle 16411 - Heartbeat OK (3423), 0 inbox, GH blocked - contribute skipped
+- 2026-03-27T22:15:39.000Z: Cycle 16412 - heartbeat rate limited, inbox empty, GH blocked
