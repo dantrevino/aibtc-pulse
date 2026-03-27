@@ -1,12 +1,12 @@
 {
-  "cycle": 16392,
-  "timestamp": "2026-03-27T20:35:30.000Z",
-  "status": "ok",
+  "cycle": 16393,
+  "timestamp": "2026-03-27T20:40:44.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "404 agent not registered - needs re-registration",
     "inbox": "0 unread",
-    "decide": "cycle%6=0: check open PRs (skipped - GH not configured)",
-    "execute": "skipped - no repos configured",
+    "decide": "cycle%6=1 contribute: GH not configured, no contacts, no bounties - idle",
+    "execute": "skipped - no actionable items",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -24,14 +24,14 @@
     "self_audits": 0
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-27T20:30:38.000Z",
+    "last_self_modification_check": "2026-03-27T20:40:44.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-27",
-  "next_cycle_at": "2026-03-27T20:40:30.000Z"
+  "next_cycle_at": "2026-03-27T20:45:44.000Z"
 }

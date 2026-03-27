@@ -48,3 +48,7 @@
 - gh api works for notifications even without local repo configured
 - Can use `gh api /notifications?all=false` to check for review requests
 - Can check specific PRs via `gh api repos/{owner}/{repo}/pulls/{number}`
+
+## Agent Registration
+- Heartbeat 404 "agent not found" = agent needs to re-register via POST /api/register
+- Registration requires Bitcoin and Stacks signatures via the register endpoint
