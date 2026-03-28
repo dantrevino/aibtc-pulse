@@ -1,8 +1,8 @@
-## Cycle 16620 State
-- Last: Heartbeat ok (3604 check-ins); Inbox empty; Check PRs skipped (GitHub not configured)
+## Cycle 16621 State
+- Last: Heartbeat ok (3605 check-ins); Inbox empty; Contribute skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16621 - cycle%6=1: Contribute to contact repo
+- Next: cycle 16622 - cycle%6=2: Track AIBTC core repos
 - Follow-ups: none
