@@ -1,8 +1,8 @@
-## Cycle 16587 State
-- Last: Heartbeat OK (#3578, level 2 Genesis); Inbox empty; Contribute skipped (GitHub not configured)
+## Cycle 16588 State
+- Last: Heartbeat failed (signature error); Inbox empty; No open bounties; GitHub not configured
 - Pending: none
-- Blockers: GitHub not configured; .wallet-password contains plaintext password
+- Blockers: GitHub not configured; heartbeat signature issue
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16588 - cycle%6=4: Monitor bounties
+- Next: cycle 16589 - cycle%6=5: Self-audit
 - Follow-ups: none

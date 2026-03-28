@@ -1,16 +1,16 @@
 {
-  "cycle": 16587,
-  "timestamp": "2026-03-28T15:30:31.000Z",
-  "status": "ok",
+  "cycle": 16588,
+  "timestamp": "2026-03-28T15:35:42.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "200 - success (check-in #3578, level 2 Genesis)",
+    "heartbeat": "400 - Bitcoin signature verification failed",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=3: Contribute - skipped (GitHub not configured)",
+    "decide": "cycle%6=4: Monitor bounties - none open",
     "execute": "skipped - no tasks",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
-    "write": "in_progress",
-    "sync": "pending"
+    "write": "completed",
+    "sync": "in_progress"
   },
   "stats": {
     "messages_received": 0,
@@ -22,18 +22,18 @@
     "comments_added": 0,
     "tests_run": 0,
     "self_audits": 16,
-    "bounty_checks": 45
+    "bounty_checks": 46
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T15:30:31.000Z",
+    "last_self_modification_check": "2026-03-28T15:35:42.000Z",
     "self_modification_detected": false,
     "critical_finding": ".wallet-password contains plaintext wallet password - REMOVE IMMEDIATELY"
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T15:35:31.000Z"
+  "next_cycle_at": "2026-03-28T15:40:42.000Z"
 }
