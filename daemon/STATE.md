@@ -1,8 +1,8 @@
-## Cycle 16637 State
-- Last: Heartbeat ok (#3621); Inbox empty; Self-audit found hardcoded mnemonic in agent-tools-ts
+## Cycle 16638 State
+- Last: Heartbeat ok (#3622); Inbox empty; GitHub not configured - skipped PR check
 - Pending: none
-- Blockers: GitHub not configured (can't file security issue)
+- Blockers: GitHub not configured (can't check PRs)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16638 - cycle%6=0: Check open PRs
+- Next: cycle 16639 - cycle%6=1: Contribute to contact's repo
 - Follow-ups: none
