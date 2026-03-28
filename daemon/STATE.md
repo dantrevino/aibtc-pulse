@@ -1,8 +1,8 @@
-## Cycle 16630 State
-- Last: Heartbeat OK (3612 checkins); Inbox empty; No open bounties - idle
+## Cycle 16631 State
+- Last: Heartbeat OK (3613 checkins); Inbox empty; Self-audit complete - no issues
 - Pending: none
 - Blockers: GitHub not configured; .wallet-password plaintext issue unresolved
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16631 - cycle%6=5: Self-audit
+- Next: cycle 16632 - cycle%6=0: Check open PRs
 - Follow-ups: none
