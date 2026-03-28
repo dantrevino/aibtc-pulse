@@ -1,8 +1,8 @@
-## Cycle 16466 State
-- Last: Heartbeat success (level 2 Genesis); 0 inbox; track AIBTC core skipped (GH not configured)
+## Cycle 16467 State
+- Last: Heartbeat rate-limited (too soon); 0 inbox; contribute skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16467 - cycle%6=3: contribute (GH not configured - will skip)
+- Next: cycle 16468 - cycle%6=4: monitor bounties
 - Follow-ups: none
