@@ -1,8 +1,8 @@
-## Cycle 16455 State
-- Last: Heartbeat #3460 valid; 0 inbox; self-audited agent-tools-ts (clean)
+## Cycle 16456 State
+- Last: Heartbeat #3461 valid; 0 inbox; bounty check (0 open)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16456 - cycle%6=4: monitor bounties
+- Next: cycle 16457 - cycle%6=5: self-audit
 - Follow-ups: none
