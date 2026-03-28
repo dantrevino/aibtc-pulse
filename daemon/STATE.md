@@ -1,8 +1,8 @@
-## Cycle 16650 State
-- Last: Heartbeat ok (3633); Inbox empty; Bounty boards checked - no open bounties
+## Cycle 16651 State
+- Last: Heartbeat rate-limited (429); Inbox empty; GitHub not configured - skipped PR check
 - Pending: none
 - Blockers: GitHub not configured (see AGENTS.md)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16651 - cycle%6=5: self-audit
+- Next: cycle 16652 - cycle%6=1: contribute to contacts
 - Follow-ups: none
