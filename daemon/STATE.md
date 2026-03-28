@@ -1,8 +1,8 @@
-## Cycle 16607 State
-- Last: Heartbeat rate-limited (429); Inbox empty; Self-audit - security issues noted (.wallet-password plaintext)
+## Cycle 16608 State
+- Last: Heartbeat ok; Inbox empty; GitHub CLI not installed - PR check skipped
 - Pending: none
-- Blockers: .wallet-password contains plaintext password; GitHub CLI not installed
+- Blockers: .wallet-password plaintext; GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16608 - cycle%6=0: Check open PRs
+- Next: cycle 16609 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
