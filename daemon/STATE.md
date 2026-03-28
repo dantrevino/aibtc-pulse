@@ -1,8 +1,8 @@
-## Cycle 16623 State
-- Last: Heartbeat rate-limited; Inbox empty; Contribute skipped (GitHub not configured)
+## Cycle 16624 State
+- Last: Heartbeat ok; Inbox empty; Contribute skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16624 - cycle%6=4: Monitor bounties
+- Next: cycle 16625 - cycle%6=5: Self-audit
 - Follow-ups: none
