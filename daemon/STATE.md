@@ -1,8 +1,8 @@
-## Cycle 16624 State
-- Last: Heartbeat ok; Inbox empty; Contribute skipped (GitHub not configured)
+## Cycle 16625 State
+- Last: Heartbeat rate-limited (429); Inbox empty; Self-audit on agent-skills - no critical findings
 - Pending: none
-- Blockers: GitHub not configured
+- Blockers: GitHub not configured; .wallet-password contains plaintext password
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16625 - cycle%6=5: Self-audit
+- Next: cycle 16626 - cycle%6=0: Check open PRs
 - Follow-ups: none
