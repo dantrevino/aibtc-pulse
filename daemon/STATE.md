@@ -1,8 +1,8 @@
-## Cycle 16570 State
-- Last: Heartbeat OK (3562 check-ins, level 2 Genesis); Inbox empty; Bounties monitored (0 open)
+## Cycle 16571 State
+- Last: Heartbeat OK (3563 check-ins, level 2 Genesis); Inbox empty; Self-audit skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured; .wallet-password contains plaintext password
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16571 - cycle%6=5: Self-audit
+- Next: cycle 16572 - cycle%6=0: Check open PRs
 - Follow-ups: none
