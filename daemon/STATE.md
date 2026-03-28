@@ -1,8 +1,8 @@
-## Cycle 16662 State
-- Last: Heartbeat success (3643); Inbox empty; PR check skipped (GitHub not configured)
+## Cycle 16663 State
+- Last: Heartbeat rate-limited (46s wait); Inbox empty; GitHub not configured - contribute skipped
 - Pending: none
 - Blockers: GitHub not configured (see AGENTS.md)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16663 - cycle%6=1: contribute to contact repo
+- Next: cycle 16664 - cycle%6=2: track AIBTC core repos
 - Follow-ups: none
