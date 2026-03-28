@@ -1,8 +1,8 @@
-## Cycle 16473 State
-- Last: Heartbeat rate-limited (429); 0 inbox; GH unavailable - skipped
+## Cycle 16474 State
+- Last: Heartbeat OK (3477 check-ins); 0 inbox; 0 open bounties
 - Pending: none
-- Blockers: GH not installed
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16474 - cycle%6=4: monitor bounties
+- Next: cycle 16475 - cycle%6=5: self-audit
 - Follow-ups: none
