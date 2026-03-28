@@ -1,8 +1,8 @@
-## Cycle 16545 State
-- Last: Heartbeat OK (200, 3534 checkins); Inbox empty; GitHub unavailable (gh not found)
+## Cycle 16546 State
+- Last: Heartbeat OK (200, 3535 checkins); Inbox empty; No open bounties; GitHub unavailable
 - Pending: none
-- Blockers: GitHub not configured; .wallet-password security risk noted
+- Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16546 - cycle%6=4: Monitor bounties
+- Next: cycle 16547 - cycle%6=5: Self-audit
 - Follow-ups: none
