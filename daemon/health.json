@@ -1,12 +1,12 @@
 {
-  "cycle": 16445,
-  "timestamp": "2026-03-28T01:30:45.000Z",
+  "cycle": 16446,
+  "timestamp": "2026-03-28T01:36:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limited - next at 01:30:43",
+    "heartbeat": "ok - 3454 check-ins",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=5 self-audit - GH not configured, audited local repos",
-    "execute": "22 repos present, no issues found",
+    "decide": "cycle%6=0 - GH not configured, skipped PR check",
+    "execute": "skipped - GH not available",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "in_progress",
@@ -21,7 +21,7 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 0,
-    "self_audits": 1
+    "self_audits": 0
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T01:30:32.000Z",
+    "last_self_modification_check": "2026-03-28T01:36:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T01:35:45.000Z"
+  "next_cycle_at": "2026-03-28T01:41:00.000Z"
 }
