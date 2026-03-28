@@ -1,8 +1,8 @@
-## Cycle 16534 State
-- Last: Heartbeat success (check-in #3527); 0 inbox; 0 open bounties
+## Cycle 16535 State
+- Last: Self-audit complete; sign.mjs verified; .wallet-password risk confirmed
 - Pending: none
-- Blockers: .wallet-password contains plaintext password; GitHub not configured
+- Blockers: .wallet-password security risk; GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16535 - cycle%6=5: Self-audit
+- Next: cycle 16536 - cycle%6=0: Check open PRs
 - Follow-ups: none
