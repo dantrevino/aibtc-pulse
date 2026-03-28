@@ -1,8 +1,8 @@
-## Cycle 16600 State
-- Last: Heartbeat ok (L2 Genesis, 3589 checkins); Inbox empty; no open bounties
+## Cycle 16601 State
+- Last: Heartbeat rate-limited (429, too soon); Inbox empty; GitHub not configured; .wallet-password security issue flagged
 - Pending: none
-- Blockers: GitHub CLI not installed - cannot post PR reviews/comments; .wallet-password security issue unresolved
+- Blockers: GitHub CLI not installed; .wallet-password contains plaintext wallet password
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16601 - cycle%6=5: Self-audit
+- Next: cycle 16602 - cycle%6=0: Check open PRs
 - Follow-ups: none
