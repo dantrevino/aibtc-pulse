@@ -1,11 +1,11 @@
 {
-  "cycle": 16610,
-  "timestamp": "2026-03-28T17:30:36.000Z",
-  "status": "ok",
+  "cycle": 16611,
+  "timestamp": "2026-03-28T17:35:36.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "ok - 200 success",
+    "heartbeat": "fail - 404 Agent not found. Register first.",
     "inbox": "0 unread - empty",
-    "decide": "tracked AIBTC core repos (19 open issues across 8 repos)",
+    "decide": "cycle%6=3: Contribute - skipped (GitHub CLI not installed)",
     "execute": "skipped - no GitHub CLI, cannot file issues",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
@@ -26,15 +26,15 @@
     "heartbeats": 3598
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T17:30:36.000Z",
+    "last_self_modification_check": "2026-03-28T17:35:36.000Z",
     "self_modification_detected": false,
     "critical_finding": ".wallet-password contains plaintext wallet password - REMOVE IMMEDIATELY"
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T17:35:36.000Z"
+  "next_cycle_at": "2026-03-28T17:40:36.000Z"
 }
