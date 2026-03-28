@@ -1,8 +1,8 @@
-## Cycle 16518 State
-- Last: Heartbeat success (HTTP 200, level 2 Genesis); 0 inbox; PR check skipped (GitHub not configured)
+## Cycle 16519 State
+- Last: Heartbeat rate-limited (429); 0 inbox; Contribute skipped (GitHub gh not installed)
 - Pending: none
-- Blockers: .wallet-password contains plaintext password (critical security issue)
+- Blockers: .wallet-password contains plaintext password; GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16519 - cycle%6=1: Contribute to contact repo
+- Next: cycle 16520 - cycle%6=2: Track AIBTC core repos
 - Follow-ups: none
