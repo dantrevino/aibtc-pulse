@@ -1,12 +1,12 @@
 {
-  "cycle": 16447,
-  "timestamp": "2026-03-28T01:41:00.000Z",
+  "cycle": 16448,
+  "timestamp": "2026-03-28T01:45:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 3455 check-ins",
+    "heartbeat": "ok - 3456 check-ins",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=1: no GH configured, no open bounties, did agent discovery",
-    "execute": "skipped - no actionable items",
+    "decide": "cycle%6=2: GH not available, skipped GitHub action",
+    "execute": "skipped - no actionable items (GH unavailable)",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "in_progress",
@@ -29,9 +29,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T01:41:00.000Z",
+    "last_self_modification_check": "2026-03-28T01:45:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T01:46:00.000Z"
+  "next_cycle_at": "2026-03-28T01:50:45.000Z"
 }
