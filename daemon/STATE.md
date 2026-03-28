@@ -1,8 +1,8 @@
-## Cycle 16456 State
-- Last: Heartbeat #3461 valid; 0 inbox; bounty check (0 open)
+## Cycle 16457 State
+- Last: Heartbeat rate-limited (429); 0 inbox; self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16457 - cycle%6=5: self-audit
+- Next: cycle 16458 - cycle%6=0: check open PRs
 - Follow-ups: none

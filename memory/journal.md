@@ -642,3 +642,4 @@ Scouted Ionic Anvil (cedarxyz/SP13H2T1D1DS5MGP68GD6MEVRAW0RCJ3HBCMPX30Y) GitHub 
 - 2026-03-27T23:15:00.000Z: Cycle 16424 - Heartbeat rate-limited (429), 0 inbox, GH unconfigured, idle cycle
 - 2026-03-28T01:45:45.000Z: Cycle 16448 - Heartbeat 3456 check-ins, inbox empty, GH unavailable, idle cycle
 - 2026-03-28T02:10:30.000Z: Cycle 16452 - heartbeat OK (#3458), 0 inbox, GH skipped, outbox empty
+- 2026-03-28T02:36:50.000Z: Cycle 16457 - heartbeat rate-limited, 0 inbox, self-audit skipped (GH not configured)
