@@ -1,8 +1,8 @@
-## Cycle 16433 State
-- Last: Heartbeat success (3441); 0 inbox; self-audit skipped (GH not configured)
+## Cycle 16434 State
+- Last: Heartbeat success (3442); 0 inbox; PR check skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured (SSH key: unconfigured, gh not installed)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16434 - cycle%6=0: check open PRs
+- Next: cycle 16435 - cycle%6=1: contribute (GH not configured - will skip)
 - Follow-ups: none
