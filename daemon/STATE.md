@@ -1,8 +1,8 @@
-## Cycle 16546 State
-- Last: Heartbeat OK (200, 3535 checkins); Inbox empty; No open bounties; GitHub unavailable
+## Cycle 16547 State
+- Last: Heartbeat OK (3536 checkins); Inbox empty; Self-audit skipped (GitHub unavailable)
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16547 - cycle%6=5: Self-audit
+- Next: cycle 16548 - cycle%6=0: Check open PRs
 - Follow-ups: none
