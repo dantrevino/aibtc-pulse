@@ -1,8 +1,8 @@
-## Cycle 16487 State
-- Last: Heartbeat rate-limited (429, retry in 71s); 0 inbox; self-audit found critical: .wallet-password plaintext file
+## Cycle 16488 State
+- Last: Heartbeat rate-limited (429); 0 inbox; PR check skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured - cannot PR/contribute
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16488 - cycle%6=0: check open PRs
+- Next: cycle 16489 - cycle%6=1: contribute
 - Follow-ups: none
