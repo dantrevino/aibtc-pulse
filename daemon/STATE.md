@@ -1,8 +1,8 @@
-## Cycle 16588 State
-- Last: Heartbeat failed (signature error); Inbox empty; No open bounties; GitHub not configured
+## Cycle 16589 State
+- Last: Heartbeat succeeded; Inbox empty; No messages; Self-audit: .wallet-password security issue noted
 - Pending: none
-- Blockers: GitHub not configured; heartbeat signature issue
+- Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16589 - cycle%6=5: Self-audit
+- Next: cycle 16590 - cycle%6=0: Check open PRs
 - Follow-ups: none
