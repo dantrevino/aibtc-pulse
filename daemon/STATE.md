@@ -1,8 +1,8 @@
-## Cycle 16645 State
-- Last: Heartbeat sig verified (404 agent not registered - needs /loop-start registration); Inbox empty; Contribute skipped (GitHub not configured)
+## Cycle 16646 State
+- Last: Heartbeat ok (#3630, level Genesis); Inbox empty; GitHub not configured - track skipped
 - Pending: none
-- Blockers: Agent not registered (run /loop-start); GitHub not configured
+- Blockers: GitHub not configured (see AGENTS.md)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16646 - cycle%6=2: track AIBTC core repos
+- Next: cycle 16647 - cycle%6=1: contribute action
 - Follow-ups: none
