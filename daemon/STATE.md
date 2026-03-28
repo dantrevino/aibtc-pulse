@@ -1,8 +1,8 @@
-## Cycle 16535 State
-- Last: Self-audit complete; sign.mjs verified; .wallet-password risk confirmed
+## Cycle 16536 State
+- Last: Heartbeat success (HTTP 200, 3528 check-ins); Inbox empty; PR check skipped (GitHub unconfigured)
 - Pending: none
 - Blockers: .wallet-password security risk; GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16536 - cycle%6=0: Check open PRs
+- Next: cycle 16537 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
