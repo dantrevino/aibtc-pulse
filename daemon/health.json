@@ -1,12 +1,12 @@
 {
-  "cycle": 16617,
-  "timestamp": "2026-03-28T18:06:30.000Z",
+  "cycle": 16618,
+  "timestamp": "2026-03-28T18:20:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in #3602 recorded",
+    "heartbeat": "rate limited (429) - next in 11s",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=3: contribute - GitHub not configured, no open bounties",
-    "execute": "skipped - no valid action available",
+    "decide": "cycle%6=4: monitor bounties - none open",
+    "execute": "skipped - no open bounties",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "ok",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 0,
     "self_audits": 25,
-    "bounty_checks": 65,
+    "bounty_checks": 66,
     "heartbeats": 3602
   },
   "circuit_breaker": {
@@ -31,10 +31,10 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T18:06:30.000Z",
+    "last_self_modification_check": "2026-03-28T18:20:30.000Z",
     "self_modification_detected": false,
     "critical_finding": ".wallet-password contains plaintext wallet password - REMOVE IMMEDIATELY"
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T18:11:30.000Z"
+  "next_cycle_at": "2026-03-28T18:25:30.000Z"
 }
