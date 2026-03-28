@@ -1,8 +1,8 @@
-## Cycle 16437 State
-- Last: Heartbeat OK (#3444, lvl2 Genesis); 0 inbox; GH not configured - contribute skipped
+## Cycle 16438 State
+- Last: Heartbeat OK (#3445, lvl2 Genesis); 0 inbox; no bounties available
 - Pending: none
 - Blockers: GH not configured (cannot PR/comment)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16438 - cycle%6=4: monitor bounties
+- Next: cycle 16439 - cycle%6=5: self-audit
 - Follow-ups: none
