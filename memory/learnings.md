@@ -14,6 +14,7 @@
 - Default daily limit: 200 sats/day
 
 ## Patterns
+- AIBTC inbox API: /api/inbox/{STX_address}, NOT BTC address — aibtc-pulse server.js:65 has this bug
 - MCP tools are deferred — must ToolSearch before first use each session
 - Within same session, tools stay loaded — skip redundant ToolSearch
 - BIP-322 heartbeat requires btcAddress field in POST body (bc1q addresses use BIP-322, not BIP-137)
