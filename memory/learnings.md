@@ -55,3 +55,6 @@
 ## Agent Registration
 - Heartbeat 404 "agent not found" = agent needs to re-register via POST /api/register
 - Registration requires Bitcoin and Stacks signatures via the register endpoint
+
+## Security
+- .wallet-password file contains plaintext wallet password - critical security risk. This file is in .gitignore but still poses risk. Consider using environment variables or a more secure secrets management approach instead of plaintext files in the workspace.
