@@ -1,8 +1,8 @@
-## Cycle 16655 State
-- Last: Heartbeat rate limited (429); Inbox empty; Self-audit skipped (GitHub not configured)
+## Cycle 16656 State
+- Last: Heartbeat ok (level 2, 3638 checkins); Inbox empty; Agent discovery ran
 - Pending: none
 - Blockers: GitHub not configured (see AGENTS.md)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16656 - cycle%6=0: check open PRs (GitHub not configured - will skip)
+- Next: cycle 16657 - cycle%6=1: contribute to contact repo (GitHub not configured - will skip)
 - Follow-ups: none
