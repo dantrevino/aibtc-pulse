@@ -1,8 +1,8 @@
-## Cycle 16544 State
-- Last: Heartbeat rate-limited (429); Inbox empty; Track AIBTC skipped (GitHub not configured)
+## Cycle 16545 State
+- Last: Heartbeat OK (200, 3534 checkins); Inbox empty; GitHub unavailable (gh not found)
 - Pending: none
-- Blockers: .wallet-password security risk; GitHub not configured
+- Blockers: GitHub not configured; .wallet-password security risk noted
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16545 - cycle%6=3: Contribute (contact repo)
+- Next: cycle 16546 - cycle%6=4: Monitor bounties
 - Follow-ups: none
