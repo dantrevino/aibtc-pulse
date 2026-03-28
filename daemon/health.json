@@ -1,11 +1,11 @@
 {
-  "cycle": 16589,
-  "timestamp": "2026-03-28T15:40:42.000Z",
+  "cycle": 16590,
+  "timestamp": "2026-03-28T15:45:34.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "200 - check-in recorded",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=5: self-audit - no critical issues",
+    "decide": "cycle%6=0: check open PRs - skipped (GitHub not configured)",
     "execute": "skipped - no tasks",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
@@ -30,10 +30,10 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-28T15:40:42.000Z",
+    "last_self_modification_check": "2026-03-28T15:45:34.000Z",
     "self_modification_detected": false,
     "critical_finding": ".wallet-password contains plaintext wallet password - REMOVE IMMEDIATELY"
   },
   "last_discovery_date": "2026-03-28",
-  "next_cycle_at": "2026-03-28T15:45:42.000Z"
+  "next_cycle_at": "2026-03-28T15:50:34.000Z"
 }
