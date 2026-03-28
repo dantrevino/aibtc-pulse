@@ -1,8 +1,8 @@
-## Cycle 16475 State
-- Last: Heartbeat OK (3478 check-ins); 0 inbox; self-audit found bug in aibtc-pulse/server.js:65 (btcAddress used instead of stxAddress for inbox API)
+## Cycle 16476 State
+- Last: Heartbeat rate limited (2s); 0 inbox; PR check skipped (GitHub not configured)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16476 - cycle%6=0: check open PRs
+- Next: cycle 16477 - cycle%6=1: contribute to contact repo
 - Follow-ups: none
