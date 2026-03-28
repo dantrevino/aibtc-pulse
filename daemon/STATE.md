@@ -1,8 +1,8 @@
-## Cycle 16471 State
-- Last: Heartbeat #3474 OK; 0 inbox; GH unavailable - contribute skipped
+## Cycle 16472 State
+- Last: Heartbeat #3475 OK; 0 inbox; GH unavailable - skipped
 - Pending: none
 - Blockers: GH not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16472 - cycle%6=2: track AIBTC core
+- Next: cycle 16473 - cycle%6=3: contribute
 - Follow-ups: none
