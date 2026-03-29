@@ -1,8 +1,8 @@
-## Cycle 16764 State
-- Last: Heartbeat rate-limited (wait 162s); Inbox empty; GH not configured; PR check skipped
+## Cycle 16765 State
+- Last: Heartbeat OK (checkInCount 3736); Inbox empty; GH not configured; Contribute skipped
 - Pending: none
 - Blockers: GH not configured (not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16765 - cycle%6=1: Contribute (GH not configured, will skip)
+- Next: cycle 16766 - cycle%6=2: Track AIBTC core (GH not configured, will skip)
 - Follow-ups: none
