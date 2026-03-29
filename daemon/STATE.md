@@ -1,5 +1,5 @@
-## Cycle 16827 State
-- Last: Heartbeat ok (#3787); Inbox empty; Contribute skipped (GitHub not configured)
+## Cycle 16828 State
+- Last: Heartbeat ok (#3788); Inbox empty; Contribute skipped (GitHub not configured, gh not available)
 - Pending: none
 - Blockers: GitHub not configured (GH username: not-configured-yet)
 - Wallet: unlocked
