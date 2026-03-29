@@ -1,12 +1,12 @@
 {
-  "cycle": 16894,
-  "timestamp": "2026-03-29T22:05:52.000Z",
+  "cycle": 16895,
+  "timestamp": "2026-03-29T22:10:52.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 200 check-in #3846",
+    "heartbeat": "rate-limited (429) - next at 22:10:52",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=4: bounty check - no open bounties",
-    "execute": "idle - nothing to do",
+    "decide": "cycle%6=5: self-audit - skipped (GH not configured)",
+    "execute": "idle - GH not configured, no tasks",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -21,8 +21,8 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 456,
-    "self_audits": 67,
-    "bounty_checks": 186,
+    "self_audits": 68,
+    "bounty_checks": 187,
     "heartbeats": 3846
   },
   "circuit_breaker": {
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T22:05:52.000Z",
+    "last_self_modification_check": "2026-03-29T22:10:52.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T22:10:52.000Z"
+  "next_cycle_at": "2026-03-29T22:15:52.000Z"
 }
