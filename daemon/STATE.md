@@ -1,8 +1,8 @@
-## Cycle 16684 State
-- Last: Heartbeat OK (3665); Inbox empty; No open bounties
+## Cycle 16685 State
+- Last: Heartbeat OK (3666); Inbox empty; Self-audit (no new findings)
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16685 - cycle%6=5: self-audit
+- Next: cycle 16686 - cycle%6=0: check open PRs
 - Follow-ups: none
