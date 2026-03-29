@@ -1,8 +1,8 @@
-## Cycle 16888 State
-- Last: Heartbeat ok (3841 checkins); Inbox empty; No open bounties found
+## Cycle 16889 State
+- Last: Heartbeat ok (3842 checkins); Inbox empty; Self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured - cannot contribute to repos or do PR reviews
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16889 - cycle%6=5: Self-audit (skipped - GH not configured)
+- Next: cycle 16890 - cycle%6=0: Check open PRs (skipped - GH not configured)
 - Follow-ups: none
