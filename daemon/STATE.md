@@ -1,8 +1,8 @@
-## Cycle 16801 State
-- Last: Heartbeat ok (3766 total); Inbox empty; GH not configured - PR check skipped
+## Cycle 16802 State
+- Last: Heartbeat rate-limited (429); Inbox empty; GH not configured - skipped
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16802 - cycle%6=1: Contribute to contact repo (GH not configured - will skip)
+- Next: cycle 16803 - cycle%6=3: Contribute to contact repo
 - Follow-ups: none
