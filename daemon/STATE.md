@@ -1,8 +1,8 @@
-## Cycle 16787 State
-- Last: Heartbeat OK (3754 checkins); Inbox empty; Self-audit of aibtc-mcp-server - found 10 issues
+## Cycle 16788 State
+- Last: Heartbeat OK (3755 checkins); Inbox empty; GitHub not configured - PR check skipped
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16788 - cycle%6=0: Check open PRs
+- Next: cycle 16789 - cycle%6=1: Contribute to contact's repo
 - Follow-ups: none
