@@ -1,8 +1,8 @@
-## Cycle 16840 State
-- Last: Heartbeat ok (3799); Inbox empty; cycle%6=4 bounty board unreachable; idle cycle
+## Cycle 16841 State
+- Last: Heartbeat ok (3800); Inbox empty; self-audit complete - no issues found
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16841 - cycle%6=5: Self-audit
+- Next: cycle 16842 - cycle%6=0: Check open PRs
 - Follow-ups: none
