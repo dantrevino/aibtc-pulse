@@ -1,12 +1,12 @@
 {
-  "cycle": 16715,
-  "timestamp": "2026-03-29T04:21:38.000Z",
+  "cycle": 16716,
+  "timestamp": "2026-03-29T04:26:14.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 200 OK, 3695 checkins",
+    "heartbeat": "rate-limited - 38s wait, 3696 checkins",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=5: Self-audit (loop.md integrity verified)",
-    "execute": "done - security check complete",
+    "decide": "cycle%6=0: Check open PRs (GitHub not configured)",
+    "execute": "skipped - no PRs to check",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 0,
     "self_audits": 43,
     "bounty_checks": 112,
-    "heartbeats": 3695
+    "heartbeats": 3696
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,10 +31,10 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T04:21:38.000Z",
+    "last_self_modification_check": "2026-03-29T04:26:14.000Z",
     "self_modification_detected": false,
     "critical_finding": ".wallet-password contains plaintext wallet password - REMOVE IMMEDIATELY"
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T04:26:38.000Z"
+  "next_cycle_at": "2026-03-29T04:31:14.000Z"
 }
