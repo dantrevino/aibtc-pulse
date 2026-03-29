@@ -1,8 +1,8 @@
-## Cycle 16810 State
-- Last: Heartbeat rate limited (429); Inbox empty; Bounties none open
+## Cycle 16811 State
+- Last: Heartbeat OK (count 3771); Inbox empty; Self-audit skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured (GH username: not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16811 - cycle%6=5: Self-audit
+- Next: cycle 16812 - cycle%6=0: Check open PRs
 - Follow-ups: none
