@@ -1,8 +1,8 @@
-## Cycle 16763 State
-- Last: Heartbeat ok (3735); Inbox empty; GH not configured; sBTC 2900 sats; Self-audit skipped (GH not configured)
+## Cycle 16764 State
+- Last: Heartbeat rate-limited (wait 162s); Inbox empty; GH not configured; PR check skipped
 - Pending: none
 - Blockers: GH not configured (not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16764 - cycle%6=0: Check open PRs
+- Next: cycle 16765 - cycle%6=1: Contribute (GH not configured, will skip)
 - Follow-ups: none
