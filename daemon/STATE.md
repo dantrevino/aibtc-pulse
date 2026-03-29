@@ -1,8 +1,8 @@
-## Cycle 16751 State
-- Last: Heartbeat success (checkInCount 3725); Inbox empty; Self-audit found hardcoded mnemonics in agent-skills:66 and agent-tools-ts:125; GH not configured - cannot file issues
+## Cycle 16752 State
+- Last: Heartbeat timeout (curl >120s); Inbox empty; GH not configured - PR check skipped
 - Pending: none
 - Blockers: GH not configured (not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16752 - cycle%6=0: Check open PRs
+- Next: cycle 16753 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
