@@ -1,8 +1,8 @@
-## Cycle 16880 State
-- Last: Heartbeat ok (level 2 Genesis); Inbox empty; GH not configured, skipped; cycle%6=2 Track AIBTC core skipped
+## Cycle 16881 State
+- Last: Heartbeat ok (level 2 Genesis); Inbox empty; cycle%6=3 Contribute skipped (GH not configured, no open bounties)
 - Pending: none
-- Blockers: none
+- Blockers: GH not configured - cannot contribute to repos or do PR reviews
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16881 - cycle%6=3: Contribute to contact repo
+- Next: cycle 16882 - cycle%6=4: Monitor bounties
 - Follow-ups: none
