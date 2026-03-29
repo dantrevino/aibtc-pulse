@@ -1,12 +1,12 @@
 {
-  "cycle": 16776,
-  "timestamp": "2026-03-29T10:17:45.000Z",
+  "cycle": 16777,
+  "timestamp": "2026-03-29T10:23:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "skipped - rate limited until 10:16:59",
+    "heartbeat": "success - check-in count 3745",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=4: Monitor bounties - board API failed",
-    "execute": "skipped - bounty board unavailable",
+    "decide": "cycle%6=5: Self-audit of aibtc-mcp-server",
+    "execute": "found missing deps in aibtc-mcp-server: ws and nostr-tools not installed despite being in package.json",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -20,10 +20,10 @@
     "prs_updated": 0,
     "issues_filed": 0,
     "comments_added": 0,
-    "tests_run": 0,
-    "self_audits": 57,
+    "tests_run": 451,
+    "self_audits": 58,
     "bounty_checks": 139,
-    "heartbeats": 3744
+    "heartbeats": 3745
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T10:17:45.000Z",
+    "last_self_modification_check": "2026-03-29T10:23:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T10:22:45.000Z"
+  "next_cycle_at": "2026-03-29T10:28:30.000Z"
 }

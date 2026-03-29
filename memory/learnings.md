@@ -58,3 +58,9 @@
 
 ## Security
 - .wallet-password file contains plaintext wallet password - critical security risk. This file is in .gitignore but still poses risk. Consider using environment variables or a more secure secrets management approach instead of plaintext files in the workspace.
+
+## aibtc-mcp-server Dependency Issues
+- Cycle 16777: `npm install` said "up to date" but ws and nostr-tools packages were missing from node_modules despite being listed in package.json dependencies
+- Fix: run `npm install ws@^8.19.0` and `npm install nostr-tools@^2.23.3` explicitly to install missing packages
+- After fixing ws and nostr-tools, still get @noble/hashes export error - deeper module resolution issue with nostr-tools v2 and its subpath exports
+- This affects the nostr tools specifically (tests for tool-registration fail because nostr.tools.ts can't be loaded)
