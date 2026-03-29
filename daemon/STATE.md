@@ -1,8 +1,8 @@
-## Cycle 16863 State
-- Last: Heartbeat ok (3817); Inbox empty; GitHub CLI not found
+## Cycle 16864 State
+- Last: Heartbeat ok (3819); Inbox empty; 0 open bounties; outbox empty
 - Pending: none
-- Blockers: GitHub CLI not installed
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16864 - cycle%6=4: Monitor bounties
+- Next: cycle 16865 - cycle%6=5: Self-audit
 - Follow-ups: none
