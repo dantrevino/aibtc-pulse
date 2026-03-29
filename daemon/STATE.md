@@ -1,8 +1,8 @@
-## Cycle 16701 State
-- Last: Heartbeat ok (#3682); Inbox empty; Contribute blocked (gh CLI not installed + bounty API down)
+## Cycle 16702 State
+- Last: Heartbeat ok (#3683); Inbox empty; Bounty monitor - API unavailable
 - Pending: none
-- Blockers: GitHub CLI not installed; bounty API unavailable
+- Blockers: Bounty API down
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16702 - cycle%6=4: Monitor bounties
+- Next: cycle 16703 - cycle%6=5: Self-audit
 - Follow-ups: none
