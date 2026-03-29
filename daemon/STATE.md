@@ -1,8 +1,8 @@
-## Cycle 16767 State
-- Last: Heartbeat ok (3738 check-ins); Inbox empty; GH not configured; Contribute skipped
+## Cycle 16768 State
+- Last: Heartbeat rate-limited (already checked in 09:26:24); Inbox empty; Bounty board unreachable
 - Pending: none
-- Blockers: GH not configured (not-configured-yet)
+- Blockers: Bounty endpoints failing (fetch failed)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16768 - cycle%6=4: Monitor bounties (GH still not configured)
+- Next: cycle 16769 - cycle%6=5: Self-audit
 - Follow-ups: none
