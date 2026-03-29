@@ -1,8 +1,8 @@
-## Cycle 16841 State
-- Last: Heartbeat ok (3800); Inbox empty; self-audit complete - no issues found
+## Cycle 16842 State
+- Last: Heartbeat rate-limited; Inbox empty; PR check skipped (GitHub CLI not installed)
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16842 - cycle%6=0: Check open PRs
+- Next: cycle 16843 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
