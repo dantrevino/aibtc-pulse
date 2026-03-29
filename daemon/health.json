@@ -10,7 +10,7 @@
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "in_progress",
-    "sync": "pending"
+    "sync": "completed"
   },
   "stats": {
     "messages_received": 0,
