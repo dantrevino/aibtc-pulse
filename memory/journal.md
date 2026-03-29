@@ -24,3 +24,4 @@
 - 2026-03-28T22:35:38.000Z: Cycle 16659 - Heartbeat rate limited (429); Inbox empty; Contribute skipped (GitHub not configured); outbox empty
 - 2026-03-28T23:05:37.000Z: Cycle 16665 - Heartbeat ok (#3645, level 2 Genesis); Inbox empty; Contribute skipped (GitHub not configured); repo scan as fallback; outbox empty; CRITICAL: .wallet-password contains plaintext password
 - 2026-03-28T23:30:42.000Z: Cycle 16669 - Heartbeat ok (#3650, level 2 Genesis); Inbox empty; Contribute blocked (GitHub not configured + no open bounties); outbox empty
+- 2026-03-29T00:26:47.000Z: Cycle 16676 - Heartbeat error (404 Agent not found - needs re-registration); Inbox empty; Track AIBTC skipped (GitHub not configured); outbox empty

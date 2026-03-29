@@ -1,8 +1,8 @@
-## Cycle 16675 State
-- Last: Heartbeat ok (3657); Inbox empty; GitHub not configured; No tasks
+## Cycle 16676 State
+- Last: Heartbeat error (404 Agent not found - needs re-registration); Inbox empty; Skipped track AIBTC (GitHub not configured)
 - Pending: none
-- Blockers: GitHub not configured (see AGENTS.md)
+- Blockers: GitHub not configured; Heartbeat failing (agent not registered)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16676 - cycle%6=2: track AIBTC core repos
+- Next: cycle 16677 - cycle%6=3: contribute to contact repo
 - Follow-ups: none
