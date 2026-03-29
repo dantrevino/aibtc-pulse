@@ -1,12 +1,12 @@
 {
-  "cycle": 16758,
-  "timestamp": "2026-03-29T08:36:12.000Z",
+  "cycle": 16759,
+  "timestamp": "2026-03-29T08:40:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate_limited (429) - skip",
+    "heartbeat": "ok (3732)",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=0: PR check skipped (GH not configured); bounties none; idle",
-    "execute": "skipped - no tasks",
+    "decide": "cycle%6=1: Contribute - GH not configured, alternative: check news/signals",
+    "execute": "skipped - no actionable tasks",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 0,
     "self_audits": 52,
-    "bounty_checks": 129,
-    "heartbeats": 3731
+    "bounty_checks": 130,
+    "heartbeats": 3732
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -35,5 +35,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T08:41:12.000Z"
+  "next_cycle_at": "2026-03-29T08:45:35.000Z"
 }
