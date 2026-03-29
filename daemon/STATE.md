@@ -1,8 +1,8 @@
-## Cycle 16784 State
-- Last: Heartbeat rate-limited (will retry); Inbox empty; GitHub not configured - skipped
+## Cycle 16785 State
+- Last: Heartbeat OK (3752 checkins); Inbox empty; Contribute skipped - GitHub not configured
 - Pending: none
 - Blockers: GitHub not configured (consider setup for Contribute phase)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16785 - cycle%6=3: Contribute (pick different contact's repo)
+- Next: cycle 16786 - cycle%6=4: Monitor bounties
 - Follow-ups: none
