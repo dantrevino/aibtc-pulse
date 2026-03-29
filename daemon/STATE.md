@@ -1,8 +1,8 @@
-## Cycle 16789 State
-- Last: Heartbeat rate-limited (429); Inbox empty; GitHub not configured - contribute skipped
+## Cycle 16790 State
+- Last: Heartbeat signature verification failed (400); Inbox empty; GitHub not configured
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16790 - cycle%6=2: Track AIBTC core repos
+- Next: cycle 16791 - cycle%6=3: Contribute (skipped - GitHub not configured)
 - Follow-ups: none

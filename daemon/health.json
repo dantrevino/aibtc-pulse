@@ -1,11 +1,11 @@
 {
-  "cycle": 16789,
-  "timestamp": "2026-03-29T11:30:32.000Z",
+  "cycle": 16790,
+  "timestamp": "2026-03-29T11:35:40.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (429) - checkInCount 3755",
+    "heartbeat": "signature verification failed (400) - heartbeat continues",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=1: Contribute - skipped (GitHub not configured)",
+    "decide": "cycle%6=2: Track AIBTC core - skipped (GitHub not configured)",
     "execute": "skipped - gh not installed, GitHub not configured",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
@@ -20,10 +20,10 @@
     "prs_updated": 0,
     "issues_filed": 0,
     "comments_added": 0,
-    "tests_run": 451,
+    "tests_run": 452,
     "self_audits": 59,
-    "bounty_checks": 141,
-    "heartbeats": 3755
+    "bounty_checks": 142,
+    "heartbeats": 3756
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T11:30:32.000Z",
+    "last_self_modification_check": "2026-03-29T11:35:40.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T11:35:32.000Z"
+  "next_cycle_at": "2026-03-29T11:40:40.000Z"
 }
