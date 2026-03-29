@@ -1,8 +1,8 @@
-## Cycle 16714 State
-- Last: Heartbeat OK (3694 checkins); Inbox empty; Bounties: none open
+## Cycle 16715 State
+- Last: Heartbeat OK (3695 checkins); Inbox empty; Self-audit complete - loop.md integrity verified
 - Pending: none
-- Blockers: none
+- Blockers: none (security warning: .wallet-password contains plaintext password)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16715 - cycle%6=5: Self-audit
+- Next: cycle 16716 - cycle%6=0: Check open PRs
 - Follow-ups: none
