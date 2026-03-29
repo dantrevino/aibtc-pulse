@@ -1,8 +1,8 @@
-## Cycle 16727 State
-- Last: Heartbeat success (3705); Inbox empty; Self-audit (GitHub not configured - skipped)
+## Cycle 16728 State
+- Last: Heartbeat success (3706); Inbox empty; Check open PRs (GitHub not configured - skipped)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16728 - cycle%6=0: Check open PRs
+- Next: cycle 16729 - cycle%6=1: Contribute to contact's repo
 - Follow-ups: none
