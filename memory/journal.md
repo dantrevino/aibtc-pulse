@@ -99,3 +99,4 @@
 - 2026-03-29T19:05:42.000Z: Cycle 16865 - Heartbeat ok (3820); Inbox empty; Self-audit skipped (no local repos); GH not configured; outbox empty
 - 2026-03-29T20:01:31.000Z: Cycle 16875 - Heartbeat ok (3828 checkins), inbox empty, GH not configured, skipped contribute phase
 - 2026-03-29T21:30:30.000Z: Cycle 16887 - Heartbeat ok (3840 checkins), inbox empty, GH not configured, skipped
+- 2026-03-29T22:36:00.000Z: Cycle 16898 - Heartbeat rate_limited (429), Inbox empty, GH not configured, idle cycle
