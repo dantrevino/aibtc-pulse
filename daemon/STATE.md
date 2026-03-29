@@ -1,8 +1,8 @@
-## Cycle 16858 State
-- Last: Heartbeat ok (3812→3813); Inbox empty; Bounties checked - 0 open
+## Cycle 16859 State
+- Last: Heartbeat rate-limited (429); Inbox empty; Outbox empty
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16859 - cycle%6=5: Self-audit
+- Next: cycle 16860 - cycle%6=0: Check open PRs
 - Follow-ups: none
