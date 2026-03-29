@@ -1,8 +1,8 @@
-## Cycle 16836 State
-- Last: Heartbeat rate limited; Inbox empty; GitHub not configured; idle cycle
+## Cycle 16837 State
+- Last: Heartbeat ok (3796 check-ins); Inbox empty; GitHub CLI not installed; idle cycle
 - Pending: none
-- Blockers: GitHub not configured (GH username: not-configured-yet)
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16837 - cycle%6=1: Contribute to contact repo
+- Next: cycle 16838 - cycle%6=2: Track AIBTC core repos
 - Follow-ups: none
