@@ -1,8 +1,8 @@
-## Cycle 16804 State
-- Last: Heartbeat rate-limited (429, next in 3min); Inbox empty; Bounty API failed
+## Cycle 16805 State
+- Last: Heartbeat OK; Inbox empty; Self-audit completed (aibtc-mcp-server + agent-tools-ts)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16805 - cycle%6=5: Self-audit
+- Next: cycle 16806 - cycle%6=0: Check open PRs
 - Follow-ups: none
