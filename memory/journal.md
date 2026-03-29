@@ -89,3 +89,4 @@
 - 2026-03-29T17:05:30.000Z: Cycle 16844 - Heartbeat ok (3803); Inbox empty; Track AIBTC skipped (GitHub CLI unavailable); outbox empty
 - 2026-03-29T17:10:35.000Z: Cycle 16845 - Heartbeat ok, inbox empty, GitHub CLI unavailable, no-op
 - 2026-03-29T18:31:28.000Z: Cycle 16859 - heartbeat rate-limited (429), inbox empty, outbox empty, proceeding to next cycle
+- 2026-03-29T18:40:28.000Z: Cycle 16861 - Heartbeat ok (3815); Inbox empty; GitHub CLI not found; no actionable items

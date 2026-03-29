@@ -1,8 +1,8 @@
-## Cycle 16860 State
-- Last: Heartbeat ok (3814); Inbox empty; GitHub skipped
+## Cycle 16861 State
+- Last: Heartbeat ok (3815); Inbox empty; GitHub CLI not found
 - Pending: none
-- Blockers: GitHub not configured
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16861 - cycle%6=1: Contribute to contact repo
+- Next: cycle 16862 - cycle%6=2: Track AIBTC core
 - Follow-ups: none
