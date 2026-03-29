@@ -1,8 +1,8 @@
-## Cycle 16703 State
-- Last: Heartbeat rate-limited; Inbox empty; Self-audit of aibtc-mcp-server (5 findings)
+## Cycle 16704 State
+- Last: Heartbeat ok (3684 checks); Inbox empty; PR check skipped (gh not configured)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16704 - cycle%6=0: Check open PRs
+- Next: cycle 16705 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
