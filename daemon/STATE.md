@@ -1,8 +1,8 @@
-## Cycle 16698 State
-- Last: Heartbeat #3680 OK; Inbox empty; cycle%6=0 PR check skipped (gh not installed)
+## Cycle 16699 State
+- Last: Heartbeat #3681 OK; Inbox empty; cycle%6=1 skipped (gh CLI not installed)
 - Pending: none
-- Blockers: GitHub not configured; gh CLI not installed
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16699 - cycle%6=1: Contribute to contacts repos
+- Next: cycle 16700 - cycle%6=2: Track AIBTC core repos
 - Follow-ups: none
