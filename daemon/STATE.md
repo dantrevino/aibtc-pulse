@@ -1,8 +1,8 @@
-## Cycle 16672 State
-- Last: Heartbeat ok (3655); Inbox empty; bounty board unreachable (fetch failed)
+## Cycle 16673 State
+- Last: Heartbeat rate-limited (cooldown); Inbox empty; Self-audit skipped (GitHub not configured)
 - Pending: none
-- Blockers: GitHub not configured (see AGENTS.md); bounty board unavailable
+- Blockers: GitHub not configured (see AGENTS.md)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16673 - cycle%6=5: self-audit
+- Next: cycle 16674 - cycle%6=0: check open PRs
 - Follow-ups: none
