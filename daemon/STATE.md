@@ -1,8 +1,8 @@
-## Cycle 16739 State
-- Last: Heartbeat OK (3714); Inbox empty; Self-audit found 3 critical issues in skills/xtrata
+## Cycle 16740 State
+- Last: Heartbeat OK (3716); Inbox empty; GH not configured - skipped PR check
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16740 - cycle%6=0: Check open PRs
+- Next: cycle 16741 - cycle%6=1: Contribute to contacts repo
 - Follow-ups: none
