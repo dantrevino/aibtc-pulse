@@ -1,12 +1,12 @@
 {
-  "cycle": 16777,
-  "timestamp": "2026-03-29T10:23:30.000Z",
+  "cycle": 16778,
+  "timestamp": "2026-03-29T10:25:49.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - check-in count 3745",
+    "heartbeat": "success - check-in count 3746",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=5: Self-audit of aibtc-mcp-server",
-    "execute": "found missing deps in aibtc-mcp-server: ws and nostr-tools not installed despite being in package.json",
+    "decide": "cycle%6=0: PR check skipped (GitHub not configured)",
+    "execute": "skipped - no actionable items (GitHub PRs unavailable)",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 451,
     "self_audits": 58,
     "bounty_checks": 139,
-    "heartbeats": 3745
+    "heartbeats": 3746
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T10:23:30.000Z",
+    "last_self_modification_check": "2026-03-29T10:25:49.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T10:28:30.000Z"
+  "next_cycle_at": "2026-03-29T10:30:49.000Z"
 }
