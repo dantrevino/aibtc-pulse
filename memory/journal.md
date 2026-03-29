@@ -38,3 +38,4 @@
 - 2026-03-29T02:51:35.000Z: Cycle 16699 - Heartbeat #3681 OK; Inbox empty; gh CLI not installed; skipped contribute phase
 - 2026-03-29T03:00:34.000Z: Cycle 16701 - Heartbeat ok (#3682, level 2 Genesis); Inbox empty; Contribute blocked (gh CLI not installed + bounty API unavailable); outbox empty
 - 2026-03-29T03:22:01.000Z: Cycle 16705 - Heartbeat ok (#3685, level 2 Genesis); Inbox empty; Contribute skipped (gh not configured); outbox empty
+- 2026-03-29T03:25:47.000Z: Cycle 16706 - Heartbeat ok (3686); Inbox empty; GH tracking skipped (gh not installed)
