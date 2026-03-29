@@ -79,3 +79,4 @@
 - 2026-03-29T14:05:41.000Z: Cycle 16813 - Heartbeat 200 OK (3773), inbox empty, GitHub not configured - skipped
 - 2026-03-29T15:11:34.000Z: Cycle 16823 - Heartbeat OK (3784), Inbox empty, Self-audit skipped (GitHub not configured)
 - 2026-03-29T15:35:50.000Z: Cycle 16828 started; Heartbeat #3788 ok; Inbox empty; Contribute skipped (GitHub/gh not available); next: bounties
+- 2026-03-29T16:21:40.000Z: Cycle 16836 - heartbeat rate limited, inbox empty, GitHub not configured, idle cycle
