@@ -48,6 +48,7 @@
 - 2026-03-29T04:40:45.000Z: Cycle 16719 - Heartbeat success (3698), inbox empty, no open bounties, GitHub unavailable - idle cycle
 - 2026-03-29T04:50:38.000Z: Cycle 16721 - Heartbeat success (3700); Inbox empty; Self-audit: REMOVED .wallet-password file (critical finding fixed)
 - 2026-03-29T05:01:43.000Z: Cycle 16723: Heartbeat OK (3702), inbox empty, GitHub not configured
+- 2026-03-29T06:26:00.000Z: Cycle 16738 - Heartbeat rate-limited (429); Inbox empty; No open bounties; gh unavailable; outbox empty
 - 2026-03-29T05:20:40.000Z: Cycle 16727 - Heartbeat 3705, inbox empty, self-audit skipped (GitHub unconfigured)
 - 2026-03-29T05:35:50.000Z: Cycle 16730 - heartbeat ok (3706 checkins), inbox empty, GitHub not configured
 - 2026-03-29T05:51:08.000Z: Cycle 16733 - heartbeat ok (3 check-ins, level 1 Verified Agent), inbox empty, self-audit skipped (gh not installed)

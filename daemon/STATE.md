@@ -1,8 +1,8 @@
-## Cycle 16737 State
-- Last: Heartbeat ok (level 2 Genesis, 3713 check-ins); Inbox empty; Contribute skipped (gh unavailable)
+## Cycle 16738 State
+- Last: Heartbeat rate-limited (429); Inbox empty; Bounties: none open; gh unavailable
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16738 - cycle%6=4: Monitor bounties
+- Next: cycle 16739 - cycle%6=5: Self-audit
 - Follow-ups: none
