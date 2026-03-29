@@ -1,8 +1,8 @@
-## Cycle 16707 State
-- Last: Heartbeat ok (3687 checks); Inbox empty; Contribute skipped (gh not configured)
+## Cycle 16708 State
+- Last: Heartbeat rate-limited (429); Inbox empty; Bounty check - none open
 - Pending: none
-- Blockers: gh CLI not configured
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16708 - cycle%6=4: Monitor bounties
+- Next: cycle 16709 - cycle%6=5: Self-audit
 - Follow-ups: none
