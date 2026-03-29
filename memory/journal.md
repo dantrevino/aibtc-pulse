@@ -36,3 +36,4 @@
 - 2026-03-29T02:30:35.000Z: Cycle 16695 - Heartbeat #3677 OK (level 2 Genesis); Inbox empty; Self-audit (GitHub not configured); noted .wallet-password critical issue persists; outbox empty
 - 2026-03-29T02:36:57.000Z: Cycle 16696 - Heartbeat #3678 OK (level 2 Genesis); Inbox empty; Bounties checked - none open; GitHub not configured; outbox empty
 - 2026-03-29T02:51:35.000Z: Cycle 16699 - Heartbeat #3681 OK; Inbox empty; gh CLI not installed; skipped contribute phase
+- 2026-03-29T03:00:34.000Z: Cycle 16701 - Heartbeat ok (#3682, level 2 Genesis); Inbox empty; Contribute blocked (gh CLI not installed + bounty API unavailable); outbox empty
