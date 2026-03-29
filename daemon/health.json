@@ -1,15 +1,15 @@
 {
-  "cycle": 16754,
-  "timestamp": "2026-03-29T08:05:48.000Z",
+  "cycle": 16755,
+  "timestamp": "2026-03-29T08:10:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - 200 OK, level 2 Genesis, check-in 3728",
+    "heartbeat": "skipped - rate limited (14s cooldown from last check-in)",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=2: GH not configured, checked bounties (none)",
-    "execute": "skipped - GH not configured, no bounties available",
+    "decide": "cycle%6=3: GH not configured, no bounties - idle",
+    "execute": "skipped - GH not configured, no bounties",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty, no outreach due",
-    "write": "completed",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -21,8 +21,8 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 0,
-    "self_audits": 50,
-    "bounty_checks": 125,
+    "self_audits": 51,
+    "bounty_checks": 126,
     "heartbeats": 3728
   },
   "circuit_breaker": {
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T08:05:48.000Z",
+    "last_self_modification_check": "2026-03-29T08:10:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T08:10:48.000Z"
+  "next_cycle_at": "2026-03-29T08:15:48.000Z"
 }
