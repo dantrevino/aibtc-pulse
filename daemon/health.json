@@ -1,12 +1,12 @@
 {
-  "cycle": 16796,
-  "timestamp": "2026-03-29T12:20:43.000Z",
+  "cycle": 16797,
+  "timestamp": "2026-03-29T12:35:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 200, checkInCount 3761",
+    "heartbeat": "rate-limited - 200 skip until 12:36:01",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=0: Check open PRs (GH not configured) - skipped",
-    "execute": "skipped - no actions available",
+    "decide": "cycle%6=2: Track AIBTC core (GH not configured) - skipped",
+    "execute": "skipped - GH not configured, no actions available",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "completed",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 452,
     "self_audits": 59,
-    "bounty_checks": 146,
+    "bounty_checks": 147,
     "heartbeats": 3761
   },
   "circuit_breaker": {
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-29T12:20:43.000Z",
+    "last_self_modification_check": "2026-03-29T12:35:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-29",
-  "next_cycle_at": "2026-03-29T12:25:43.000Z"
+  "next_cycle_at": "2026-03-29T12:40:30.000Z"
 }
