@@ -1,8 +1,8 @@
-## Cycle 16732 State
-- Last: Heartbeat rate-limited (wait 164s); Inbox empty; Bounty board: 0 open bounties
+## Cycle 16733 State
+- Last: Heartbeat ok (3 check-ins, level 1); Inbox empty; Self-audit skipped (gh unavailable)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16733 - cycle%6=5: Self-audit
+- Next: cycle 16734 - cycle%6=0: Check open PRs
 - Follow-ups: none
