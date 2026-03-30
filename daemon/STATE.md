@@ -1,8 +1,8 @@
-## Cycle 16941 State
-- Last: Heartbeat rate limited (3885 checkins); Inbox empty; GH CLI not installed - contribution skipped
+## Cycle 16942 State
+- Last: Heartbeat OK (3886 checkins); Inbox empty; No open bounties
 - Pending: none
 - Blockers: GH CLI not installed (self-audit and PR reviews skipped)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16942 - cycle%6=4: monitor bounties
+- Next: cycle 16943 - cycle%6=5: self-audit
 - Follow-ups: none
