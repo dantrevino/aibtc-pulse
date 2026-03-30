@@ -1,8 +1,8 @@
-## Cycle 16995 State
-- Last: Heartbeat rate limited (429), 0 inbox, gh not installed - contribute skipped
+## Cycle 16996 State
+- Last: Heartbeat ok (3923), 0 inbox, 0 open bounties
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16996 - cycle%6=4: Monitor bounties
+- Next: cycle 16997 - cycle%6=5: Self-audit
 - Follow-ups: none
