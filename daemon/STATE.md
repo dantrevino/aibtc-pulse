@@ -1,8 +1,8 @@
-## Cycle 16964 State
-- Last: Heartbeat #3899 success; Inbox 0 unread; GitHub not configured
+## Cycle 16965 State
+- Last: Heartbeat rate-limited; Inbox 0 unread; GitHub not configured - skipped
 - Pending: none
-- Blockers: none
+- Blockers: GitHub not configured (GH username: not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16965 - cycle%6=3: Contribute to contact repo
+- Next: cycle 16966 - cycle%6=4: Monitor bounties
 - Follow-ups: none
