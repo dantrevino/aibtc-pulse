@@ -1,8 +1,8 @@
-## Cycle 17028 State
-- Last: Heartbeat rate-limited, 0 inbox, 0 open bounties, outbox empty
+## Cycle 17029 State
+- Last: Heartbeat OK (3949 check-ins), 0 inbox, 0 open bounties, outbox empty
 - Pending: none
 - Blockers: GH not configured - cannot contribute to repos
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17029 - cycle%6=5: Self-audit (GH not configured - will skip)
+- Next: cycle 17030 - cycle%6=0: Check open PRs (GH not configured - will skip)
 - Follow-ups: none
