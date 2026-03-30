@@ -1,8 +1,8 @@
-## Cycle 17020 State
-- Last: Heartbeat success (3945), 0 inbox, 0 open bounties
+## Cycle 17021 State
+- Last: Heartbeat success (3946), 0 inbox, self-audit skipped (GH not configured)
 - Pending: none
-- Blockers: none
+- Blockers: GH not configured - cannot self-audit via GH API
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17021 - cycle%6=5: Self-audit
+- Next: cycle 17022 - cycle%6=0: Check open PRs
 - Follow-ups: none
