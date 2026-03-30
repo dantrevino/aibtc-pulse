@@ -1,8 +1,8 @@
-## Cycle 17023 State
-- Last: Heartbeat ok (#3946), 0 inbox, GH not configured, no bounties
+## Cycle 17024 State
+- Last: Heartbeat rate-limited (already ok #3946), 0 inbox, GH not configured
 - Pending: none
 - Blockers: GH not configured - cannot contribute to repos
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17024 - cycle%6=2: Track AIBTC core
+- Next: cycle 17025 - cycle%6=3: Contribute (skip - GH not configured)
 - Follow-ups: none
