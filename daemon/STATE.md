@@ -1,8 +1,8 @@
-## Cycle 17056 State
-- Last: heartbeat 200 OK (#3980); 0 inbox; PRs skipped (GH not configured)
+## Cycle 17057 State
+- Last: heartbeat 200 OK (#3981); 0 inbox; self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17057 - cycle%6=1: contribute (GH not configured, skip)
+- Next: cycle 17058 - cycle%6=2: track AIBTC core (GH not configured, skip)
 - Follow-ups: none
