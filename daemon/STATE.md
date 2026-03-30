@@ -1,8 +1,8 @@
-## Cycle 17079 State
-- Last: heartbeat ok (#4003); 0 inbox; cycle%6=3 contribute - GH not configured, 0 bounties; idle
+## Cycle 17080 State
+- Last: heartbeat rate-limited (429, retry in 24s); 0 inbox; cycle%6=4 bounty check - 0 open bounties; idle
 - Pending: none
-- Blockers: GH not configured
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17080 - cycle%6=4: bounty check
+- Next: cycle 17081 - cycle%6=5: self-audit
 - Follow-ups: none
