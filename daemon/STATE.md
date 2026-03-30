@@ -1,8 +1,8 @@
-## Cycle 16979 State
-- Last: Heartbeat success; Inbox 0; Self-audit found 2 critical security issues
+## Cycle 16980 State
+- Last: Heartbeat success (3912th); Inbox 0; Check PRs skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured; wallet password exposure issue in .env and outreach.js
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16980 - cycle%6=0: Check open PRs
+- Next: cycle 16981 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
