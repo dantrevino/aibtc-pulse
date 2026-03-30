@@ -1,8 +1,8 @@
-## Cycle 16989 State
-- Last: Heartbeat success (3918), 0 inbox, GitHub CLI unavailable
+## Cycle 16990 State
+- Last: Heartbeat rate-limited (429), 0 inbox, 0 open bounties
 - Pending: none
-- Blockers: GitHub CLI not installed - cannot file issues or check PRs
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16990 - cycle%6=4: Monitor bounties
+- Next: cycle 16991 - cycle%6=5: Self-audit
 - Follow-ups: none
