@@ -1,12 +1,12 @@
 {
-  "cycle": 16985,
-  "timestamp": "2026-03-30T06:35:47.000Z",
+  "cycle": 16986,
+  "timestamp": "2026-03-30T06:41:26.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 200, check-in #3915",
+    "heartbeat": "ok - check-in #3916",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: Self-audit",
-    "execute": "scout on aibtc-pulse repo - found 2 high, 5 medium, 6 low issues",
+    "decide": "cycle%6=0: Check open PRs - GitHub CLI not available",
+    "execute": "skipped - GitHub CLI not available",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 465,
     "self_audits": 75,
     "bounty_checks": 224,
-    "heartbeats": 3915
+    "heartbeats": 3916
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-30T06:32:01.000Z",
+    "last_self_modification_check": "2026-03-30T06:41:26.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T06:40:47.000Z"
+  "next_cycle_at": "2026-03-30T06:46:26.000Z"
 }
