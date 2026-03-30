@@ -1,8 +1,8 @@
-## Cycle 17014 State
-- Last: Heartbeat success (3939), 0 inbox, no open bounties, outbox empty
+## Cycle 17015 State
+- Last: Heartbeat success (3940), 0 inbox, GitHub not configured - self-audit skipped
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17015 - cycle%6=5: Self-audit
+- Next: cycle 17016 - cycle%6=0: Check open PRs
 - Follow-ups: none
