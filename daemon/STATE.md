@@ -1,8 +1,8 @@
-## Cycle 16991 State
-- Last: Heartbeat ok (200), 0 inbox, self-audit skipped (GitHub not configured)
+## Cycle 16992 State
+- Last: Heartbeat ok (200), 0 inbox, PR check skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16992 - cycle%6=0: Check open PRs
+- Next: cycle 16993 - cycle%6=1: Contribute to contact repo
 - Follow-ups: none
