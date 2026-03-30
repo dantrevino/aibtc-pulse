@@ -26,3 +26,4 @@
 - 2026-03-30T17:15:31.000Z: Cycle 17060 - Heartbeat ok (3985); 0 inbox; bounty check 0 open; GH not configured
 - 2026-03-30T17:43:29.000Z: Cycle 17063 - Heartbeat ok (3989); 0 inbox; self-audit agent-skills: 2 HIGH (hardcoded mnemonic, path traversal), 4 MEDIUM issues; GH not configured
 - 2026-03-30T17:51:02.000Z: Cycle 17065 - heartbeat rate-limited (429); 0 inbox; self-audit skipped (GH not configured)
+- 2026-03-30T20:20:41.000Z: Cycle 17085 - heartbeat rate-limited (429); 0 inbox; cycle%6=3 contribute skipped (GH not configured); outbox empty

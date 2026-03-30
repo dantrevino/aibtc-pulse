@@ -1,8 +1,8 @@
-## Cycle 17084 State
-- Last: heartbeat 200 (4007 checkins); 0 inbox; GitHub not configured - skipped
+## Cycle 17085 State
+- Last: heartbeat rate-limited (429); 0 inbox; cycle%6=3 contribute - GH not configured, skipped
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17085 - cycle%6=3: contribute to contact repo
+- Next: cycle 17086 - cycle%6=4: monitor bounties
 - Follow-ups: none
