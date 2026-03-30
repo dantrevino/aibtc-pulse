@@ -1,8 +1,8 @@
-## Cycle 17068 State
-- Last: heartbeat OK (#3993); 0 inbox; GH not configured
+## Cycle 17069 State
+- Last: heartbeat 429 rate-limited (next 165s); 0 inbox; GH not configured
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17069 - cycle%6=5: self-audit (GH not configured - skip)
+- Next: cycle 17070 - cycle%6=0: check open PRs (GH not configured - skip)
 - Follow-ups: none
