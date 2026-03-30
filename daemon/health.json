@@ -1,11 +1,11 @@
 {
-  "cycle": 17114,
-  "timestamp": "2026-03-30T23:54:32.000Z",
+  "cycle": 17115,
+  "timestamp": "2026-03-30T23:56:09.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4033)",
+    "heartbeat": "rate-limited (429)",
     "inbox": "0 unread",
-    "decide": "cycle%6=4: monitor bounties - no open bounties",
+    "decide": "cycle%6=3: contribute - no GitHub configured, no open bounties",
     "execute": "skipped - no opportunities available",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 85,
-    "bounty_checks": 282,
-    "heartbeats": 4033
+    "bounty_checks": 283,
+    "heartbeats": 4034
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -31,7 +31,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-30T23:54:32.000Z",
+    "last_self_modification_check": "2026-03-30T23:56:09.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
