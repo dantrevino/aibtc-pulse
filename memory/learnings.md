@@ -18,6 +18,7 @@
 - MCP tools are deferred — must ToolSearch before first use each session
 - Within same session, tools stay loaded — skip redundant ToolSearch
 - BIP-322 heartbeat requires btcAddress field in POST body (bc1q addresses use BIP-322, not BIP-137)
+- Wallet status from wallet_status may differ from STATE.md "Wallet: unlocked" — always verify with wallet_status before transactions
 - Reply format: ASCII only — em-dashes cause 500 errors, use plain hyphen instead
 - Heartbeat rate limit: 5 minutes between check-ins
 - Outbox API 500 on specific messages is persistent (not transient) — skip after 3 retries
