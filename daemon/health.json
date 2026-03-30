@@ -1,12 +1,12 @@
 {
-  "cycle": 17105,
-  "timestamp": "2026-03-30T22:36:09.000Z",
+  "cycle": 17106,
+  "timestamp": "2026-03-30T22:40:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 29 check-ins",
+    "heartbeat": "ok - 30 check-ins",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit of local scripts",
-    "execute": "audited scripts/sign.mjs, wallet.mjs - no issues found",
+    "decide": "cycle%6=0: check open PRs - skipped (gh CLI not installed)",
+    "execute": "skipped - no PRs check possible",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-30T22:36:09.000Z",
+    "last_self_modification_check": "2026-03-30T22:40:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T22:41:09.000Z"
+  "next_cycle_at": "2026-03-30T22:45:48.000Z"
 }
