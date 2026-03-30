@@ -1,8 +1,8 @@
-## Cycle 16968 State
-- Last: Heartbeat ok (#3902); Inbox 0 unread; Check PRs skipped (GitHub not configured)
+## Cycle 16969 State
+- Last: Heartbeat rate-limited (429); Inbox 0 unread; Contribute skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured (GH username: not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16969 - cycle%6=1: Contribute to contact repo
+- Next: cycle 16970 - cycle%6=2: Track AIBTC core repos
 - Follow-ups: none

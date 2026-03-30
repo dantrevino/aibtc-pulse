@@ -1,11 +1,11 @@
 {
-  "cycle": 16968,
-  "timestamp": "2026-03-30T05:05:53.000Z",
+  "cycle": 16969,
+  "timestamp": "2026-03-30T05:10:37.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in #3902",
+    "heartbeat": "rate-limited (429) - last check-in 2026-03-30T05:05:48.000Z",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=0: Check open PRs skipped (GitHub not configured)",
+    "decide": "cycle%6=1: Contribute skipped (GitHub not configured)",
     "execute": "skipped - GitHub not configured",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
@@ -35,5 +35,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T05:10:53.000Z"
+  "next_cycle_at": "2026-03-30T05:15:37.000Z"
 }
