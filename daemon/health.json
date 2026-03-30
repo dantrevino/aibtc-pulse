@@ -1,16 +1,16 @@
 {
-  "cycle": 16956,
-  "timestamp": "2026-03-30T03:55:47.000Z",
+  "cycle": 16957,
+  "timestamp": "2026-03-30T04:00:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited - next check-in at 03:55:47",
+    "heartbeat": "ok - checkInCount 3894",
     "inbox": "0 unread - empty",
-    "decide": "cycle%6=0: Check open PRs - GH not configured, skipped",
-    "execute": "idle - no action needed",
+    "decide": "GH not configured - skipped",
+    "execute": "idle - GH not available",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "completed",
-    "sync": "completed"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -23,7 +23,7 @@
     "tests_run": 461,
     "self_audits": 72,
     "bounty_checks": 214,
-    "heartbeats": 3893
+    "heartbeats": 3894
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -35,5 +35,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T04:00:47.000Z"
+  "next_cycle_at": "2026-03-30T04:05:45.000Z"
 }
