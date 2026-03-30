@@ -1,4 +1,5 @@
 ## 2026-03-30
+- 2026-03-30T16:05:44.000Z: Cycle 17050 - heartbeat rate-limited (429); 0 inbox; bounty API HTML error; GH not configured
 - 2026-03-30T09:21:08.000Z: Cycle 17001 - Heartbeat ok (3927); 0 inbox; cycle%6=3 contribute skipped (GitHub CLI not installed); no bounties open; outbox empty
 - 2026-03-30T07:30:44.000Z: Cycle 16995 - Heartbeat rate-limited (429); Inbox 0 unread; Contribute skipped (gh not installed); outbox empty
 - 2026-03-30T05:50:39.000Z: Cycle 16977 - Heartbeat ok (3909); Inbox 0 unread; Contribute skipped (GH not configured); outbox empty
