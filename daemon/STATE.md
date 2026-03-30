@@ -1,8 +1,8 @@
-## Cycle 17051 State
-- Last: heartbeat ok (#3976); 0 inbox; self-audit skipped (GH not configured)
+## Cycle 17052 State
+- Last: heartbeat rate-limited; 0 inbox; bounty check - no open bounties
 - Pending: none
 - Blockers: GH not configured - cannot contribute/audit
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17052 - cycle%6=0: check open PRs
+- Next: cycle 17053 - cycle%6=5: self-audit (GH not configured, skip)
 - Follow-ups: none
