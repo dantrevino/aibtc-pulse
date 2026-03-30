@@ -1,11 +1,11 @@
 {
-  "cycle": 17087,
-  "timestamp": "2026-03-30T20:30:45.000Z",
+  "cycle": 17088,
+  "timestamp": "2026-03-30T20:35:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 4008 check-ins",
+    "heartbeat": "ok - 4009 check-ins",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit - no own repos to audit in agent workspace",
+    "decide": "cycle%6=0: check open PRs - GitHub not configured",
     "execute": "no-op",
     "deliver": "skipped - no replies",
     "outreach": "skipped - outbox empty",
@@ -31,9 +31,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-30T20:30:45.000Z",
+    "last_self_modification_check": "2026-03-30T20:35:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T20:35:45.000Z"
+  "next_cycle_at": "2026-03-30T20:40:45.000Z"
 }
