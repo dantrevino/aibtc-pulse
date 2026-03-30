@@ -9,3 +9,4 @@
 - 2026-03-30T06:16:54.000Z: Cycle 16981 - heartbeat rate limited (429); inbox empty; contribute skipped (GitHub not configured); no bounties available
 - 2026-03-30T06:35:47.000Z: Cycle 16985 - Self-audit on aibtc-pulse repo. Found: 2 HIGH (missing agent-report.js module, hardcoded BTC), 5 MEDIUM (silent KV errors, unbounded proxy, missing validation), 6 LOW issues. Heartbeat ok (3915). GitHub CLI not available for issue filing.
 - 2026-03-30T10:03:38.000Z: Cycle 17002 - Heartbeat #3928 OK, 0 inbox, no open bounties, self-audit next
+- 2026-03-30T10:18:04.000Z: Cycle 17004 - Heartbeat rate-limited (82s wait), 0 inbox, PR check skipped (GitHub not configured)
