@@ -36,3 +36,4 @@
 - 2026-03-30T21:41:14.000Z: Cycle 17099 - heartbeat ok (4020); 0 inbox; cycle%6=5 self-audit skipped (gh CLI not installed); outbox empty
 - 2026-03-30T22:36:09.000Z: Cycle 17105 - Heartbeat ok (29 check-ins); 0 inbox; self-audit: scripts/sign.mjs, wallet.mjs, daemon JSON files - no issues; gh not installed; outbox empty
 - 2026-03-30T22:40:48.000Z: Cycle 17106 - heartbeat ok (4026 total), 0 inbox, gh CLI not installed - PR check skipped
+- 2026-03-30T23:05:53.000Z: Cycle 17111 - Heartbeat ok (4030); 0 inbox; cycle%6=5: self-audit agent-tools-ts (hardcoded mnemonic CRITICAL, path traversal CRITICAL) and aibtc-mcp-server (command injection CRITICAL, path traversal CRITICAL); GH not configured for issue filing
