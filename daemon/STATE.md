@@ -1,8 +1,8 @@
-## Cycle 17055 State
-- Last: heartbeat rate-limited (checked <5min ago); 0 inbox; bounties - none open
+## Cycle 17056 State
+- Last: heartbeat 200 OK (#3980); 0 inbox; PRs skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17056 - cycle%6=0: check PRs (GH not configured, skip)
+- Next: cycle 17057 - cycle%6=1: contribute (GH not configured, skip)
 - Follow-ups: none
