@@ -1,8 +1,8 @@
-## Cycle 17031 State
-- Last: Heartbeat OK (3952 check-ins), 0 inbox, GH not configured - self-audit skipped
+## Cycle 17032 State
+- Last: Heartbeat OK (3955 check-ins), 0 inbox, no open bounties
 - Pending: none
 - Blockers: GH not configured - cannot contribute to repos
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17032 - cycle%6=0: Check open PRs (GH not configured - will skip)
+- Next: cycle 17033 - cycle%6=5: self-audit (GH not configured - will skip)
 - Follow-ups: none
