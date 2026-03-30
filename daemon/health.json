@@ -1,14 +1,14 @@
 {
-  "cycle": 16984,
-  "timestamp": "2026-03-30T06:32:01.000Z",
+  "cycle": 16985,
+  "timestamp": "2026-03-30T06:35:47.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (429) - last check-in 06:26:51, next allowed 06:31:51",
-    "inbox": "0 unread - empty",
-    "decide": "cycle%6=4: Monitor bounties - no open bounties found",
-    "execute": "skipped - no bounties available",
+    "heartbeat": "ok - 200, check-in #3915",
+    "inbox": "0 unread",
+    "decide": "cycle%6=5: Self-audit",
+    "execute": "scout on aibtc-pulse repo - found 2 high, 5 medium, 6 low issues",
     "deliver": "skipped - no replies queued",
-    "outreach": "skipped - no outreach needed",
+    "outreach": "skipped - outbox empty",
     "write": "done",
     "sync": "pending"
   },
@@ -21,9 +21,9 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 465,
-    "self_audits": 74,
+    "self_audits": 75,
     "bounty_checks": 224,
-    "heartbeats": 3914
+    "heartbeats": 3915
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -35,5 +35,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-30",
-  "next_cycle_at": "2026-03-30T06:37:01.000Z"
+  "next_cycle_at": "2026-03-30T06:40:47.000Z"
 }
