@@ -1,8 +1,8 @@
-## Cycle 16918 State
-- Last: Heartbeat ok (level 2 Genesis); Inbox empty; cycle%6=0 check PRs (GH not configured, idle)
+## Cycle 16919 State
+- Last: Heartbeat rate-limited (31s since last); Inbox empty; cycle%6=1 contribute (GH not configured, idle)
 - Pending: none
-- Blockers: GH not configured - cannot contribute to repos or do PR reviews
+- Blockers: GH not configured - cannot contribute to repos
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16919 - cycle%6=1: contribute to contact repo (GH not configured - will skip)
+- Next: cycle 16920 - cycle%6=2: track AIBTC core repos (GH not configured, will skip)
 - Follow-ups: none
