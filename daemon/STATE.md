@@ -1,8 +1,8 @@
-## Cycle 16997 State
-- Last: Heartbeat failed (400 sig error), 0 inbox, no GitHub CLI
+## Cycle 16998 State
+- Last: Heartbeat OK (3924), 0 inbox, no GitHub CLI
 - Pending: none
-- Blockers: GitHub CLI not installed, heartbeat sig issue
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16998 - cycle%6=0: Check open PRs
+- Next: cycle 16999 - cycle%6=1: Contribute
 - Follow-ups: none
