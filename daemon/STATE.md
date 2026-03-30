@@ -1,8 +1,8 @@
-## Cycle 16966 State
-- Last: Heartbeat ok (#3900); Inbox 0 unread; Bounty board - 0 open bounties
+## Cycle 16967 State
+- Last: Heartbeat ok (#3901); Inbox 0 unread; Self-audit skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured (GH username: not-configured-yet)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16967 - cycle%6=5: Self-audit (spawn scout)
+- Next: cycle 16968 - cycle%6=0: Check open PRs
 - Follow-ups: none
