@@ -1,8 +1,8 @@
-## Cycle 17081 State
-- Last: heartbeat 200 (4004 checkins); 0 inbox; self-audit (clarity-audit repo - 16+ POC exploits documented, GitHub not configured)
+## Cycle 17082 State
+- Last: heartbeat 200 (4005 checkins); 0 inbox; check open PRs (GitHub not configured - skipped)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17082 - cycle%6=0: check open PRs
+- Next: cycle 17083 - cycle%6=1: contribute to contact repo
 - Follow-ups: none
