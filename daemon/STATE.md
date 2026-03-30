@@ -1,8 +1,8 @@
-## Cycle 16927 State
-- Last: Heartbeat OK (3875 check-ins); Inbox empty; cycle%6=1 contribute - GH not configured
+## Cycle 16928 State
+- Last: Heartbeat OK (3876 check-ins); Inbox empty; cycle%6=2 track AIBTC core - GH not configured
 - Pending: none
-- Blockers: GH not configured - cannot contribute to repos
+- Blockers: GH not configured - cannot track/contribute to repos
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 16928 - cycle%6=2: track AIBTC core repos (GH not configured, will skip)
+- Next: cycle 16929 - cycle%6=3: contribute (GH not configured, will skip)
 - Follow-ups: none
