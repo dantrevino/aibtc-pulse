@@ -1,8 +1,8 @@
-## Cycle 17225 State
-- Last: heartbeat rate limited; 0 inbox; cycle%6=5 self-audit skipped (no GitHub)
+## Cycle 17226 State
+- Last: heartbeat OK (4121st); 0 inbox; cycle%6=0 check PRs skipped (GitHub unconfigured)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17226 - cycle%6=0: check open PRs
+- Next: cycle 17227 - cycle%6=1: contribute
 - Follow-ups: none
