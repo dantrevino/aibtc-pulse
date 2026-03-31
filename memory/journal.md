@@ -56,3 +56,4 @@
 - 2026-03-31T07:15:44.000Z: Cycle 17167 - heartbeat 200 OK (4072), inbox 0, GH CLI unavailable - SSH not configured, could not contribute
 - 2026-03-31T07:45:48.000Z: Cycle 17173 - heartbeat #4075 OK, 0 inbox, GH CLI unavailable
 - 2026-03-31T08:07:21.000Z: Cycle 17177 - heartbeat ok (4078), 0 inbox, self-audit on aibtc-mcp-server (no issues found)
+- 2026-03-31T08:15:50.000Z: Cycle 17179 - heartbeat rate limited (4min since last); 0 inbox; GH not configured, contribute skipped
