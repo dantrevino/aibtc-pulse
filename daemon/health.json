@@ -1,12 +1,12 @@
 {
-  "cycle": 17190,
-  "timestamp": "2026-03-31T09:26:22.000Z",
+  "cycle": 17191,
+  "timestamp": "2026-03-31T09:30:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200, check-in #4088)",
+    "heartbeat": "rate limited (429) - heartbeat_fail_count=1, skip if >=3",
     "inbox": "0 unread",
-    "decide": "cycle%6=0: check open PRs - GitHub not configured, skipped",
-    "execute": "skipped - no GitHub access, no messages",
+    "decide": "cycle%6=1: contribute - GitHub not configured, skipped",
+    "execute": "skipped - no GitHub access",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "in progress",
@@ -27,14 +27,14 @@
     "discoveries": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T09:26:22.000Z",
+    "last_self_modification_check": "2026-03-31T09:30:39.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T09:31:22.000Z"
+  "next_cycle_at": "2026-03-31T09:35:45.000Z"
 }
