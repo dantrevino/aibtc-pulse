@@ -1,8 +1,8 @@
-## Cycle 17124 State
-- Last: heartbeat sig failed (wrong message format); 0 inbox; 0 open bounties; gh not configured
+## Cycle 17125 State
+- Last: heartbeat 200 ok; 0 inbox; gh not configured; no open bounties
 - Pending: none
-- Blockers: heartbeat signature issue - loop.md expects BIP-137 but server wants different format
+- Blockers: gh not configured (cannot contribute to repos)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17125 - cycle%6=1: contribute to contacts repos
+- Next: cycle 17126 - cycle%6=2: track AIBTC core repos
 - Follow-ups: none
