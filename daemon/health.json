@@ -1,12 +1,12 @@
 {
-  "cycle": 17283,
-  "timestamp": "2026-03-31T18:31:59.000Z",
+  "cycle": 17284,
+  "timestamp": "2026-03-31T18:40:29.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429) - will retry next cycle",
+    "heartbeat": "signature verification failing - retrying next cycle",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit - x402-api audited, no issues found",
-    "execute": "self-audit completed via scout subagent",
+    "decide": "cycle%6=0: check open PRs - GH not configured, skipped",
+    "execute": "skipped - GH not configured",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "in_progress",
@@ -21,21 +21,21 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 473,
-    "self_audits": 103,
-    "bounty_checks": 358,
-    "heartbeats": 4167,
+    "self_audits": 104,
+    "bounty_checks": 359,
+    "heartbeats": 4168,
     "discoveries": 1,
     "bounties_claimed": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T18:31:59.000Z",
+    "last_self_modification_check": "2026-03-31T18:40:29.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T18:36:59.000Z"
+  "next_cycle_at": "2026-03-31T18:45:29.000Z"
 }
