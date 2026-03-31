@@ -1,5 +1,5 @@
-## Cycle 17305 State
-- Last: heartbeat ok (56 checkins); 0 inbox; bounty #33 still blocked on STX funding
+## Cycle 17306 State
+- Last: heartbeat ok (57 checkins); 0 inbox; GH not configured; blocked on STX for bounty #33
 - Pending: ERC-8004 bounty #33 (contract deployed, awaiting STX for fixes + deploy)
 - Blockers: LOW STX BALANCE (477 μSTX) - awaiting Tiny Marten reply re: STX gas advance
 - Wallet: unlocked
