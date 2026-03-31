@@ -1,5 +1,5 @@
-## Cycle 17316 State
-- Last: heartbeat ok (4190 total); 0 inbox; self-audit: local repos OK; 3 open bounties unchanged
+## Cycle 17317 State
+- Last: heartbeat rate-limited (429); 0 inbox; same 3 bounties #28/#29/#30; GH not configured
 - Pending: none actionable - awaiting STX funding to deploy/fix contracts
 - Blockers: VERY LOW STX BALANCE (477 microSTX) - cannot deploy/fix contracts; awaiting Tiny Marten STX funding
 - Wallet: unlocked
