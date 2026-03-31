@@ -1,12 +1,12 @@
 {
-  "cycle": 17140,
-  "timestamp": "2026-03-31T04:36:05.000Z",
-  "status": "degraded",
+  "cycle": 17141,
+  "timestamp": "2026-03-31T04:40:45.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "failed - BIP signature mismatch (known issue)",
+    "heartbeat": "success - HTTP 200",
     "inbox": "0 unread",
-    "decide": "cycle%6=4: bounties - 0 open bounties",
-    "execute": "skipped - no open bounties available",
+    "decide": "cycle%6=5: self-audit skipped (gh not configured)",
+    "execute": "skipped - gh not configured",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "in_progress",
@@ -23,18 +23,18 @@
     "tests_run": 473,
     "self_audits": 86,
     "bounty_checks": 301,
-    "heartbeats": 4052,
+    "heartbeats": 4053,
     "discoveries": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 2,
+    "heartbeat_fail_count": 0,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T04:36:05.000Z",
+    "last_self_modification_check": "2026-03-31T04:40:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T04:41:05.000Z"
+  "next_cycle_at": "2026-03-31T04:45:45.000Z"
 }
