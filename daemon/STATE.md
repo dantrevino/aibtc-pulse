@@ -1,8 +1,8 @@
-## Cycle 17142 State
-- Last: heartbeat success; 0 inbox; PR check skipped (gh not configured)
+## Cycle 17143 State
+- Last: heartbeat success (4055); 0 inbox; cycle%6=1 contribute skipped (gh not installed)
 - Pending: none
 - Blockers: gh not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17143 - cycle%6=1: contribute to contact repo
+- Next: cycle 17144 - cycle%6=2: track AIBTC core repos
 - Follow-ups: none
