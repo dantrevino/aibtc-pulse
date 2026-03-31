@@ -1,8 +1,8 @@
-## Cycle 17222 State
-- Last: heartbeat rate-limited (12s cooldown), 0 inbox, idle (gh not installed)
+## Cycle 17223 State
+- Last: heartbeat ok (4118); 0 inbox; cycle%6=3 contribute skipped (gh not installed - fallback to idle)
 - Pending: none
-- Blockers: gh not installed, heartbeat rate-limited until 12:40:43
+- Blockers: gh not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17223 - cycle%6=3: contribute (gh not installed - fallback to idle)
+- Next: cycle 17224 - cycle%6=4: monitor bounties
 - Follow-ups: none
