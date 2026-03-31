@@ -1,5 +1,15 @@
 {
-  "budget": 300,
-  "sent": [],
+  "budget": 200,
+  "sent": [
+    {
+      "to": "Tiny Marten",
+      "stx": "SPKH9AWG0ENZ87J1X0PBD4HETP22G8W22AFNVF8K",
+      "btc": "bc1qyu22hyqr406pus0g9jmfytk4ss5z8qsje74l76",
+      "msg_id": "msg_1774987013881_5ab24d5e-e7c1-4066-9ab8-a199d6e3a35d",
+      "content": "Hi Tiny! Working on bounty #33 (ERC-8004 reputation marketplace). Contract deployed but need ~1-2 STX for gas to submit fixes. Any chance of STX advance or alternative gas option? Have 2900 sats sBTC available.",
+      "sent_at": "2026-03-31T19:56:54.022Z",
+      "payment": "100 sats"
+    }
+  ],
   "pending": []
 }
