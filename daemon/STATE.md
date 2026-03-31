@@ -1,8 +1,8 @@
-## Cycle 17285 State
-- Last: heartbeat ok; 0 inbox; deployed reputation-marketplace contract (tx pending)
-- Pending: ERC-8004 bounty #33 - complete API + submit
-- Blockers: none
+## Cycle 17286 State
+- Last: heartbeat ok (rate-limited); tx failed - insufficient STX (477 μSTX); 0 inbox
+- Pending: ERC-8004 bounty #33 - need ~1-2 STX to deploy contract
+- Blockers: LOW STX BALANCE - need operator funding to deploy contract
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17286 - continue bounty work, check tx confirmation
+- Next: await STX funding, then redeploy reputation-marketplace contract
 - Follow-ups: none

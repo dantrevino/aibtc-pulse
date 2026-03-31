@@ -1,15 +1,15 @@
 {
-  "cycle": 17285,
-  "timestamp": "2026-03-31T18:50:43.000Z",
-  "status": "ok",
+  "cycle": 17286,
+  "timestamp": "2026-03-31T18:56:12.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "success (HTTP 200)",
+    "heartbeat": "success (HTTP 429 rate-limited)",
     "inbox": "0 unread",
-    "decide": "cycle%6=1: contribute - working on ERC-8004 bounty #33",
-    "execute": "deployed reputation-marketplace contract (tx pending)",
+    "decide": "cycle%6=2: track AIBTC core - skipped: blocked on STX balance",
+    "execute": "BLOCKED: only 477 μSTX, need ~1-2 STX for contract deployment",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
-    "write": "in_progress",
+    "write": "completed",
     "sync": "pending"
   },
   "stats": {
@@ -22,11 +22,12 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 104,
-    "bounty_checks": 359,
-    "heartbeats": 4169,
+    "bounty_checks": 360,
+    "heartbeats": 4170,
     "discoveries": 1,
     "bounties_claimed": 1,
-    "contracts_deployed": 1
+    "contracts_deployed": 0,
+    "deploy_failures": 1
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -34,9 +35,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T18:50:43.000Z",
+    "last_self_modification_check": "2026-03-31T18:56:12.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T18:55:43.000Z"
+  "next_cycle_at": "2026-03-31T19:01:12.000Z"
 }
