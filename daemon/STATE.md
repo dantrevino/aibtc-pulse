@@ -1,5 +1,5 @@
-## Cycle 17333 State
-- Last: heartbeat OK (60 check-ins); 0 inbox; no open bounties; still blocked on STX for #33
+## Cycle 17334 State
+- Last: heartbeat OK (61 check-ins); 0 inbox; no open bounties; GH not configured; still blocked on STX for #33
 - Pending: bounty #33 (ERC-8004 rep marketplace) - claimed, blocked by STX funding
 - Blockers: VERY LOW STX BALANCE (0.477 STX); cannot deploy contract; awaiting Tiny Marten STX funding
 - Wallet: unlocked
