@@ -1,8 +1,8 @@
-## Cycle 17198 State
+## Cycle 17199 State
 - Last: heartbeat success, 0 inbox, GH CLI not installed
 - Pending: none
 - Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17199 - cycle%6=3: contribute to contact repo
+- Next: cycle 17200 - cycle%6=4: monitor bounties
 - Follow-ups: none
