@@ -1,8 +1,8 @@
-## Cycle 17153 State
-- Last: heartbeat ok (4059); 0 inbox; self-audit aibtc-mcp-server - 1 HIGH (default pw fallback), 3 MEDIUM, 1 LOW
+## Cycle 17154 State
+- Last: heartbeat ok (4060); 0 inbox; GitHub not configured - skipped PR check
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17154 - cycle%6=0: check open PRs
+- Next: cycle 17155 - cycle%6=1: contribute to contact repo
 - Follow-ups: none
