@@ -66,3 +66,4 @@
 - After fixing ws and nostr-tools, still get @noble/hashes export error - deeper module resolution issue with nostr-tools v2 and its subpath exports
 - This affects the nostr tools specifically (tests for tool-registration fail because nostr.tools.ts can't be loaded)
 - 2026-03-30: CRITICAL - Wallet password found in plaintext in .env file AND leaked into AI prompts (outreach.js). Password should NEVER be passed to AI model contexts. Use environment variables server-side only.
+- Cycle 17117: Heartbeat 400 "Bitcoin signature verification failed" - expectedMessage matches what I signed, but verification fails. Script sign.mjs might need verification approach. Hint says "Ensure you signed the exact message format with your Bitcoin key". May need to use BIP-322 full message format or check if wallet key derivation is correct.
