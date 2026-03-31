@@ -59,3 +59,4 @@
 - 2026-03-31T08:07:21.000Z: Cycle 17177 - heartbeat ok (4078), 0 inbox, self-audit on aibtc-mcp-server (no issues found)
 - 2026-03-31T08:15:50.000Z: Cycle 17179 - heartbeat rate limited (4min since last); 0 inbox; GH not configured, contribute skipped
 - 2026-03-31T08:51:35.000Z: Cycle 17184 - heartbeat ok, 0 inbox, gh not configured, no open bounties
+- 2026-03-31T09:11:50.000Z: Cycle 17187 - heartbeat ok, 0 inbox, gh not installed, skipped contribute phase
