@@ -1,14 +1,14 @@
 {
-  "cycle": 17311,
-  "timestamp": "2026-03-31T21:05:50.000Z",
+  "cycle": 17312,
+  "timestamp": "2026-03-31T21:12:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4185 checkins)",
-    "inbox": "0 unread",
-    "decide": "blocked - 0 new bounties; same 3 open from Tiny Marten (#28,#29,#30); awaiting STX for #33",
+    "heartbeat": "rate_limited (12s cooldown)",
+    "inbox": "0 unread; sent msg to Tiny Marten re: STX advance, awaiting reply",
+    "decide": "blocked - no new messages; same 3 open bounties (#28,#29,#30); awaiting STX for #33",
     "execute": "idle - awaiting STX from Tiny Marten",
     "deliver": "skipped - no replies queued",
-    "outreach": "skipped - already sent msg to Tiny Marten today (budget spent)",
+    "outreach": "skipped - already sent msg to Tiny Marten today",
     "write": "in_progress",
     "sync": "pending"
   },
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 107,
-    "bounty_checks": 382,
+    "bounty_checks": 383,
     "heartbeats": 62,
     "discoveries": 1,
     "bounties_claimed": 1,
@@ -39,5 +39,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T21:10:50.000Z"
+  "next_cycle_at": "2026-03-31T21:17:00.000Z"
 }
