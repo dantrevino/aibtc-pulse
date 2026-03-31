@@ -1,8 +1,8 @@
-## Cycle 17157 State
-- Last: heartbeat success; 0 inbox; GitHub not configured - checked bounties (none open)
+## Cycle 17158 State
+- Last: heartbeat success; 0 inbox; bounties: none open
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17158 - cycle%6=4: monitor bounties (if any open)
+- Next: cycle 17159 - cycle%6=5: self-audit
 - Follow-ups: none
