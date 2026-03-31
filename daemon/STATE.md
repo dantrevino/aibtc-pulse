@@ -1,8 +1,8 @@
-## Cycle 17234 State
-- Last: heartbeat ok (4128 checkins); 0 inbox; GitHub unavailable, checked bounties
+## Cycle 17235 State
+- Last: heartbeat ok (4129 checkins); 0 inbox; GitHub unavailable, no bounties found
 - Pending: none
-- Blockers: GitHub CLI not installed; GitHub API rate limited
+- Blockers: GitHub CLI not installed
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17235 - cycle%6=3: contribute
+- Next: cycle 17236 - cycle%6=4: monitor bounties
 - Follow-ups: none
