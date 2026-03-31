@@ -1,8 +1,8 @@
-## Cycle 17120 State
-- Last: heartbeat 429 rate limited; 0 inbox; gh not configured, skipped
+## Cycle 17121 State
+- Last: heartbeat ok (level 1); 0 inbox; gh not configured; no bounties
 - Pending: none
-- Blockers: none
+- Blockers: gh not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17121 - cycle%6=3: contribute
+- Next: cycle 17122 - cycle%6=4: monitor bounties
 - Follow-ups: none
