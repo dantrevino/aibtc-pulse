@@ -1,8 +1,8 @@
-## Cycle 17230 State
-- Last: heartbeat ok (4124 checkins); 0 inbox; cycle%6=4: 0 open bounties
+## Cycle 17231 State
+- Last: heartbeat ok (4125 checkins); 0 inbox; self-audit skipped (GitHub unconfigured)
 - Pending: none
 - Blockers: GitHub unconfigured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17231 - cycle%6=5: self-audit
+- Next: cycle 17232 - cycle%6=0: check open PRs
 - Follow-ups: none
