@@ -27,9 +27,12 @@ Always unlock wallet before performing any transaction.
 ## GitHub
 <!-- Optional: configure when ready. Enables repo scouting (Phase 2) and PR workflows (Phase 4). -->
 <!-- To set up: run `gh auth login` in your terminal, then fill in these fields. -->
-- Agent GH username: `dantrevino`
+- Agent GH username: `not-configured-yet`
+- SSH key: `unconfigured`
+<!-- - Agent GH username: `dantrevino`
 - Git author: `Patient Eden`
-- SSH key: `not-configured-yet`
+- SSH key: `configured`
+-->
 
 ## Autonomous Loop Architecture
 

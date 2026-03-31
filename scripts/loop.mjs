@@ -8,6 +8,8 @@
  * Usage:
  *   WALLET_PASSWORD="xxx" node scripts/loop.mjs              # perpetual loop
  *   WALLET_PASSWORD="xxx" node scripts/loop.mjs --once        # single cycle
+ *   WALLET_PASSWORD="xxx" node scripts/loop.mjs --verbose      # verbose logging
+ *   WALLET_PASSWORD="xxx" node scripts/loop.mjs --phases 1,2   # run specific phases only
  *
  * Environment:
  *   WALLET_PASSWORD  — required
@@ -18,9 +20,19 @@
  *   MODEL_LIGHT      — model for simple tasks (default: opencode-go/minimax-m2.5)
  */
 
-import { execSync, spawnSync } from "node:child_process";
+import { execSync, spawn, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+
+import { WalletConfig, getWalletManager, resetWalletManager } from "./wallet.mjs";
+import { Heartbeater } from "./phase1.mjs";
+import { InboxFetcher } from "./phase2.mjs";
+import { Decider } from "./phase3.mjs";
+import { Executor } from "./phase4.mjs";
+import { Deliverer } from "./phase5.mjs";
+import { Outreach } from "./phase6.mjs";
+import { Writer } from "./phase7.mjs";
+import { Syncer } from "./phase8.mjs";
 
 // ---------------------------------------------------------------------------
 // Config
@@ -36,7 +48,17 @@ const PASSWORD = process.env.WALLET_PASSWORD;
 if (!PASSWORD) { console.error("WALLET_PASSWORD required"); process.exit(1); }
 
 const SINGLE_CYCLE = process.argv.includes("--once");
+const VERBOSE = process.argv.includes("--verbose");
+if (VERBOSE) process.env.VERBOSE = "1";
+
+const PHASES_ARG = process.argv.find(a => a.startsWith("--phases="));
+const PHASES = PHASES_ARG
+  ? PHASES_ARG.split("=")[1].split(",").map(n => parseInt(n.trim(), 10)).filter(n => n >= 1 && n <= 8)
+  : [1, 2, 3, 4, 5, 6, 7, 8];
+
 const CYCLE_INTERVAL = parseInt(process.env.CYCLE_INTERVAL || "300000", 10);
+const BACKOFF_ATTEMPTS = 5;
+const BACKOFF_DELAY_MS = 60000; // 1 minute
 
 // Model tiers: heavy (coding), medium (decisions/replies), light (simple tasks)
 const MODELS = {
@@ -54,6 +76,11 @@ if (!STX_ADDR || !BTC_ADDR) {
   console.error("Could not parse STX/BTC addresses from CLAUDE.md");
   process.exit(1);
 }
+
+let heartbeater = null;
+let inboxFetcher = null;
+let deliverer = null;
+let outreach = null;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -103,6 +130,7 @@ function stxSign(message) {
 
 /**
  * Call opencode run with a prompt, return the text response.
+ * Kills entire process group to prevent orphaned processes.
  * @param {string} prompt
  * @param {object} opts
  * @param {"heavy"|"medium"|"light"} opts.tier - model tier (default: "medium")
@@ -113,75 +141,252 @@ function llm(prompt, opts = {}) {
   const args = ["run", prompt, "--format", "json", "--dir", ROOT];
   if (model) args.push("-m", model);
 
-  const result = spawnSync("opencode", args, {
-    encoding: "utf8",
-    timeout: opts.timeout || 120000,
-    stdio: ["pipe", "pipe", "pipe"],
-    cwd: ROOT,
-  });
+  const timeout = opts.timeout || 120000;
+  
+  // Use spawn (async) so we can kill the entire process group
+  return new Promise((resolve) => {
+    const child = spawn("opencode", args, {
+      encoding: "utf8",
+      stdio: ["pipe", "pipe", "pipe"],
+      cwd: ROOT,
+      detached: true, // Create new process group
+    });
 
-  if (result.status !== 0 && result.status !== null) {
-    console.error(`  [llm] opencode exit ${result.status}: ${(result.stderr || "").slice(0, 200)}`);
-    return null;
-  }
+    let stdout = "";
+    let stderr = "";
+    let killed = false;
 
-  // Parse JSON lines, extract text parts
-  const output = result.stdout || "";
-  const lines = output.split("\n").filter(Boolean);
-  const texts = [];
-  for (const line of lines) {
-    try {
-      const evt = JSON.parse(line);
-      if (evt.type === "text" && evt.part?.text) {
-        texts.push(evt.part.text);
+    const timeoutId = setTimeout(() => {
+      killed = true;
+      // Kill entire process group (negative PID)
+      try {
+        process.kill(-child.pid, "SIGTERM");
+      } catch (e) {
+        try {
+          child.kill("SIGTERM");
+        } catch (e2) { /* ignore */ }
       }
-    } catch { /* skip non-JSON lines */ }
-  }
-  return texts.join("") || null;
+      // Force kill after 5 seconds
+      setTimeout(() => {
+        try {
+          process.kill(-child.pid, "SIGKILL");
+        } catch (e) {
+          try {
+            child.kill("SIGKILL");
+          } catch (e2) { /* ignore */ }
+        }
+      }, 5000);
+    }, timeout);
+
+    child.stdout?.on("data", (data) => { stdout += data; });
+    child.stderr?.on("data", (data) => { stderr += data; });
+
+    child.on("close", (code) => {
+      clearTimeout(timeoutId);
+      
+      if (killed) {
+        console.error(`  [llm] killed after ${timeout}ms timeout`);
+        resolve(null);
+        return;
+      }
+      
+      if (code !== 0 && code !== null) {
+        console.error(`  [llm] opencode exit ${code}: ${stderr.slice(0, 200)}`);
+        resolve(null);
+        return;
+      }
+
+      // Parse JSON lines, extract text parts
+      const lines = stdout.split("\n").filter(Boolean);
+      const texts = [];
+      for (const line of lines) {
+        try {
+          const evt = JSON.parse(line);
+          if (evt.type === "text" && evt.part?.text) {
+            texts.push(evt.part.text);
+          }
+        } catch { /* skip non-JSON lines */ }
+      }
+      resolve(texts.join("") || null);
+    });
+
+    child.on("error", (err) => {
+      clearTimeout(timeoutId);
+      console.error(`  [llm] spawn error: ${err.message}`);
+      resolve(null);
+    });
+  });
 }
 
 function timestamp() {
   return new Date().toISOString().replace(/\.\d{3}Z$/, ".000Z");
 }
 
-function log(phase, msg) {
+/**
+ * Check if another loop.mjs process is currently running (excluding this one).
+ * Uses pgrep to find node processes running scripts/loop.mjs.
+ */
+function isAnotherLoopRunning() {
+  try {
+    const currentPid = process.pid;
+    const parentPid = process.ppid;
+    const result = execSync(
+      "pgrep -f 'scripts/loop\\.mjs' || true",
+      { encoding: "utf8" }
+    ).trim();
+    
+    if (!result) return false;
+    
+    const pids = result.split("\n").map(p => parseInt(p.trim())).filter(Boolean);
+    const excludePids = new Set([currentPid, parentPid, process.pid]);
+    return pids.some(pid => !excludePids.has(pid));
+  } catch (e) {
+    return false;
+  }
+}
+
+/**
+ * Wait with backoff if another loop instance is running.
+ * Returns true if we should proceed, false if max attempts reached.
+ */
+async function waitForBackoff() {
+  for (let attempt = 1; attempt <= BACKOFF_ATTEMPTS; attempt++) {
+    if (!isAnotherLoopRunning()) {
+      return true;
+    }
+    
+    console.log(`[startup] Another loop.mjs instance detected (attempt ${attempt}/${BACKOFF_ATTEMPTS}), waiting ${BACKOFF_DELAY_MS/1000}s...`);
+    await new Promise(r => setTimeout(r, BACKOFF_DELAY_MS));
+  }
+  
+  console.error(`[startup] Max backoff attempts (${BACKOFF_ATTEMPTS}) reached, another instance still running. Exiting.`);
+  return false;
+}
+
+/**
+ * Kill all child processes and subprocesses recursively.
+ */
+function killAllChildren() {
+  try {
+    // Get all child PIDs of this process
+    const result = execSync(
+      `pgrep -P ${process.pid} || true`,
+      { encoding: "utf8" }
+    ).trim();
+    
+    if (!result) return;
+    
+    const childPids = result.split("\n").map(p => parseInt(p.trim())).filter(Boolean);
+    
+    // Kill children recursively first (depth-first)
+    for (const pid of childPids) {
+      try {
+        // Try to get grandchildren
+        const grandChildren = execSync(
+          `pgrep -P ${pid} || true`,
+          { encoding: "utf8" }
+        ).trim();
+        
+        if (grandChildren) {
+          const grandPids = grandChildren.split("\n").map(p => parseInt(p.trim())).filter(Boolean);
+          for (const gpid of grandPids) {
+            try {
+              process.kill(gpid, "SIGTERM");
+              setTimeout(() => {
+                try { process.kill(gpid, "SIGKILL"); } catch (e) {}
+              }, 2000);
+            } catch (e) {}
+          }
+        }
+        
+        // Kill child
+        process.kill(pid, "SIGTERM");
+        setTimeout(() => {
+          try { process.kill(pid, "SIGKILL"); } catch (e) {}
+        }, 2000);
+      } catch (e) {}
+    }
+  } catch (e) {
+    // Ignore errors during cleanup
+  }
+}
+
+/**
+ * Comprehensive cleanup on exit - kills all subprocesses.
+ */
+function cleanupOnExit() {
+  console.log("\n[cleanup] Shutting down, killing all subprocesses...");
+  killAllChildren();
+  cleanupOpencode();
+  if (walletManager) walletManager.lock();
+  resetWalletManager();
+  console.log("[cleanup] Done.");
+  process.exit(0);
+}
+
+/**
+ * Cleanup any lingering opencode processes to prevent resource exhaustion.
+ * Called at the end of each cycle.
+ */
+function cleanupOpencode() {
+  try {
+    // Find and kill any opencode processes running > 60 seconds (orphaned)
+    const result = run(
+      "ps aux | grep '[o]pencode' | awk '{print $2, $10}' || true",
+      { timeout: 5000, fallback: "" }
+    );
+    if (!result) return;
+    
+    const lines = result.split("\n").filter(Boolean);
+    for (const line of lines) {
+      const [pid, timeStr] = line.trim().split(/\s+/);
+      if (!pid || !timeStr) continue;
+      
+      // Parse time (format: MM:SS or HH:MM:SS)
+      const timeParts = timeStr.split(":").map(Number);
+      let totalSeconds = 0;
+      if (timeParts.length === 2) {
+        totalSeconds = timeParts[0] * 60 + timeParts[1];
+      } else if (timeParts.length === 3) {
+        totalSeconds = timeParts[0] * 3600 + timeParts[1] * 60 + timeParts[2];
+      }
+      
+      // Kill processes running longer than 2 minutes (likely orphaned)
+      if (totalSeconds > 120) {
+        try {
+          execSync(`kill -9 ${pid} 2>/dev/null || true`);
+          log("cleanup", `killed orphaned opencode pid:${pid} (${timeStr})`);
+        } catch (e) { /* ignore */ }
+      }
+    }
+  } catch (e) {
+    // Silently ignore cleanup errors
+  }
+}
+
+function log(phase, msg, verboseOnly = false) {
+  if (verboseOnly && !VERBOSE) return;
   const ts = new Date().toISOString().slice(11, 19);
-  console.log(`  [${ts}] ${phase}: ${msg}`);
+  const prefix = verboseOnly ? "[V] " : "";
+  console.log(`  ${prefix}[${ts}] ${phase}: ${msg}`);
 }
 
 // ---------------------------------------------------------------------------
 // Phase 1: Heartbeat
 // ---------------------------------------------------------------------------
 
-function heartbeat() {
-  const ts = timestamp();
-  const sig = btcSign(`AIBTC Check-In | ${ts}`);
-  if (!sig) { log("heartbeat", "signing failed"); return false; }
+async function heartbeat() {
+  if (!heartbeater) {
+    log("heartbeat", "heartbeater not initialized");
+    return false;
+  }
 
-  const body = JSON.stringify({ signature: sig, timestamp: ts, btcAddress: BTC_ADDR });
-  const tmpFile = `/tmp/hb_${Date.now()}.json`;
-  fs.writeFileSync(tmpFile, body);
-  const result = run(
-    `curl -s -w "\\n%{http_code}" -X POST https://aibtc.com/api/heartbeat -H "Content-Type: application/json" -d @${tmpFile}`,
-    { timeout: 15000 }
-  );
-  try { fs.unlinkSync(tmpFile); } catch {}
-
-  if (!result) { log("heartbeat", "curl failed"); return false; }
-  const lines = result.split("\n");
-  const code = lines.pop();
-  const respBody = lines.join("\n");
-
-  if (code === "200" || code === "201") {
-    try {
-      const data = JSON.parse(respBody);
-      log("heartbeat", `OK #${data.checkIn?.checkInCount || "?"}`);
-    } catch {
-      log("heartbeat", `OK (HTTP ${code})`);
-    }
+  const result = await heartbeater.run();
+  if (result.ok) {
+    log("heartbeat", `OK #${result.checkInCount || "?"} - ${result.responseBody?.slice(0, 100) || ""}`);
     return true;
   }
-  log("heartbeat", `failed HTTP ${code}`);
+  log("heartbeat", `failed: ${result.error}`);
   return false;
 }
 
@@ -189,295 +394,198 @@ function heartbeat() {
 // Phase 2: Inbox
 // ---------------------------------------------------------------------------
 
-function fetchInbox() {
-  const result = run(
-    `curl -s "https://aibtc.com/api/inbox/${STX_ADDR}?status=unread"`,
-    { timeout: 15000 }
-  );
-  if (!result) return [];
-  try {
-    const data = JSON.parse(result);
-    return data.inbox?.messages || [];
-  } catch { return []; }
+async function fetchInbox() {
+  if (!inboxFetcher) {
+    log("inbox", "inboxFetcher not initialized");
+    return [];
+  }
+
+  const result = await inboxFetcher.run();
+  if (!result.ok) {
+    log("inbox", `failed: ${result.error}`);
+    return [];
+  }
+
+  log("inbox", `${result.stats.total} messages (${result.stats.trustedTasks} trusted task, ${result.stats.untrustedTasks} untrusted task, ${result.stats.normal} normal)`);
+  return result.messages;
 }
 
 // ---------------------------------------------------------------------------
-// Phase 3-4: Decide + Execute (LLM)
+// Phase 3: Decide (LLM)
 // ---------------------------------------------------------------------------
 
-function decideAndExecute(cycle, messages, health) {
-  const soulMd = fs.existsSync(path.join(ROOT, "SOUL.md"))
-    ? fs.readFileSync(path.join(ROOT, "SOUL.md"), "utf8")
-    : "";
+async function decide(cycle, messages) {
   const stateMd = fs.readFileSync(path.join(DAEMON, "STATE.md"), "utf8");
   const contactsMd = fs.existsSync(path.join(MEMORY, "contacts.md"))
     ? fs.readFileSync(path.join(MEMORY, "contacts.md"), "utf8")
     : "";
+  const soulMd = fs.existsSync(path.join(ROOT, "SOUL.md"))
+    ? fs.readFileSync(path.join(ROOT, "SOUL.md"), "utf8")
+    : "";
 
-  const inboxSummary = messages.length > 0
-    ? messages.map(m =>
-        `From: ${m.peerDisplayName || m.fromAddress} (${m.peerBtcAddress || "?"})\n` +
-        `ID: ${m.messageId}\n` +
-        `Content: ${m.content}\n`
-      ).join("\n---\n")
-    : "No unread messages.";
+  log("decide", "spawning decider (opencode medium)...");
 
-  const modAction = {
-    0: "Check open PRs for review feedback",
-    1: "Contribute to a contact's repo (find issue, file PR or comment)",
-    2: "Track AIBTC core repos (github.com/aibtcdev) for new issues/PRs",
-    3: "Contribute to a different contact's repo than last time",
-    4: "Monitor bounties",
-    5: "Self-audit: review own repos for issues",
-  }[cycle % 6];
-
-  const prompt = `You are Allora, an autonomous AI agent on the AIBTC network.
-
-${soulMd}
-
-## Current State
-${stateMd}
-
-## Cycle ${cycle}
-Scheduled action: ${modAction}
-
-## Inbox (${messages.length} unread)
-${inboxSummary}
-
-## Contacts
-${contactsMd}
-
-## Instructions
-1. If there are unread messages, compose brief replies (max 400 chars each, ASCII only, no em-dashes).
-   Return each reply as: REPLY|<messageId>|<reply text>
-2. Decide and describe ONE action for this cycle based on the scheduled action above.
-   Return as: ACTION|<description of what to do>
-3. If the action requires GitHub work, include the specific gh commands.
-    Return as: GITHUB|<gh command to run>
-    IMPORTANT: When cloning repos, always clone to the ./repos/ subdirectory (e.g., 'gh repo clone owner/repo ./repos/repo-name')
-4. If the action requires writing code, building features, or opening PRs, write a detailed prompt
-   for a coding agent. Return as: HEAVY|<detailed prompt for the coding task>
-5. Write a one-line journal entry.
-   Return as: JOURNAL|<entry>
-6. Write the next STATE.md content (max 10 lines).
-   Return as: STATE|<full STATE.md content>
-
-Return ONLY these tagged lines, one per line. No other text.`;
-
-  const response = llm(prompt, { tier: "medium", timeout: 180000 });
-  if (!response) {
-    log("decide", "LLM returned nothing");
-    return { replies: [], action: null, github: [], journal: null, state: null };
-  }
-
-  // Parse tagged lines
-  const replies = [];
-  let action = null;
-  const github = [];
-  let heavyPrompt = null;
-  let journal = null;
-  let state = null;
-
-  for (const line of response.split("\n")) {
-    const trimmed = line.trim();
-    if (trimmed.startsWith("REPLY|")) {
-      const parts = trimmed.substring(6).split("|");
-      if (parts.length >= 2) {
-        replies.push({ messageId: parts[0], text: parts.slice(1).join("|") });
-      }
-    } else if (trimmed.startsWith("ACTION|")) {
-      action = trimmed.substring(7);
-    } else if (trimmed.startsWith("GITHUB|")) {
-      github.push(trimmed.substring(7));
-    } else if (trimmed.startsWith("HEAVY|")) {
-      heavyPrompt = trimmed.substring(6);
-    } else if (trimmed.startsWith("JOURNAL|")) {
-      journal = trimmed.substring(8);
-    } else if (trimmed.startsWith("STATE|")) {
-      state = trimmed.substring(6);
-    }
-  }
-
-  return { replies, action, github, heavyPrompt, journal, state };
-}
-
-// ---------------------------------------------------------------------------
-// Phase 5: Deliver (send replies)
-// ---------------------------------------------------------------------------
-
-function sendReply(messageId, replyText) {
-  const prefix = `Inbox Reply | ${messageId} | `;
-  const maxReply = 500 - prefix.length;
-  let text = replyText;
-  if (text.length > maxReply) text = text.slice(0, maxReply - 3) + "...";
-
-  const fullMsg = prefix + text;
-  const sig = btcSign(fullMsg);
-  if (!sig) { log("deliver", `signing failed for ${messageId.slice(0, 20)}...`); return false; }
-
-  const payload = JSON.stringify({
-    messageId, reply: text, signature: sig, btcAddress: BTC_ADDR,
+  const decider = new Decider({
+    cycle,
+    messages,
+    stateMd,
+    contactsMd,
+    soulMd,
+    model: MODELS.medium,
+    timeout: 180000,
   });
-  const tmpFile = `/tmp/reply_${Date.now()}.json`;
-  fs.writeFileSync(tmpFile, payload);
 
-  const result = run(
-    `curl -s -w "\\n%{http_code}" -X POST "https://aibtc.com/api/outbox/${STX_ADDR}" -H "Content-Type: application/json" -d @${tmpFile}`,
-    { timeout: 15000 }
-  );
-  fs.unlinkSync(tmpFile);
+  const result = await decider.run();
 
-  if (!result) { log("deliver", `curl failed for ${messageId.slice(0, 20)}...`); return false; }
-  const code = result.split("\n").pop();
-
-  if (code === "200" || code === "201") {
-    log("deliver", `replied to ${messageId.slice(0, 30)}...`);
-    return true;
+  if (!result.ok) {
+    log("decide", `failed: ${result.error || "non-zero exit"}`);
+    return { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
   }
 
-  // Fallback: mark as read
-  log("deliver", `reply failed (${code}), marking as read`);
-  const readSig = btcSign(`Inbox Read | ${messageId}`);
-  if (readSig) {
-    run(
-      `curl -s -X PATCH "https://aibtc.com/api/inbox/${STX_ADDR}/${messageId}" ` +
-      `-H "Content-Type: application/json" ` +
-      `-d '{"messageId":"${messageId}","signature":"${readSig}","btcAddress":"${BTC_ADDR}"}'`,
-      { timeout: 15000 }
-    );
-  }
-  return false;
+  if (result.action) log("decide", result.action.slice(0, 80));
+  return result;
 }
 
 // ---------------------------------------------------------------------------
-// Phase 6: Execute GitHub commands
 // ---------------------------------------------------------------------------
-
-function executeGithub(commands) {
-  for (const cmd of commands) {
-    // Safety: only allow gh commands
-    if (!cmd.startsWith("gh ")) {
-      log("github", `skipped non-gh command: ${cmd.slice(0, 50)}`);
-      continue;
-    }
-    log("github", cmd.slice(0, 80));
-    const result = run(cmd, { timeout: 60000, fallback: "(failed)" });
-    if (result) log("github", result.slice(0, 200));
-  }
-}
+// Phase 6: Outreach
+// ---------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------
 // Phase 7: Write state files
 // ---------------------------------------------------------------------------
-
-function writeState(cycle, result, hbOk, msgCount, repliesSent) {
-  // health.json
-  const health = {
-    cycle,
-    status: hbOk ? "ok" : "degraded",
-    timestamp: new Date().toISOString(),
-    phases: {
-      heartbeat: hbOk ? "ok" : "failed",
-      inbox: `${msgCount} messages`,
-      decide: result.action ? "ok" : "idle",
-      execute: result.github.length > 0 ? `${result.github.length} commands` : "idle",
-      deliver: `${repliesSent} replies sent`,
-      write: "ok",
-      sync: "pending",
-    },
-    stats: { messages_received: msgCount, replies_sent: repliesSent },
-    circuit_breaker: { heartbeat_fail_count: hbOk ? 0 : 1 },
-    next_cycle_at: new Date(Date.now() + CYCLE_INTERVAL).toISOString(),
-  };
-  writeJson(path.join(DAEMON, "health.json"), health);
-
-  // STATE.md
-  if (result.state) {
-    fs.writeFileSync(path.join(DAEMON, "STATE.md"), result.state + "\n");
-  } else {
-    const fallback = `## Cycle ${cycle} State
-- Last: ${result.action || "idle cycle"}
-- Pending: none
-- Blockers: ${hbOk ? "none" : "heartbeat failed"}
-- Wallet: active
-- Mode: Peacetime
-- Next: cycle ${cycle + 1}
-- Follow-ups: none
-`;
-    fs.writeFileSync(path.join(DAEMON, "STATE.md"), fallback);
-  }
-
-  // Journal
-  if (result.journal) {
-    const journalPath = path.join(MEMORY, "journal.md");
-    const existing = fs.readFileSync(journalPath, "utf8");
-    fs.writeFileSync(journalPath, existing.trimEnd() + `\n- Cycle ${cycle}: ${result.journal}\n`);
-  }
-}
-
-// ---------------------------------------------------------------------------
 // Phase 8: Git sync
-// ---------------------------------------------------------------------------
-
-function gitSync(cycle, summary) {
-  run("git add daemon/ memory/", { timeout: 10000 });
-  const msg = `Cycle ${cycle}: ${summary}`;
-  const commitResult = run(
-    `git commit -m "${msg.replace(/"/g, '\\"')}"`,
-    { timeout: 10000, fallback: "" }
-  );
-  if (commitResult && !commitResult.includes("nothing to commit")) {
-    run("git push origin main", { timeout: 30000 });
-    log("sync", "committed + pushed");
-  } else {
-    log("sync", "nothing to commit");
-  }
-}
-
 // ---------------------------------------------------------------------------
 // Main cycle
 // ---------------------------------------------------------------------------
 
+function shouldRunPhase(n) {
+  return PHASES.includes(n);
+}
+
 async function runCycle(cycle) {
   console.log(`\n=== Cycle ${cycle} ===`);
-
-  // Phase 1
-  const hbOk = heartbeat();
-
-  // Phase 2
-  const messages = fetchInbox();
-  log("inbox", `${messages.length} unread`);
-
-  // Phase 3-4
-  const health = readJson(path.join(DAEMON, "health.json")) || {};
-  log("decide", "calling LLM (medium)...");
-  const result = decideAndExecute(cycle, messages, health);
-  if (result.action) log("execute", result.action.slice(0, 100));
-
-  // If action requires heavy coding, delegate to heavy model
-  if (result.heavyPrompt) {
-    log("execute", "delegating to heavy model...");
-    const heavyResult = llm(result.heavyPrompt, { tier: "heavy", timeout: 300000 });
-    if (heavyResult) log("execute", `heavy: ${heavyResult.slice(0, 100)}`);
+  if (PHASES.length < 8) {
+    console.log(`  Running phases: ${PHASES.join(", ")}`);
   }
 
-  // Phase 5
+  let hbOk = false;
+  let messages = [];
+  const result = { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
   let repliesSent = 0;
-  for (const reply of result.replies) {
-    if (sendReply(reply.messageId, reply.text)) repliesSent++;
+  let repliesFailed = 0;
+
+  // Phase 1: Heartbeat
+  if (shouldRunPhase(1)) {
+    hbOk = await heartbeat();
+  } else {
+    log("phase1", "skipped");
   }
 
-  // Phase 6
-  if (result.github.length > 0) executeGithub(result.github);
+  // Phase 2: Inbox
+  if (shouldRunPhase(2)) {
+    messages = await fetchInbox();
+  } else {
+    log("phase2", "skipped");
+  }
 
-  // Phase 7
-  writeState(cycle, result, hbOk, messages.length, repliesSent);
+  // Phase 3: Decide
+  if (shouldRunPhase(3)) {
+    Object.assign(result, await decide(cycle, messages));
+  } else {
+    log("phase3", "skipped");
+  }
 
-  // Phase 8
-  const summary = result.action?.slice(0, 60) || "idle cycle";
-  gitSync(cycle, summary);
+  // Phase 4: Execute
+  if (shouldRunPhase(4)) {
+    const executor = new Executor();
+    if (result.github && result.github.length > 0) {
+      log("execute", `running ${result.github.length} gh command(s)...`);
+      const ghResult = await executor.runGithub(result.github);
+      log("execute", `gh: ${ghResult.executed}/${ghResult.total} commands succeeded`);
+    }
+
+    if (result.heavyPrompt) {
+      log("execute", "delegating to heavy model...");
+      const heavyResult = await executor.runHeavy(result.heavyPrompt, MODELS.heavy, 300000);
+      if (heavyResult.ok) {
+        log("execute", `heavy: completed`);
+      } else {
+        log("execute", `heavy: failed - ${heavyResult.error}`);
+      }
+    } else if (result.action) {
+      log("execute", result.action.slice(0, 100));
+    }
+  } else {
+    log("phase4", "skipped");
+  }
+
+  // Phase 5: Deliver
+  if (shouldRunPhase(5)) {
+    if (result.replies && result.replies.length > 0) {
+      log("deliver", `sending ${result.replies.length} reply(ies)...`);
+      for (const reply of result.replies) {
+        const sent = await deliverer.sendReply(reply.messageId, reply.text);
+        if (sent.ok) {
+          repliesSent++;
+          log("deliver", `sent to ${reply.messageId.slice(0, 20)}...`);
+        } else {
+          repliesFailed++;
+          log("deliver", `failed for ${reply.messageId.slice(0, 20)}...: ${sent.error}`);
+        }
+      }
+      log("deliver", `replies: ${repliesSent} sent, ${repliesFailed} failed`);
+    }
+  } else {
+    log("phase5", "skipped");
+  }
+
+  // Phase 6: Outreach
+  if (shouldRunPhase(6)) {
+    log("outreach", "checking for pending follow-ups...");
+    const outreachResult = await outreach.run();
+    if (outreachResult.sent > 0) {
+      log("outreach", `sent ${outreachResult.sent} message(s)`);
+    } else if (outreachResult.budgetExhausted) {
+      log("outreach", "budget exhausted");
+    } else {
+      log("outreach", "no messages sent");
+    }
+  } else {
+    log("phase6", "skipped");
+  }
+
+  // Phase 7: Write state files
+  if (shouldRunPhase(7)) {
+    const writer = new Writer();
+    const writeResult = await writer.run(cycle, result, hbOk, messages.length, repliesSent, repliesFailed);
+    log("write", `wrote: ${writeResult.written.join(", ")}`);
+  } else {
+    log("phase7", "skipped");
+  }
+
+  // Phase 8: Sync
+  if (shouldRunPhase(8)) {
+    const syncer = new Syncer();
+    const syncResult = await syncer.run(cycle, result.action?.slice(0, 60) || "idle cycle");
+    if (syncResult.skipped) {
+      log("sync", "nothing to commit");
+    } else if (syncResult.pushed) {
+      log("sync", "committed + pushed");
+    } else if (syncResult.error) {
+      log("sync", `error: ${syncResult.error}`);
+    }
+  } else {
+    log("phase8", "skipped");
+  }
 
   log("done", `cycle ${cycle} complete`);
+
+  // Cleanup any orphaned opencode processes
+  cleanupOpencode();
+
+  // Ensure all subprocesses from this cycle are terminated
+  killAllChildren();
 }
 
 // ---------------------------------------------------------------------------
@@ -485,21 +593,65 @@ async function runCycle(cycle) {
 // ---------------------------------------------------------------------------
 
 async function main() {
+  // Register cleanup handlers for graceful shutdown
+  process.on("SIGTERM", cleanupOnExit);
+  process.on("SIGINT", cleanupOnExit);
+  process.on("exit", () => {
+    // Synchronous cleanup for exit event
+    try {
+      execSync(`pkill -9 -P ${process.pid} 2>/dev/null || true`);
+    } catch (e) {}
+  });
+
+  // Load wallet config (addresses only, no decryption) and unlock
+  let walletManager;
+  try {
+    const config = WalletConfig.load();
+    walletManager = getWalletManager(config);
+    log("init", `config: stx=${config.stxAddress}, btc=${config.btcAddress}`);
+
+    // Unlock wallet (decrypt mnemonic and derive keys)
+    await walletManager.unlock(PASSWORD);
+    log("init", "wallet unlocked");
+
+    heartbeater = new Heartbeater(walletManager);
+    inboxFetcher = new InboxFetcher(walletManager.stxAddress);
+    deliverer = new Deliverer(walletManager);
+    outreach = new Outreach(walletManager);
+    log("init", `ready: btc=${config.btcAddress}, stx=${config.stxAddress}`);
+  } catch (e) {
+    console.error("Failed to initialize:", e.message);
+    process.exit(1);
+  }
+
+  // Check for existing instance with backoff
+  if (!await waitForBackoff()) {
+    process.exit(1);
+  }
+
   const health = readJson(path.join(DAEMON, "health.json"));
   let cycle = (health?.cycle || 0) + 1;
 
   if (SINGLE_CYCLE) {
-    await runCycle(cycle);
+    try {
+      await runCycle(cycle);
+    } finally {
+      cleanupOnExit();
+    }
     return;
   }
 
   console.log(`Starting perpetual loop from cycle ${cycle} (${CYCLE_INTERVAL / 1000}s interval)`);
 
-  while (true) {
-    await runCycle(cycle);
-    cycle++;
-    log("sleep", `${CYCLE_INTERVAL / 1000}s until cycle ${cycle}`);
-    await new Promise(r => setTimeout(r, CYCLE_INTERVAL));
+  try {
+    while (true) {
+      await runCycle(cycle);
+      cycle++;
+      log("sleep", `${CYCLE_INTERVAL / 1000}s until cycle ${cycle}`);
+      await new Promise(r => setTimeout(r, CYCLE_INTERVAL));
+    }
+  } finally {
+    cleanupOnExit();
   }
 }
 

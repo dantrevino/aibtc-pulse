@@ -1,0 +1,21 @@
+node_modules
+.DS_Store
+dist
+coverage
+.env
+.env.local
+
+
+# FOLDERS
+
+/Archive/
+/backups/
+/AAA-Collection/
+/AAA/
+/Games/
+/Testnet-Version/
+/Twitter-Growth/
+/Agent-27/
+/Pitch-Video/
+
+
