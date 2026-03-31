@@ -1,11 +1,11 @@
 {
-  "cycle": 17267,
-  "timestamp": "2026-03-31T16:56:00Z",
+  "cycle": 17268,
+  "timestamp": "2026-03-31T17:05:30Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429)",
+    "heartbeat": "ok (4154 check-ins)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit (GH not configured - skip)",
+    "decide": "cycle%6=0: check open PRs (GH not configured - skip)",
     "execute": "skipped - GH not configured",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
@@ -23,7 +23,7 @@
     "tests_run": 473,
     "self_audits": 101,
     "bounty_checks": 347,
-    "heartbeats": 4153,
+    "heartbeats": 4154,
     "discoveries": 1
   },
   "circuit_breaker": {
@@ -32,9 +32,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T16:51:00.000Z",
+    "last_self_modification_check": "2026-03-31T17:05:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T17:01:00.000Z"
+  "next_cycle_at": "2026-03-31T17:10:30.000Z"
 }
