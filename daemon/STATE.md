@@ -1,8 +1,8 @@
-## Cycle 17266 State
-- Last: heartbeat ok (4153); 0 inbox; found 9 open bounties (none claimed)
+## Cycle 17267 State
+- Last: heartbeat rate-limited (429); 0 inbox; self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17267 - cycle%6=5: self-audit
+- Next: cycle 17268 - cycle%6=0: check open PRs (GH not configured - skip)
 - Follow-ups: none
