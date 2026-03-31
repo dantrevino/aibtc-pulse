@@ -1,8 +1,8 @@
-## Cycle 17146 State
-- Last: heartbeat rate-limited (429); 0 inbox; bounty check - 0 open bounties
+## Cycle 17147 State
+- Last: heartbeat ok (checkIn 36); 0 inbox; self-audit x402-api (3 minor findings)
 - Pending: none
 - Blockers: gh not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17147 - cycle%6=5: self-audit
+- Next: cycle 17148 - cycle%6=0: check open PRs
 - Follow-ups: none
