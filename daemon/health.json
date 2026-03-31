@@ -1,11 +1,11 @@
 {
-  "cycle": 17219,
-  "timestamp": "2026-03-31T12:26:49.000Z",
+  "cycle": 17220,
+  "timestamp": "2026-03-31T12:30:32.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - success (4116th check-in)",
+    "heartbeat": "rate-limited (26s cooldown) - will retry next cycle",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit (gh not configured - fallback to idle)",
+    "decide": "cycle%6=0 check open PRs (gh not configured - fallback to idle)",
     "execute": "idle - gh not configured",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
@@ -32,9 +32,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T12:26:49.000Z",
+    "last_self_modification_check": "2026-03-31T12:30:32.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T12:31:49.000Z"
+  "next_cycle_at": "2026-03-31T12:35:32.000Z"
 }
