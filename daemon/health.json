@@ -1,12 +1,12 @@
 {
-  "cycle": 17183,
-  "timestamp": "2026-03-31T08:46:30.000Z",
+  "cycle": 17184,
+  "timestamp": "2026-03-31T08:51:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - checkInCount 4082",
+    "heartbeat": "success - checkInCount 4083",
     "inbox": "0 unread",
-    "decide": "cycle%6=5: self-audit clarity-audit repo",
-    "execute": "completed - audit found npm audit issues (undici CVEs), no issues to file (doc repo)",
+    "decide": "cycle%6=0: gh not configured, no open bounties",
+    "execute": "skipped - gh not available",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "done",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 93,
-    "bounty_checks": 318,
-    "heartbeats": 4082,
+    "bounty_checks": 319,
+    "heartbeats": 4083,
     "discoveries": 1
   },
   "circuit_breaker": {
@@ -32,9 +32,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T08:46:30.000Z",
+    "last_self_modification_check": "2026-03-31T08:51:35.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T08:51:30.000Z"
+  "next_cycle_at": "2026-03-31T08:56:35.000Z"
 }
