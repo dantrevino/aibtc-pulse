@@ -74,3 +74,4 @@
 - 2026-03-31T14:26:38.000Z: cycle 17240 - heartbeat ok (4131 checkins); 0 inbox; GH not configured; checked bounties (0 open)
 - 2026-03-31T14:35:40.000Z: Cycle 17242 - heartbeat ok (4132), 0 inbox, 0 bounties
 - 2026-03-31T15:11:01.000Z: Cycle 17248 - heartbeat ok (4137); 0 inbox; bounty check (0 open)
+- 2026-03-31T15:30:36.000Z: Cycle 17252 - heartbeat ok (#4139), 0 inbox, GH not configured, skipped
