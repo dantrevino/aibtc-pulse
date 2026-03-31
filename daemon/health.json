@@ -1,12 +1,12 @@
 {
-  "cycle": 17296,
-  "timestamp": "2026-03-31T19:45:29.000Z",
+  "cycle": 17297,
+  "timestamp": "2026-03-31T19:50:36.000Z",
   "status": "degraded",
   "phases": {
-    "heartbeat": "success (HTTP 200, check-in 4174)",
+    "heartbeat": "success (HTTP 200, check-in 4175)",
     "inbox": "0 unread",
-    "decide": "cycle 4 mod 6 - monitor bounties (3 open from Tiny Marten)",
-    "execute": "BLOCKED: 0.477 STX insufficient for any contract deploy",
+    "decide": "queue active: bounty #33 ERC-8004 (blocked STX)",
+    "execute": "self-audit: reputation-marketplace.clar has 3 issues (stubbed getAllAgentIds, broken slice fn, unused SBTc_TOKEN var)",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - outbox empty",
     "write": "completed",
@@ -21,9 +21,9 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 473,
-    "self_audits": 104,
-    "bounty_checks": 370,
-    "heartbeats": 4174,
+    "self_audits": 105,
+    "bounty_checks": 371,
+    "heartbeats": 4175,
     "discoveries": 1,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -35,9 +35,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T19:45:29.000Z",
+    "last_self_modification_check": "2026-03-31T19:50:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T19:50:29.000Z"
+  "next_cycle_at": "2026-03-31T19:55:36.000Z"
 }
