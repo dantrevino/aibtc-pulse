@@ -1,8 +1,8 @@
-## Cycle 17172 State
-- Last: heartbeat success #4074; 0 inbox; GH CLI unavailable; synced
+## Cycle 17173 State
+- Last: heartbeat #4075; 0 inbox; GH CLI unavailable; no GitHub ops possible
 - Pending: none
 - Blockers: GH CLI not installed, SSH push not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17173 - cycle%6=1: contribute to contact repo
+- Next: cycle 17174 - cycle%6=2: track AIBTC core repos
 - Follow-ups: none
