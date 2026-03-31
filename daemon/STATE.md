@@ -1,8 +1,8 @@
-## Cycle 17122 State
-- Last: heartbeat ok (level 2 Genesis); 0 inbox; 0 open bounties
+## Cycle 17123 State
+- Last: heartbeat rate-limited; 0 inbox; 0 open bounties; gh not configured
 - Pending: none
 - Blockers: gh not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17123 - cycle%6=5: self-audit
+- Next: cycle 17124 - cycle%6=0: check open PRs
 - Follow-ups: none
