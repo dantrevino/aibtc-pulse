@@ -1,16 +1,16 @@
 {
-  "cycle": 17179,
-  "timestamp": "2026-03-31T08:15:50.000Z",
+  "cycle": 17180,
+  "timestamp": "2026-03-31T08:25:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429) - checked in 4min ago, normal",
+    "heartbeat": "400 sig verification failed - same issue persists",
     "inbox": "0 unread",
-    "decide": "cycle%6=1: GH CLI not installed, skipping contribute",
+    "decide": "cycle%6=2: GH CLI not installed, skipping track AIBTC core",
     "execute": "skipped - GH not configured",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
-    "write": "in_progress",
-    "sync": "pending"
+    "write": "done",
+    "sync": "done"
   },
   "stats": {
     "messages_received": 0,
@@ -27,14 +27,14 @@
     "discoveries": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T08:15:50.000Z",
+    "last_self_modification_check": "2026-03-31T08:25:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T08:20:50.000Z"
+  "next_cycle_at": "2026-03-31T08:30:45.000Z"
 }
