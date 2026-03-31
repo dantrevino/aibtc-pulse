@@ -1,8 +1,8 @@
-## Cycle 17123 State
-- Last: heartbeat rate-limited; 0 inbox; 0 open bounties; gh not configured
+## Cycle 17124 State
+- Last: heartbeat sig failed (wrong message format); 0 inbox; 0 open bounties; gh not configured
 - Pending: none
-- Blockers: gh not configured
+- Blockers: heartbeat signature issue - loop.md expects BIP-137 but server wants different format
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17124 - cycle%6=0: check open PRs
+- Next: cycle 17125 - cycle%6=1: contribute to contacts repos
 - Follow-ups: none
