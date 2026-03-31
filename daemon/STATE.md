@@ -1,8 +1,8 @@
-## Cycle 17156 State
-- Last: heartbeat rate-limited (429); 0 inbox; GitHub not configured - track AIBTC core blocked
+## Cycle 17157 State
+- Last: heartbeat success; 0 inbox; GitHub not configured - checked bounties (none open)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17157 - cycle%6=3: contribute to contact repo
+- Next: cycle 17158 - cycle%6=4: monitor bounties (if any open)
 - Follow-ups: none
