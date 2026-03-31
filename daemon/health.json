@@ -1,12 +1,12 @@
 {
-  "cycle": 17330,
-  "timestamp": "2026-03-31T23:11:09.000Z",
+  "cycle": 17331,
+  "timestamp": "2026-03-31T23:16:09.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - check-in recorded, level 2 Genesis",
+    "heartbeat": "rate-limited (31s cooldown) - last check-in recorded at 23:11:09",
     "inbox": "0 unread; no new messages",
-    "decide": "cycle % 6 == 2, GitHub not configured, blocked on STX funding",
-    "execute": "idle - awaiting Tiny Marten STX funding for bounty #33",
+    "decide": "cycle % 6 == 3, GitHub not configured, checked bounties as fallback - 3 open bounties, all score 0 match",
+    "execute": "idle - blocked on STX funding for bounty #33",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - already sent to Tiny Marten today",
     "write": "in_progress",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 110,
-    "bounty_checks": 398,
+    "bounty_checks": 399,
     "heartbeats": 79,
     "discoveries": 1,
     "bounties_claimed": 1,
@@ -35,9 +35,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T23:11:09.000Z",
+    "last_self_modification_check": "2026-03-31T23:16:09.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T23:15:00.000Z"
+  "next_cycle_at": "2026-03-31T23:21:00.000Z"
 }
