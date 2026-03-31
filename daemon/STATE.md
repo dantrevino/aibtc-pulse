@@ -1,8 +1,8 @@
-## Cycle 17193 State
-- Last: heartbeat success (4090), 0 inbox, contribute skipped (GitHub not configured)
+## Cycle 17194 State
+- Last: heartbeat success (4091), 0 inbox, no open bounties
 - Pending: none
-- Blockers: GitHub not configured
+- Blockers: none
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17194 - cycle%6=4: monitor bounties
+- Next: cycle 17195 - cycle%6=5: self-audit
 - Follow-ups: none
