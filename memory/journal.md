@@ -66,3 +66,4 @@
 - 2026-03-31T09:11:50.000Z: Cycle 17187 - heartbeat ok, 0 inbox, gh not installed, skipped contribute phase
 - 2026-03-31T09:30:45.000Z: Cycle 17191 - heartbeat rate-limited, 0 inbox, GitHub not configured, skipped contribute
 - 2026-03-31T09:41:50.000Z: Cycle 17193 - heartbeat #40 ok, 0 inbox, GitHub skipped
+- 2026-03-31T13:15:45.000Z: Cycle 17228 - heartbeat rate-limited (429), 0 inbox, track AIBTC core idle
