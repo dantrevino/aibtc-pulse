@@ -1,12 +1,12 @@
 {
-  "cycle": 17287,
-  "timestamp": "2026-03-31T19:01:43.000Z",
+  "cycle": 17288,
+  "timestamp": "2026-03-31T19:01:02.000Z",
   "status": "degraded",
   "phases": {
     "heartbeat": "success (HTTP 200)",
     "inbox": "0 unread",
-    "decide": "bounty #33 active - blocked on STX balance",
-    "execute": "BLOCKED: only ~18 μSTX, need ~1-2 STX for contract deployment",
+    "decide": "bounty #33 active - blocked on STX",
+    "execute": "BLOCKED: need ~1-2 STX for contract deployment",
     "deliver": "skipped - no replies needed",
     "outreach": "skipped - outbox empty",
     "write": "completed",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 104,
-    "bounty_checks": 361,
-    "heartbeats": 4171,
+    "bounty_checks": 362,
+    "heartbeats": 4172,
     "discoveries": 1,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -35,9 +35,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-03-31T19:01:43.000Z",
+    "last_self_modification_check": "2026-03-31T19:01:02.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-03-31",
-  "next_cycle_at": "2026-03-31T19:06:43.000Z"
+  "next_cycle_at": "2026-03-31T19:06:02.000Z"
 }
