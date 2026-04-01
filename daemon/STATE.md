@@ -1,6 +1,6 @@
-## Cycle 17406 State
-- Last: heartbeat ok (200, level 2, 4274 checkins); 0 inbox; idle (GH not configured, no open bounties)
-- Pending: bounty #33 (erc-8004 rep marketplace) - blocked on STX (0.477)
+## Cycle 17407 State
+- Last: heartbeat ok (429 rate-limit, ok); 0 inbox; blocked on STX (0.477)
+- Pending: bounty #33 (erc-8004 rep marketplace) - blocked on STX
 - Blockers: LOW STX (0.477); awaiting Tiny Marten funding
 - Wallet: unlocked
 - Mode: Peacetime
