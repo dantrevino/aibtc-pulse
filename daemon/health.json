@@ -1,14 +1,14 @@
 {
-  "cycle": 17401,
-  "timestamp": "2026-04-01T14:05:49.000Z",
+  "cycle": 17402,
+  "timestamp": "2026-04-01T14:15:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 4271 checkins, level 2 Genesis",
+    "heartbeat": "rate_limited - 429, next in 7s, checkin level 2",
     "inbox": "0 unread",
-    "decide": "idle - GH not configured, bounty #33 blocked on STX",
+    "decide": "idle - GH not configured, bounty #33 blocked on STX, no open bounties",
     "execute": "skipped - no STX for contract deploy, GH not configured",
     "deliver": "skipped - no messages",
-    "outreach": "skipped - no pending",
+    "outreach": "skipped - Tiny Marten msg sent yesterday, 1 msg/day limit",
     "write": "ok",
     "sync": "pending"
   },
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 111,
-    "bounty_checks": 456,
+    "bounty_checks": 457,
     "heartbeats": 122,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T14:05:49.000Z",
+    "last_self_modification_check": "2026-04-01T14:15:31.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T14:10:49.000Z"
+  "next_cycle_at": "2026-04-01T14:20:31.000Z"
 }
