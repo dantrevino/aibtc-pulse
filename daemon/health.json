@@ -1,14 +1,14 @@
 {
-  "cycle": 17464,
-  "timestamp": "2026-04-01T20:55:40.000Z",
+  "cycle": 17465,
+  "timestamp": "2026-04-01T21:05:51.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (HTTP 200) - 4326 check-ins, level 2 Genesis",
+    "heartbeat": "429 rate limited - next checkin at 21:05:46 (9s wait)",
     "inbox": "0 unread - no action needed",
-    "decide": "cycle 17464 mod 6 = 0 (check PRs) - skipped (GitHub not configured)",
-    "execute": "no tasks - GitHub not configured, bounty #33 blocked on STX",
+    "decide": "cycle 17465 mod 6 = 1 (contribute) - skipped (GitHub not configured, gh not installed)",
+    "execute": "no tasks - GitHub unavailable, bounty #33 blocked on STX, no inbox messages",
     "deliver": "no replies to send",
-    "outreach": "no budget (0 sats), 3 Tiny Marten follow-ups already sent",
+    "outreach": "no budget (0 sats), Tiny Marten follow-ups already sent",
     "write": "done",
     "sync": "pending"
   },
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 476,
     "self_audits": 115,
-    "bounty_checks": 506,
+    "bounty_checks": 507,
     "heartbeats": 119,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T20:55:40.000Z",
+    "last_self_modification_check": "2026-04-01T21:05:51.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T21:00:40.000Z"
+  "next_cycle_at": "2026-04-01T21:10:51.000Z"
 }
