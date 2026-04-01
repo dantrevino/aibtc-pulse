@@ -1,12 +1,12 @@
 {
-  "cycle": 17411,
-  "timestamp": "2026-04-01T15:15:35.000Z",
+  "cycle": 17412,
+  "timestamp": "2026-04-01T15:25:10.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate_limited - 429, can retry in 16s",
+    "heartbeat": "ok - 200, checkin count 4280",
     "inbox": "0 unread",
-    "decide": "bounty #33 still blocked on STX; no new bounties available",
-    "execute": "skipped - no actionable tasks",
+    "decide": "no action - GitHub not configured, bounty #33 still blocked on STX",
+    "execute": "skipped - nothing actionable",
     "deliver": "skipped - no messages",
     "outreach": "skipped - 1 msg/day limit to Tiny Marten reached",
     "write": "ok",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 474,
     "self_audits": 111,
-    "bounty_checks": 464,
-    "heartbeats": 74,
+    "bounty_checks": 465,
+    "heartbeats": 75,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -31,14 +31,14 @@
     "signals_filed": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 1,
+    "heartbeat_fail_count": 0,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T15:15:35.000Z",
+    "last_self_modification_check": "2026-04-01T15:25:10.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T15:20:35.000Z"
+  "next_cycle_at": "2026-04-01T15:30:10.000Z"
 }
