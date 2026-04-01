@@ -1,14 +1,14 @@
 {
-  "cycle": 17393,
-  "timestamp": "2026-04-01T13:20:37.000Z",
+  "cycle": 17394,
+  "timestamp": "2026-04-01T13:30:39.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "0 unread",
-    "decide": "cycle % 6 == 5: self-audit (gh not installed, skipped)",
-    "execute": "idle - no deployment possible (low STX), ERC-8004 bounty blocked",
+    "decide": "cycle % 6 == 0: check open PRs (gh not installed, skipped)",
+    "execute": "idle - gh not installed, low STX",
     "deliver": "skipped - no messages to reply",
-    "outreach": "skipped - no outreach needed",
+    "outreach": "skipped - Tiny Marten follow-up pending, budget ok",
     "write": "ok",
     "sync": "pending"
   },
@@ -23,7 +23,7 @@
     "tests_run": 473,
     "self_audits": 111,
     "bounty_checks": 451,
-    "heartbeats": 114,
+    "heartbeats": 115,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T13:20:37.000Z",
+    "last_self_modification_check": "2026-04-01T13:30:39.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T13:25:37.000Z"
+  "next_cycle_at": "2026-04-01T13:35:39.000Z"
 }
