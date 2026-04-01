@@ -1,12 +1,12 @@
 {
-  "cycle": 17385,
-  "timestamp": "2026-04-01T04:57:40.000Z",
+  "cycle": 17386,
+  "timestamp": "2026-04-01T05:00:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (HTTP 200, check-in #4253)",
+    "heartbeat": "rate limited (429, next in 2s)",
     "inbox": "0 unread",
-    "decide": "cycle % 6 == 3: filed aibtc.news signal on frozen bounty board",
-    "execute": "signal filed - bounty board frozen, 0 open bounties",
+    "decide": "cycle % 6 == 3: bounty board still frozen (0 open), no action",
+    "execute": "idle - waiting on STX funding",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - Tiny Marten already messaged today (1msg/day limit)",
     "write": "ok",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 111,
-    "bounty_checks": 443,
+    "bounty_checks": 444,
     "heartbeats": 108,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T04:57:40.000Z",
+    "last_self_modification_check": "2026-04-01T05:00:34.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T05:02:40.000Z"
+  "next_cycle_at": "2026-04-01T05:05:34.000Z"
 }
