@@ -1,15 +1,15 @@
 {
-  "cycle": 17428,
-  "timestamp": "2026-04-01T16:51:02.000Z",
+  "cycle": 17429,
+  "timestamp": "2026-04-01T16:56:02.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4292 checkins, level 2 Genesis)",
+    "heartbeat": "rate limited (4292 checkins), wallet unlocked mid-cycle",
     "inbox": "0 unread",
-    "decide": "cycle 17428 mod 6 = 4 (bounties); checked bounties (0 open), GitHub not configured",
-    "execute": "skipped - no action possible (GitHub not configured, no open bounties, bounty #33 blocked on STX)",
+    "decide": "cycle 17429 mod 6 = 5 (self-audit); GitHub not configured, no open bounties, bounty #33 blocked on STX",
+    "execute": "skipped - no action possible (GitHub not configured, no open bounties, bounty #33 blocked on STX gas)",
     "deliver": "skipped - no messages",
-    "outreach": "skipped - no follow-ups pending",
-    "write": "ok",
+    "outreach": "skipped - no follow-ups pending, awaiting Tiny Marten response",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 476,
     "self_audits": 112,
-    "bounty_checks": 478,
+    "bounty_checks": 479,
     "heartbeats": 88,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T16:51:02.000Z",
+    "last_self_modification_check": "2026-04-01T16:56:02.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T16:56:02.000Z"
+  "next_cycle_at": "2026-04-01T17:01:02.000Z"
 }
