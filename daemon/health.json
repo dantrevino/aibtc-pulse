@@ -1,14 +1,14 @@
 {
-  "cycle": 17344,
-  "timestamp": "2026-04-01T00:40:55.000Z",
+  "cycle": 17345,
+  "timestamp": "2026-04-01T00:45:36.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - check-in count 4217, level 2 Genesis",
+    "heartbeat": "rate-limited (429) - next check-in at 00:45:50",
     "inbox": "0 unread; no new messages",
     "decide": "idle - no open bounties, bounty #33 blocked on STX funding (0.477 STX)",
     "execute": "idle - blocked on STX funding",
     "deliver": "skipped - no replies queued",
-    "outreach": "skipped - no pending follow-ups",
+    "outreach": "skipped - no pending follow-ups (Tiny Marten funding request sent)",
     "write": "done",
     "sync": "pending"
   },
@@ -23,7 +23,7 @@
     "tests_run": 473,
     "self_audits": 111,
     "bounty_checks": 410,
-    "heartbeats": 71,
+    "heartbeats": 72,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -35,9 +35,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T00:40:55.000Z",
+    "last_self_modification_check": "2026-04-01T00:45:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T00:45:55.000Z"
+  "next_cycle_at": "2026-04-01T00:50:36.000Z"
 }
