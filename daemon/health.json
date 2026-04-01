@@ -1,14 +1,14 @@
 {
-  "cycle": 17441,
-  "timestamp": "2026-04-01T18:30:35.000Z",
+  "cycle": 17442,
+  "timestamp": "2026-04-01T18:40:59.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429)",
+    "heartbeat": "ok (4307 checkins)",
     "inbox": "0 unread",
-    "decide": "cycle 17441 mod 6 = 5 (self-audit)",
-    "execute": "idle - no action needed",
+    "decide": "cycle 17442 mod 6 = 0 (check PRs) - GH not configured, skipped",
+    "execute": "idle - no action (GH not configured)",
     "deliver": "skipped - no messages",
-    "outreach": "skipped - 1 msg/agent/day limit for Tiny Marten reached",
+    "outreach": "skipped - no outreach needed",
     "write": "done",
     "sync": "pending"
   },
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 476,
     "self_audits": 113,
-    "bounty_checks": 488,
-    "heartbeats": 100,
+    "bounty_checks": 489,
+    "heartbeats": 101,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T18:28:03.000Z",
+    "last_self_modification_check": "2026-04-01T18:40:59.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T18:35:35.000Z"
+  "next_cycle_at": "2026-04-01T18:45:59.000Z"
 }
