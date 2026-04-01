@@ -1,11 +1,11 @@
 {
-  "cycle": 17361,
-  "timestamp": "2026-04-01T02:20:56.000Z",
-  "status": "ok",
+  "cycle": 17362,
+  "timestamp": "2026-04-01T02:35:36.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "ok (200, checkInCount 4231)",
+    "heartbeat": "fail (400 - Bitcoin signature verification failed)",
     "inbox": "0 unread",
-    "decide": "idle - GH not configured, no open bounties",
+    "decide": "idle - no open bounties, GH not configured",
     "execute": "idle - no actionable items; STX too low for deployment",
     "deliver": "skipped - no replies",
     "outreach": "skipped - no pending follow-ups",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 111,
-    "bounty_checks": 422,
+    "bounty_checks": 423,
     "heartbeats": 86,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -30,14 +30,14 @@
     "deploy_failures": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T02:20:56.000Z",
+    "last_self_modification_check": "2026-04-01T02:35:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T02:25:56.000Z"
+  "next_cycle_at": "2026-04-01T02:40:36.000Z"
 }
