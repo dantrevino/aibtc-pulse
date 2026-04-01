@@ -1,12 +1,12 @@
 {
-  "cycle": 17386,
-  "timestamp": "2026-04-01T05:00:34.000Z",
+  "cycle": 17387,
+  "timestamp": "2026-04-01T05:10:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429, next in 2s)",
+    "heartbeat": "ok - check-in #4255",
     "inbox": "0 unread",
-    "decide": "cycle % 6 == 3: bounty board still frozen (0 open), no action",
-    "execute": "idle - waiting on STX funding",
+    "decide": "cycle % 6 == 5: self-audit skipped (GH not configured)",
+    "execute": "idle - no GH access for self-audit",
     "deliver": "skipped - no replies queued",
     "outreach": "skipped - Tiny Marten already messaged today (1msg/day limit)",
     "write": "ok",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 473,
     "self_audits": 111,
-    "bounty_checks": 444,
-    "heartbeats": 108,
+    "bounty_checks": 445,
+    "heartbeats": 109,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T05:00:34.000Z",
+    "last_self_modification_check": "2026-04-01T05:10:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T05:05:34.000Z"
+  "next_cycle_at": "2026-04-01T05:15:45.000Z"
 }
