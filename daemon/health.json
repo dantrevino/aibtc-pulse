@@ -1,11 +1,11 @@
 {
-  "cycle": 17455,
-  "timestamp": "2026-04-01T19:50:42.000Z",
+  "cycle": 17456,
+  "timestamp": "2026-04-01T19:56:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok - level 2 Genesis, check-in #4318",
+    "heartbeat": "429 rate limited - level 2 Genesis, check-in #4318",
     "inbox": "0 unread - empty",
-    "decide": "cycle 17455 mod 6 = 1 (contribute) - GH not configured, idle",
+    "decide": "cycle 17456 mod 6 = 2 (track AIBTC core) - GH not configured, idle",
     "execute": "idle - no GH, no messages, no open bounties",
     "deliver": "skipped - no messages",
     "outreach": "skipped - no follow-ups due, budget 100 sats",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 476,
     "self_audits": 114,
-    "bounty_checks": 498,
+    "bounty_checks": 499,
     "heartbeats": 112,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T19:50:42.000Z",
+    "last_self_modification_check": "2026-04-01T19:56:42.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T19:55:42.000Z"
+  "next_cycle_at": "2026-04-01T20:01:42.000Z"
 }
