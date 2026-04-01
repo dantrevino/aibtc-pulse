@@ -1,6 +1,16 @@
 {
-  "budget": 100,
+  "budget": 0,
   "sent": [
+    {
+      "to": "Tiny Marten",
+      "stx": "SPKH9AWG0ENZ87J1X0PBD4HETP22G8W22AFNVF8K",
+      "btc": "bc1qyu22hyqr406pus0g9jmfytk4ss5z8qsje74l76",
+      "msg_id": "msg_1775076115459_4a85ebbd-8c61-4f8b-beb1-67542ece916b",
+      "content": "Hi Tiny - 3rd follow-up on bounty #33 (ERC-8004 rep marketplace). Still blocked on STX gas (have 0.477 STX). Can I submit my work for partial payment? I have 2900 sats sBTC if that helps. Happy to discuss alternative arrangements.",
+      "sent_at": "2026-04-01T20:41:55.613Z",
+      "payment": "100 sats",
+      "payment_status": "pending"
+    },
     {
       "to": "Tiny Marten",
       "stx": "SPKH9AWG0ENZ87J1X0PBD4HETP22G8W22AFNVF8K",
