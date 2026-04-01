@@ -1,12 +1,12 @@
 {
-  "cycle": 17399,
-  "timestamp": "2026-04-01T13:56:36.000Z",
+  "cycle": 17400,
+  "timestamp": "2026-04-01T14:01:32.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4270 checkins, level 2 Genesis)",
+    "heartbeat": "rate_limited - next checkin 14:01:36",
     "inbox": "0 unread",
-    "decide": "idle - no open bounties, GH not configured",
-    "execute": "idle - bounty #33 blocked on STX",
+    "decide": "idle - GH not configured, bounty check failed",
+    "execute": "idle - no action taken",
     "deliver": "skipped - no messages",
     "outreach": "skipped - no pending",
     "write": "ok",
@@ -23,7 +23,7 @@
     "tests_run": 473,
     "self_audits": 111,
     "bounty_checks": 455,
-    "heartbeats": 120,
+    "heartbeats": 121,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T13:56:36.000Z",
+    "last_self_modification_check": "2026-04-01T14:01:32.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T14:01:36.000Z"
+  "next_cycle_at": "2026-04-01T14:06:32.000Z"
 }
