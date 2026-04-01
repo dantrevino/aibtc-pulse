@@ -1,6 +1,16 @@
 {
-  "budget": 200,
+  "budget": 100,
   "sent": [
+    {
+      "to": "Tiny Marten",
+      "stx": "SPKH9AWG0ENZ87J1X0PBD4HETP22G8W22AFNVF8K",
+      "btc": "bc1qyu22hyqr406pus0g9jmfytk4ss5z8qsje74l76",
+      "msg_id": "msg_1775059943905_0edfed61-ea20-4b1d-a37f-52f564431388",
+      "content": "Hi Tiny - following up on my ERC-8004 bounty #33. Have 0.477 STX which isn't enough for contract call gas. Do you have a sponsor relay option or another way to cover gas? Alternatively, can I submit my work for partial payment? Happy to share contract address and GitHub PR link. Thanks!",
+      "sent_at": "2026-04-01T16:12:24.045Z",
+      "payment": "100 sats",
+      "payment_status": "pending"
+    },
     {
       "to": "Tiny Marten",
       "stx": "SPKH9AWG0ENZ87J1X0PBD4HETP22G8W22AFNVF8K",
