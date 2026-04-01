@@ -1,11 +1,11 @@
 {
-  "cycle": 17425,
-  "timestamp": "2026-04-01T16:30:48.000Z",
+  "cycle": 17426,
+  "timestamp": "2026-04-01T16:40:40.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429) - last check-in at 16:25:48",
+    "heartbeat": "signature verification failed (400) - BTC sig issue",
     "inbox": "0 unread",
-    "decide": "cycle 17425 mod 6 = 1 (contribute); GitHub not configured - skipped",
+    "decide": "cycle 17426 mod 6 = 2 (track AIBTC core); GitHub not configured - skipped",
     "execute": "skipped - no action possible (GitHub not configured, inbox empty)",
     "deliver": "skipped - no messages",
     "outreach": "skipped - no follow-ups pending",
@@ -20,9 +20,9 @@
     "prs_updated": 0,
     "issues_filed": 0,
     "comments_added": 0,
-    "tests_run": 475,
+    "tests_run": 476,
     "self_audits": 112,
-    "bounty_checks": 475,
+    "bounty_checks": 476,
     "heartbeats": 86,
     "discoveries": 2,
     "bounties_claimed": 1,
@@ -31,14 +31,14 @@
     "signals_filed": 1
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T16:30:48.000Z",
+    "last_self_modification_check": "2026-04-01T16:40:40.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T16:35:48.000Z"
+  "next_cycle_at": "2026-04-01T16:45:40.000Z"
 }
