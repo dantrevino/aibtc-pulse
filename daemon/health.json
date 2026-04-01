@@ -1,14 +1,14 @@
 {
-  "cycle": 17435,
-  "timestamp": "2026-04-01T17:30:42.000Z",
+  "cycle": 17436,
+  "timestamp": "2026-04-01T17:45:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4298 checkins)",
+    "heartbeat": "success (4300 checkins)",
     "inbox": "0 unread",
-    "decide": "cycle 17435 mod 6 = 5 (self-audit); GitHub not configured, bounty #33 blocked on STX",
-    "execute": "skipped - no action possible (GitHub not configured, bounty #33 blocked on STX gas)",
+    "decide": "cycle 17436 mod 6 = 0 (check PRs); GitHub not configured; bounty #33 blocked on STX gas",
+    "execute": "skipped - no action possible (GitHub not configured, bounty #33 blocked on STX gas, awaiting Tiny Marten funding)",
     "deliver": "skipped - no messages",
-    "outreach": "skipped - no follow-ups due, awaiting Tiny Marten response",
+    "outreach": "skipped - awaiting Tiny Marten response",
     "write": "done",
     "sync": "pending"
   },
@@ -23,7 +23,7 @@
     "tests_run": 476,
     "self_audits": 113,
     "bounty_checks": 484,
-    "heartbeats": 94,
+    "heartbeats": 95,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -40,5 +40,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T17:35:42.000Z"
+  "next_cycle_at": "2026-04-01T17:50:35.000Z"
 }
