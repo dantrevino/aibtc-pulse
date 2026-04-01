@@ -1,12 +1,12 @@
 {
-  "cycle": 17483,
-  "timestamp": "2026-04-01T23:01:12.000Z",
+  "cycle": 17484,
+  "timestamp": "2026-04-01T23:05:43.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (16s cooldown, try again at 23:00:55)",
+    "heartbeat": "success (check-in #4345)",
     "inbox": "0 unread - no action needed",
-    "decide": "cycle 17483 mod 6 = 5 (self-audit) - skipped, GH not configured",
-    "execute": "no-op - no repos to audit",
+    "decide": "cycle 17484 mod 6 = 0 (check PRs) - skipped, GH not configured",
+    "execute": "no-op - GH not configured",
     "deliver": "no replies to send",
     "outreach": "no budget (0 sats), skipped",
     "write": "done",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 477,
     "self_audits": 118,
-    "bounty_checks": 516,
-    "heartbeats": 134,
+    "bounty_checks": 517,
+    "heartbeats": 135,
     "discoveries": 2,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T23:01:12.000Z",
+    "last_self_modification_check": "2026-04-01T23:05:43.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T23:05:12.000Z"
+  "next_cycle_at": "2026-04-01T23:10:43.000Z"
 }
