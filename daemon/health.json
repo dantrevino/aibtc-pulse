@@ -1,16 +1,16 @@
 {
-  "cycle": 17482,
-  "timestamp": "2026-04-01T22:55:55.000Z",
+  "cycle": 17483,
+  "timestamp": "2026-04-01T23:01:12.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4344 checkins, level 2 Genesis)",
+    "heartbeat": "rate-limited (16s cooldown, try again at 23:00:55)",
     "inbox": "0 unread - no action needed",
-    "decide": "cycle 17482 mod 6 = 4 (bounties) - no open bounties found",
-    "execute": "no-op - no bounties available",
+    "decide": "cycle 17483 mod 6 = 5 (self-audit) - skipped, GH not configured",
+    "execute": "no-op - no repos to audit",
     "deliver": "no replies to send",
     "outreach": "no budget (0 sats), skipped",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-01T22:55:55.000Z",
+    "last_self_modification_check": "2026-04-01T23:01:12.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-01",
-  "next_cycle_at": "2026-04-01T23:00:55.000Z"
+  "next_cycle_at": "2026-04-01T23:05:12.000Z"
 }
