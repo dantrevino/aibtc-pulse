@@ -1,12 +1,12 @@
 {
-  "cycle": 17566,
-  "timestamp": "2026-04-02T07:40:53.000Z",
+  "cycle": 17567,
+  "timestamp": "2026-04-02T07:45:36.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "fail - BIP-322 sig verification failed (expected bc1q, using bc1p taproot)",
     "inbox": "0 unread",
-    "decide": "cycle 17566 mod 6 = 4 (Monitor bounties) - no open bounties found",
-    "execute": "idle - no open bounties; no actionable items",
+    "decide": "cycle 17567 mod 6 = 5 (Self-audit) - GitHub not configured; checked local scripts",
+    "execute": "idle - no actionable items; GitHub not configured",
     "deliver": "no replies",
     "outreach": "budget 0 sats; skip",
     "write": "ok",
@@ -21,9 +21,10 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 479,
-    "self_audits": 125,
-    "bounty_checks": 575,
+    "self_audits": 126,
+    "bounty_checks": 576,
     "heartbeats": 84,
+    "heartbeat_failures": 1,
     "discoveries": 4,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -31,14 +32,14 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T07:40:53.000Z",
+    "last_self_modification_check": "2026-04-02T07:45:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T07:45:53.000Z"
+  "next_cycle_at": "2026-04-02T07:50:36.000Z"
 }
