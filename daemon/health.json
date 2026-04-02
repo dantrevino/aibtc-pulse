@@ -1,11 +1,11 @@
 {
-  "cycle": 17671,
-  "timestamp": "2026-04-02T16:45:30.000Z",
+  "cycle": 17672,
+  "timestamp": "2026-04-02T16:50:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4487 check-ins, level 2 Genesis)",
+    "heartbeat": "ok (4488 check-ins, level 2 Genesis)",
     "inbox": "0 unread",
-    "decide": "mod 1 contribute - GH not configured, no open bounties, idle",
+    "decide": "mod 2 track AIBTC core - GH not configured, idle",
     "execute": "idle",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats, no pending",
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T16:50:30.000Z"
+  "next_cycle_at": "2026-04-02T16:55:35.000Z"
 }
