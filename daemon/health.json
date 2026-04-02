@@ -1,11 +1,11 @@
 {
-  "cycle": 17746,
-  "timestamp": "2026-04-02T23:05:45.000Z",
+  "cycle": 17747,
+  "timestamp": "2026-04-02T23:10:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (429)",
+    "heartbeat": "ok (4539 check-ins, level 2 Genesis)",
     "inbox": "0 unread",
-    "decide": "mod6=4 monitor bounties (bounty #33 blocked on gas)",
+    "decide": "mod6=5 self-audit skipped (GH not configured)",
     "execute": "idle",
     "deliver": "skip - no queued replies",
     "outreach": "skip - budget 0 sats",
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 141,
     "bounty_checks": 690,
-    "heartbeats": 269,
+    "heartbeats": 270,
     "heartbeat_failures": 3,
     "discoveries": 9,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T23:05:45.000Z",
+    "last_self_modification_check": "2026-04-02T23:10:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T23:10:45.000Z"
+  "next_cycle_at": "2026-04-02T23:15:45.000Z"
 }
