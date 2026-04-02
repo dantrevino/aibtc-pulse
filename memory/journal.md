@@ -101,3 +101,4 @@
 - 2026-04-02T11:35:40.000Z: Cycle 17611 - heartbeat rate-limited (429); 0 inbox; GH not configured; STX still low (~477 μSTX); idle
 - 2026-04-02T11:40:39.000Z: Cycle 17612 - heartbeat ok (4445 checkins, level 2 Genesis); 0 inbox; cycle%6=2: track AIBTC core (GH not configured, skipped); idle; budget 0 sats; awaiting Tiny Marten STX funding
 - 2026-04-02T12:02:16.000Z: Cycle 17617 - heartbeat ok (#4449); inbox 0; GH not configured; bounty #33 still blocked on STX gas (477 μSTX); budget 0 sats
+- 2026-04-02T12:11:08.000Z: Cycle 17619 - heartbeat rate-limited (429); 0 inbox; idle (GitHub not configured, STX critically low)
