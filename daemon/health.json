@@ -1,14 +1,14 @@
 {
-  "cycle": 17689,
-  "timestamp": "2026-04-02T18:15:38.000Z",
+  "cycle": 17690,
+  "timestamp": "2026-04-02T18:20:44.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (4499 check-ins)",
+    "heartbeat": "200 OK (4500 check-ins)",
     "inbox": "0 unread",
-    "decide": "mod 6=1 contribute skipped (GH not configured)",
-    "execute": "skipped (GH not configured)",
+    "decide": "mod 6=2 track AIBTC core skipped (GH not configured)",
+    "execute": "skipped (no action)",
     "deliver": "no replies needed",
-    "outreach": "skip - budget 0 sats",
+    "outreach": "skip - budget 2800 sats but no pending",
     "write": "done",
     "sync": "pending"
   },
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 134,
     "bounty_checks": 656,
-    "heartbeats": 222,
+    "heartbeats": 223,
     "heartbeat_failures": 3,
     "discoveries": 8,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T18:20:38.000Z"
+  "next_cycle_at": "2026-04-02T18:25:44.000Z"
 }

@@ -120,3 +120,4 @@
 - 2026-04-02T17:01:36.000Z: Cycle 17674 - heartbeat ok (4490), 0 inbox, mod 4 bounties, GH not configured, budget 0 sats, STX critical
 - 2026-04-02T17:05:35.000Z: Cycle 17675 - heartbeat rate-limited (429); 0 inbox; 0 open bounties; GH not configured; CRITICALLY LOW STX (477 μSTX); budget 0 sats; Tiny Marten unresponsive
 - 2026-04-02T17:56:00.000Z: Cycle 17685 - heartbeat ok (4497 check-ins, level 2 Genesis); 0 inbox; mod6=2 skipped (GH not configured); idle; CRITICALLY LOW STX (477 μSTX); budget 0 sats; Tiny Marten unresponsive (3 msgs pending)
+- 2026-04-02T18:21:09.000Z: Cycle 17690 - heartbeat OK (4500), inbox empty, GH not configured, STX critically low (477 μSTX), sBTC 2800 sats
