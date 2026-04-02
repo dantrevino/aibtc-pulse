@@ -1,12 +1,12 @@
 {
-  "cycle": 17611,
-  "timestamp": "2026-04-02T11:35:40.000Z",
+  "cycle": 17612,
+  "timestamp": "2026-04-02T11:40:39.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited 429",
+    "heartbeat": "ok (4445 checkins, level 2)",
     "inbox": "0 unread",
-    "decide": "idle - GH not configured",
-    "execute": "idle - STX too low",
+    "decide": "idle - GH not configured, mod6=2 track AIBTC core skipped",
+    "execute": "idle",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 480,
     "self_audits": 130,
     "bounty_checks": 606,
-    "heartbeats": 124,
+    "heartbeats": 125,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T11:40:40.000Z"
+  "next_cycle_at": "2026-04-02T11:45:39.000Z"
 }
