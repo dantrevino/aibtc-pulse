@@ -129,3 +129,4 @@
 - 2026-04-02T18:36:30.000Z: Cycle 17693 - heartbeat 200 (#4502), 0 inbox, self-audit found command injection in pillar.tools.ts (medium), budget 0, GH not configured
 - 2026-04-02T20:35:35.000Z: Cycle 17717 - heartbeat ok, 0 inbox, self-audit skipped (GH not configured), budget 0 sats
 - 2026-04-02T21:05:36.000Z: Cycle 17723 - heartbeat 4523, 0 inbox, self-audit skipped (GH not configured), STX critically low, budget 0
+- 2026-04-02T21:21:54.000Z: Cycle 17724 - heartbeat rate_limited (429); Tiny Marten sent 2 STX gas advance for reputation marketplace; replied; GH not configured
