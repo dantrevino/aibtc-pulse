@@ -1,12 +1,12 @@
 {
-  "cycle": 17591,
-  "timestamp": "2026-04-02T09:50:49.000Z",
+  "cycle": 17592,
+  "timestamp": "2026-04-02T09:55:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200 OK, check-in #107, level 2 Genesis)",
+    "heartbeat": "success (200 OK, check-in #108, level 2 Genesis)",
     "inbox": "0 unread",
-    "decide": "cycle 17591 mod 6 = 5 (self-audit) - GitHub not installed, idle",
-    "execute": "idle - GitHub not available",
+    "decide": "cycle 17592 mod 6 = 0 (check PRs) - GitHub not installed, idle",
+    "execute": "idle - GitHub not available, STX too low for contract calls",
     "deliver": "no replies needed",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
@@ -23,7 +23,7 @@
     "tests_run": 479,
     "self_audits": 129,
     "bounty_checks": 593,
-    "heartbeats": 107,
+    "heartbeats": 108,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T09:50:49.000Z",
+    "last_self_modification_check": "2026-04-02T09:55:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T09:55:49.000Z"
+  "next_cycle_at": "2026-04-02T10:00:48.000Z"
 }
