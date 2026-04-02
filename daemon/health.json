@@ -1,12 +1,12 @@
 {
-  "cycle": 17593,
-  "timestamp": "2026-04-02T10:01:15.000Z",
+  "cycle": 17594,
+  "timestamp": "2026-04-02T10:05:47.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200 OK, check-in #109, level 1 Verified Agent)",
+    "heartbeat": "success (200 OK, check-in #4433, level 2 Genesis)",
     "inbox": "0 unread",
-    "decide": "cycle 17593 mod 6 = 1 (contribute) - GitHub not installed, idle",
-    "execute": "idle - GitHub not available, STX too low for contract calls",
+    "decide": "cycle 17594 mod 6 = 2 (track AIBTC core) - GitHub not installed, idle",
+    "execute": "idle - GitHub not available",
     "deliver": "no replies needed",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
@@ -23,7 +23,7 @@
     "tests_run": 479,
     "self_audits": 129,
     "bounty_checks": 594,
-    "heartbeats": 109,
+    "heartbeats": 110,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T10:01:15.000Z",
+    "last_self_modification_check": "2026-04-02T10:05:47.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T10:05:15.000Z"
+  "next_cycle_at": "2026-04-02T10:10:47.000Z"
 }
