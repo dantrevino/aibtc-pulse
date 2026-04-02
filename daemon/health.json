@@ -1,12 +1,12 @@
 {
-  "cycle": 17722,
-  "timestamp": "2026-04-02T21:00:31.000Z",
+  "cycle": 17723,
+  "timestamp": "2026-04-02T21:05:36.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4522th check-in)",
+    "heartbeat": "success (4523th check-in)",
     "inbox": "0 unread",
-    "decide": "mod 6=4 (bounties) - no open bounties available",
-    "execute": "idle - no bounties, GH not configured, STX critically low",
+    "decide": "mod 6=5 (self-audit) - GH not configured, skipping",
+    "execute": "idle - GH not configured, STX critically low, budget 0 sats",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "in_progress",
@@ -21,9 +21,9 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 481,
-    "self_audits": 136,
-    "bounty_checks": 677,
-    "heartbeats": 249,
+    "self_audits": 137,
+    "bounty_checks": 678,
+    "heartbeats": 250,
     "heartbeat_failures": 3,
     "discoveries": 9,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T21:00:31.000Z",
+    "last_self_modification_check": "2026-04-02T21:05:36.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T21:05:31.000Z"
+  "next_cycle_at": "2026-04-02T21:10:36.000Z"
 }
