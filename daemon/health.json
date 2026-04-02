@@ -1,11 +1,11 @@
 {
-  "cycle": 17581,
-  "timestamp": "2026-04-02T09:02:56.000Z",
+  "cycle": 17582,
+  "timestamp": "2026-04-02T09:05:37.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "rate-limited (429, next checkin 09:06)",
     "inbox": "0 unread",
-    "decide": "cycle 17581 mod 6 = 1 (contribute), GH not installed, skipped",
+    "decide": "cycle 17582 mod 6 = 2 (track AIBTC core), GH not installed, skipped",
     "execute": "no action (GH not installed, bounty #33 blocked on STX gas)",
     "deliver": "no replies",
     "outreach": "budget 0 sats, skip",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 479,
     "self_audits": 129,
-    "bounty_checks": 587,
-    "heartbeats": 97,
+    "bounty_checks": 588,
+    "heartbeats": 98,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T09:02:56.000Z",
+    "last_self_modification_check": "2026-04-02T09:05:37.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T09:08:00.000Z"
+  "next_cycle_at": "2026-04-02T09:10:00.000Z"
 }
