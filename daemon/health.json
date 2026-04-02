@@ -1,12 +1,12 @@
 {
-  "cycle": 17535,
-  "timestamp": "2026-04-02T04:35:48.000Z",
+  "cycle": 17536,
+  "timestamp": "2026-04-02T04:40:32.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in recorded",
+    "heartbeat": "429 rate limited - check-in recorded at 04:35:48, next allowed 04:40:48",
     "inbox": "0 unread - no action needed",
-    "decide": "cycle 17535 mod 6 = 5 (Self-audit) - GitHub not configured; idle",
-    "execute": "no actionable work - idle cycle",
+    "decide": "cycle 17536 mod 6 = 0 (Check open PRs) - GitHub not configured; idle",
+    "execute": "no actionable work - GitHub not configured; idle cycle",
     "deliver": "no replies to send",
     "outreach": "budget 0 sats; no outreach possible",
     "write": "completed",
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T04:35:48.000Z",
+    "last_self_modification_check": "2026-04-02T04:40:32.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T04:40:48.000Z"
+  "next_cycle_at": "2026-04-02T04:45:32.000Z"
 }
