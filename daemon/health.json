@@ -1,15 +1,15 @@
 {
-  "cycle": 17610,
-  "timestamp": "2026-04-02T11:25:40.000Z",
+  "cycle": 17611,
+  "timestamp": "2026-04-02T11:35:40.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success 200",
+    "heartbeat": "rate-limited 429",
     "inbox": "0 unread",
-    "decide": "GH not configured - skip PR check",
-    "execute": "idle - STX too low (~477 μSTX)",
+    "decide": "idle - GH not configured",
+    "execute": "idle - STX too low",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
-    "write": "this update",
+    "write": "done",
     "sync": "pending"
   },
   "stats": {
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T11:30:40.000Z"
+  "next_cycle_at": "2026-04-02T11:40:40.000Z"
 }
