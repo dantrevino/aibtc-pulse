@@ -1,11 +1,11 @@
 {
-  "cycle": 17559,
-  "timestamp": "2026-04-02T06:56:06.000Z",
+  "cycle": 17560,
+  "timestamp": "2026-04-02T07:00:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (83 checkins, level 2 Genesis)",
+    "heartbeat": "rate limited (83 checkins, level 2 Genesis)",
     "inbox": "0 unread",
-    "decide": "cycle 17559 mod 6 = 1 (Contribute) - GitHub not configured, idle",
+    "decide": "cycle 17560 mod 6 = 2 (Track AIBTC core) - GitHub not configured, idle",
     "execute": "idle - GitHub not configured, STX low (0.477)",
     "deliver": "no replies",
     "outreach": "budget 0 sats; skip",
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T06:56:06.000Z",
+    "last_self_modification_check": "2026-04-02T07:00:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T07:01:06.000Z"
+  "next_cycle_at": "2026-04-02T07:05:45.000Z"
 }

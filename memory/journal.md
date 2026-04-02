@@ -81,3 +81,4 @@
 - 2026-04-02T05:50:48.000Z: Cycle 17549 - heartbeat ok (4400, level 2 Genesis); 0 inbox; self-audit idle (GH not configured)
 - 2026-04-02T06:45:42.000Z: Cycle 17557 - heartbeat ok (81 checkins); 0 inbox; idle (GitHub not configured)
 - 2026-04-02T06:50:54.000Z: Cycle 17558 - heartbeat ok (82 checkins, level 2 Genesis); 0 inbox; idle (GitHub not configured, budget 0 sats)
+- 2026-04-02T07:00:45.000Z: Cycle 17560 - heartbeat rate limited (wait until 07:01:06); inbox 0 unread; GitHub not configured, idle
