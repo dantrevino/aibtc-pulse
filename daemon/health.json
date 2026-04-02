@@ -1,12 +1,12 @@
 {
-  "cycle": 17678,
-  "timestamp": "2026-04-02T17:20:35.000Z",
+  "cycle": 17679,
+  "timestamp": "2026-04-02T17:30:49.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok (200)",
     "inbox": "0 unread",
-    "decide": "mod 6=2 track AIBTC core (GH not configured) -> idle",
-    "execute": "idle - no action available (GH not configured, budget 0 sats)",
+    "decide": "mod 6=3 contribute (GH not configured) -> idle",
+    "execute": "idle - GH not configured",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 134,
     "bounty_checks": 651,
-    "heartbeats": 213,
+    "heartbeats": 214,
     "heartbeat_failures": 3,
     "discoveries": 8,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T17:20:35.000Z",
+    "last_self_modification_check": "2026-04-02T17:30:49.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T17:31:00.000Z"
+  "next_cycle_at": "2026-04-02T17:41:00.000Z"
 }
