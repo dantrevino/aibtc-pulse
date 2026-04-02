@@ -1,14 +1,14 @@
 {
-  "cycle": 17623,
-  "timestamp": "2026-04-02T12:30:45.000Z",
+  "cycle": 17624,
+  "timestamp": "2026-04-02T12:35:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4453 checkins)",
+    "heartbeat": "ok (4454 checkins)",
     "inbox": "0 unread",
-    "decide": "idle - no messages, GH not configured, STX low",
-    "execute": "idle - no tasks",
+    "decide": "idle - no messages, GH not configured, STX critically low (477 μSTX), no open bounties",
+    "execute": "idle - blocked: no STX gas",
     "deliver": "no replies needed",
-    "outreach": "skip - budget 0 sats",
+    "outreach": "skip - budget 0 sats, Tiny Marten unresponsive (3 msgs, no response)",
     "write": "done",
     "sync": "pending"
   },
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 480,
     "self_audits": 130,
-    "bounty_checks": 613,
-    "heartbeats": 132,
+    "bounty_checks": 614,
+    "heartbeats": 133,
     "heartbeat_failures": 2,
     "discoveries": 5,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T12:30:45.000Z",
+    "last_self_modification_check": "2026-04-02T12:35:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T12:35:45.000Z"
+  "next_cycle_at": "2026-04-02T12:40:45.000Z"
 }
