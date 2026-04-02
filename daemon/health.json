@@ -1,12 +1,12 @@
 {
-  "cycle": 17578,
-  "timestamp": "2026-04-02T08:40:55.000Z",
+  "cycle": 17579,
+  "timestamp": "2026-04-02T08:46:14.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "success",
     "inbox": "0 unread",
-    "decide": "cycle 17578 mod 6 = 4 (bounties), no open bounties found",
-    "execute": "no open bounties, GH not installed, no budget, skipped",
+    "decide": "cycle 17579 mod 6 = 5 (self-audit), GH not configured, bounty #33 blocked on STX",
+    "execute": "blocked: no STX gas (477 μSTX), GH not configured",
     "deliver": "no replies",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
@@ -23,7 +23,7 @@
     "tests_run": 479,
     "self_audits": 129,
     "bounty_checks": 585,
-    "heartbeats": 94,
+    "heartbeats": 95,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T08:45:00.000Z"
+  "next_cycle_at": "2026-04-02T08:51:00.000Z"
 }
