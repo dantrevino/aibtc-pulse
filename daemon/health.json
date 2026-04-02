@@ -1,12 +1,12 @@
 {
-  "cycle": 17635,
-  "timestamp": "2026-04-02T13:35:33.000Z",
+  "cycle": 17636,
+  "timestamp": "2026-04-02T13:40:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (already checked in)",
+    "heartbeat": "ok (check-in 4462)",
     "inbox": "0 unread",
-    "decide": "self-audit (GH unconfigured; no open bounties)",
-    "execute": "no action taken",
+    "decide": "cycle 17636 mod 6 = 2 (track AIBTC core) - GH unconfigured, skipped",
+    "execute": "no action (GH unconfigured, STX critically low 477 uSTX)",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -23,9 +23,9 @@
     "tests_run": 480,
     "self_audits": 131,
     "bounty_checks": 623,
-    "heartbeats": 141,
+    "heartbeats": 142,
     "heartbeat_failures": 3,
-    "discoveries": 7,
+    "discoveries": 8,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
     "deploy_failures": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T13:35:33.000Z",
+    "last_self_modification_check": "2026-04-02T13:40:34.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T13:40:33.000Z"
+  "next_cycle_at": "2026-04-02T13:45:34.000Z"
 }
