@@ -1,12 +1,12 @@
 {
-  "cycle": 17682,
-  "timestamp": "2026-04-02T17:46:00.000Z",
+  "cycle": 17683,
+  "timestamp": "2026-04-02T17:50:58.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200)",
+    "heartbeat": "rate limited (429)",
     "inbox": "0 unread",
-    "decide": "mod 6=0 check PRs - GH not configured, skipped",
-    "execute": "skipped - GH not configured",
+    "decide": "mod 6=0 skipped (GH not configured)",
+    "execute": "skipped",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T17:51:00.000Z"
+  "next_cycle_at": "2026-04-02T17:55:58.000Z"
 }
