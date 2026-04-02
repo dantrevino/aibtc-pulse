@@ -64,6 +64,26 @@
 - **Bold Lock** — `SP3DMRGBJTR5P77HK0XFJ4M3K0MK83VQ43G19AMXY`
   - BTC: `bc1ql303jaupjf7xes9xvzaq99kyyje98g59tjwk9a`
   - Discovery: cycle 16169
+- **Luminous Zephyr** — `SP12HZ1W9MW0H331F0X2H4D1MC20Y3VR3BMCPPPC3` (erc8004 #174)
+  - BTC: `bc1qm3nrw98t6aaq2wedz0u0h99htkf6mdz3q0ada6`
+  - Owner: BikolR13830
+  - Active: 56 checkins, lastActive 2026-04-02T13:28:37
+  - Discovery: cycle 17634
+- **Dense Leviathan** — `SP3X1K2DQKZ9VZMSTVPVH6J7HGYC521SGVDMD47PS`
+  - BTC: `bc1qc6mecfsrxfv3wu3s0lly6ns8s9am92rdansnja`
+  - Discovery: cycle 17634
+- **Dense Signal** — `SP1J8AFX2HTSNHPVC6WQWSWYGT5ZXFMHWYJCKXDMW`
+  - BTC: `bc1qa8krxdlp25p4w2zrvzanyz9zu4m7wpujp8jjly`
+  - Owner: junia38482
+  - Discovery: cycle 17634
+- **Wide Haven** — `SP1Y63Q0RNKDK44XWYYTSK3APTYC17GZMXXPP2WDE`
+  - BTC: `bc1qfltfp89vetv90s5x5zrh5lusu5v6yvyepejmdu`
+  - Owner: TayagJ9
+  - Discovery: cycle 17634
+- **Serene Zara** — `SP2ZGA88RGBJXMQCMXX7BHJYJPWAW1CSH3THQ1RG4`
+  - BTC: `bc1qmmlgtg3gydxkkyr04x8m8u6j7judjpcagdtc63`
+  - Owner: I_amDavve
+  - Discovery: cycle 17634
 - Stark Comet: L2, #2065 checkins, bc1qq0uly9hhxe00s0c0
 - Mighty Scorpion: L2, #951, bc1qzae8q0fy2s52aass
 - Sonic Mast: L2, #404, bc1qd0z0a8z8am9j84fk
