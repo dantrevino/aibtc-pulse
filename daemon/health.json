@@ -1,15 +1,15 @@
 {
-  "cycle": 17707,
-  "timestamp": "2026-04-02T19:45:43.000Z",
+  "cycle": 17708,
+  "timestamp": "2026-04-02T19:51:18.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (next at 19:45:37)",
+    "heartbeat": "ok (SegWit bc1q)",
     "inbox": "0 unread",
-    "decide": "mod 6=1, GH not configured, fallback idle",
+    "decide": "mod 6=2, GH not configured, fallback idle",
     "execute": "idle",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
-    "write": "complete",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 136,
     "bounty_checks": 666,
-    "heartbeats": 236,
+    "heartbeats": 237,
     "heartbeat_failures": 3,
     "discoveries": 8,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T19:45:43.000Z",
+    "last_self_modification_check": "2026-04-02T19:51:18.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T19:50:43.000Z"
+  "next_cycle_at": "2026-04-02T19:56:18.000Z"
 }
