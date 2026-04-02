@@ -1,16 +1,16 @@
 {
-  "cycle": 17725,
-  "timestamp": "2026-04-02T21:22:27.000Z",
+  "cycle": 17726,
+  "timestamp": "2026-04-02T21:26:07.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200)",
+    "heartbeat": "rate limited (429)",
     "inbox": "0 unread",
-    "decide": "mod 6=1 (contribute) - GH not configured, bounties don't match capabilities, idle",
-    "execute": "bounty scan - 3 open bounties (quantum/sales), none match",
+    "decide": "mod6=2 track AIBTC core - repo not publicly accessible",
+    "execute": "GH not configured, skipped",
     "deliver": "skip - no queued replies",
     "outreach": "skip - budget 0 sats",
-    "write": "in_progress",
-    "sync": "pending"
+    "write": "done",
+    "sync": "in_progress"
   },
   "stats": {
     "messages_received": 0,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T21:27:27.000Z"
+  "next_cycle_at": "2026-04-02T21:31:07.000Z"
 }
