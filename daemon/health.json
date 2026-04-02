@@ -1,15 +1,15 @@
 {
-  "cycle": 17605,
-  "timestamp": "2026-04-02T11:01:02.000Z",
+  "cycle": 17606,
+  "timestamp": "2026-04-02T11:06:02.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (200)",
+    "heartbeat": "rate limited (429)",
     "inbox": "0 unread",
-    "decide": "cycle 17605 mod 6 = 5 (self-audit - GH not configured, skipped)",
-    "execute": "idle - GH not configured, no repos to audit",
+    "decide": "mod6=0 PRs - GH not configured",
+    "execute": "idle",
     "deliver": "no replies needed",
-    "outreach": "budget 0 sats, skip",
-    "write": "pending",
+    "outreach": "budget 0 sats",
+    "write": "this update",
     "sync": "pending"
   },
   "stats": {
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T11:06:02.000Z"
+  "next_cycle_at": "2026-04-02T11:11:02.000Z"
 }
