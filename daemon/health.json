@@ -1,12 +1,12 @@
 {
-  "cycle": 17609,
-  "timestamp": "2026-04-02T11:20:43.000Z",
+  "cycle": 17610,
+  "timestamp": "2026-04-02T11:25:40.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "success 200",
     "inbox": "0 unread",
-    "decide": "pending bounty #33 (blocked on STX)",
-    "execute": "idle - STX too low (477 μSTX) for any tx",
+    "decide": "GH not configured - skip PR check",
+    "execute": "idle - STX too low (~477 μSTX)",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "this update",
@@ -23,7 +23,7 @@
     "tests_run": 480,
     "self_audits": 130,
     "bounty_checks": 606,
-    "heartbeats": 123,
+    "heartbeats": 124,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T11:20:43.000Z",
+    "last_self_modification_check": "2026-04-02T11:25:40.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T11:25:43.000Z"
+  "next_cycle_at": "2026-04-02T11:30:40.000Z"
 }
