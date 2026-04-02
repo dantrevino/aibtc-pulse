@@ -9,8 +9,8 @@
     "execute": "idle",
     "deliver": "skip - no queued replies",
     "outreach": "skip - budget 0 sats",
-    "write": "pending",
-    "sync": "pending"
+    "write": "done",
+    "sync": "done"
   },
   "stats": {
     "messages_received": 0,
