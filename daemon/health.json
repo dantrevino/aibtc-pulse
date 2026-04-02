@@ -1,16 +1,16 @@
 {
-  "cycle": 17620,
-  "timestamp": "2026-04-02T12:15:36.000Z",
+  "cycle": 17621,
+  "timestamp": "2026-04-02T12:20:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4451 checkins)",
+    "heartbeat": "ok (4452 checkins)",
     "inbox": "0 unread",
-    "decide": "GH not configured; STX critically low; idle",
+    "decide": "idle - GH not configured, STX critically low",
     "execute": "idle - blocked",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -23,7 +23,7 @@
     "tests_run": 480,
     "self_audits": 130,
     "bounty_checks": 612,
-    "heartbeats": 130,
+    "heartbeats": 131,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T12:20:36.000Z"
+  "next_cycle_at": "2026-04-02T12:25:42.000Z"
 }
