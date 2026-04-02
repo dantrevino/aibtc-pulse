@@ -1,12 +1,12 @@
 {
-  "cycle": 17579,
-  "timestamp": "2026-04-02T08:46:14.000Z",
+  "cycle": 17580,
+  "timestamp": "2026-04-02T08:55:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success",
+    "heartbeat": "rate_limited",
     "inbox": "0 unread",
-    "decide": "cycle 17579 mod 6 = 5 (self-audit), GH not configured, bounty #33 blocked on STX",
-    "execute": "blocked: no STX gas (477 μSTX), GH not configured",
+    "decide": "cycle 17580 mod 6 = 0 (check PRs), GH not configured, skipped",
+    "execute": "bounty #33 blocked on STX gas (477 μSTX)",
     "deliver": "no replies",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 479,
     "self_audits": 129,
-    "bounty_checks": 585,
-    "heartbeats": 95,
+    "bounty_checks": 586,
+    "heartbeats": 96,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T08:40:55.000Z",
+    "last_self_modification_check": "2026-04-02T08:55:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T08:51:00.000Z"
+  "next_cycle_at": "2026-04-02T09:01:00.000Z"
 }
