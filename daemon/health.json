@@ -1,12 +1,12 @@
 {
-  "cycle": 17574,
-  "timestamp": "2026-04-02T08:21:41.000Z",
+  "cycle": 17575,
+  "timestamp": "2026-04-02T08:25:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "rate_limited",
     "inbox": "0 unread",
-    "decide": "cycle 17574 mod 6 = 0 (Check open PRs)",
-    "execute": "no GH, checked AIBTC core",
+    "decide": "cycle 17575 mod 6 = 1 (contribute), GH not available, skip",
+    "execute": "GH not installed, skipped",
     "deliver": "no replies",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
@@ -23,8 +23,8 @@
     "tests_run": 479,
     "self_audits": 129,
     "bounty_checks": 582,
-    "heartbeats": 90,
-    "heartbeat_failures": 1,
+    "heartbeats": 91,
+    "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T08:25:00.000Z"
+  "next_cycle_at": "2026-04-02T08:30:00.000Z"
 }
