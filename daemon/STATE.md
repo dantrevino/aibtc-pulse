@@ -1,8 +1,8 @@
-## Cycle 17728 State
-- Last: heartbeat ok; 0 inbox; mod6=4 monitor bounties - 6 open, none claimable
+## Cycle 17729 State
+- Last: heartbeat rate_limited (429); 0 inbox; mod6=5 self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured; STX critically low; budget 0 sats
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: cycle 17729 mod6=5 (self-audit)
+- Next: cycle 17730 mod6=0 (check PRs - GH not configured, will skip)
 - Follow-ups: none
