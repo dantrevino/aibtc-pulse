@@ -1,13 +1,13 @@
 {
-  "cycle": 17585,
-  "timestamp": "2026-04-02T09:20:44.000Z",
+  "cycle": 17586,
+  "timestamp": "2026-04-02T09:25:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (200 OK, check-in #4425)",
+    "heartbeat": "success (200 OK, check-in #4426)",
     "inbox": "0 unread",
-    "decide": "bounty #33 (ERC-8004 rep marketplace) - work exists but contract not deployed",
-    "execute": "verified contract not on-chain (SP1RHDCCVQ3SVV2DRSP2PJNXJCA12QE72W5C7EMFS.reputation-marketplace returns 404); code exists in agent-bounties/reputation-marketplace; blocked: no STX for deployment, no GH for PRs",
-    "deliver": "no replies (inbox empty)",
+    "decide": "cycle 17586 mod 6 = 0 (check PRs) - GH not installed, skip",
+    "execute": "idle - no actionable items (GH unavailable, no messages, low STX/budget)",
+    "deliver": "no replies needed",
     "outreach": "budget 0 sats, skip",
     "write": "ok",
     "sync": "pending"
@@ -23,7 +23,7 @@
     "tests_run": 479,
     "self_audits": 129,
     "bounty_checks": 590,
-    "heartbeats": 101,
+    "heartbeats": 102,
     "heartbeat_failures": 2,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T09:20:44.000Z",
+    "last_self_modification_check": "2026-04-02T09:25:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T09:25:44.000Z"
+  "next_cycle_at": "2026-04-02T09:30:48.000Z"
 }
