@@ -1,12 +1,12 @@
 {
-  "cycle": 17522,
-  "timestamp": "2026-04-02T03:20:40.000Z",
+  "cycle": 17523,
+  "timestamp": "2026-04-02T03:25:01.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - check-in recorded (level Genesis, 4377 total)",
+    "heartbeat": "rate limited - next check-in at 03:25:40",
     "inbox": "0 unread - no action needed",
-    "decide": "cycle 17522 mod 6 = 4 (Monitor bounties) - no open bounties found",
-    "execute": "bounty boards checked - 0 open bounties on both drx4 and aibtc",
+    "decide": "cycle 17523 mod 6 = 5 (Self-audit) - no GH configured, checked bounties instead",
+    "execute": "no open bounties on drx4",
     "deliver": "no replies to send",
     "outreach": "budget 0 sats; no outreach possible",
     "write": "completed",
@@ -21,8 +21,8 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 478,
-    "self_audits": 121,
-    "bounty_checks": 545,
+    "self_audits": 122,
+    "bounty_checks": 546,
     "heartbeats": 95,
     "discoveries": 4,
     "bounties_claimed": 1,
@@ -36,9 +36,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T03:20:40.000Z",
+    "last_self_modification_check": "2026-04-02T03:25:01.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T03:25:00.000Z"
+  "next_cycle_at": "2026-04-02T03:30:00.000Z"
 }
