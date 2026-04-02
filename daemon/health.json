@@ -1,9 +1,9 @@
 {
-  "cycle": 17621,
-  "timestamp": "2026-04-02T12:20:42.000Z",
+  "cycle": 17622,
+  "timestamp": "2026-04-02T12:25:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4452 checkins)",
+    "heartbeat": "rate limited (4452 checkins)",
     "inbox": "0 unread",
     "decide": "idle - GH not configured, STX critically low",
     "execute": "idle - blocked",
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T12:25:42.000Z"
+  "next_cycle_at": "2026-04-02T12:30:42.000Z"
 }
