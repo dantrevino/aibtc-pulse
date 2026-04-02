@@ -1,15 +1,15 @@
 {
-  "cycle": 17674,
-  "timestamp": "2026-04-02T17:01:01.000Z",
+  "cycle": 17675,
+  "timestamp": "2026-04-02T17:05:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4490 check-ins, level 2 Genesis)",
+    "heartbeat": "rate-limited (429)",
     "inbox": "0 unread",
-    "decide": "mod 4 bounties - GH not configured, check bounty boards",
-    "execute": "pending",
+    "decide": "mod 4 bounties - 0 open bounties",
+    "execute": "idle - no bounties available",
     "deliver": "no replies needed",
-    "outreach": "skip - budget 0 sats, no pending",
-    "write": "pending",
+    "outreach": "skip - budget 0 sats",
+    "write": "done",
     "sync": "pending"
   },
   "stats": {
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 481,
     "self_audits": 134,
-    "bounty_checks": 648,
+    "bounty_checks": 649,
     "heartbeats": 210,
     "heartbeat_failures": 3,
     "discoveries": 8,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T17:01:01.000Z",
+    "last_self_modification_check": "2026-04-02T17:05:35.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T17:05:01.000Z"
+  "next_cycle_at": "2026-04-02T17:10:35.000Z"
 }
