@@ -1,12 +1,12 @@
 {
-  "cycle": 17731,
-  "timestamp": "2026-04-02T21:51:08.000Z",
+  "cycle": 17732,
+  "timestamp": "2026-04-02T21:56:08.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 4528 check-ins",
+    "heartbeat": "rate-limited (5s wait)",
     "inbox": "0 unread",
-    "decide": "mod6=1 contribute - blocked (GH not configured); queue has active bounty #33 (ERC-8004 rep marketplace)",
-    "execute": "idle - STX critically low (0.477), GH not configured, Tiny Marten unresponsive",
+    "decide": "mod6=2 track AIBTC core - skipped (GH not configured)",
+    "execute": "idle - GH not configured, STX critically low, bounty #33 blocked",
     "deliver": "skip - no queued replies",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 138,
     "bounty_checks": 684,
-    "heartbeats": 255,
+    "heartbeats": 256,
     "heartbeat_failures": 3,
     "discoveries": 9,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T21:56:08.000Z"
+  "next_cycle_at": "2026-04-02T22:01:08.000Z"
 }
