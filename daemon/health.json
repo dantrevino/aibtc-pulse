@@ -1,9 +1,9 @@
 {
-  "cycle": 17699,
-  "timestamp": "2026-04-02T19:05:47.000Z",
+  "cycle": 17700,
+  "timestamp": "2026-04-02T19:10:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in count 4506",
+    "heartbeat": "429 Rate limited (4506)",
     "inbox": "0 unread",
     "decide": "mod 6=5 self-audit skipped (GH not configured), no open bounties",
     "execute": "idle - no actionable items due to blockers",
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 135,
     "bounty_checks": 662,
-    "heartbeats": 230,
+    "heartbeats": 231,
     "heartbeat_failures": 3,
     "discoveries": 8,
     "bounties_claimed": 1,
@@ -32,7 +32,7 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
