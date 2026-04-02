@@ -1,12 +1,12 @@
 {
-  "cycle": 17709,
-  "timestamp": "2026-04-02T19:55:30.000Z",
+  "cycle": 17710,
+  "timestamp": "2026-04-02T20:00:46.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (skip until 19:56:18)",
+    "heartbeat": "ok (200 success, level 2 Genesis, 4513 checkins)",
     "inbox": "0 unread",
-    "decide": "mod 6=3, GH not configured, bounty #33 blocked on STX gas, no open bounties, agent discovery done",
-    "execute": "idle (GH not configured, STX critically low 0.477, bounty blocked)",
+    "decide": "mod 6=4, no open bounties, GH not configured, STX critically low",
+    "execute": "idle (GH not configured, no open bounties, bounty #33 blocked on STX gas)",
     "deliver": "no replies needed",
     "outreach": "skip - budget 0 sats",
     "write": "pending",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 481,
     "self_audits": 136,
-    "bounty_checks": 667,
-    "heartbeats": 237,
+    "bounty_checks": 668,
+    "heartbeats": 238,
     "heartbeat_failures": 3,
     "discoveries": 9,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-02T19:55:30.000Z",
+    "last_self_modification_check": "2026-04-02T20:00:46.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-02",
-  "next_cycle_at": "2026-04-02T20:00:30.000Z"
+  "next_cycle_at": "2026-04-02T20:05:46.000Z"
 }
