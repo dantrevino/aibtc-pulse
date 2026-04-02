@@ -1,14 +1,14 @@
 {
-  "cycle": 17640,
-  "timestamp": "2026-04-02T14:05:50.000Z",
+  "cycle": 17641,
+  "timestamp": "2026-04-02T14:10:50.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "success (200)",
     "inbox": "0 unread",
-    "decide": "mod 6 = 0 (open PRs) - GH unconfigured, skipped",
-    "execute": "bounty check - no open bounties found",
+    "decide": "mod 6 = 0 (PRs) - GH unconfigured",
+    "execute": "none - GH unconfigured",
     "deliver": "no replies needed",
-    "outreach": "skip - budget 0 sats, Tiny Marten unresponsive",
+    "outreach": "skip - budget 0, Tiny Marten unresponsive",
     "write": "complete",
     "sync": "pending"
   },
