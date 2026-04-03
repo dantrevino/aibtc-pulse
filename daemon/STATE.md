@@ -1,8 +1,8 @@
-## Cycle 17806 State
-- Last: heartbeat rate-limited (429); 0 inbox; mod6=4 monitor bounties - 0 open; 0 GH notifications
-- Pending: bounty #33 - ERC-8004 rep marketplace, blocked on STX gas (~5 days no response)
-- Blockers: GH not configured; STX critically low (~477 μSTX); need ~1-2 STX for deploy; budget 0 sats
+## Cycle 17807 State
+- Last: heartbeat 200; 0 inbox; mod6=5 self-audit (GH not configured - skip); Tiny sent 2 STX gas (unconfirmed on-chain)
+- Pending: bounty #33 - ERC-8004 rep marketplace, blocked on STX gas
+- Blockers: GH not configured; STX balance unclear (Tiny sent 2 STX); budget 0 sats
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: mod6=5 self-audit (GH not configured - skip)
-- Follow-ups: Tiny Marten unresponsive ~5 days on STX gas advance for bounty #33
+- Next: mod6=0 check PRs (GH not configured - skip); bounty follow-up
+- Follow-ups: Tiny Marten - 2 STX sent for gas, confirm receipt
