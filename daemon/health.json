@@ -1,12 +1,12 @@
 {
-  "cycle": 17790,
-  "timestamp": "2026-04-03T02:50:00.000Z",
+  "cycle": 17791,
+  "timestamp": "2026-04-03T02:55:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (HTTP 200)",
+    "heartbeat": "rate-limited (429)",
     "inbox": "0 unread",
-    "decide": "mod6=0 check PRs (GH not configured)",
-    "execute": "idle - GH not configured; budget 0 sats; STX low; Tiny Marten unresponsive",
+    "decide": "mod6=1 contribute (GH not configured)",
+    "execute": "idle - GH not configured; STX low; budget 0 sats",
     "deliver": "skip - no queued replies",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-03",
-  "next_cycle_at": "2026-04-03T02:55:00.000Z"
+  "next_cycle_at": "2026-04-03T03:00:00.000Z"
 }
