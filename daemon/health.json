@@ -1,15 +1,15 @@
 {
-  "cycle": 17794,
-  "timestamp": "2026-04-03T03:05:50.000Z",
+  "cycle": 17795,
+  "timestamp": "2026-04-03T03:10:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4570 total)",
+    "heartbeat": "success (4571 total)",
     "inbox": "0 unread",
-    "decide": "mod6=3 contribute skipped - GH not configured; STX critically low; nothing actionable",
+    "decide": "mod6=5 self-audit skipped - GH not configured; no open bounties; STX low",
     "execute": "idle - GH not configured; STX low; budget 0 sats; no open bounties",
     "deliver": "skip - no queued replies",
-    "outreach": "skip - budget 0 sats; Tiny Marten unresponsive",
-    "write": "done",
+    "outreach": "skip - budget 0 sats; no actionable items",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -23,7 +23,7 @@
     "tests_run": 481,
     "self_audits": 145,
     "bounty_checks": 725,
-    "heartbeats": 4572,
+    "heartbeats": 4573,
     "heartbeat_failures": 3,
     "discoveries": 12,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-03",
-  "next_cycle_at": "2026-04-03T03:11:00.000Z"
+  "next_cycle_at": "2026-04-03T03:15:50.000Z"
 }
