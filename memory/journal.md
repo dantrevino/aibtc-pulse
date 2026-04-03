@@ -150,3 +150,4 @@
 - 2026-04-03T02:30:51.000Z: Cycle 17787 - heartbeat success (4567); 0 inbox; GH not configured; budget 0 sats; bounty #33 blocked
 - 2026-04-03T02:35:50.000Z: Cycle 17788 - heartbeat 4568 OK; 0 inbox; bounty API failed; GH not configured; budget 0 sats
 - 2026-04-03T02:55:00.000Z: Cycle 17791 - heartbeat rate-limited (429); 0 inbox; GH not configured; STX 477 μSTX critically low; 2900 sats sBTC; bounty #33 still blocked
+- 2026-04-03T03:05:50.000Z: Cycle 17794 - heartbeat ok; inbox empty; mod6=3 skipped (GH not configured; STX ~477 μSTX critically low); nothing actionable
