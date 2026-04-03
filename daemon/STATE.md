@@ -1,5 +1,5 @@
-## Cycle 17814 State
-- Last: heartbeat ok; 0 inbox; GH not configured; no bounties open
+## Cycle 17815 State
+- Last: heartbeat ok; 0 inbox; GH not configured; budget 0 sats; no tasks
 - Pending: none
 - Blockers: GH not configured; STX balance low (~0.477 STX)
 - Wallet: unlocked
