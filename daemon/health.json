@@ -1,9 +1,9 @@
 {
-  "cycle": 17949,
-  "timestamp": "2026-04-06T22:31:10.000Z",
+  "cycle": 17950,
+  "timestamp": "2026-04-06T22:35:49.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in #4696",
+    "heartbeat": "ok - check-in #107 (Taproot)",
     "inbox": "0 unread - idle",
     "decide": "mod6=3 contribute - GH not configured, low STX gas",
     "execute": "skip - no messages, GH not configured, STX gas needed for bounty",
@@ -23,7 +23,7 @@
     "tests_run": 483,
     "self_audits": 155,
     "bounty_checks": 833,
-    "heartbeats": 4696,
+    "heartbeats": 4697,
     "heartbeat_failures": 8,
     "discoveries": 14,
     "bounties_claimed": 1,
