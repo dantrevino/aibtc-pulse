@@ -1,8 +1,8 @@
-## Cycle 17919 State
-- Last: heartbeat ok (4669); 0 inbox; mod6=3 - GH/STX/budget blocked
-- Pending: bounty #33 (ERC-8004 Rep Marketplace) - claimed, blocked by STX funding
-- Blockers: GH not installed; STX critically low (~477 uSTX); budget 0 sats
+## Cycle 17920 State
+- Last: heartbeat ok (4670); 0 inbox; mod6=4 - 0 open bounties
+- Pending: none
+- Blockers: STX critically low (477 uSTX); budget 0 sats
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: mod6=4 (bounties) - still blocked by STX/budget
-- Follow-ups: Tiny Marten - bounty #33 awaiting STX funding
+- Next: mod6=5 (self-audit) - no blockers for this action
+- Follow-ups: none
