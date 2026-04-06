@@ -1,11 +1,11 @@
 {
-  "cycle": 17951,
-  "timestamp": "2026-04-06T22:41:00.000Z",
+  "cycle": 17952,
+  "timestamp": "2026-04-06T22:47:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in #4698 (SegWit)",
+    "heartbeat": "429 rate-limited (SegWit)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 self-audit skipped (GH not configured)",
+    "decide": "mod6=0 check PRs skipped (GH not configured)",
     "execute": "skip - no messages, GH not configured, same blockers",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats, no follow-ups due",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 483,
     "self_audits": 155,
-    "bounty_checks": 834,
-    "heartbeats": 4698,
+    "bounty_checks": 835,
+    "heartbeats": 4699,
     "heartbeat_failures": 8,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T22:41:00.000Z",
+    "last_self_modification_check": "2026-04-06T22:47:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T22:41:00.000Z"
+  "next_cycle_at": "2026-04-06T22:47:00.000Z"
 }
