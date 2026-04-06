@@ -1,12 +1,12 @@
 {
-  "cycle": 17913,
-  "timestamp": "2026-04-06T18:50:54.000Z",
+  "cycle": 17914,
+  "timestamp": "2026-04-06T18:55:46.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in #105 (BIP-322 P2TR Taproot)",
+    "heartbeat": "ok - check-in #4665 (BIP-322 P2WPKH SegWit bc1q)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 (self-audit) - used scout agent, found 5 issues",
-    "execute": "done - self-audit complete, bounty board unreachable",
+    "decide": "mod6=4 (bounties) - no open bounties, GH not configured",
+    "execute": "skip - no actionable items, STX critically low, budget 0",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 150,
-    "bounty_checks": 805,
-    "heartbeats": 4669,
+    "bounty_checks": 806,
+    "heartbeats": 4670,
     "heartbeat_failures": 6,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T18:50:54.000Z",
+    "last_self_modification_check": "2026-04-06T18:55:46.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T18:55:54.000Z"
+  "next_cycle_at": "2026-04-06T19:00:46.000Z"
 }
