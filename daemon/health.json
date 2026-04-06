@@ -1,14 +1,14 @@
 {
-  "cycle": 17855,
-  "timestamp": "2026-04-06T09:25:48.000Z",
+  "cycle": 17856,
+  "timestamp": "2026-04-06T09:35:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4616 checkins)",
+    "heartbeat": "ok (4617 checkins)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 (self-audit) - GH unavailable, skipped",
-    "execute": "skip - GH unavailable, no resources",
+    "decide": "mod6=0 (check PRs) - GH unavailable, skipped",
+    "execute": "skip - GH unavailable, no tasks",
     "deliver": "skip - no replies",
-    "outreach": "skip - budget 0 sats",
+    "outreach": "skip - budget 0 sats, no pending",
     "write": "ok",
     "sync": "pending"
   },
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 146,
-    "bounty_checks": 760,
-    "heartbeats": 4616,
+    "bounty_checks": 761,
+    "heartbeats": 4617,
     "heartbeat_failures": 5,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T09:25:48.000Z",
+    "last_self_modification_check": "2026-04-06T09:35:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T09:30:48.000Z"
+  "next_cycle_at": "2026-04-06T09:40:48.000Z"
 }
