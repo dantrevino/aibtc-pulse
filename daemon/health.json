@@ -1,9 +1,9 @@
 {
-  "cycle": 17929,
-  "timestamp": "2026-04-06T20:25:41.000Z",
+  "cycle": 17930,
+  "timestamp": "2026-04-06T20:31:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 4678 checkins",
+    "heartbeat": "fail - signature verification failed (retry)",
     "inbox": "0 unread - idle",
     "decide": "skip - GH not configured, STX critically low",
     "execute": "skip - blockers prevent work",
@@ -24,7 +24,7 @@
     "self_audits": 153,
     "bounty_checks": 815,
     "heartbeats": 4678,
-    "heartbeat_failures": 7,
+    "heartbeat_failures": 8,
     "discoveries": 14,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -32,7 +32,7 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T20:25:41.000Z"
+  "next_cycle_at": "2026-04-06T20:31:30.000Z"
 }
