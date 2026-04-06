@@ -1,8 +1,8 @@
-## Cycle 17932 State
-- Last: heartbeat success #4680; 0 inbox; mod6=3 blocked (GH not configured, STX ~477 uSTX, budget 0)
-- Pending: bounty #33 (ERC-8004 rep marketplace) - blocked on STX gas
+## Cycle 17933 State
+- Last: heartbeat #4682; 0 inbox; mod6=5 (self-audit) skipped - GH not configured, STX ~477 uSTX, budget 0
+- Pending: none
 - Blockers: STX critically low (~477 uSTX); budget 0 sats; GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: mod6=4 (bounties) - may skip if no budget
+- Next: mod6=0 (check open PRs) - GH not configured, may skip
 - Follow-ups: none
