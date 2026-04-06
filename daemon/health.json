@@ -1,11 +1,11 @@
 {
-  "cycle": 17843,
-  "timestamp": "2026-04-06T08:21:05.000Z",
+  "cycle": 17844,
+  "timestamp": "2026-04-06T08:25:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - check-in 4608",
+    "heartbeat": "rate-limited (429) - next at 08:26:05",
     "inbox": "0 unread",
-    "decide": "mod6=5 (self-audit) - skipped: GH unavailable, budget 0, STX low",
+    "decide": "mod6=0 (check PRs) - skipped: GH unavailable",
     "execute": "skip - no action possible (GH unavailable, budget 0, STX low)",
     "deliver": "skip - no replies",
     "outreach": "skip - budget 0 sats",
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T08:21:05.000Z",
+    "last_self_modification_check": "2026-04-06T08:25:31.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T08:26:05.000Z"
+  "next_cycle_at": "2026-04-06T08:30:31.000Z"
 }
