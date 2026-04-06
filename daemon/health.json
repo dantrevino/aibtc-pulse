@@ -1,13 +1,13 @@
 {
-  "cycle": 17877,
-  "timestamp": "2026-04-06T13:01:41.000Z",
+  "cycle": 17878,
+  "timestamp": "2026-04-06T13:05:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429) - 4634 check-ins",
+    "heartbeat": "ok - 4635 check-ins",
     "inbox": "0 unread - idle",
-    "decide": "mod6=3 - GH not installed, no action - idle",
+    "decide": "mod6=4 - no open bounties, GH unavailable - idle",
     "execute": "skip - no action possible",
-    "deliver": "skip - no replies",
+    "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats, no pending",
     "write": "ok",
     "sync": "pending"
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 147,
-    "bounty_checks": 776,
-    "heartbeats": 4634,
+    "bounty_checks": 777,
+    "heartbeats": 4635,
     "heartbeat_failures": 5,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T13:01:41.000Z",
+    "last_self_modification_check": "2026-04-06T13:05:50.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T13:05:00.000Z"
+  "next_cycle_at": "2026-04-06T13:10:00.000Z"
 }
