@@ -1,16 +1,16 @@
 {
-  "cycle": 17890,
-  "timestamp": "2026-04-06T15:05:33.000Z",
+  "cycle": 17891,
+  "timestamp": "2026-04-06T15:15:05.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - 4647 check-ins, level 2 Genesis",
+    "heartbeat": "rate-limited (429) - next check-in at 15:18:05",
     "inbox": "0 unread - idle",
-    "decide": "mod6=4 (monitor bounties) - no open bounties found",
+    "decide": "mod6=5 (self-audit) - GH not installed, skipped",
     "execute": "skip - no open bounties, GH not installed",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats",
     "write": "ok",
-    "sync": "pending"
+    "sync": "ok - nothing to commit"
   },
   "stats": {
     "messages_received": 0,
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 149,
-    "bounty_checks": 786,
-    "heartbeats": 4645,
+    "bounty_checks": 787,
+    "heartbeats": 4646,
     "heartbeat_failures": 5,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T15:05:33.000Z",
+    "last_self_modification_check": "2026-04-06T15:15:05.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T15:10:33.000Z"
+  "next_cycle_at": "2026-04-06T15:18:05.000Z"
 }
