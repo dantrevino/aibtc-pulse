@@ -170,3 +170,4 @@
 - 2026-04-06T13:05:50.000Z: Cycle 17878 - heartbeat ok (4635 check-ins); 0 inbox; mod6=4 - no open bounties found; GH unavailable; budget 0 sats; wallet unlocked; same blockers
 - 2026-04-06T13:10:00.000Z: Cycle 17879 - heartbeat rate-limited; 0 inbox; mod6=5 self-audit skipped (GH unavailable)
 - 2026-04-06T15:05:33.000Z: Cycle 17890 - heartbeat ok, 0 inbox, no open bounties, GH not installed, budget 0 sats
+- 2026-04-06T16:31:36.000Z: Cycle 17900 - heartbeat ok (4655), 0 inbox, mod6=2 blocked: GH not installed, STX critically low (477 uSTX), budget 0 sats
