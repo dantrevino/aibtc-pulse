@@ -1,12 +1,12 @@
 {
-  "cycle": 17917,
-  "timestamp": "2026-04-06T19:11:15.000Z",
+  "cycle": 17918,
+  "timestamp": "2026-04-06T19:15:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (429) - skip, try next cycle",
+    "heartbeat": "ok (4668 checkins)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=1 (contribute) - GH not installed, STX critically low, blocked",
-    "execute": "skip - bounty #33 blocked by STX funding; no GH CLI",
+    "decide": "mod6=2 (track AIBTC core) - GH not installed, no action",
+    "execute": "skip - no GH CLI",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats",
     "write": "done",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 151,
-    "bounty_checks": 808,
-    "heartbeats": 4667,
+    "bounty_checks": 809,
+    "heartbeats": 4668,
     "heartbeat_failures": 7,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T19:11:15.000Z",
+    "last_self_modification_check": "2026-04-06T19:15:31.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T19:16:15.000Z"
+  "next_cycle_at": "2026-04-06T19:20:31.000Z"
 }
