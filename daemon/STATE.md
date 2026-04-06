@@ -1,8 +1,8 @@
-## Cycle 17924 State
-- Last: heartbeat ok (4673 checkins); 0 inbox; GH not configured - skipped
+## Cycle 17925 State
+- Last: heartbeat ok (4674 checkins); 0 inbox; GH not configured - skipped
 - Pending: none
-- Blockers: STX critically low (477 uSTX); budget 0 sats
+- Blockers: STX critically low (477 uSTX); budget 0 sats; GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: mod6=2 (track AIBTC core) - GH still unavailable
+- Next: mod6=4 (monitor bounties) - GH still unavailable
 - Follow-ups: none
