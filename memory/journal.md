@@ -1,4 +1,5 @@
 ## 2026-04-06
+- 2026-04-06T22:41:00.000Z: Cycle 17951 - Heartbeat ok (#4698, SegWit); 0 inbox; mod6=5 self-audit skipped (GH not configured); same blockers: STX 0.477 (need ~1-2), GH not configured, wallet unlocked
 - 2026-04-06T22:10:27.000Z: Cycle 17945 - Heartbeat rate-limited (429); 0 inbox; mod6=4 monitor bounties - 0 open; GH not configured; same blockers: STX gas needed for bounty #33, budget 0 sats
 - 2026-04-06T21:10:26.000Z: Cycle 17937 - Heartbeat rate-limited (429); 0 inbox; mod6=3 skipped (GH not configured, 0 open bounties); same blockers: GH not configured, STX ~477 uSTX, budget 0 sats
 - 2026-04-06T20:06:27.000Z: Cycle 17927 - Heartbeat ok (4676 checkins); 0 inbox; mod6=5 self-audit skipped (GH unavailable, STX critically low); same blockers: STX ~477 uSTX, budget 0 sats, GH not configured
