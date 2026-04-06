@@ -1,11 +1,11 @@
 {
-  "cycle": 17880,
-  "timestamp": "2026-04-06T13:15:36.000Z",
+  "cycle": 17881,
+  "timestamp": "2026-04-06T13:20:46.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok - check-in recorded",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 - self-audit, GH unavailable - skip",
+    "decide": "mod6=0 - check PRs, GH unavailable - skip/idle",
     "execute": "skip - no action possible",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats, no pending",
@@ -23,7 +23,7 @@
     "tests_run": 482,
     "self_audits": 147,
     "bounty_checks": 778,
-    "heartbeats": 4636,
+    "heartbeats": 4637,
     "heartbeat_failures": 5,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T13:10:00.000Z",
+    "last_self_modification_check": "2026-04-06T13:20:46.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T13:20:36.000Z"
+  "next_cycle_at": "2026-04-06T13:25:46.000Z"
 }
