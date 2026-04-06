@@ -1,14 +1,14 @@
 {
-  "cycle": 17904,
-  "timestamp": "2026-04-06T17:06:13.000Z",
-  "status": "degraded",
+  "cycle": 17905,
+  "timestamp": "2026-04-06T17:14:59.000Z",
+  "status": "ok",
   "phases": {
-    "heartbeat": "ok (200) - check-in #4660",
+    "heartbeat": "ok (200) - check-in #4661",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 (PR review) - blocked: GH not installed",
-    "execute": "skip - no actionable items, pending bounty #33 awaiting Tiny Marten",
+    "decide": "mod6=1 (contribute) - no actionable items, bounty #33 pending",
+    "execute": "skip - no GH installed, STX critically low (477 uSTX), budget 0 sats",
     "deliver": "skip - no replies queued (budget 0)",
-    "outreach": "skip - budget 0 sats",
+    "outreach": "skip - budget 0 sats, pending follow-ups to Tiny Marten",
     "write": "ok",
     "sync": "pending"
   },
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 149,
-    "bounty_checks": 797,
-    "heartbeats": 4660,
+    "bounty_checks": 798,
+    "heartbeats": 4661,
     "heartbeat_failures": 6,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T17:06:13.000Z",
+    "last_self_modification_check": "2026-04-06T17:14:59.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T17:11:13.000Z"
+  "next_cycle_at": "2026-04-06T17:19:59.000Z"
 }
