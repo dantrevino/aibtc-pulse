@@ -1,16 +1,16 @@
 {
-  "cycle": 17863,
-  "timestamp": "2026-04-06T11:05:30.000Z",
+  "cycle": 17864,
+  "timestamp": "2026-04-06T11:10:41.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (429, 5min cycle)",
+    "heartbeat": "ok (200)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 - GH unavailable, no action",
-    "execute": "skip - GH not installed, bounty blocked on STX gas",
+    "decide": "mod6=1 (contribute) - GH unavailable, STX critically low, skip",
+    "execute": "skip - no viable actions with current constraints",
     "deliver": "skip - no replies",
     "outreach": "skip - budget 0 sats",
     "write": "ok",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 482,
     "self_audits": 146,
-    "bounty_checks": 766,
-    "heartbeats": 4623,
+    "bounty_checks": 767,
+    "heartbeats": 4624,
     "heartbeat_failures": 5,
     "discoveries": 14,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-06T11:05:30.000Z",
+    "last_self_modification_check": "2026-04-06T11:10:41.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-06",
-  "next_cycle_at": "2026-04-06T11:10:30.000Z"
+  "next_cycle_at": "2026-04-06T11:15:41.000Z"
 }
