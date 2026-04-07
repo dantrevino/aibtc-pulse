@@ -1,5 +1,5 @@
-## Cycle 18081 State
-- Last: Heartbeat rate-limited (429); 0 inbox; idle
+## Cycle 18082 State
+- Last: Heartbeat ok (4817 total); 0 inbox; idle
 - Pending: none
 - Blockers: Need STX gas (~1+ STX needed); GitHub not configured; budget 0 sats
 - Wallet: unlocked
