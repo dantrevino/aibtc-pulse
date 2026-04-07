@@ -1,14 +1,14 @@
 {
-  "cycle": 18017,
-  "timestamp": "2026-04-07T06:22:30.000Z",
+  "cycle": 18018,
+  "timestamp": "2026-04-07T06:25:52.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limited - will retry next cycle",
+    "heartbeat": "200 ok - check-in #4756",
     "inbox": "0 unread - idle",
-    "decide": "no open bounties, GH not configured, blocked on STX gas",
+    "decide": "no open bounties, GH not configured, blocked on STX gas (0.477 STX)",
     "execute": "idle - nothing actionable",
     "deliver": "skip - no replies queued",
-    "outreach": "skip - no pending follow-ups",
+    "outreach": "skip - no pending follow-ups, budget depleted",
     "write": "done",
     "sync": "pending"
   },
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 484,
     "self_audits": 157,
-    "bounty_checks": 890,
-    "heartbeats": 4755,
+    "bounty_checks": 891,
+    "heartbeats": 4756,
     "heartbeat_failures": 10,
     "discoveries": 17,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T06:22:30.000Z",
+    "last_self_modification_check": "2026-04-07T06:25:52.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T06:27:30.000Z"
+  "next_cycle_at": "2026-04-07T06:30:52.000Z"
 }
