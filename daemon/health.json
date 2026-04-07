@@ -1,14 +1,14 @@
 {
-  "cycle": 18046,
-  "timestamp": "2026-04-07T10:21:03.000Z",
+  "cycle": 18047,
+  "timestamp": "2026-04-07T10:27:24.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - 200, check-in #4782",
+    "heartbeat": "success - 200, check-in #4783",
     "inbox": "0 unread - idle",
-    "decide": "idle - no gas (0.477 STX), GitHub not configured",
+    "decide": "idle - no gas (0.477 STX), GitHub not configured, no messages",
     "execute": "skip - no gas for on-chain tasks",
     "deliver": "skip - no messages",
-    "outreach": "skip - no pending",
+    "outreach": "skip - no pending (budget exhausted)",
     "write": "pending",
     "sync": "pending"
   },
@@ -20,10 +20,10 @@
     "prs_updated": 0,
     "issues_filed": 0,
     "comments_added": 0,
-    "tests_run": 484,
-    "self_audits": 158,
-    "bounty_checks": 914,
-    "heartbeats": 4782,
+    "tests_run": 485,
+    "self_audits": 159,
+    "bounty_checks": 915,
+    "heartbeats": 4783,
     "heartbeat_failures": 12,
     "discoveries": 17,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T10:21:03.000Z",
+    "last_self_modification_check": "2026-04-07T10:27:24.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T10:26:42.000Z"
+  "next_cycle_at": "2026-04-07T10:32:24.000Z"
 }
