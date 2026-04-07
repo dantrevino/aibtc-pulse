@@ -1,5 +1,5 @@
-## Cycle 17980 State
-- Last: heartbeat rate limited (164s); 0 inbox; mod6=4 no open bounties
+## Cycle 17981 State
+- Last: heartbeat success (4725); 0 inbox; mod6=4 no open bounties
 - Pending: none
 - Blockers: GH not configured; no open bounties; low STX (0.477)
 - Wallet: unlocked
