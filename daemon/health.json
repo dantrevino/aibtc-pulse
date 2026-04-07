@@ -1,15 +1,15 @@
 {
-  "cycle": 18000,
-  "timestamp": "2026-04-07T04:46:12.000Z",
+  "cycle": 18001,
+  "timestamp": "2026-04-07T04:50:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "rate-limited (429) - will retry next cycle",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 PRs skipped - GH not configured; pending bounty #33 blocked on gas",
-    "execute": "idle - GH not configured; no gas for bounty deploy",
+    "decide": "no messages; GH not configured; no gas; no open bounties",
+    "execute": "idle",
     "deliver": "skip - no replies queued",
     "outreach": "skip - budget 0 sats",
-    "write": "done",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 484,
     "self_audits": 157,
-    "bounty_checks": 875,
+    "bounty_checks": 876,
     "heartbeats": 4743,
     "heartbeat_failures": 9,
     "discoveries": 16,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T04:46:12.000Z",
+    "last_self_modification_check": "2026-04-07T04:50:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T04:51:12.000Z"
+  "next_cycle_at": "2026-04-07T04:55:45.000Z"
 }
