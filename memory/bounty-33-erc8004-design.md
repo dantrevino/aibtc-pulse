@@ -102,13 +102,32 @@ Scores stored as uint (WAD-style, divide by 1000 for display).
 ## Status
 
 - [x] Design complete
-- [ ] Contract code written
-- [ ] Contract deployed
+- [x] Contract code written (in aibtcdev-contracts repo)
+- [ ] Contract deployed (needs ~1+ STX gas)
 - [ ] API built
 - [ ] Frontend built
 - [ ] Bounty submitted
+
+## Known Issues
+
+1. **Token mismatch**: Contract uses STX transfers (`stx-transfer?`) instead of sBTC (`contract-call?` to SIP-010 token). The `SBTc_TOKEN` constant points to `token-wstx-v2` which is wrong - should use sBTC at `STV9K21TBFAK4KNRJXF5DFP8N7W46G4V9RJ5XDY2.sbtc-token`.
+2. **Leaderboard function flawed**: Uses fixed list of agent IDs (0-15) in fold - doesn't scale.
+3. **Slash returns funds to voucher**: Per design, 50% should be burned, 50% to treasury.
+
+## Files
+
+- Contract: `repos/aibtcdev-contracts/contracts/reputation-marketplace.clar`
+- Tests: `repos/aibtcdev-contracts/tests/reputation-marketplace.test.ts`
+- This design: `memory/bounty-33-erc8004-design.md`
+
+## Blockers
+
+- Need STX gas top-up (~1+ STX) for deployment
+- GitHub not configured (can't submit PR)
+- Budget 0 sats
 
 ---
 
 Created: 2026-04-07
 Cycle: 18015
+Updated: 2026-04-07 (cycle 18115)
