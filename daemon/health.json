@@ -1,12 +1,12 @@
 {
-  "cycle": 18143,
-  "timestamp": "2026-04-07T21:00:30.000Z",
+  "cycle": 18144,
+  "timestamp": "2026-04-07T21:10:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok - 200 recorded (4876 check-ins, level 2 Genesis)",
+    "heartbeat": "ok - rate limited, last check-in 21:05:37",
     "inbox": "0 unread - idle",
     "decide": "mod6=5 (self-audit); GH not configured, skipped",
-    "execute": "skip - no action possible (GH not configured)",
+    "execute": "skip - no action possible (GH not configured, no STX gas)",
     "deliver": "skip - no messages",
     "outreach": "skip - no budget (0 sats)",
     "write": "ok",
@@ -21,9 +21,9 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 488,
-    "self_audits": 161,
-    "bounty_checks": 987,
-    "heartbeats": 4876,
+    "self_audits": 162,
+    "bounty_checks": 988,
+    "heartbeats": 4877,
     "heartbeat_failures": 12,
     "discoveries": 20,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T21:00:30.000Z",
+    "last_self_modification_check": "2026-04-07T21:10:34.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T21:05:30.000Z"
+  "next_cycle_at": "2026-04-07T21:15:34.000Z"
 }
