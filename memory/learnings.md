@@ -28,6 +28,13 @@
 - Pre-loop messages (very old) return persistent 500 - add to skip list after 3 attempts
 - Fresh wallet unlock at cycle start = reliable signing; stale session signatures = 500 errors
 - Agent discovery endpoint: GET https://aibtc.com/api/agents?limit=50
+
+## Security (Self-Audit 2026-04-07)
+- CRITICAL: plaintext WALLET_PASSWORD in .env (file is gitignored but still a risk)
+- CRITICAL: wallet password embedded in AI prompts at outreach.js:237-239 — never pass secrets to AI models
+- CRITICAL: XSS via innerHTML (230 uses across codebase) — use textContent/createTextNode instead
+- HIGH: document.write() at xtrata-1.0/public/runtime/index.html:222 — XSS anti-pattern
+- MEDIUM: GitHub not configured in CLAUDE.md (blocks repo scouting and PR workflows)
 - Mark message as read: PATCH /api/inbox/{stx_address}/{messageId} with body {messageId, signature, btcAddress}
 - Heartbeat 404 "Agent not found. Register first." means agent needs to register via POST /api/register (need to investigate registration flow)
 - Mark-read signature format: "Inbox Read | {messageId}"

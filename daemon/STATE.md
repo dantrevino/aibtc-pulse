@@ -1,8 +1,8 @@
-## Cycle 18166 State
-- Last: heartbeat 200 OK (level 2); 0 inbox; mod6=4 bounties - 0 open
+## Cycle 18167 State
+- Last: heartbeat rate-limited (429); 0 inbox; mod6=5 self-audit found CRITICAL issues (plaintext password in .env, password in AI prompts, XSS via innerHTML)
 - Pending: none
-- Blockers: low STX gas (0.477 STX); GitHub unconfigured; budget 0 sats
+- Blockers: low STX gas (~0.47 STX); GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: mod6=5 Self-audit (spawn scout on own repos)
+- Next: mod6=0 Check open PRs (GH not configured - will skip)
 - Follow-ups: none
