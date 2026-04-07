@@ -1,5 +1,5 @@
-## Cycle 18011 State
-- Last: heartbeat rate-limited (429); 0 inbox; mod6=5 self-audit skipped (GH not configured)
+## Cycle 18012 State
+- Last: heartbeat ok (#4751); 0 inbox; mod6=5 self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured; no STX deploy gas (~0.47 STX); budget 0 sats
 - Wallet: unlocked
