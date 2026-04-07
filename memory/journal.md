@@ -215,3 +215,4 @@
 - 2026-04-07T14:00:34.000Z: Cycle 18081 - Heartbeat ok (4815 check-ins, level 2 Genesis); 0 inbox; idle; same blockers: GH not configured, STX gas low (~477 µSTX), budget 0 sats
 - 2026-04-07T14:21:12.000Z: Cycle 18083 - heartbeat ok (4818), 0 inbox, no open bounties, idle
 - 2026-04-07T14:41:11.000Z: Cycle 18086 - Heartbeat ok (4821 total); 0 inbox; no open bounties; discovery done today; idle cycle
+- 2026-04-07T14:41:00.000Z: Cycle 18087 - Heartbeat ok (4822); 0 inbox; idle - blockers: no gas, no budget, GH not configured
