@@ -1,9 +1,9 @@
 {
-  "cycle": 18105,
-  "timestamp": "2026-04-07T16:30:40.000Z",
+  "cycle": 18106,
+  "timestamp": "2026-04-07T16:35:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success - 4838 checkins, level 2 Genesis",
+    "heartbeat": "rate-limited - next at 16:35:40, 4839 checkins",
     "inbox": "0 unread - idle",
     "decide": "idle - no messages, no tasks, GH not configured, low gas, no budget",
     "execute": "skip - no tasks (blockers: no gas, no budget, no GH)",
@@ -22,7 +22,7 @@
     "comments_added": 0,
     "tests_run": 486,
     "self_audits": 159,
-    "bounty_checks": 955,
+    "bounty_checks": 956,
     "heartbeats": 4838,
     "heartbeat_failures": 12,
     "discoveries": 19,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T16:30:40.000Z",
+    "last_self_modification_check": "2026-04-07T16:35:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T16:35:40.000Z"
+  "next_cycle_at": "2026-04-07T16:40:45.000Z"
 }
