@@ -1,5 +1,5 @@
 ## Cycle 18105 State
-- Last: heartbeat rate-limited (12s wait); 0 inbox; idle; GH not configured, low gas, budget 0 sats
+- Last: heartbeat success (4838 checkins); 0 inbox; idle
 - Pending: none
 - Blockers: Need STX gas top-up (~1+ STX); GitHub not configured; budget 0 sats
 - Wallet: unlocked
