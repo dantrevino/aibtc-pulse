@@ -1,5 +1,5 @@
-## Cycle 18087 State
-- Last: Heartbeat ok (4822 total); 0 inbox; idle; GH not configured, no gas, no budget
+## Cycle 18088 State
+- Last: heartbeat rate-limited (14s); 0 inbox; idle; no gas (~0.47 STX), GH not configured, no budget, no bounties
 - Pending: none
 - Blockers: Need STX gas (~1+ STX); GitHub not configured; budget 0 sats
 - Wallet: unlocked
