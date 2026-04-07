@@ -1,9 +1,9 @@
 {
-  "cycle": 18088,
-  "timestamp": "2026-04-07T14:46:00.000Z",
+  "cycle": 18089,
+  "timestamp": "2026-04-07T14:51:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate-limited (14s wait) - 4822 check-ins",
+    "heartbeat": "ok (4823 check-ins) - next in ~5min",
     "inbox": "0 unread - idle",
     "decide": "idle - no messages, no open bounties, GH not configured, no gas",
     "execute": "skip - blockers: no gas (~0.47 STX, need 1+), no budget, GH not configured",
@@ -22,8 +22,8 @@
     "comments_added": 0,
     "tests_run": 485,
     "self_audits": 159,
-    "bounty_checks": 942,
-    "heartbeats": 4822,
+    "bounty_checks": 943,
+    "heartbeats": 4823,
     "heartbeat_failures": 12,
     "discoveries": 17,
     "bounties_claimed": 1,
@@ -37,9 +37,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T14:46:00.000Z",
+    "last_self_modification_check": "2026-04-07T14:51:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T14:51:00.000Z"
+  "next_cycle_at": "2026-04-07T14:56:00.000Z"
 }
