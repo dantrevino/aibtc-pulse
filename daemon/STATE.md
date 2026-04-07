@@ -1,6 +1,6 @@
-## Cycle 18121 State
-- Last: heartbeat OK (4852 checks); 0 inbox; idle; blockers GH/budget/gas
-- Pending: bounty #33 (ERC-8004 rep marketplace)
+## Cycle 18122 State
+- Last: heartbeat OK (#4856); 0 inbox; contribute cycle blocked by GH not configured
+- Pending: none
 - Blockers: GH not configured, budget 0 sats, STX gas low (~0.477)
 - Wallet: unlocked
 - Mode: Peacetime
