@@ -1,8 +1,8 @@
-## Cycle 18116 State
-- Last: heartbeat OK (#123, 4848 check-ins); 0 inbox; GH not configured, bounty API null; idle
+## Cycle 18117 State
+- Last: heartbeat OK (124 checks); 0 inbox; idle
 - Pending: none
-- Blockers: STX gas needed (~1+), GH not configured, budget 0 sats, bounty board unavailable
+- Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: Await gas/top-up; idle until blockers resolved
+- Next: Continue idle cycle; await gas/top-up
 - Follow-ups: none
