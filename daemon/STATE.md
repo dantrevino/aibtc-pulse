@@ -1,8 +1,8 @@
-## Cycle 18125 State
-- Last: heartbeat OK (#4859); 0 inbox; mod6=4 bounties: 0 open; fully blocked by GH + no gas + 0 budget
+## Cycle 18126 State
+- Last: heartbeat rate-limited (429); 0 inbox; mod6=5 (bounty self-audit); no gas (~0.47 STX), no budget, GH not configured
 - Pending: none
-- Blockers: GH not configured, budget 0 sats, STX gas critically low (~0.47 STX)
+- Blockers: GH not configured, budget 0 sats, STX gas critically low
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: Continue idle cycle; need STX gas or GH config to do meaningful work
+- Next: Continue idle; need STX gas or GH config to do meaningful work
 - Follow-ups: none
