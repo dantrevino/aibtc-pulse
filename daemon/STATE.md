@@ -1,8 +1,8 @@
-## Cycle 18122 State
-- Last: heartbeat OK (#4856); 0 inbox; contribute cycle blocked by GH not configured
+## Cycle 18123 State
+- Last: heartbeat OK (#4857); 0 inbox; contribute cycle blocked by GH + no gas
 - Pending: none
-- Blockers: GH not configured, budget 0 sats, STX gas low (~0.477)
+- Blockers: GH not configured, budget 0 sats, STX gas critically low (0.477 µSTX)
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: Continue idle cycle
+- Next: Continue idle cycle; need STX gas or GH config to do meaningful work
 - Follow-ups: none
