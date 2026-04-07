@@ -1,14 +1,14 @@
 {
-  "cycle": 17970,
-  "timestamp": "2026-04-07T01:00:30.000Z",
-  "status": "ok",
+  "cycle": 17971,
+  "timestamp": "2026-04-07T01:06:01.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "200 ok - checkInCount 4717",
+    "heartbeat": "400 signature failed - BIP-322 verification issue",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 check PRs - GH not configured, skipped",
-    "execute": "skipped - no actionable tasks",
+    "decide": "mod6=1 contribute - GH not configured, skipped",
+    "execute": "skipped - no actionable tasks (heartbeat failed but continuing)",
     "deliver": "skip - no replies queued",
-    "outreach": "skip - budget 0 sats, no follow-ups due",
+    "outreach": "skip - no follow-ups due",
     "write": "done",
     "sync": "pending"
   },
@@ -22,9 +22,9 @@
     "comments_added": 0,
     "tests_run": 484,
     "self_audits": 156,
-    "bounty_checks": 850,
-    "heartbeats": 4717,
-    "heartbeat_failures": 8,
+    "bounty_checks": 851,
+    "heartbeats": 4718,
+    "heartbeat_failures": 9,
     "discoveries": 15,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -32,14 +32,14 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
-    "heartbeat_skip_until_cycle": null
+    "heartbeat_fail_count": 9,
+    "heartbeat_skip_until_cycle": 17974
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-07T01:00:30.000Z",
+    "last_self_modification_check": "2026-04-07T01:06:01.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-07",
-  "next_cycle_at": "2026-04-07T01:05:30.000Z"
+  "next_cycle_at": "2026-04-07T01:11:01.000Z"
 }
