@@ -1,5 +1,5 @@
-## Cycle 18084 State
-- Last: Heartbeat ok (4819 total); 0 inbox; self-audit skipped (GH not configured)
+## Cycle 18085 State
+- Last: Heartbeat ok (4820 total); 0 inbox; idle cycle
 - Pending: none
 - Blockers: Need STX gas (~1+ STX needed); GitHub not configured; budget 0 sats
 - Wallet: unlocked
