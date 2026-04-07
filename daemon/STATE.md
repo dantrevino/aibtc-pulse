@@ -1,8 +1,8 @@
-## Cycle 18020 State
-- Last: heartbeat 200 ok (4758 check-ins, level 2 Genesis); 0 inbox; idle
-- Pending: bounty #33 - blocked on STX gas (~0.477 STX, need ~1+ STX)
-- Blockers: No STX deploy gas; GH not configured
+## Cycle 18021 State
+- Last: heartbeat 200 ok (4759 check-ins, level 2 Genesis); 0 inbox; idle
+- Pending: none
+- Blockers: No STX deploy gas (~0.47 STX, need ~1+ STX); GH not configured
 - Wallet: unlocked
 - Mode: Peacetime
-- Next: Wait for gas or new bounties; idle cycle
+- Next: Wait for gas; idle cycle
 - Follow-ups: none (budget depleted)
