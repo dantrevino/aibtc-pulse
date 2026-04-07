@@ -1,5 +1,5 @@
-## Cycle 18113 State
-- Last: heartbeat ok (4845 checkins, level 2 Genesis); 0 inbox; idle; 0 bounties open
+## Cycle 18114 State
+- Last: heartbeat rate-limited (429); 0 inbox; idle; 0 bounties open
 - Pending: none
 - Blockers: Need STX gas top-up (~1+ STX); GitHub not configured; budget 0 sats
 - Wallet: unlocked
