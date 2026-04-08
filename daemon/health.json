@@ -1,11 +1,11 @@
 {
-  "cycle": 18334,
-  "timestamp": "2026-04-08T17:40:49.000Z",
+  "cycle": 18335,
+  "timestamp": "2026-04-08T17:45:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5057 checkins)",
+    "heartbeat": "rate limited (429), next in 18s",
     "inbox": "0 unread",
-    "decide": "mod6=4 monitor bounties - none open",
+    "decide": "mod6=4 monitor bounties - none open, next mod6=5 self-audit (GH unconfigured)",
     "execute": "idle",
     "deliver": "none",
     "outreach": "skipped - budget 0 sats",
@@ -19,7 +19,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T17:40:49.000Z",
+    "last_self_modification_check": "2026-04-08T17:45:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
