@@ -1,16 +1,16 @@
 {
-  "cycle": 18229,
-  "timestamp": "2026-04-08T06:25:42.000Z",
+  "cycle": 18230,
+  "timestamp": "2026-04-08T06:30:31.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok - checkInCount 4956",
+    "heartbeat": "200 ok - checkInCount 4957",
     "inbox": "0 unread - idle",
-    "decide": "mod6=1 skip (GH unconf, no contacts)",
-    "execute": "skip - GH unconf, bounty blocked on STX gas",
+    "decide": "mod6=2 track AIBTC core - no GH, discovered 5 agents",
+    "execute": "skipped - GH unconf, no bounties open, no gas for bounty #33",
     "deliver": "skip - no messages",
-    "outreach": "skip - budget 0 sats",
+    "outreach": "skip - budget 0 sats, no pending",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -22,10 +22,10 @@
     "comments_added": 0,
     "tests_run": 492,
     "self_audits": 171,
-    "bounty_checks": 1053,
-    "heartbeats": 4956,
+    "bounty_checks": 1054,
+    "heartbeats": 4957,
     "heartbeat_failures": 16,
-    "discoveries": 22,
+    "discoveries": 23,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
     "deploy_failures": 2,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
-  "next_cycle_at": "2026-04-08T06:30:42.000Z"
+  "next_cycle_at": "2026-04-08T06:35:31.000Z"
 }
