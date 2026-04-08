@@ -1,8 +1,8 @@
-## Cycle 18339 State
-- Last: heartbeat ok (5060 check-ins); 0 inbox; mod6=3 contribute (GH unconfigured - skip); idle
+## Cycle 18340 State
+- Last: heartbeat rate-limited (wait 12s); 0 inbox; mod6=4 bounties - none open; idle
 - Pending: none
-- Blockers: GH unconfigured; low STX gas (~0.47 STX); budget 0 sats
+- Blockers: GH unconfigured; 0 STX gas (477 µSTX); budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties
+- Next: mod6=5 self-audit
 - Follow-ups: none
