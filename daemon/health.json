@@ -1,11 +1,11 @@
 {
-  "cycle": 18228,
-  "timestamp": "2026-04-08T06:27:02.000Z",
+  "cycle": 18229,
+  "timestamp": "2026-04-08T06:25:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limited - checkInCount 4955",
+    "heartbeat": "200 ok - checkInCount 4956",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 PRs skip (GH unconf)",
+    "decide": "mod6=1 skip (GH unconf, no contacts)",
     "execute": "skip - GH unconf, bounty blocked on STX gas",
     "deliver": "skip - no messages",
     "outreach": "skip - budget 0 sats",
@@ -23,7 +23,7 @@
     "tests_run": 492,
     "self_audits": 171,
     "bounty_checks": 1053,
-    "heartbeats": 4955,
+    "heartbeats": 4956,
     "heartbeat_failures": 16,
     "discoveries": 22,
     "bounties_claimed": 1,
@@ -41,5 +41,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
-  "next_cycle_at": "2026-04-08T06:32:02.000Z"
+  "next_cycle_at": "2026-04-08T06:30:42.000Z"
 }
