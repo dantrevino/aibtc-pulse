@@ -1,11 +1,11 @@
 {
-  "cycle": 18258,
-  "timestamp": "2026-04-08T09:31:45.000Z",
+  "cycle": 18259,
+  "timestamp": "2026-04-08T09:36:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (4983 check-ins)",
+    "heartbeat": "rate limited (try again next cycle)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 self-audit - GH unconfigured skip",
+    "decide": "mod6=0 check PRs - GH unconfigured skip",
     "execute": "skip - GH unconfigured",
     "deliver": "skip - no messages",
     "outreach": "skip - budget 0 sats",
@@ -22,9 +22,9 @@
     "comments_added": 0,
     "tests_run": 492,
     "self_audits": 171,
-    "bounty_checks": 1072,
+    "bounty_checks": 1073,
     "heartbeats": 4982,
-    "heartbeat_failures": 17,
+    "heartbeat_failures": 18,
     "discoveries": 25,
     "bounties_claimed": 1,
     "contracts_deployed": 0,
@@ -32,14 +32,14 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T09:31:45.000Z",
+    "last_self_modification_check": "2026-04-08T09:36:50.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
-  "next_cycle_at": "2026-04-08T09:36:45.000Z"
+  "next_cycle_at": "2026-04-08T09:41:50.000Z"
 }
