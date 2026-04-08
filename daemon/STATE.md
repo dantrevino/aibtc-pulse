@@ -1,5 +1,5 @@
-## Cycle 18315 State
-- Last: heartbeat ok; 0 inbox; mod6=3 contribute (GH unconfigured - will skip); idle
+## Cycle 18316 State
+- Last: heartbeat ok; 0 inbox; mod6=3 contribute skipped (GH unconfigured); idle
 - Pending: none
 - Blockers: GH unconfigured; low STX gas (~0.47 STX); budget 0 sats
 - Wallet: unlocked

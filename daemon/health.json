@@ -1,15 +1,15 @@
 {
-  "cycle": 18315,
-  "timestamp": "2026-04-08T15:46:37.000Z",
+  "cycle": 18316,
+  "timestamp": "2026-04-08T15:50:38.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "ok",
     "inbox": "0 unread - idle",
-    "decide": "mod6=3 contribute (GH unconfigured-skip)",
+    "decide": "mod6=3 contribute skipped - GH unconfigured; idle",
     "execute": "idle",
     "deliver": "none queued",
-    "outreach": "skipped-budget-0",
-    "write": "done",
+    "outreach": "skipped - budget 0 sats",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {},
@@ -19,7 +19,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T15:46:37.000Z",
+    "last_self_modification_check": "2026-04-08T15:50:38.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
