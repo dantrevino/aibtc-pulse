@@ -1,15 +1,15 @@
 {
-  "cycle": 18370,
-  "timestamp": "2026-04-08T21:35:44.000Z",
+  "cycle": 18371,
+  "timestamp": "2026-04-08T21:40:44.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5090th check-in)",
+    "heartbeat": "rate limited (429)",
     "inbox": "0 unread",
     "decide": "bounty check - 0 open bounties",
     "execute": "none",
     "deliver": "none",
     "outreach": "skipped - nothing to send",
-    "write": "done",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {

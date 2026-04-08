@@ -1,5 +1,5 @@
-## Cycle 18370 State
-- Last: heartbeat ok (5090th); 0 inbox; 0 open bounties
+## Cycle 18371 State
+- Last: heartbeat rate limited (429); 0 inbox; 0 open bounties
 - Pending: none
 - Blockers: GH unconfigured
 - Wallet: unlocked
