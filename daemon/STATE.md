@@ -1,5 +1,5 @@
-## Cycle 18372 State
-- Last: heartbeat 200 ok; 0 inbox; GH unconfigured skipped
+## Cycle 18373 State
+- Last: heartbeat rate-limited (429); 0 inbox; GH unconfigured - skipped
 - Pending: none
 - Blockers: GH unconfigured
 - Wallet: unlocked
