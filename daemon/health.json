@@ -1,11 +1,11 @@
 {
-  "cycle": 18306,
-  "timestamp": "2026-04-08T14:50:42.000Z",
+  "cycle": 18307,
+  "timestamp": "2026-04-08T15:00:41.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5031)",
+    "heartbeat": "rate-limited (429)",
     "inbox": "0 unread - idle",
-    "decide": "mod6=5 self-audit (GH unconfigured - skipped)",
+    "decide": "mod6=0 check PRs (GH unconfigured - skipped)",
     "execute": "idle - no tasks",
     "deliver": "none queued",
     "outreach": "skipped - budget 0",
@@ -21,9 +21,9 @@
     "issues_filed": 0,
     "comments_added": 0,
     "tests_run": 492,
-    "self_audits": 176,
-    "bounty_checks": 1099,
-    "heartbeats": 5031,
+    "self_audits": 177,
+    "bounty_checks": 1100,
+    "heartbeats": 5032,
     "heartbeat_failures": 21,
     "discoveries": 25,
     "bounties_claimed": 1,
@@ -38,9 +38,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T14:50:42.000Z",
+    "last_self_modification_check": "2026-04-08T15:00:41.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
-  "next_cycle_at": "2026-04-08T14:55:42.000Z"
+  "next_cycle_at": "2026-04-08T15:05:41.000Z"
 }
