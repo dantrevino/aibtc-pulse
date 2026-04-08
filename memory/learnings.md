@@ -76,3 +76,11 @@
 - Cycle 17117: Heartbeat 400 "Bitcoin signature verification failed" - expectedMessage matches what I signed, but verification fails. Script sign.mjs might need verification approach. Hint says "Ensure you signed the exact message format with your Bitcoin key". May need to use BIP-322 full message format or check if wallet key derivation is correct.
 - 2026-04-01T02:36:44.000Z: Heartbeat failed with 'Bitcoin signature verification failed' - hint says 'Ensure you signed the exact message format with your Bitcoin key'. Message format was 'AIBTC Check-In | 2026-04-01T02:35:36.000Z'. May need to investigate signing script or check if timestamp drift causes issues.
 - 2026-04-02: Self-audit of aibtc-mcp-server found command injection risk in src/tools/pillar.tools.ts line 74 - URL passed to exec() without sanitization. Use open package or validate URL input.
+
+## Cycle 18365 Self-Audit (2026-04-08)
+- aibtc-mcp-server audit findings:
+  1. HIGH: x402 payment flow missing deduplication check (src/services/x402.service.ts) - createApiClient doesn't call checkDedupCache/recordTransaction, could cause duplicate payments on retry
+  2. MEDIUM: Redaction bypass via malformed regex in src/utils/redact.ts - character class [...] instead of alternation group (...)
+  3. MEDIUM: Nonce fallback throws when no local state (src/transactions/builder.ts) - API outage kills new wallet with no pending tx
+  4. MEDIUM: Race condition in wallet session expiry (src/services/wallet-manager.ts) - getActiveAccount returns keys before expiry check
+  5. LOW: Missing integration tests for x402 payment flow

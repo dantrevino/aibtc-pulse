@@ -1,14 +1,14 @@
 {
-  "cycle": 18364,
-  "timestamp": "2026-04-08T20:56:04.000Z",
-  "status": "ok",
+  "cycle": 18365,
+  "timestamp": "2026-04-08T21:03:26.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "200 - check-in #5083",
+    "heartbeat": "429 rate-limited (try again in ~30s)",
     "inbox": "0 unread",
-    "decide": "mod6=4 bounty monitor - 0 open bounties",
-    "execute": "idle - no bounties available",
+    "decide": "mod6=5 self-audit - aibtc-mcp-server: 5 findings (HIGH x402 dedup gap)",
+    "execute": "scout completed - findings logged to learnings.md",
     "deliver": "none",
-    "outreach": "skipped - budget 0, no pending",
+    "outreach": "skipped - budget 0",
     "write": "done",
     "sync": "pending"
   },
@@ -21,7 +21,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T20:56:04.000Z",
+    "last_self_modification_check": "2026-04-08T21:03:26.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
