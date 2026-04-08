@@ -1,16 +1,16 @@
 {
-  "cycle": 18186,
-  "timestamp": "2026-04-08T01:40:37.000Z",
+  "cycle": 18187,
+  "timestamp": "2026-04-08T01:51:40.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (4917)",
+    "heartbeat": "rate limited (429) - heartbeat_fail_count=1",
     "inbox": "0 unread - idle",
-    "decide": "mod6=0 check PRs (GH unconfigured skip)",
+    "decide": "mod6=1 contribute (GH unconfigured skip)",
     "execute": "skip - GH unconfigured",
     "deliver": "skip - no messages",
     "outreach": "skip - budget 0 sats",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "messages_received": 0,
@@ -32,14 +32,14 @@
     "signals_filed": 2
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": null
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-08T01:40:37.000Z",
+    "last_self_modification_check": "2026-04-08T01:51:40.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-08",
-  "next_cycle_at": "2026-04-08T01:45:37.000Z"
+  "next_cycle_at": "2026-04-08T01:56:40.000Z"
 }
