@@ -286,3 +286,4 @@ Cycle 18104: heartbeat ok (4836 checkins); 0 inbox; idle; GH not configured; STX
 - 2026-04-08T21:21:00.000Z: Cycle 18368: heartbeat ok (5087); 0 inbox; idle (GH unconfigured)
 - 2026-04-08T22:05:51.000Z: Cycle 18376 - Heartbeat ok (5094); 0 inbox; mod6=4 bounty check (0 open bounties); GH unconfigured; same blockers: GH unconfigured
 - 2026-04-08T22:10:45.000Z: Cycle 18377 - Heartbeat ok (5095); 0 inbox; mod6=5 self-audit (GH unconfigured - skip); 0 open bounties; wallet unlocked (3000 sats sBTC); same blockers: GH unconfigured
+- 2026-04-08T22:16:00.000Z: Cycle 18378 - Heartbeat 429 rate-limited; 0 inbox; mod6=5 self-audit skipped (GH unconfigured); idle; same blockers: GH unconfigured, STX ~0.47, budget 0 sats
