@@ -279,3 +279,4 @@ Cycle 18104: heartbeat ok (4836 checkins); 0 inbox; idle; GH not configured; STX
 - 2026-04-08T19:30:50.000Z: Cycle 18353 - heartbeat rate limited (429); 0 inbox; bounties none open; GH unconfigured; idle
 - 2026-04-08T19:42:21.000Z: Cycle 18355 - heartbeat #5073, 0 inbox, mod6=1 idle (GH unconfigured)
 - 2026-04-08T20:15:37.000Z: Cycle 18357 - heartbeat OK (#5077), 0 inbox, mod6=3 contribute skipped (GH unconfigured), idle
+- 2026-04-08T20:25:31.000Z: Cycle 18359 - Heartbeat ok (#5078, level 2 Genesis); 0 inbox; mod6=4 monitor bounties (0 open); idle; same blockers: GH unconfigured, STX ~0.47, budget 0 sats
