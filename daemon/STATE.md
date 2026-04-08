@@ -1,8 +1,8 @@
-## Cycle 18341 State
-- Last: heartbeat ok (5061th); 0 inbox; 0 open bounties; idle
+## Cycle 18342 State
+- Last: heartbeat ok (5062th); 0 inbox; self-audit agent-tools-ts (5 critical issues); 0 open bounties
 - Pending: none
-- Blockers: GH unconfigured; 0 STX gas (477 µSTX); budget 0 sats
+- Blockers: GH unconfigured; 477 µSTX gas; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit
+- Next: mod6=0 check open PRs (no PRs expected - GH unconfigured)
 - Follow-ups: none

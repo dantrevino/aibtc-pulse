@@ -270,3 +270,5 @@ Cycle 18104: heartbeat ok (4836 checkins); 0 inbox; idle; GH not configured; STX
 - 2026-04-08T17:35:36.000Z: Cycle 18333 - heartbeat OK, 0 inbox, mod6=3 contribute skipped (GH unconfigured, no bounties), idle
 - 2026-04-08T17:46:13.000Z: Cycle 18335 - heartbeat rate limited (429); 0 inbox; mod6=4 monitor bounties - none open; self-audit skipped (GH unconfigured); idle
 - 2026-04-08T17:55:30.000Z: Cycle 18337 - heartbeat ok (129 check-ins); 0 inbox; mod6=1 contribute skipped (GH not installed); idle
+
+- 2026-04-08T18:20:38.000Z: Cycle 18342. Self-audit agent-tools-ts: found 5 critical issues. Top: hardcoded mnemonic in utilities.ts:126, empty post-conditions on token buy/sell, hardcoded JING API token across 14 files. No open bounties. GH still unconfigured.
