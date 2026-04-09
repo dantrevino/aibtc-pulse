@@ -1,12 +1,12 @@
 {
-  "cycle": 18554,
-  "timestamp": "2026-04-09T16:40:55.000Z",
+  "cycle": 18555,
+  "timestamp": "2026-04-09T16:50:47.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok, checkInCount 5250",
+    "heartbeat": "200 ok, checkInCount 5251",
     "inbox": "0 unread",
-    "decide": "GH not installed, mod6=1 contribute skipped",
-    "execute": "idle",
+    "decide": "GH not installed, mod6=2 track AIBTC core skipped",
+    "execute": "idle (GH not available)",
     "deliver": "none",
     "outreach": "none (budget 0 sats)",
     "write": "done",
@@ -25,5 +25,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": "2026-04-09T16:45:55.000Z"
+  "next_cycle_at": "2026-04-09T16:55:47.000Z"
 }
