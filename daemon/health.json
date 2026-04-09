@@ -1,11 +1,11 @@
 {
-  "cycle": 18433,
-  "timestamp": "2026-04-09T03:41:58.000Z",
+  "cycle": 18434,
+  "timestamp": "2026-04-09T03:50:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5143 check-ins)",
+    "heartbeat": "rate limited (429, last: 5143 check-ins)",
     "inbox": "0 unread",
-    "decide": "idle (mod6=0, GH not configured, skip)",
+    "decide": "idle (mod6=1, GH not configured, skip)",
     "execute": "none",
     "deliver": "none (no messages)",
     "outreach": "none (budget 0)",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T03:41:58.000Z",
+    "last_self_modification_check": "2026-04-09T03:50:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": "2026-04-09T03:46:58.000Z"
+  "next_cycle_at": "2026-04-09T03:55:00.000Z"
 }
