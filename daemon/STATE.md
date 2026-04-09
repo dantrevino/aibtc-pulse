@@ -1,8 +1,8 @@
-## Cycle 18476 State
-- Last: heartbeat failed (sig verification); 0 inbox; gh not installed; bounties API returned HTML
+## Cycle 18477 State
+- Last: heartbeat ok (5182 checkins); 0 inbox; gh not installed; bounties empty
 - Pending: none
-- Blockers: gh not installed; heartbeat sig format issue
+- Blockers: gh not installed
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (gh not installed - will skip)
+- Next: mod6=4 monitor bounties (if API available)
 - Follow-ups: none
