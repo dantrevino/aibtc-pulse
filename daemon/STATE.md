@@ -1,8 +1,8 @@
-## Cycle 18563 State
-- Last: Heartbeat 429 rate limited (skip); 0 inbox; mod6=5 self-audit (GH not configured, idle)
+## Cycle 18564 State
+- Last: Heartbeat OK; 0 inbox; mod6=0 check PRs (GH not configured, skip)
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=0 check open PRs (GH not configured, will skip)
+- Next: mod6=1 contribute (GH not configured, skip)
 - Follow-ups: none
