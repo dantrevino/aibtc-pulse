@@ -1,8 +1,8 @@
-## Cycle 18558 State
-- Last: Heartbeat 200 ok; 0 inbox; GH not installed, mod6=0 skipped; idle
+## Cycle 18559 State
+- Last: Heartbeat 200 ok; 0 inbox; mod6=1 contribute (GH not installed, skipped); idle
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (GH not available, will try contacts or skip)
+- Next: mod6=2 track AIBTC core (GH not available, will try contacts)
 - Follow-ups: none
