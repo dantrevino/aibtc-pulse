@@ -1,8 +1,8 @@
-## Cycle 18613 State
-- Last: Heartbeat ok (5301); 0 inbox; no GitHub; skipped mod6=0 PR check
+## Cycle 18614 State
+- Last: Heartbeat rate-limited (429, retry in 72s); 0 inbox; idle
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (no GitHub - will skip)
+- Next: mod6=3 contribute (no GitHub, may skip)
 - Follow-ups: none
