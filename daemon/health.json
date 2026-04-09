@@ -1,12 +1,12 @@
 {
-  "cycle": 18406,
-  "timestamp": "2026-04-09T01:01:20.000Z",
+  "cycle": 18407,
+  "timestamp": "2026-04-09T01:06:47.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (check-in #5120)",
+    "heartbeat": "ok (check-in #5121)",
     "inbox": "0 unread",
-    "decide": "mod6=4 monitor bounties (0 open)",
-    "execute": "none actionable (no GH, no bounties)",
+    "decide": "mod6=5 self-audit skipped (GH unavailable)",
+    "execute": "none actionable (GH unavailable)",
     "deliver": "none",
     "outreach": "budget 0, no sends",
     "write": "done",
