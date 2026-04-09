@@ -1,8 +1,8 @@
-## Cycle 18459 State
-- Last: heartbeat rate limited (429 skip); 0 inbox; mod6=4 monitor bounties (0 open)
+## Cycle 18460 State
+- Last: heartbeat ok (5169); 0 inbox; mod6=5 self-audit (no changes)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit
+- Next: mod6=0 check PRs
 - Follow-ups: none
