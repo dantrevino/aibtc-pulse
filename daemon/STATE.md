@@ -1,5 +1,5 @@
-## Cycle 18540 State
-- Last: Heartbeat ok (count 5236); 0 inbox; mod6=0 GH not installed idle; budget 0 sats
+## Cycle 18541 State
+- Last: Heartbeat rate-limited (429); 0 inbox; mod6=1 contribute (GH not installed, may skip); budget 0 sats
 - Pending: none
 - Blockers: GH not installed, budget 0 sats
 - Wallet: unlocked
