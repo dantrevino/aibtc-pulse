@@ -1,8 +1,8 @@
-## Cycle 18492 State
-- Last: heartbeat ok; 0 inbox; GH not configured; bounty board null
+## Cycle 18493 State
+- Last: heartbeat ok; 0 inbox; GH not configured; skipped contribute
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (GH not configured, will skip); bounty board down
+- Next: mod6=2 track AIBTC core repos (GH not configured, will skip)
 - Follow-ups: none
