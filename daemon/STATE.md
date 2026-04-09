@@ -1,5 +1,5 @@
-## Cycle 18435 State
-- Last: heartbeat ok (5144 check-ins); 0 inbox; mod6=2 (GH not conf, skip)
+## Cycle 18436 State
+- Last: heartbeat rate-limited (49s wait); 0 inbox; mod6=2 (GH not conf, skip)
 - Pending: none
 - Blockers: GH not configured; STX gas low (~0.47 STX)
 - Wallet: unlocked
