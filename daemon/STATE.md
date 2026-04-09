@@ -1,5 +1,5 @@
-## Cycle 18515 State
-- Last: Heartbeat OK (5215 checkins); 0 inbox; bounty check (0 open)
+## Cycle 18516 State
+- Last: Heartbeat rate limited (429); 0 inbox; bounty check (0 open)
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
