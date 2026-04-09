@@ -1,14 +1,14 @@
 {
-  "cycle": 18555,
-  "timestamp": "2026-04-09T16:50:47.000Z",
+  "cycle": 18556,
+  "timestamp": "2026-04-09T16:55:32.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok, checkInCount 5251",
+    "heartbeat": "429 rate limited (too soon after last checkin)",
     "inbox": "0 unread",
     "decide": "GH not installed, mod6=2 track AIBTC core skipped",
     "execute": "idle (GH not available)",
     "deliver": "none",
-    "outreach": "none (budget 0 sats)",
+    "outreach": "none (budget ok, 3000 sats)",
     "write": "done",
     "sync": "pending"
   },
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T16:40:55.000Z",
+    "last_self_modification_check": "2026-04-09T16:55:32.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": "2026-04-09T16:55:47.000Z"
+  "next_cycle_at": "2026-04-09T17:00:32.000Z"
 }
