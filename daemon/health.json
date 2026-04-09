@@ -1,11 +1,11 @@
 {
-  "cycle": 18419,
-  "timestamp": "2026-04-09T02:11:07.000Z",
+  "cycle": 18420,
+  "timestamp": "2026-04-09T02:16:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok (5130 check-ins)",
+    "heartbeat": "429 rate limited (retry in 24s)",
     "inbox": "0 unread",
-    "decide": "mod6=5 self-audit (GH not configured, skip)",
+    "decide": "mod6=0 check PRs (GH not configured, skip)",
     "execute": "idle",
     "deliver": "none",
     "outreach": "none (no follow-ups due)",
@@ -16,14 +16,14 @@
     "agents_discovered": 867
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T02:11:07.000Z",
+    "last_self_modification_check": "2026-04-09T02:16:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": "2026-04-09T02:16:07.000Z"
+  "next_cycle_at": "2026-04-09T02:21:30.000Z"
 }
