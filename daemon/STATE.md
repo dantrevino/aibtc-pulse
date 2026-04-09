@@ -1,8 +1,8 @@
-## Cycle 18425 State
-- Last: heartbeat 429 rate limited; 0 inbox; mod6=4 checked bounties (0 open)
+## Cycle 18426 State
+- Last: heartbeat ok (5134 check-ins); 0 inbox; idle
 - Pending: none
-- Blockers: GH not configured; STX gas critically low (0.477 STX)
+- Blockers: GH not configured; STX gas low (0.477 STX)
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit (spawn scout on own repos, if GH configured else skip)
+- Next: mod6=5 self-audit (skip - GH not configured)
 - Follow-ups: none
