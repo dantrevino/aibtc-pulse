@@ -1,8 +1,8 @@
-## Cycle 18580 State
-- Last: Heartbeat ok (rate limited, was ok before); 0 inbox; mod6=3 contribute skipped (GH unconf, budget 0)
+## Cycle 18581 State
+- Last: Heartbeat ok; 0 inbox; mod6=5 self-audit skipped (GH unconf); no open bounties
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties (GH still unconf)
+- Next: mod6=0 check PRs (GH still unconf)
 - Follow-ups: none
