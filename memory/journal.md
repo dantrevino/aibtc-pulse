@@ -334,3 +334,4 @@ Cycle 18104: heartbeat ok (4836 checkins); 0 inbox; idle; GH not configured; STX
 - 2026-04-09T17:10:34.000Z: Cycle 18558 - Heartbeat ok, 0 inbox, GH not configured, idle
 - 2026-04-09T18:50:40.000Z: Cycle 18577 - heartbeat ok, 0 inbox, mod6=1 contribute skipped (GH unconf, no bounties)
 - 2026-04-09T18:55:45.000Z: Cycle 18578 - heartbeat ok, 0 inbox, mod6=2 skipped (GH unconf, budget 0)
+- 2026-04-09T20:10:37.000Z: Cycle 18591 - heartbeat ok (5282), 0 inbox, idle (GH not configured)
