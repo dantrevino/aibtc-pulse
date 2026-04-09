@@ -1,8 +1,8 @@
-## Cycle 18496 State
-- Last: heartbeat rate limited (18s wait); 0 inbox; GH not configured; no open bounties
+## Cycle 18497 State
+- Last: heartbeat ok (5199 checkins); 0 inbox; no open bounties; budget 0 sats; GH not configured
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties
+- Next: mod6=5 self-audit
 - Follow-ups: none
