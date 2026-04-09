@@ -1,8 +1,8 @@
-## Cycle 18442 State
-- Last: heartbeat ok; 0 inbox; mod6=3 contribute skipped (GH not configured)
+## Cycle 18443 State
+- Last: heartbeat rate limited (429); 0 inbox; mod6=5 self-audit (GH not configured, skipped); no open bounties
 - Pending: none
-- Blockers: GH not configured; STX gas low (~0.47 STX)
+- Blockers: GH not configured
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties
+- Next: mod6=0 check open PRs (GH not configured, will skip)
 - Follow-ups: none
