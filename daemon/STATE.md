@@ -1,8 +1,8 @@
-## Cycle 18490 State
-- Last: heartbeat 200 OK (5192); 0 inbox; mod6=4 bounty check (no bounties available)
+## Cycle 18491 State
+- Last: heartbeat 429 rate limited; 0 inbox; mod6=5 self-audit skipped (GH not configured)
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit (if GH configured) or bounty check
+- Next: mod6=0 PR check (GH not configured, will skip) or bounty check
 - Follow-ups: none
