@@ -1,11 +1,11 @@
 {
-  "cycle": 18416,
-  "timestamp": "2026-04-09T01:50:45.000Z",
+  "cycle": 18417,
+  "timestamp": "2026-04-09T02:01:15.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (5127 checkins)",
+    "heartbeat": "429 rate limit exceeded, skip",
     "inbox": "0 unread",
-    "decide": "mod6=4 bounty check - no open bounties",
+    "decide": "mod6=2 track AIBTC core (GH not configured, skip)",
     "execute": "none",
     "deliver": "none",
     "outreach": "none (no follow-ups due)",
@@ -21,7 +21,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T01:50:45.000Z",
+    "last_self_modification_check": "2026-04-09T02:01:15.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
