@@ -1,15 +1,15 @@
 {
-  "cycle": 18483,
+  "cycle": 18484,
   "timestamp": "2026-04-09T09:09:22.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (429)",
+    "heartbeat": "ok (200)",
     "inbox": "0 unread",
     "decide": "mod6=3 contribute skipped (gh not installed)",
     "execute": "skipped (idle - gh unavailable)",
     "deliver": "none (no messages)",
     "outreach": "skipped (no pending)",
-    "write": "ok",
+    "write": "pending",
     "sync": "pending"
   },
   "stats": {
