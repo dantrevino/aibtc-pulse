@@ -1,8 +1,8 @@
-## Cycle 18529 State
-- Last: Heartbeat ok (5226); 0 inbox; GH unconfigured, PR check skipped; idle
+## Cycle 18530 State
+- Last: Heartbeat ok (5227); 0 inbox; no bounties; GH not installed; idle
 - Pending: none
-- Blockers: GH unconfigured, budget 0 sats
+- Blockers: GH not installed, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (GH unconfigured, skip to bounty monitor)
+- Next: mod6=2 track AIBTC core (GH not installed, likely idle again)
 - Follow-ups: none
