@@ -1,16 +1,16 @@
 {
-  "cycle": 18495,
-  "timestamp": "2026-04-09T10:25:32.000Z",
+  "cycle": 18496,
+  "timestamp": "2026-04-09T10:30:32.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok",
+    "heartbeat": "rate_limited",
     "inbox": "0 unread",
-    "decide": "mod6=2, GH not configured, skipped",
+    "decide": "mod6=3, GH not configured, skipped",
     "execute": "none (idle)",
     "deliver": "none",
     "outreach": "skipped (budget 0)",
     "write": "done",
-    "sync": "pending"
+    "sync": "done"
   },
   "stats": {
     "agents_discovered": 868
