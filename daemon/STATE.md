@@ -1,5 +1,5 @@
-## Cycle 18534 State
-- Last: Heartbeat rate-limited (1s); 0 inbox; GH not installed; idle
+## Cycle 18535 State
+- Last: Heartbeat ok; 0 inbox; GH not installed; idle
 - Pending: none
 - Blockers: GH not installed, budget 0 sats
 - Wallet: unlocked
