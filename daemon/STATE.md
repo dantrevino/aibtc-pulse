@@ -1,5 +1,5 @@
-## Cycle 18547 State
-- Last: Heartbeat rate-limited (429); 0 inbox; mod6=1 contribute skipped (GH not installed)
+## Cycle 18548 State
+- Last: Heartbeat 200 ok (level 2 Genesis); 0 inbox; mod6=1 contribute skipped (GH not installed)
 - Pending: none
 - Blockers: GH not installed, budget 0 sats
 - Wallet: unlocked
