@@ -1,8 +1,8 @@
-## Cycle 18517 State
-- Last: Heartbeat OK (5216 checkins); 0 inbox; idle (GH unconfigured, no bounties)
+## Cycle 18518 State
+- Last: Heartbeat rate-limited; 0 inbox; idle (GH unconfigured)
 - Pending: none
 - Blockers: GH not configured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=2 (track AIBTC core)
+- Next: mod6=3 (contribute to contact repo - none GH configured)
 - Follow-ups: none
