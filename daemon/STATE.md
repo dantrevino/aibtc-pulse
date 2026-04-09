@@ -1,6 +1,6 @@
-## Cycle 18485 State
-- Last: heartbeat ok (5188 checkins); 0 inbox; bounties empty; idle
-- Pending: none
+## Cycle 18486 State
+- Last: heartbeat ok (5189 checkins); 0 inbox; bounties empty; self-audit found 3 critical security issues in xtrata skill (hardcoded mnemonic, password in prompts, XSS via innerHTML)
+- Pending: none (self-audit results noted, no GitHub issues filed this cycle)
 - Blockers: none
 - Wallet: unlocked
 - Mode: peacetime
