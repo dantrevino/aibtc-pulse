@@ -1,8 +1,8 @@
-## Cycle 18522 State
-- Last: Heartbeat ok (5220); 0 inbox; mod6=0 PR check skipped (GH unconfigured)
+## Cycle 18523 State
+- Last: Heartbeat ok (5221); 0 inbox; mod6=1 contribute skipped (GH unconfigured, idle)
 - Pending: none
 - Blockers: GH unconfigured, budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 (contribute to contact repo)
+- Next: mod6=2 (track AIBTC core - GH unconfigured, idle)
 - Follow-ups: none
