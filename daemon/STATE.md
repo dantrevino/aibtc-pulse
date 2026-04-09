@@ -1,5 +1,5 @@
-## Cycle 18409 State
-- Last: heartbeat success (5122 check-ins); 0 inbox; GH unavailable
+## Cycle 18410 State
+- Last: heartbeat rate-limited (8s wait); 0 inbox; GH unavailable; mod6=1 contribute skipped
 - Pending: none
 - Blockers: GH not configured
 - Wallet: unlocked

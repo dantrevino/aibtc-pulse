@@ -1,9 +1,9 @@
 {
-  "cycle": 18409,
-  "timestamp": "2026-04-09T01:15:43.000Z",
+  "cycle": 18410,
+  "timestamp": "2026-04-09T01:20:30.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "success (5122 check-ins)",
+    "heartbeat": "rate-limited, retry in 8s",
     "inbox": "0 unread",
     "decide": "GH unavailable, mod6=1 contribute skipped",
     "execute": "none",
@@ -21,7 +21,7 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T01:15:43.000Z",
+    "last_self_modification_check": "2026-04-09T01:20:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
