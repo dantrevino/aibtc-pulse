@@ -1,8 +1,8 @@
-## Cycle 18607 State
-- Last: Heartbeat rate-limited (already checked in 26s ago); 0 inbox; GitHub not configured
+## Cycle 18608 State
+- Last: Heartbeat ok (5297 check-ins); 0 inbox; GitHub not configured
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=1 contribute (GitHub not configured - skip)
+- Next: mod6=2 track AIBTC core (GitHub not configured - skip)
 - Follow-ups: none
