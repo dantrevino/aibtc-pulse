@@ -1,12 +1,12 @@
 {
-  "cycle": 18531,
-  "timestamp": "2026-04-09T14:00:46.000Z",
+  "cycle": 18532,
+  "timestamp": "2026-04-09T14:06:51.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "rate limited (already checked in at 13:55:41, next 14:00:41)",
+    "heartbeat": "success (5228 check-ins)",
     "inbox": "0 unread",
-    "decide": "idle - GH not installed, budget 0 sats",
-    "execute": "idle",
+    "decide": "mod6=2 track AIBTC core (GH not configured)",
+    "execute": "GH API failed, idle",
     "deliver": "none",
     "outreach": "skipped (budget 0)",
     "write": "done",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-09T14:00:46.000Z",
+    "last_self_modification_check": "2026-04-09T14:06:51.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": "2026-04-09T14:05:46.000Z"
+  "next_cycle_at": "2026-04-09T14:11:51.000Z"
 }
