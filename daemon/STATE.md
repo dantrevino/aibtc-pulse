@@ -1,5 +1,5 @@
-## Cycle 18595 State
-- Last: Heartbeat ok (135 checkins); 0 inbox; mod6=1 contribute skipped (GH not configured)
+## Cycle 18596 State
+- Last: Heartbeat rate limited (429); 0 inbox; mod6=1 contribute skipped (GH not configured)
 - Pending: none
 - Blockers: none
 - Wallet: unlocked
