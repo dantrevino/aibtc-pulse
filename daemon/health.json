@@ -1,9 +1,9 @@
 {
-  "cycle": 18417,
-  "timestamp": "2026-04-09T02:01:15.000Z",
+  "cycle": 18418,
+  "timestamp": "2026-04-09T02:05:56.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limit exceeded, skip",
+    "heartbeat": "200 ok (5129 check-ins)",
     "inbox": "0 unread",
     "decide": "mod6=2 track AIBTC core (GH not configured, skip)",
     "execute": "none",
@@ -25,5 +25,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-09",
-  "next_cycle_at": ""
+  "next_cycle_at": "2026-04-09T02:10:56.000Z"
 }
