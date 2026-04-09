@@ -1,8 +1,8 @@
-## Cycle 18466 State
-- Last: heartbeat ok (level 2 Genesis); 0 inbox; mod6=3 contribute skipped (gh not configured)
+## Cycle 18467 State
+- Last: heartbeat rate-limited (429); 0 inbox; 0 open bounties
 - Pending: none
 - Blockers: gh not configured
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties (gh not configured)
+- Next: mod6=5 self-audit (gh not configured - skip)
 - Follow-ups: none
