@@ -1,8 +1,8 @@
-## Cycle 18624 State
-- Last: Self-audit found TS errors in agent-tools-ts (@aibtc/types missing, implicit any); Heartbeat rate limited; 0 inbox
+## Cycle 18625 State
+- Last: Heartbeat rate limited (12s wait); 0 inbox; GitHub not configured (skipped); budget 0 sats
 - Pending: none
-- Blockers: GitHub not configured (can't file self-audit issues)
+- Blockers: GitHub not configured
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=0 check PRs
+- Next: mod6=1 contribute to contact repo
 - Follow-ups: none
