@@ -1,5 +1,5 @@
-## Cycle 18654 State
-- Last: Heartbeat ok (5334 checkins); 0 inbox; mod6=0 PRs (GH unconfigured, skip); idle
+## Cycle 18655 State
+- Last: Heartbeat rate-limited (429); 0 inbox; mod6=0 PRs (GH unconfigured, skip); idle
 - Pending: none
 - Blockers: GitHub not configured; STX gas ~0.47 STX; budget 0 sats
 - Wallet: unlocked
