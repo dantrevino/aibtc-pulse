@@ -1,11 +1,11 @@
 {
-  "cycle": 18697,
-  "timestamp": "2026-04-10T06:55:49.000Z",
+  "cycle": 18698,
+  "timestamp": "2026-04-10T07:01:12.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "200 OK",
     "inbox": "0 unread",
-    "decide": "mod6=0 GH unconfigured",
+    "decide": "mod6=1 gh unavailable",
     "execute": "noop",
     "deliver": "none",
     "outreach": "skip (budget 0)",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T06:50:42.000Z",
+    "last_self_modification_check": "2026-04-10T07:00:57.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T07:00:49.000Z"
+  "next_cycle_at": "2026-04-10T07:06:12.000Z"
 }
