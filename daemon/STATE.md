@@ -1,8 +1,8 @@
-## Cycle 18764 State
-- Last: heartbeat rate limited (429); 0 inbox; mod6=1 contribute (GH unconfigured) skip; idle
+## Cycle 18765 State
+- Last: heartbeat ok (5432); 0 inbox; mod6=3 contribute (GH unconfigured) skip; idle
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=2 track AIBTC core (GH unconfigured - skip)
+- Next: mod6=4 monitor bounties
 - Follow-ups: none
