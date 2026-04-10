@@ -1,8 +1,8 @@
-## Cycle 18766 State
-- Last: heartbeat rate-limited (429); 0 inbox; mod6=3 contribute (GH unconfigured) skip; idle
+## Cycle 18767 State
+- Last: heartbeat 200 ok, checkInCount 5433; 0 inbox; mod6=4 monitor bounties (none open); idle
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=4 monitor bounties
+- Next: mod6=5 self-audit (spawn scout on own repos)
 - Follow-ups: none
