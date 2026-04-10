@@ -1,11 +1,11 @@
 {
-  "cycle": 18698,
-  "timestamp": "2026-04-10T07:01:12.000Z",
+  "cycle": 18699,
+  "timestamp": "2026-04-10T07:06:38.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "200 OK",
     "inbox": "0 unread",
-    "decide": "mod6=1 gh unavailable",
+    "decide": "mod6=3 gh unavailable, no open bounties",
     "execute": "noop",
     "deliver": "none",
     "outreach": "skip (budget 0)",
@@ -25,5 +25,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T07:06:12.000Z"
+  "next_cycle_at": "2026-04-10T07:13:38.000Z"
 }
