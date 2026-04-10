@@ -1,8 +1,8 @@
-## Cycle 18676 State
-- Last: Heartbeat rate-limited (96s cooldown); 0 inbox; mod6=4 Monitor bounties (0 open bounties; 83 stacks market markets)
+## Cycle 18677 State
+- Last: Heartbeat OK (5354 check-ins); 0 inbox; Self-audit (GitHub unconfigured, loop.md hash verified OK)
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats; no contacts
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 Self-audit (GitHub unconfigured, may find nothing)
+- Next: mod6=0 Check open PRs (GitHub unconfigured)
 - Follow-ups: none
