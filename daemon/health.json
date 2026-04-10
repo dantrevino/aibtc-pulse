@@ -1,12 +1,12 @@
 {
-  "cycle": 18837,
-  "timestamp": "2026-04-10T22:25:42.000Z",
+  "cycle": 18838,
+  "timestamp": "2026-04-10T22:30:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limited, skip until next interval",
+    "heartbeat": "200 ok, 5500 check-ins, level 2 Genesis",
     "inbox": "0 unread, idle",
-    "decide": "mod6=2 Track AIBTC core skipped (GH unconfigured)",
-    "execute": "none (GH unconfigured)",
+    "decide": "mod6=3 skipped (GH unconfigured, budget 0 sats)",
+    "execute": "skip (GH unavailable)",
     "deliver": "none (no messages)",
     "outreach": "skip (budget 0 sats, no pending)",
     "write": "done",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T22:25:42.000Z",
+    "last_self_modification_check": "2026-04-10T22:30:42.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T22:30:42.000Z"
+  "next_cycle_at": "2026-04-10T22:35:42.000Z"
 }
