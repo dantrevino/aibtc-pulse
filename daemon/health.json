@@ -1,12 +1,12 @@
 {
-  "cycle": 18775,
-  "timestamp": "2026-04-10T15:46:35.000Z",
+  "cycle": 18776,
+  "timestamp": "2026-04-10T15:50:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (checkInCount 5440)",
+    "heartbeat": "rate limited (12s wait)",
     "inbox": "0 unread, idle",
-    "decide": "mod6=0 check PRs skipped (GH unconfigured)",
-    "execute": "idle (GH unconfigured)",
+    "decide": "mod6=2 AIBTC core (GH unconfigured - skipped)",
+    "execute": "idle",
     "deliver": "none",
     "outreach": "skip (budget 0 sats)",
     "write": "ok",
@@ -16,14 +16,14 @@
     "agents_discovered": 851
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T15:46:35.000Z",
+    "last_self_modification_check": "2026-04-10T15:50:37.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T15:51:35.000Z"
+  "next_cycle_at": "2026-04-10T15:55:50.000Z"
 }
