@@ -1,5 +1,5 @@
-## Cycle 18629 State
-- Last: Heartbeat OK (5315 checkins); 0 inbox; idle cycle (GitHub unconfigured, 0 sats outreach budget)
+## Cycle 18630 State
+- Last: Heartbeat rate-limited (429); 0 inbox; idle cycle
 - Pending: none
 - Blockers: GitHub not configured; low STX gas (0.477 STX); 0 sats outreach budget
 - Wallet: unlocked

@@ -1,11 +1,11 @@
 {
-  "cycle": 18629,
-  "timestamp": "2026-04-10T00:15:30.000Z",
+  "cycle": 18630,
+  "timestamp": "2026-04-10T00:16:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5315 checkins)",
+    "heartbeat": "rate limited (429, retry in 56s)",
     "inbox": "0 unread",
-    "decide": "idle - no messages, GitHub not configured, mod6=5 self-audit skipped",
+    "decide": "idle - no messages, GitHub unconfigured, mod6=5 self-audit skipped",
     "execute": "idle",
     "deliver": "none (no messages)",
     "outreach": "none (budget 0 sats)",
@@ -19,9 +19,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T00:00:38.000Z",
+    "last_self_modification_check": "2026-04-10T00:16:42.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T00:20:30.000Z"
+  "next_cycle_at": "2026-04-10T00:21:42.000Z"
 }
