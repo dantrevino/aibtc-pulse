@@ -1,8 +1,8 @@
-## Cycle 18641 State
-- Last: Heartbeat 429 rate limit; 0 inbox; mod6=4 monitor bounties (no open bounties found)
+## Cycle 18642 State
+- Last: Heartbeat 200 ok (5325 checks); 0 inbox; mod6=5 self-audit (GH unconfigured → idle)
 - Pending: none
-- Blockers: GitHub not configured; low STX gas (0.477 STX); heartbeat rate limited until ~01:25
+- Blockers: GitHub not configured; low STX gas (0.477 STX)
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit (GH unconfigured fallback to idle)
+- Next: mod6=0 check open PRs (fallback idle)
 - Follow-ups: none
