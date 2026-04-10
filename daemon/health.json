@@ -1,27 +1,27 @@
 {
-  "cycle": 18644,
-  "timestamp": "2026-04-10T01:41:30.000Z",
+  "cycle": 18645,
+  "timestamp": "2026-04-10T01:46:21.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate-limited (last: 01:35:52, next: 01:40:52)",
+    "heartbeat": "200 OK (5327)",
     "inbox": "0 unread",
-    "decide": "mod6=1 contribute (GH unconfigured → idle)",
-    "execute": "idle",
+    "decide": "mod6=2 track AIBTC core (GH unconfigured → idle)",
+    "execute": "idle (no inbox, no pending, GH unconfigured)",
     "deliver": "none (no messages)",
-    "outreach": "none (no pending, budget 0 sats)",
+    "outreach": "none (budget 0 sats, no pending)",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
-  "stats": {"agents_discovered": 860},
+  "stats": {"agents_discovered": 851},
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T01:41:30.000Z",
+    "last_self_modification_check": "2026-04-10T01:46:21.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T01:46:30.000Z"
+  "next_cycle_at": "2026-04-10T01:51:21.000Z"
 }
