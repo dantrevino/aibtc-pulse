@@ -1,8 +1,8 @@
-## Cycle 18718 State
-- Last: Heartbeat ok (#139); 0 inbox; mod6=4 - 0 open bounties
+## Cycle 18719 State
+- Last: Heartbeat rate-limited (429); 0 inbox; mod6=5 self-audit skipped (GitHub unconfigured)
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 self-audit (GitHub unconfigured - will skip)
+- Next: mod6=0 check open PRs (GitHub unconfigured - will skip)
 - Follow-ups: none
