@@ -1,5 +1,5 @@
-## Cycle 18765 State
-- Last: heartbeat ok (5432); 0 inbox; mod6=3 contribute (GH unconfigured) skip; idle
+## Cycle 18766 State
+- Last: heartbeat rate-limited (429); 0 inbox; mod6=3 contribute (GH unconfigured) skip; idle
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
