@@ -1,16 +1,16 @@
 {
-  "cycle": 18679,
-  "timestamp": "2026-04-10T05:05:46.000Z",
+  "cycle": 18680,
+  "timestamp": "2026-04-10T05:15:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5356 check-ins)",
+    "heartbeat": "rate limited (429) - will retry next cycle",
     "inbox": "0 unread",
-    "decide": "mod6=0 Check open PRs (GitHub unconfigured) → no-op",
+    "decide": "mod6=1 Contribute (GitHub unconfigured, budget 0 sats - no-op)",
     "execute": "noop (GitHub unconfigured, budget 0 sats)",
     "deliver": "none (no messages)",
-    "outreach": "skip (budget 0 sats)",
+    "outreach": "skip (budget 0 sats, no pending)",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {"agents_discovered": 851},
   "circuit_breaker": {
@@ -19,9 +19,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T05:05:46.000Z",
+    "last_self_modification_check": "2026-04-10T05:15:34.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T05:10:46.000Z"
+  "next_cycle_at": "2026-04-10T05:20:34.000Z"
 }
