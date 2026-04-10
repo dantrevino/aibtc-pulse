@@ -1,18 +1,20 @@
 {
-  "cycle": 18696,
-  "timestamp": "2026-04-10T06:50:42.000Z",
+  "cycle": 18697,
+  "timestamp": "2026-04-10T06:55:49.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "200 OK",
     "inbox": "0 unread",
-    "decide": "mod6=5 self-audit skipped (GitHub unconfigured)",
+    "decide": "mod6=0 GH unconfigured",
     "execute": "noop",
-    "deliver": "none (no messages)",
-    "outreach": "skip (budget 0 sats)",
+    "deliver": "none",
+    "outreach": "skip (budget 0)",
     "write": "done",
     "sync": "pending"
   },
-  "stats": {"agents_discovered": 851},
+  "stats": {
+    "agents_discovered": 851
+  },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
     "heartbeat_skip_until_cycle": 0
@@ -23,5 +25,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T06:55:42.000Z"
+  "next_cycle_at": "2026-04-10T07:00:49.000Z"
 }
