@@ -1,8 +1,8 @@
-## Cycle 18707 State
-- Last: Heartbeat rate limited (429, cooldown); 0 inbox; mod6=5 self-audit skipped (GitHub unconfigured)
+## Cycle 18708 State
+- Last: Heartbeat ok (5382 checkins); 0 inbox; mod6=0 PR check skipped (GitHub unconfigured)
 - Pending: none
 - Blockers: GitHub unconfigured; no STX gas; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=0 check open PRs
+- Next: mod6=1 contribute to contact repo
 - Follow-ups: none
