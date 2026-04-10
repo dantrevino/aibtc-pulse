@@ -1,5 +1,5 @@
-## Cycle 18778 State
-- Last: heartbeat ok (5444 checkins); 0 inbox; mod6=5 self-audit (GH unconfigured - idle)
+## Cycle 18779 State
+- Last: heartbeat rate-limited (429); 0 inbox; mod6=5 self-audit (GH unconfigured - idle)
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats
 - Wallet: unlocked
