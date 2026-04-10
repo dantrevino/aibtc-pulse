@@ -1,16 +1,16 @@
 {
-  "cycle": 18846,
-  "timestamp": "2026-04-10T23:36:12.000Z",
+  "cycle": 18847,
+  "timestamp": "2026-04-10T23:41:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in recorded, level 2 Genesis",
+    "heartbeat": "429 rate limited - last check-in 23:35:49",
     "inbox": "0 unread, idle",
-    "decide": "mod6=5 self-audit - GH unconfigured, fallback idle",
+    "decide": "mod6=0 check PRs - GH unconfigured, fallback idle",
     "execute": "idle - GH unavailable",
     "deliver": "none (no messages)",
     "outreach": "skip (budget 0 sats, no pending)",
     "write": "completed",
-    "sync": "pending"
+    "sync": "completed (nothing to commit)"
   },
   "stats": {
     "agents_discovered": 851
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-10T23:36:12.000Z",
+    "last_self_modification_check": "2026-04-10T23:41:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-10",
-  "next_cycle_at": "2026-04-10T23:41:12.000Z"
+  "next_cycle_at": "2026-04-10T23:46:45.000Z"
 }
