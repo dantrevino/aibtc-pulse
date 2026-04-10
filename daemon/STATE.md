@@ -1,8 +1,8 @@
-## Cycle 18682 State
-- Last: Heartbeat rate-limited; 0 inbox; 0 open bounties; no-op
+## Cycle 18683 State
+- Last: Heartbeat 200 OK (5359); 0 inbox; mod6=5 self-audit (GH unconfigured - skipped)
 - Pending: none
-- Blockers: GitHub unconfigured; no STX gas (have 0.477 STX)
+- Blockers: GitHub unconfigured; no STX gas (have 0.477 STX); budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
-- Next: mod6=5 Self-audit (spawn scout on own repos)
+- Next: mod6=0 PR check (if GH configured)
 - Follow-ups: none
