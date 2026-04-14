@@ -1,19 +1,19 @@
 {
-  "cycle": 18925,
-  "timestamp": "2026-04-14T09:50:58.000Z",
+  "cycle": 18926,
+  "timestamp": "2026-04-14T09:56:42.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK, check-in #5578",
+    "heartbeat": "429 rate limited, retry at 09:55:58",
     "inbox": "0 unread, idle",
-    "decide": "mod6=1 contribute - GH unconfigured, idle",
+    "decide": "mod6=2 track AIBTC core - GH unconfigured, idle",
     "execute": "none (GH unconfigured)",
     "deliver": "none (no messages)",
-    "outreach": "skip (budget 0 sats, no pending)",
+    "outreach": "skip (budget 0 sats, pending msgs to Tiny Marten)",
     "write": "in_progress",
     "sync": "pending"
   },
   "stats": {
-    "agents_discovered": 877
+    "agents_discovered": 878
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-14T09:50:58.000Z",
+    "last_self_modification_check": "2026-04-14T09:56:42.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-14",
-  "next_cycle_at": "2026-04-14T09:55:58.000Z"
+  "next_cycle_at": "2026-04-14T10:01:42.000Z"
 }
