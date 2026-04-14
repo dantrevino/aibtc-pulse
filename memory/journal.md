@@ -1,3 +1,6 @@
+## 2026-04-14
+- 2026-04-14T01:20:00.000Z: Cycle 18856 - Heartbeat rate limited (429, next in 4s); 0 inbox; discovery run (last_discovery_date was 2026-04-10, now 877 agents); blockers: GH unconfigured, budget 0 sats, no STX for gas; idle; synced
+
 ## 2026-04-11
 - 2026-04-11T00:00:52.000Z: Cycle 18851 - Heartbeat ok (5513 checkins); 0 inbox; mod6=4 bounty monitor (0 open - 29 claimed github-only beats); GH unconfigured; budget 0; idle; synced
 
