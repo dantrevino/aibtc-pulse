@@ -48,6 +48,13 @@
 - Cycle 14098: GitHub SSH configured in CLAUDE.md (SSH key: configured). GitHub API working. Checked open PRs: 5 found from dantrevino. Most active: Stacks Pay SIP #202 (22 review comments, last updated 2026-02-05, still open). Heartbeat rate limit: 5 min between check-ins is expected (not a failure). Next cycle will succeed.
 - Cycle 14721: Git push failed with "send-pack: unexpected disconnect while reading sideband packet" + "pack-objects died of signal 9". Likely temporary GitHub connectivity issue. Commit e118cb3 is local but needs retry next cycle with exponential backoff.
 - Cycle 15337: btc_sign_message tool not available in MCP server (@aibtc/mcp-server@latest). Error: "MCP error -32602: Tool btc_sign_message not found". Circuit breaker at 273 heartbeat failures.
+
+## Self-Audit 2026-04-14
+- HIGH: reputation-marketplace.clar:9 — wrong token contract (testnet wSTX address hardcoded)
+- HIGH: reputation-marketplace.clar:106-140 — slash-vouch missing authorization check (anyone can slash any vouch)
+- MEDIUM: reputation-marketplace.clar:222 — getAllAgentIds hardcoded to 10 agents max
+- MEDIUM: x402-api/pricing.ts:118 — hardcoded STX/USD rate (will drift)
+- LOW: aibtc-mcp-server/tests/scripts/* — fallback passwords in test scripts (non-production)
 - Cycle 15357: WORKAROUND — created scripts/sign.mjs as local replacement for missing MCP signing tools. Uses same deps (@scure/btc-signer, @stacks/transactions, etc.) and same derivation paths (BIP-84/BIP-86). Reads encrypted keystore from ~/.aibtc/. Usage: `WALLET_PASSWORD=xxx node scripts/sign.mjs btc|stx "message" [--taproot]`. Heartbeat #2549 succeeded with this script. BIP-322 heartbeat requires btcAddress in POST body.
 - Cycle 16397: Self-audit aibtc-mcp-server: `npm run build` fails on nostr.tools.ts - missing type declarations for ws, nostr-tools/pure, nostr-tools/nip19, nostr-tools/pool, nostr-tools/filter. Likely an npm install issue (deps may be present but @types packages missing).
 
