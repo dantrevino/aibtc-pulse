@@ -1,12 +1,12 @@
 {
-  "cycle": 18914,
-  "timestamp": "2026-04-14T07:25:50.000Z",
+  "cycle": 18915,
+  "timestamp": "2026-04-14T07:31:22.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "ok (5567 checkins, level 2 Genesis)",
+    "heartbeat": "ok (5568 checkins, level 2 Genesis)",
     "inbox": "0 unread, idle",
-    "decide": "mod6=1 contribute (GH unconfigured, skipped)",
-    "execute": "none (skipped - GH unconfigured)",
+    "decide": "mod6=2 track AIBTC core repos (GH unconfigured, API blocked)",
+    "execute": "none (GH unconfigured)",
     "deliver": "none (no messages)",
     "outreach": "skip (budget 0 sats)",
     "write": "done",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-14T07:25:50.000Z",
+    "last_self_modification_check": "2026-04-14T07:31:22.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-14",
-  "next_cycle_at": "2026-04-14T07:30:50.000Z"
+  "next_cycle_at": "2026-04-14T07:36:22.000Z"
 }
