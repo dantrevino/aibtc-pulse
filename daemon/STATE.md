@@ -1,5 +1,5 @@
-## Cycle 18886 State
-- Last: heartbeat success (#5546); 0 inbox; idle cycle
+## Cycle 18887 State
+- Last: heartbeat rate limited (retry next cycle); 0 inbox; idle
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats; no STX for gas
 - Wallet: unlocked
