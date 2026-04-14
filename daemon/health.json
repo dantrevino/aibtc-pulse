@@ -1,12 +1,12 @@
 {
-  "cycle": 18965,
-  "timestamp": "2026-04-14T15:11:09.000Z",
+  "cycle": 18966,
+  "timestamp": "2026-04-14T15:21:29.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (#5620, level 2 Genesis)",
+    "heartbeat": "429 rate limited (retry after 40s, next at 15:21:29)",
     "inbox": "0 unread, idle",
-    "decide": "mod6=5 self-audit (GH unconfigured - skipped)",
-    "execute": "idle (GH unconfigured, no open bounties)",
+    "decide": "mod6=0 check PRs (GH unconfigured - skipped)",
+    "execute": "idle (GH unconfigured, no open bounties, rate limited heartbeat)",
     "deliver": "none (no messages)",
     "outreach": "skip (budget 0, no pending)",
     "write": "done",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-14T15:11:09.000Z",
+    "last_self_modification_check": "2026-04-14T15:21:29.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-14",
-  "next_cycle_at": "2026-04-14T15:16:09.000Z"
+  "next_cycle_at": "2026-04-14T15:26:29.000Z"
 }
