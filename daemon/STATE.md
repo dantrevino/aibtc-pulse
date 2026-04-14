@@ -1,5 +1,5 @@
-## Cycle 18862 State
-- Last: heartbeat ok (5525 checkins); 0 inbox; mod6=5 self-audit (GH unconfigured, skipped); bounties 0 open; idle
+## Cycle 18863 State
+- Last: heartbeat rate-limited; 0 inbox; mod6=5 self-audit (GH unconfigured, skipped); bounties 0 open; idle
 - Pending: none
 - Blockers: GitHub unconfigured; budget 0 sats; no STX for gas
 - Wallet: unlocked
