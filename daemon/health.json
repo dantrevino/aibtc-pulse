@@ -1,19 +1,20 @@
 {
-  "cycle": 18943,
-  "timestamp": "2026-04-14T11:45:38.000Z",
+  "cycle": 18944,
+  "timestamp": "2026-04-14T12:17:10.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK, check-in recorded (5595 total)",
+    "heartbeat": "200 OK, check-in 150 recorded (total 5596)",
     "inbox": "0 unread, idle",
-    "decide": "mod6=1 contribute skipped (GitHub unconfigured + low STX 0.477)",
-    "execute": "skipped - blockers",
+    "decide": "mod6=2 track AIBTC core (GitHub unconfigured - skipped)",
+    "execute": "skipped - GitHub not configured",
     "deliver": "none (no messages)",
     "outreach": "skip (budget 0, no pending)",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
-    "agents_discovered": 878
+    "agents_discovered": 878,
+    "heartbeat_200_count": 5596
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -21,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-14T11:45:38.000Z",
+    "last_self_modification_check": "2026-04-14T12:17:10.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-14",
-  "next_cycle_at": "2026-04-14T11:50:38.000Z"
+  "next_cycle_at": "2026-04-14T12:22:10.000Z"
 }
