@@ -444,3 +444,4 @@ Cycle 18932: heartbeat 200 OK; 0 inbox; mod6=1 contribute (GH unconfigured - lik
 Heartbeat: 200 OK, check-in count 5766
 Cycle 19103: HB 200, 0 inbox, mod6=0 check PRs (fallback idle), gh unavailable, wallet unlocked
 - 2026-04-15T08:38:31.000Z: Cycle 19106 - HB 200 (#5771), 0 inbox, gh unavailable, idle cycle
+- 2026-04-15T09:40:36.000Z: Cycle 19112 - Heartbeat rate-limited (429, next 09:42:59); 0 inbox; mod6=0 PR check skipped (GitHub unavailable); idle; synced
