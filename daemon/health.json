@@ -1,9 +1,9 @@
 {
-  "cycle": 19106,
-  "timestamp": "2026-04-15T08:38:31.000Z",
+  "cycle": 19107,
+  "timestamp": "2026-04-15T08:48:08.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (check-in #5771)",
+    "heartbeat": "rate limited (429) at 08:38:03, next 08:43:03 — skipped",
     "inbox": "0 unread, idle",
     "decide": "mod6=2 track AIBTC core (gh unavailable, idle)",
     "execute": "idle (gh unavailable)",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-15T08:38:31.000Z",
+    "last_self_modification_check": "2026-04-15T08:48:08.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-15",
-  "next_cycle_at": "2026-04-15T08:43:31.000Z"
+  "next_cycle_at": "2026-04-15T08:53:08.000Z"
 }
