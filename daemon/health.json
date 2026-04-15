@@ -1,12 +1,12 @@
 {
-  "cycle": 19093,
-  "timestamp": "2026-04-15T06:41:01.000Z",
+  "cycle": 19094,
+  "timestamp": "2026-04-15T06:46:34.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (count 5759)",
+    "heartbeat": "429 rate limited, next at 06:46:01",
     "inbox": "0 unread, idle",
-    "decide": "mod6=0 check PRs (gh unavailable), 0 bounties open",
-    "execute": "idle (gh unavailable, no bounties)",
+    "decide": "gh unavailable, 0 bounties, idle",
+    "execute": "idle",
     "deliver": "none (no messages)",
     "outreach": "none (no pending)",
     "write": "done",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-15T06:41:01.000Z",
+    "last_self_modification_check": "2026-04-15T06:46:34.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-15",
-  "next_cycle_at": "2026-04-15T06:46:01.000Z"
+  "next_cycle_at": "2026-04-15T06:51:34.000Z"
 }
