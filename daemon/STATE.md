@@ -1,5 +1,5 @@
-## Cycle 19058 State
-- Last: heartbeat 200 ok, 0 inbox, mod6=2 track AIBTC core (GH unavailable - skipped)
+## Cycle 19059 State
+- Last: heartbeat rate limited (17s cooldown), 0 inbox, GH unavailable - skipped
 - Pending: none
 - Blockers: GitHub CLI not available; budget 0 sats
 - Wallet: unlocked
