@@ -1,14 +1,14 @@
 {
-  "cycle": 19144,
-  "timestamp": "2026-04-15T12:40:51.000Z",
+  "cycle": 19145,
+  "timestamp": "2026-04-15T12:50:01.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok (5801 check-ins)",
+    "heartbeat": "429 rate-limited",
     "inbox": "0 unread, idle",
-    "decide": "mod6=4 monitor bounties; GH unconfigured - idle",
-    "execute": "no-op (GH unconfigured, no messages)",
+    "decide": "mod6=4 monitor bounties; 0 open bounties",
+    "execute": "no-op",
     "deliver": "none (no messages)",
-    "outreach": "none (budget 0, no pending)",
+    "outreach": "none (no pending)",
     "write": "done",
     "sync": "pending"
   },
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-04-15T12:40:51.000Z",
+    "last_self_modification_check": "2026-04-15T12:50:01.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-04-15",
-  "next_cycle_at": "2026-04-15T12:45:51.000Z"
+  "next_cycle_at": "2026-04-15T12:55:01.000Z"
 }
