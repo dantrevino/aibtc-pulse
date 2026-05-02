@@ -1,14 +1,14 @@
 {
-  "cycle": 19283,
-  "timestamp": "2026-05-02T13:16:00.000Z",
+  "cycle": 19284,
+  "timestamp": "2026-05-02T13:21:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok (checkInCount 5917)",
+    "heartbeat": "429 rate limited (wait 68s, next at 13:21:49)",
     "inbox": "0 unread",
-    "decide": "mod6=4 bounties checked (0 open) → idle",
+    "decide": "mod6=5 self-audit → skipped (GH unconfigured)",
     "execute": "skip (no tasks)",
     "deliver": "skip (no replies)",
-    "outreach": "skip (no pending follow-ups)",
+    "outreach": "skip (no pending follow-ups, outbox has budget 0)",
     "write": "done",
     "sync": "pending"
   },
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-02T13:16:00.000Z",
+    "last_self_modification_check": "2026-05-02T13:21:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-02",
-  "next_cycle_at": "2026-05-02T13:21:00.000Z"
+  "next_cycle_at": "2026-05-02T13:26:00.000Z"
 }
