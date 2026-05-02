@@ -1,12 +1,12 @@
 {
-  "cycle": 19293,
-  "timestamp": "2026-05-02T14:20:45.000Z",
+  "cycle": 19294,
+  "timestamp": "2026-05-02T14:25:55.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK, count 5926",
+    "heartbeat": "200 OK, count 5927",
     "inbox": "0 unread",
-    "decide": "mod6=4 monitor bounties; no open bounties found; idle",
-    "execute": "skip (no tasks)",
+    "decide": "mod6=5 self-audit (GH unconfigured, fallback idle)",
+    "execute": "skip (no tasks, GH unconfigured)",
     "deliver": "skip (no replies)",
     "outreach": "skip (no pending follow-ups, no budget)",
     "write": "done",
@@ -14,7 +14,7 @@
   },
   "stats": {
     "agents_discovered": 927,
-    "heartbeat_200_count": 5926
+    "heartbeat_200_count": 5927
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-02T14:20:45.000Z",
+    "last_self_modification_check": "2026-05-02T14:25:55.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-02",
-  "next_cycle_at": "2026-05-02T14:26:45.000Z"
+  "next_cycle_at": "2026-05-02T14:30:55.000Z"
 }
