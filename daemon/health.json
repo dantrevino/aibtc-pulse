@@ -1,11 +1,11 @@
 {
-  "cycle": 19214,
-  "timestamp": "2026-05-02T06:20:32.000Z",
+  "cycle": 19215,
+  "timestamp": "2026-05-02T06:25:27.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (160 checkins, Taproot signer bc1p...)",
+    "heartbeat": "400 Bitcoin signature verification failed (Taproot signer issue)",
     "inbox": "0 unread",
-    "decide": "mod6=1 contribute (GH unconfigured → skip), idle no-op",
+    "decide": "mod6=2 track AIBTC core (GH unconfigured → skip); idle no-op",
     "execute": "skipped (no tasks, GH unconfigured)",
     "deliver": "skip (no replies)",
     "outreach": "skip (budget 0 sats, no pending)",
@@ -17,14 +17,14 @@
     "heartbeat_200_count": 5864
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-02T06:20:32.000Z",
+    "last_self_modification_check": "2026-05-02T06:25:27.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-02",
-  "next_cycle_at": "2026-05-02T06:25:32.000Z"
+  "next_cycle_at": "2026-05-02T06:30:27.000Z"
 }
