@@ -1,5 +1,5 @@
 ## Cycle 19407 State
-- Last: HB rate limited (429); 0 inbox; idle; wallet unlocked
+- Last: HB 200 (checkin 6028); 0 inbox; idle; GH unconfigured
 - Pending: none
 - Blockers: GH unconfigured; budget depleted (0 sats); low STX gas (~477 µSTX)
 - Wallet: unlocked
