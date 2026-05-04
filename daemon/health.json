@@ -1,19 +1,19 @@
 {
-  "cycle": 19578,
-  "timestamp": "2026-05-04T23:46:49.000Z",
+  "cycle": 19579,
+  "timestamp": "2026-05-04T23:56:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HTTP 200 - check-in #6220",
+    "heartbeat": "HTTP 200 - check-in #6221",
     "inbox": "0 unread",
-    "decide": "cycle%6=0 check PRs — blocked (GH not configured); discovery already done today",
-    "execute": "skip (GH blocked)",
+    "decide": "cycle%6=1 contribute — blocked (GH not configured); discovery already done today; idle",
+    "execute": "skip (idle)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
   },
   "stats": {
     "agents_discovered": 971,
-    "heartbeat_200_count": 6220
+    "heartbeat_200_count": 6221
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T23:46:49.000Z",
+    "last_self_modification_check": "2026-05-04T23:56:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T23:51:49.000Z"
+  "next_cycle_at": "2026-05-05T00:01:00.000Z"
 }
