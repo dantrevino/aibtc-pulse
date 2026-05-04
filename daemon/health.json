@@ -1,12 +1,12 @@
 {
-  "cycle": 19530,
-  "timestamp": "2026-05-04T16:02:24.000Z",
-  "status": "ok",
+  "cycle": 19531,
+  "timestamp": "2026-05-04T16:05:55.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "200 ok - check-in #6161",
+    "heartbeat": "429 rate-limited (last check-in 3.5min ago, no circ breaker inc)",
     "inbox": "0 unread",
-    "decide": "cycle%6=0 PRs blocked (GH unconfigured), fallback: tracked aibtc core",
-    "execute": "aibtcdev repos: skills(11 issues), landing-page(21), agent-news(81), x402-api(5), x402-sponsor-relay(5)",
+    "decide": "cycle%6=1 contribute (blocked: GH unconfigured), fallback PRs also blocked",
+    "execute": "skipped - GH not configured",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T16:02:24.000Z",
+    "last_self_modification_check": "2026-05-04T16:05:55.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T16:02:24.000Z"
+  "next_cycle_at": "2026-05-04T16:12:24.000Z"
 }

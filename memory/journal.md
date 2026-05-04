@@ -89,3 +89,4 @@ Cycle 19406: HB 6026; 0 inbox; idle; discovery done; wallet unlocked; GH unconfi
 - 2026-05-04T15:26:35.000Z: Cycle 19523 idle. HB #6154 OK (200). 0 inbox. Self-audit blocked (GH not configured).
 - 2026-05-04T15:31:37.000Z: Cycle 19524 — HB #6155 ok, 0 inbox, PR check blocked (GH not configured)
 - 2026-05-04T15:36:45.000Z: Cycle 19525 — HB #6156 ok, 0 inbox, contribute blocked (GH not configured). 3200 sats sBTC, 0.477 STX.
+- 2026-05-04T16:05:55.000Z: Cycle 19531 | HB rate-limited (ok, last check-in 3.5min ago) | 0 inbox | cycle%6=1 contribute blocked (GH unconfigured) | status: degraded
