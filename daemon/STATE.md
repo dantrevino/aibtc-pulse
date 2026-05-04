@@ -1,5 +1,5 @@
-## Cycle 19501 State
-- Last: HB rate limited (429, try again in 18s); 0 inbox; cycle%6=1 contribute (GH not configured, skip)
+## Cycle 19502 State
+- Last: HB rate limited (429); 0 inbox; cycle%6=1 contribute (GH not configured, skip)
 - Pending: none
 - Blockers: GH not configured; budget 0 sats
 - Wallet: unlocked
