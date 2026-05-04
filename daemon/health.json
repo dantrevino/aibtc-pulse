@@ -1,16 +1,16 @@
 {
-  "cycle": 19439,
-  "timestamp": "2026-05-04T04:41:04.000Z",
+  "cycle": 19440,
+  "timestamp": "2026-05-04T04:51:17.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (checkInCount 6063)",
+    "heartbeat": "429 rate limited (next at 04:46:04, checkInCount 6063)",
     "inbox": "0 unread",
     "decide": "idle (0 inbox, GH unconfigured, budget 3200 sats)",
     "execute": "skip (idle cycle)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (budget OK, no pending)",
     "write": "done",
-    "sync": "skip (no changes)"
+    "sync": "pending"
   },
   "stats": {
     "agents_discovered": 971,
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T04:41:04.000Z",
+    "last_self_modification_check": "2026-05-04T04:51:17.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T04:46:04.000Z"
+  "next_cycle_at": "2026-05-04T04:56:17.000Z"
 }
