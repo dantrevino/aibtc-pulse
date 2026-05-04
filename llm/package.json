@@ -1,0 +1,10 @@
+{
+  "name": "llm",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "LLM integration for the autonomous agent loop using @opencode-ai/sdk",
+  "main": "loop.mjs",
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.14.33"
+  }
+}
