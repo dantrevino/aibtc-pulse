@@ -1,16 +1,16 @@
 {
-  "cycle": 19443,
-  "timestamp": "2026-05-04T05:00:46.000Z",
+  "cycle": 19444,
+  "timestamp": "2026-05-04T05:06:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (checkInCount 6066)",
+    "heartbeat": "rate limited, retried ok",
     "inbox": "0 unread",
     "decide": "idle (0 inbox, GH unconfigured, budget 0 sats)",
     "execute": "skip (idle cycle)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (budget 0, no pending)",
     "write": "done",
-    "sync": "done"
+    "sync": "pending"
   },
   "stats": {
     "agents_discovered": 971,
@@ -26,5 +26,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T05:05:46.000Z"
+  "next_cycle_at": "2026-05-04T05:11:00.000Z"
 }
