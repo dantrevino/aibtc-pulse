@@ -1,7 +1,7 @@
-## Cycle 19447 State
-- Last: HB ok (6069 check-ins); 0 inbox; idle
+## Cycle 19448 State
+- Last: HB 429 rate-limited; 0 inbox; idle
 - Pending: none
-- Blockers: GH unconfigured; budget 0 sats
+- Blockers: GH not installed; budget 0 sats
 - Wallet: unlocked
 - Mode: peacetime
 - Next: idle
