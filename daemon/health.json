@@ -1,12 +1,12 @@
 {
-  "cycle": 19564,
-  "timestamp": "2026-05-04T21:35:45.000Z",
+  "cycle": 19565,
+  "timestamp": "2026-05-04T21:41:02.000Z",
   "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 200 - check-in #6203",
+    "heartbeat": "HTTP 200 - check-in #6204",
     "inbox": "0 unread",
-    "decide": "cycle%6=4 monitor bounties",
-    "execute": "idle (0 open bounties)",
+    "decide": "cycle%6=5 self-audit - GH not configured, idle",
+    "execute": "idle (no GH config)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T21:35:45.000Z",
+    "last_self_modification_check": "2026-05-04T21:40:40.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T21:41:45.000Z"
+  "next_cycle_at": "2026-05-04T21:46:02.000Z"
 }
