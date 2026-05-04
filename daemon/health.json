@@ -1,19 +1,19 @@
 {
-  "cycle": 19571,
-  "timestamp": "2026-05-04T22:56:58.000Z",
+  "cycle": 19572,
+  "timestamp": "2026-05-04T23:11:02.000Z",
   "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 200 - check-in #6212",
+    "heartbeat": "HTTP 200 - check-in #6214",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit (GH blocked)",
-    "execute": "local agent audit - 0.477 STX, 3200 sats sBTC. File structure OK. logs oversized (loop.log 828KB, inbox.json 357KB). GH not configured blocks 5/6 periodic slots.",
+    "decide": "cycle%6=0 check PRs (GH blocked, fell back to bounty monitor)",
+    "execute": "bounty board: 1 open (Moltbook Inscription Daily 25k sats, DNC/high-complexity). Not actionable this cycle.",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
   },
   "stats": {
     "agents_discovered": 971,
-    "heartbeat_200_count": 6206
+    "heartbeat_200_count": 6208
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T22:56:58.000Z",
+    "last_self_modification_check": "2026-05-04T23:11:02.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T22:56:58.000Z"
+  "next_cycle_at": "2026-05-04T23:16:02.000Z"
 }
