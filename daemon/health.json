@@ -1,12 +1,12 @@
 {
-  "cycle": 19557,
-  "timestamp": "2026-05-04T20:10:58.000Z",
-  "status": "ok",
+  "cycle": 19558,
+  "timestamp": "2026-05-04T20:16:25.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 200 (check-in #6193)",
+    "heartbeat": "HTTP 429 (rate limited - called before 5min window)",
     "inbox": "0 unread",
-    "decide": "cycle%6=3 contribute (blocked: GH not configured)",
-    "execute": "idle (GH not configured)",
+    "decide": "cycle%6=4 monitor bounties",
+    "execute": "idle (no open bounties on bounty.drx4.xyz)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
@@ -16,14 +16,14 @@
     "heartbeat_200_count": 6193
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0,
+    "heartbeat_fail_count": 1,
     "heartbeat_skip_until_cycle": 0
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T20:10:58.000Z",
+    "last_self_modification_check": "2026-05-04T20:16:25.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T20:15:58.000Z"
+  "next_cycle_at": "2026-05-04T20:16:25.000Z"
 }
