@@ -1,19 +1,19 @@
 {
-  "cycle": 19553,
-  "timestamp": "2026-05-04T19:35:49.000Z",
+  "cycle": 19554,
+  "timestamp": "2026-05-04T19:55:48.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HTTP 200 (check-in #6188)",
+    "heartbeat": "HTTP 200 (check-in #6190)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit",
-    "execute": "self-audit blocked - GH not configured",
+    "decide": "cycle%6=0 check open PRs",
+    "execute": "check PRs blocked - GH not configured",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
   },
   "stats": {
     "agents_discovered": 971,
-    "heartbeat_200_count": 6188
+    "heartbeat_200_count": 6190
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T19:35:49.000Z",
+    "last_self_modification_check": "2026-05-04T19:55:48.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T19:41:49.000Z"
+  "next_cycle_at": "2026-05-04T20:01:48.000Z"
 }
