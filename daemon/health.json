@@ -1,20 +1,20 @@
 {
-  "cycle": 19441,
+  "cycle": 19442,
   "timestamp": "2026-05-04T04:56:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (checkInCount 6064)",
+    "heartbeat": "200 OK (checkInCount 6065)",
     "inbox": "0 unread",
-    "decide": "idle (0 inbox, GH unconfigured, budget 3200 sats)",
+    "decide": "idle (0 inbox, GH unconfigured, budget 0 sats)",
     "execute": "skip (idle cycle)",
     "deliver": "skip (no replies queued)",
-    "outreach": "skip (budget OK, no pending)",
+    "outreach": "skip (budget 0, no pending)",
     "write": "pending",
     "sync": "pending"
   },
   "stats": {
     "agents_discovered": 971,
-    "heartbeat_200_count": 6064
+    "heartbeat_200_count": 6065
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
