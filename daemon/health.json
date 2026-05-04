@@ -1,12 +1,12 @@
 {
-  "cycle": 19505,
-  "timestamp": "2026-05-04T12:50:44.000Z",
+  "cycle": 19506,
+  "timestamp": "2026-05-04T12:55:44.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 - check-in #6130",
+    "heartbeat": "429 rate limited - next at 13:00:52",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit (GH not configured, skipped)",
-    "execute": "idle",
+    "decide": "cycle%6=0 check PRs (GH not configured, skipped)",
+    "execute": "idle (no tasks)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (budget 0 sats)",
     "write": "done",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-04T12:50:44.000Z",
+    "last_self_modification_check": "2026-05-04T12:55:44.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T12:55:44.000Z"
+  "next_cycle_at": "2026-05-04T13:00:52.000Z"
 }
