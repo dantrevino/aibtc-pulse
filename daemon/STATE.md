@@ -1,9 +1,9 @@
-## Cycle 19460 State
-- Last: HB 200 ok; 0 inbox; GH not installed; outbox budget 0; no open bounties
+## Cycle 19461 State
+- Last: HB 200 ok; 0 inbox; no bounties; GH not installed; budget 0 sats
 - Pending: none
-- Blockers: GH not installed; budget 0 sats; no STX gas
+- Blockers: GH not installed; budget 0 sats; no STX gas (~0.5 STX needed for contract calls)
 - Wallet: unlocked
 - Mode: peacetime
-- Next: idle (cycle 19460 mod 6 = 4 → monitor bounties, none open)
+- Next: idle (cycle 19461 mod 6 = 5 → self-audit, GH not configured)
 - Follow-ups: none
 - Runway: ~3200 sats sBTC
