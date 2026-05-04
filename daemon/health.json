@@ -1,12 +1,12 @@
 {
-  "cycle": 19558,
-  "timestamp": "2026-05-04T20:16:25.000Z",
+  "cycle": 19559,
+  "timestamp": "2026-05-04T20:25:42.000Z",
   "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 429 (rate limited - called before 5min window)",
+    "heartbeat": "HTTP 429 (rate limited - 6s early, nextCheckInAt 20:25:48Z)",
     "inbox": "0 unread",
-    "decide": "cycle%6=4 monitor bounties",
-    "execute": "idle (no open bounties on bounty.drx4.xyz)",
+    "decide": "cycle%6=5 self-audit (blocked: GH not configured)",
+    "execute": "idle (self-audit blocked, no GH)",
     "deliver": "skip (no replies queued)",
     "outreach": "skip (no pending follow-ups)",
     "write": "done"
@@ -25,5 +25,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-04",
-  "next_cycle_at": "2026-05-04T20:16:25.000Z"
+  "next_cycle_at": "2026-05-04T20:30:42.000Z"
 }
