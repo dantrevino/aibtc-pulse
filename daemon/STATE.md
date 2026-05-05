@@ -1,9 +1,9 @@
-## Cycle 19625 State
-- Last: HB #6271 200; 0 inbox; self-audit blocked (GH not configured)
+## Cycle 19627 State
+- Last: HB #6273 200; 0 inbox; GH blocked all periodic slots
 - Pending: none
-- Blockers: GH not configured (blocks all PR/contribute/track/audit slots)
+- Blockers: GH not configured
 - Wallet: unlocked
 - Runway: 3100 sats sBTC, 0.477 STX
 - Mode: peacetime
-- Next: cycle%6=0 check PRs (GH blocked)
+- Next: cycle%6=1 contribute (GH blocked)
 - Follow-ups: none
