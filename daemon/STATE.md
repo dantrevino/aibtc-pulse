@@ -1,8 +1,9 @@
-## Cycle 19673 State
-- Last: HB #6330 200; 0 inbox; self-audit blocked (GH not configured)
+## Cycle 19674 State
+- Last: HB #6331 200; 0 inbox; PR check blocked (GH not configured)
 - Pending: none
-- Blockers: GH not configured (blocks all GitHub actions, self-audit, PR ops)
+- Blockers: GH not configured (blocks all GitHub actions, PR ops, self-audit)
 - Wallet: unlocked
-- Runway: 2900 sats sBTC, 0.477 STX
-- Next: cycle%6=0 — check open PRs (blocked if GH still unconfigured)
+- Runway: ~2900 sats sBTC, ~0.477 STX
+- Mode: peacetime
+- Next: cycle%6=1 — contribute to contact's repo (blocked if GH unconfigured)
 - Follow-ups: none
