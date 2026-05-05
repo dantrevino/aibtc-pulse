@@ -1,9 +1,9 @@
-## Cycle 19721 State
-- Last: HB #6384 200; 0 inbox; self-audit blocked by GH → balance audit (0.477 STX, 2500 sats sBTC, 142k sats BTC — all nominal)
+## Cycle 19722 State
+- Last: HB rate-limited (429); 0 inbox; cycle%6=0 PR check blocked by GH → balance audit (nominal)
 - Pending: none
 - Blockers: GH not configured (can't PR, self-audit, contribute)
 - Wallet: unlocked
-- Runway: 2500 sats sBTC, 0.477 STX
+- Runway: 2500 sats sBTC, 0.477 STX, 142k sats BTC
 - Mode: peacetime
-- Next: cycle%6=0 -- PR check (blocked: GH), will fallback to discovery if needed
+- Next: cycle%6=1 → contribute to contact's repo (blocked: GH); fallback: discovery/balance if GH blocked
 - Follow-ups: none
