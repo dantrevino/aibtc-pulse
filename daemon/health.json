@@ -1,11 +1,11 @@
 {
-  "cycle": 19622,
-  "timestamp": "2026-05-05T06:16:13.000Z",
+  "cycle": 19623,
+  "timestamp": "2026-05-05T06:17:35.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HTTP 200 (check-in 6269)",
+    "heartbeat": "HTTP 429 (rate-limited, 26s cooldown within 5min window)",
     "inbox": "0 unread",
-    "decide": "cycle%6=2 track AIBTC core (blocked: GH not configured); idle",
+    "decide": "cycle%6=3 contribute (blocked: GH not configured); idle",
     "execute": "skip (idle)",
     "deliver": "skip (no replies)",
     "outreach": "skip (no pending)",
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-05T06:15:56.000Z",
+    "last_self_modification_check": "2026-05-05T06:17:35.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-05",
-  "next_cycle_at": "2026-05-05T06:21:13.000Z"
+  "next_cycle_at": "2026-05-05T06:22:35.000Z"
 }
