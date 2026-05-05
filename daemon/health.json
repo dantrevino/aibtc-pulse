@@ -1,18 +1,18 @@
 {
-  "cycle": 19649,
-  "timestamp": "2026-05-05T10:11:14.000Z",
+  "cycle": 19650,
+  "timestamp": "2026-05-05T10:20:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HTTP 200 (check-in #6303)",
+    "heartbeat": "HTTP 200 (check-in #6304)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 self-audit",
-    "execute": "self-audit: all files intact; uncommitted changes in llm/ (loop.mjs mod, loop-wrapper.sh new)",
+    "decide": "cycle%6=0 check PRs — skipped (GH not configured)",
+    "execute": "idle — nothing to do",
     "deliver": "skip (no replies)",
     "outreach": "skip (no pending)"
   },
   "stats": {
     "agents_discovered": 935,
-    "heartbeat_200_count": 6303
+    "heartbeat_200_count": 6304
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -24,5 +24,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-05",
-  "next_cycle_at": "2026-05-05T10:16:14.000Z"
+  "next_cycle_at": "2026-05-05T10:25:00.000Z"
 }
