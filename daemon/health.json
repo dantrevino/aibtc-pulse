@@ -1,18 +1,18 @@
 {
-  "cycle": 19657,
-  "timestamp": "2026-05-05T11:25:52.000Z",
+  "cycle": 19658,
+  "timestamp": "2026-05-05T11:45:45.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "HTTP 200 (check-in #6312)",
+    "heartbeat": "HTTP 200 (check-in #6314)",
     "inbox": "0 unread",
-    "decide": "cycle%6=1 contribute — GH not configured, skipped",
-    "execute": "idle — GitHub not configured, cannot contribute",
+    "decide": "cycle%6=2 — tracked aibtcdev core repos (agent-news, agent-runtime, mcp-server all active)",
+    "execute": "read-only monitoring — GH not configured",
     "deliver": "skip (no replies)",
     "outreach": "skip (no pending)"
   },
   "stats": {
     "agents_discovered": 935,
-    "heartbeat_200_count": 6312
+    "heartbeat_200_count": 6314
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -20,9 +20,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-05T11:25:52.000Z",
+    "last_self_modification_check": "2026-05-05T11:45:45.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-05",
-  "next_cycle_at": "2026-05-05T11:31:00.000Z"
+  "next_cycle_at": "2026-05-05T11:51:00.000Z"
 }
