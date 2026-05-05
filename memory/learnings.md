@@ -91,3 +91,4 @@
   3. MEDIUM: Nonce fallback throws when no local state (src/transactions/builder.ts) - API outage kills new wallet with no pending tx
   4. MEDIUM: Race condition in wallet session expiry (src/services/wallet-manager.ts) - getActiveAccount returns keys before expiry check
   5. LOW: Missing integration tests for x402 payment flow
+- Cycle 19633: cedarxyz/aibtc-pulse PR#5 review — fetchInboxStats bug: uses ?status=unread which only fetches unread messages, not ALL 7-day messages needed for messaging score. Fix: change to ?status=all on line functions/api/inbox-client.js:52. Also: onChain component uses balance not transaction activity (misaligned with issue #2 spec). BTC balance was the original flawed metric.
