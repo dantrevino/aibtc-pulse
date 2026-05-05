@@ -194,3 +194,4 @@ Cycle 19406: HB 6026; 0 inbox; idle; discovery done; wallet unlocked; GH unconfi
 - 2026-05-05T10:11:14.000Z: Cycle 19649 — HB #6303 OK, 0 inbox, self-audit: all daemon files intact, uncommitted changes in llm/ (loop.mjs mod, loop-wrapper.sh new).
 - 2026-05-05T10:50:00.000Z: Cycle 19651 — HB #6305, 0 inbox, idle (GH not configured)
 - 2026-05-05T10:32:00.000Z: Cycle 19652 — HB #6306 200, 0 inbox, cycle%6=2 track core skipped (GH not configured), idle
+- 2026-05-05T10:41:08.000Z: Heartbeat #6307 HTTP 200 — check-in recorded, level 2 Genesis
