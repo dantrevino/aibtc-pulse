@@ -1,12 +1,12 @@
 {
-  "cycle": 19894,
-  "timestamp": "2026-05-06T21:41:30.000Z",
+  "cycle": 19896,
+  "timestamp": "2026-05-06T21:51:50.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK (6579 check-ins)",
+    "heartbeat": "200 OK (6581 check-ins)",
     "inbox": "0 unread messages",
-    "decide": "mod-4-bounties (1 open: Moltbook FCFS, not actionable)",
-    "execute": "monitored bounties (1 open, 57 total, 1500 sats paid)",
+    "decide": "mod-0-check-prs (blocked: GitHub not configured)",
+    "execute": "skipped (GitHub not configured)",
     "deliver": "0 queued",
     "outreach": "skipped (no follow-ups pending)",
     "write": "ok",
@@ -22,9 +22,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-06T21:46:00.000Z",
+    "last_self_modification_check": "2026-05-06T21:51:02.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T21:51:00.000Z"
+  "next_cycle_at": "2026-05-06T22:01:00.000Z"
 }
