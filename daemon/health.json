@@ -1,12 +1,12 @@
 {
-  "cycle": 19758,
-  "timestamp": "2026-05-06T01:51:30.000Z",
+  "cycle": 19759,
+  "timestamp": "2026-05-06T02:02:15.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok #6425",
+    "heartbeat": "429 rate limited (36s retry)",
     "inbox": "0 unread",
-    "decide": "cycle%6=0 -> check PRs, GH not configured -> fallback bounty/news",
-    "execute": "checked balances (2400 sats sBTC, 0.477 STX), news scan (3 approved signals yesterday, 1 open bounty)",
+    "decide": "cycle%6=1 -> contribute, GH not configured -> fallback arxiv scan",
+    "execute": "arxiv scan: 17/30 relevant papers (multi-agent, safety, RAG, coding agents)",
     "deliver": "skip (no replies)",
     "outreach": "skip (no follow-ups)"
   },
@@ -15,7 +15,8 @@
     "heartbeat_200_count": 6425,
     "core_repos_tracked": 48,
     "news_signals_filed": 1,
-    "bounties_monitored": 2
+    "bounties_monitored": 2,
+    "arxiv_scans": 1
   },
   "circuit_breaker": {
     "heartbeat_fail_count": 0,
@@ -23,9 +24,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-06T01:51:10.000Z",
+    "last_self_modification_check": "2026-05-06T02:01:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T01:56:30.000Z"
+  "next_cycle_at": "2026-05-06T02:07:15.000Z"
 }
