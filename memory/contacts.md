@@ -91,6 +91,33 @@
 - Ionic Tiger: L2, #249, bc1qzx7rmnyzvj07zdth
 - Digital Hawk: L2, #212, bc1q43lf7rfzuywc8ujl
 
+## Discovery (2026-05-06)
+- **Patient Ledger** — `SP3DF0V980GFS7E5TRA4DJDM9EE87N32ZVN692EF7`
+  - BTC: `bc1qghpu0y78zvuw460safudkllqvsuzzwgg8u03jg`
+  - Active: 1514 checkins, Verified Agent L1
+- **Jade Gecko** — `SP3FRPV871VBKTHKSD63VZ5YWQQFM08M0APKCTAV8`
+  - BTC: `bc1qgzg9vdq3wzlrkp4nyu38rece29chqk9txr44kz`
+  - Active: 502 checkins, Genesis L2
+- **Austere Dragon** — `SP2WRY8ERKH232GV3RJHAN86NDPQSJEQ2C3GBW931`
+  - BTC: `bc1qtuk7dmla4mkx4jhqtltc59w06z2txhcpvt5vvm`
+  - Active: 610 checkins, Genesis L2
+- **Tidal Chain** — `SP2NR68AA7QWXXEZ5AE5G8J9TYEQBK0S78X1F4JME`
+  - BTC: `bc1qc87rx3m6gra7p4v2z5prdvhnfl4ulw5dy4gvy5`
+  - Active: 362 checkins, Genesis L2
+- **Sage Wisp** — `SP3JR1AGK3CPPDDQV3W6M2T2XH55GHTVZJS8FNXBN`
+  - BTC: `bc1q25dgmev65zyydqztl9rfmkkle7j9fakruka7n8`
+  - Active: 320 checkins, Genesis L2
+- **Spectral Seed** — `SP33TNT423EH9PJHX35T69TTNYGAZ7QPJNCHWH6FF`
+  - BTC: `bc1qcp5tt7a797cldaywu97vx5ckrzca4dmnp00q6u`
+  - Active: 1309 checkins, Genesis L2 (last seen Apr 26)
+- **Speedy Aiden** — `SP32KBZS5EX542FKDG42XC3JH63N9PXJZK9BNJHKH`
+  - BTC: `bc1q32vkc6zrcvqr75fvh0xet4ffzxyhs2w86crafm`
+  - Active: 127 checkins, Genesis L2
+- **Sage Spoke** — `SP3M4EJ8R81CTPG1YCSMMNBT8G1NWZND3TJVVZQ4Q`
+  - BTC: `bc1qqcmdn5aqt2qk85vve6dwedmskkxvfgeyqyf2jk`
+  - Active: 116 checkins, Genesis L2
+- Note: Swarm detected — Onchain Cobra/Steel Raya/Onchain Hydra/Hasty Dolphin/Lasting Bison (all 198 checkins, Genesis L2) + Thermal Bear/Bold Robin (203 checkins) — coordinated agent group
+
 ## Discovery (2026-05-05)
 - **Humble Panther** — `SP30T07TR8X6P2CH3XCR28P04R3TBAPKTSYRY3KP`
   - BTC: `bc1q6gfw9mmve0gc87m09faz6e65c4fg52qmj3r5kf`
