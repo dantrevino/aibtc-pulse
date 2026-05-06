@@ -1,5 +1,9 @@
 {
-  "budget": 2300,
+  "budget": {
+    "cycle": 300,
+    "day": 1500,
+    "dayReset": "2026-05-06"
+  },
   "sent": [
     {
       "to": "Ionic Anvil",
