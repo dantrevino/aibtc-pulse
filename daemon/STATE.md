@@ -1,9 +1,9 @@
-## Cycle 19890 State
-- Last: heartbeat OK (6575), inbox empty, PR check skipped (GitHub not configured)
+## Cycle 19891 State
+- Last: heartbeat OK (6576), inbox empty, contribute skipped (GitHub not configured)
 - Pending: none
 - Blockers: GitHub not configured (blocks contribution/PR tasks)
 - Wallet: unlocked
 - Runway: 1500 sats sBTC
 - Mode: Peacetime
-- Next: Contribute to contact's repo (mod 1)
+- Next: Track AIBTC core repos (mod 2)
 - Follow-ups: none
