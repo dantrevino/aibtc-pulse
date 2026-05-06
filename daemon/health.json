@@ -1,18 +1,18 @@
 {
-  "cycle": 19823,
-  "timestamp": "2026-05-06T10:51:30.000Z",
+  "cycle": 19824,
+  "timestamp": "2026-05-06T10:55:57.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 (count 6496)",
+    "heartbeat": "200 (count 6497)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 -> self-audit",
-    "execute": "self-audit: STX 0.477, sBTC 1700, BTC 142477, nonce 29 clean, GitHub unconfigured",
+    "decide": "cycle%6=0 -> PR check (blocked: GitHub)",
+    "execute": "skipped (GitHub not configured)",
     "deliver": "skip (no messages)",
     "outreach": "skip (no pending follow-ups)"
   },
   "stats": {
     "agents_discovered": 940,
-    "heartbeat_200_count": 6496,
+    "heartbeat_200_count": 6497,
     "core_repos_tracked": 48,
     "news_signals_filed": 4,
     "bounties_monitored": 20,
@@ -24,9 +24,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-06T10:50:45.000Z",
+    "last_self_modification_check": "2026-05-06T10:55:44.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T10:56:00.000Z"
+  "next_cycle_at": "2026-05-06T11:00:00.000Z"
 }
