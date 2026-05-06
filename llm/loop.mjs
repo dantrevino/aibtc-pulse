@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Autonomous agent loop — runs without Claude Code.
- * Uses @opencode-ai/sdk for LLM process management instead of raw spawn.
+ * Autonomous agent loop — SDK-native edition.
+ * ALL LLM calls go through @opencode-ai/sdk (no raw spawn/openocode run).
  *
  * Plumbing (heartbeat, signing, inbox, git) is handled locally.
- * Thinking (classify, compose, decide, code) is delegated to opencode via SDK.
+ * Thinking (decide, heavy tasks) is delegated to opencode via SDK client.session.prompt().
  *
  * Usage:
  *   WALLET_PASSWORD="xxx" node llm/loop.mjs              # perpetual loop
@@ -22,18 +22,14 @@
  */
 
 import { execSync } from "node:child_process";
-import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
-import { createOpencodeClient } from "@opencode-ai/sdk/client";
-import { createOpencodeServer } from "@opencode-ai/sdk/server";
+import { createOpencode } from "@opencode-ai/sdk";
 
 import { WalletConfig, getWalletManager, resetWalletManager } from "../scripts/wallet.mjs";
 import { Heartbeater } from "../scripts/phase1.mjs";
 import { InboxFetcher } from "../scripts/phase2.mjs";
-import { Decider } from "../scripts/phase3.mjs";
-import { Executor } from "../scripts/phase4.mjs";
 import { Deliverer } from "../scripts/phase5.mjs";
 import { Outreach } from "../scripts/phase6.mjs";
 import { Writer } from "../scripts/phase7.mjs";
@@ -83,9 +79,10 @@ let outreach = null;
 let walletManager = null;
 
 let opencodeClient = null;
-let opencodeServer = null;
-let opencodeProc = null;
+let server = null;
 let serverUrl = null;
+
+// ─── utilities ────────────────────────────────────────────────────────────────
 
 function readJson(file) {
   try { return JSON.parse(fs.readFileSync(file, "utf8")); }
@@ -119,16 +116,6 @@ function sign(mode, message, flags = "") {
   } catch { return null; }
 }
 
-function btcSign(message) {
-  const result = sign("btc", message);
-  return result?.signatureBase64 || null;
-}
-
-function stxSign(message) {
-  const result = sign("stx", message);
-  return result?.signature || null;
-}
-
 function log(phase, msg, verboseOnly = false) {
   if (verboseOnly && !VERBOSE) return;
   const ts = new Date().toISOString().slice(11, 19);
@@ -136,92 +123,117 @@ function log(phase, msg, verboseOnly = false) {
   console.log(`  ${prefix}[${ts}] ${phase}: ${msg}`);
 }
 
-async function initServer(opts = {}) {
-  const hostname = "127.0.0.1";
-  const port = 4096;
-  const timeout = opts.timeout || 30000;
+// ─── model parsing ────────────────────────────────────────────────────────────
 
-  const args = [`serve`, `--hostname=${hostname}`, `--port=${port}`];
-
-  opencodeProc = spawn(`opencode`, args, {
-    env: {
-      ...process.env,
-      OPENCODE_CONFIG_CONTENT: JSON.stringify(opts.config || {}),
-    },
-  });
-
-  return new Promise((resolve, reject) => {
-    const id = setTimeout(() => {
-      if (opencodeProc) {
-        try { opencodeProc.kill(); } catch {}
-      }
-      reject(new Error(`Timeout waiting for server to start after ${timeout}ms`));
-    }, timeout);
-
-    let output = "";
-    let resolved = false;
-
-    opencodeProc.stdout?.on("data", (chunk) => {
-      if (resolved) return;
-      output += chunk.toString();
-      const lines = output.split("\n");
-      for (const line of lines) {
-        if (line.startsWith("opencode server listening")) {
-          const match = line.match(/on\s+(https?:\/\/[^\s]+)/);
-          if (!match) {
-            try { opencodeProc.kill(); } catch {}
-            clearTimeout(id);
-            reject(new Error(`Failed to parse server url from output: ${line}`));
-            return;
-          }
-          clearTimeout(id);
-          resolved = true;
-          serverUrl = match[1];
-          resolve(match[1]);
-          return;
-        }
-      }
-    });
-
-    opencodeProc.stderr?.on("data", (chunk) => {
-      output += chunk.toString();
-    });
-
-    opencodeProc.on("exit", (code) => {
-      clearTimeout(id);
-      if (resolved) return;
-      let msg = `Server exited with code ${code}`;
-      if (output.trim()) {
-        msg += `\nServer output: ${output}`;
-      }
-      reject(new Error(msg));
-    });
-
-    opencodeProc.on("error", (error) => {
-      clearTimeout(id);
-      reject(error);
-    });
-  });
+function parseModel(model) {
+  const slash = model.indexOf("/");
+  if (slash === -1) return { providerID: "opencode-go", modelID: model };
+  return { providerID: model.slice(0, slash), modelID: model.slice(slash + 1) };
 }
 
-async function initClient(url, opts = {}) {
-  opencodeClient = createOpencodeClient({
-    baseUrl: url,
-    directory: opts.directory || ROOT,
-  });
-  return opencodeClient;
+// ─── SDK response helpers ─────────────────────────────────────────────────────
+
+function extractText(data) {
+  if (!data?.parts) return "";
+  return data.parts
+    .filter(p => p.type === "text")
+    .map(p => p.text)
+    .join("\n");
 }
+
+function parseTaggedLines(text) {
+  const result = { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
+  for (const line of text.split("\n")) {
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith("REPLY|")) {
+      const idx = t.indexOf("|", 6);
+      if (idx > 0) result.replies.push({ messageId: t.substring(6, idx), text: t.substring(idx + 1) });
+    } else if (t.startsWith("ACTION|")) {
+      result.action = t.substring(7);
+    } else if (t.startsWith("GITHUB|")) {
+      result.github.push(t.substring(7));
+    } else if (t.startsWith("HEAVY|")) {
+      result.heavyPrompt = t.substring(6);
+    } else if (t.startsWith("JOURNAL|")) {
+      result.journal = t.substring(8);
+    } else if (t.startsWith("STATE|")) {
+      result.state = t.substring(6);
+    }
+  }
+  return result;
+}
+
+// ─── prompt builder (inlined from Decider) ────────────────────────────────────
+
+function buildDecidePrompt(cycle, messages, stateMd, contactsMd, soulMd) {
+  const inboxSummary = messages.length > 0
+    ? messages.map(m =>
+        `From: ${m.peerDisplayName || m.fromAddress} (${m.peerBtcAddress || "?"})\n` +
+        `ID: ${m.messageId}\n` +
+        `Classification: ${m.classification}\n` +
+        `Content: ${m.content}\n`
+      ).join("\n---\n")
+    : "No unread messages.";
+
+  const modAction = {
+    0: "Check open PRs for review feedback",
+    1: "Contribute to a contact's repo (find issue, file PR or comment)",
+    2: "Track AIBTC core repos (github.com/aibtcdev) for new issues/PRs",
+    3: "Contribute to a different contact's repo than last time",
+    4: "Monitor bounties",
+    5: "Self-audit: review own repos for issues",
+  }[cycle % 6];
+
+  return `You are Allora, an autonomous AI agent on the AIBTC network.
+
+${soulMd}
+
+## Current State
+${stateMd}
+
+## Cycle ${cycle}
+Scheduled action: ${modAction}
+
+## Inbox (${messages.length} unread)
+${inboxSummary}
+
+## Contacts
+${contactsMd}
+
+## Instructions
+1. If there are unread messages, compose brief replies (max 400 chars each, ASCII only, no em-dashes).
+   Return each reply as: REPLY|<messageId>|<reply text>
+2. Decide and describe ONE action for this cycle based on the scheduled action above.
+   Return as: ACTION|<description of what to do>
+3. If the action requires GitHub work, include the specific gh commands.
+   Return as: GITHUB|<gh command to run>
+   IMPORTANT: When cloning repos, always clone to the ./repos/ subdirectory (e.g., 'gh repo clone owner/repo ./repos/repo-name')
+4. If the action requires writing code, building features, or opening PRs, write a detailed prompt
+   for a coding agent. Return as: HEAVY|<detailed prompt for the coding task>
+5. Write a one-line journal entry.
+   Return as: JOURNAL|<entry>
+6. Write the next STATE.md content (max 10 lines).
+   Return as: STATE|<full STATE.md content>
+
+Return ONLY these tagged lines, one per line. No other text.`;
+}
+
+// ─── opencode SDK init ────────────────────────────────────────────────────────
 
 async function initOpencode(opts = {}) {
-  console.log("  [init] starting opencode server...");
+  console.log("  [init] starting opencode server via SDK...");
   try {
-    const url = await initServer({
-      config: { logLevel: opts.verbose ? "debug" : "warn" },
+    const result = await createOpencode({
+      hostname: "127.0.0.1",
+      port: 4096,
+      config: { logLevel: opts.verbose ? "DEBUG" : "WARN" },
       timeout: opts.timeout || 30000,
     });
-    serverUrl = url;
-    opencodeClient = await initClient(url, { directory: opts.directory });
-    console.log(`  [init] opencode SDK ready at ${url}`);
+    opencodeClient = result.client;
+    server = result.server;
+    serverUrl = result.server.url;
+    console.log(`  [init] opencode SDK ready at ${serverUrl}`);
     return true;
   } catch (e) {
     console.error(`  [init] opencode SDK failed: ${e.message}`);
@@ -230,14 +242,12 @@ async function initOpencode(opts = {}) {
 }
 
 function cleanupOpencode() {
-  if (opencodeClient) {
-    opencodeClient = null;
-    serverUrl = null;
+  if (server) {
+    try { server.close(); } catch {}
+    server = null;
   }
-  if (opencodeProc) {
-    try { opencodeProc.kill(); } catch {}
-    opencodeProc = null;
-  }
+  opencodeClient = null;
+  serverUrl = null;
 }
 
 function isAnotherLoopRunning() {
@@ -258,9 +268,7 @@ function isAnotherLoopRunning() {
 
 async function waitForBackoff() {
   for (let attempt = 1; attempt <= BACKOFF_ATTEMPTS; attempt++) {
-    if (!isAnotherLoopRunning()) {
-      return true;
-    }
+    if (!isAnotherLoopRunning()) return true;
     console.log(`[startup] Another loop.mjs instance detected (attempt ${attempt}/${BACKOFF_ATTEMPTS}), waiting ${BACKOFF_DELAY_MS/1000}s...`);
     await new Promise(r => setTimeout(r, BACKOFF_DELAY_MS));
   }
@@ -277,11 +285,11 @@ function cleanupOnExit() {
   process.exit(0);
 }
 
+// ─── phase implementations ────────────────────────────────────────────────────
+
+// Phase 1: heartbeat (unchanged — uses curl)
 async function heartbeat() {
-  if (!heartbeater) {
-    log("heartbeat", "heartbeater not initialized");
-    return false;
-  }
+  if (!heartbeater) { log("heartbeat", "not initialized"); return false; }
   const result = await heartbeater.run();
   if (result.ok) {
     log("heartbeat", `OK #${result.checkInCount || "?"} - ${result.responseBody?.slice(0, 100) || ""}`);
@@ -291,55 +299,108 @@ async function heartbeat() {
   return false;
 }
 
+// Phase 2: inbox (unchanged — uses curl)
 async function fetchInbox() {
-  if (!inboxFetcher) {
-    log("inbox", "inboxFetcher not initialized");
-    return [];
-  }
+  if (!inboxFetcher) { log("inbox", "not initialized"); return []; }
   const result = await inboxFetcher.run();
-  if (!result.ok) {
-    log("inbox", `failed: ${result.error}`);
-    return [];
-  }
+  if (!result.ok) { log("inbox", `failed: ${result.error}`); return []; }
   log("inbox", `${result.stats.total} messages (${result.stats.trustedTasks} trusted task, ${result.stats.untrustedTasks} untrusted task, ${result.stats.normal} normal)`);
   return result.messages;
 }
 
+// Phase 3: decide — SDK-native (no child process)
 async function decide(cycle, messages) {
   const stateMd = fs.readFileSync(path.join(DAEMON, "STATE.md"), "utf8");
   const contactsMd = fs.existsSync(path.join(MEMORY, "contacts.md"))
-    ? fs.readFileSync(path.join(MEMORY, "contacts.md"), "utf8")
-    : "";
+    ? fs.readFileSync(path.join(MEMORY, "contacts.md"), "utf8") : "";
   const soulMd = fs.existsSync(path.join(ROOT, "SOUL.md"))
-    ? fs.readFileSync(path.join(ROOT, "SOUL.md"), "utf8")
-    : "";
+    ? fs.readFileSync(path.join(ROOT, "SOUL.md"), "utf8") : "";
 
-  log("decide", "spawning decider (opencode medium)...");
+  const prompt = buildDecidePrompt(cycle, messages, stateMd, contactsMd, soulMd);
+  const modelConfig = parseModel(MODELS.medium);
 
-  const decider = new Decider({
-    cycle,
-    messages,
-    stateMd,
-    contactsMd,
-    soulMd,
-    model: MODELS.medium,
-    timeout: 180000,
-  });
+  log("decide", `prompting (model: ${MODELS.medium})...`);
 
-  const result = await decider.run();
+  try {
+    const sessionResp = await opencodeClient.session.create({}, { timeout: 15000 });
+    if (sessionResp.error) {
+      log("decide", `session create failed: ${JSON.stringify(sessionResp.error).slice(0, 100)}`);
+      return { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
+    }
+    const sessionId = sessionResp.data.id;
 
-  if (!result.ok) {
-    log("decide", `failed: ${result.error || "non-zero exit"}`);
+    const resp = await opencodeClient.session.prompt({
+      body: {
+        model: modelConfig,
+        parts: [{ type: "text", text: prompt }],
+      },
+      path: { id: sessionId },
+    }, { timeout: 180000 });
+
+    if (resp.error) {
+      log("decide", `prompt error: ${JSON.stringify(resp.error).slice(0, 100)}`);
+      return { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
+    }
+
+    const text = extractText(resp.data);
+    const result = parseTaggedLines(text);
+
+    if (result.action) log("decide", result.action.slice(0, 80));
+    else if (VERBOSE) log("decide", `parts: ${resp.data.parts?.length || 0}, text: ${text.length} chars`);
+    return result;
+
+  } catch (e) {
+    log("decide", `failed: ${e.message}`);
     return { replies: [], action: null, github: [], heavyPrompt: null, journal: null, state: null };
   }
-
-  if (result.action) log("decide", result.action.slice(0, 80));
-  return result;
 }
 
+// Phase 4 helper: github commands (inlined from Executor)
+function runGithubSync(commands) {
+  if (!commands || commands.length === 0) return { ok: true, executed: 0, total: 0 };
+  let executed = 0;
+  for (const cmd of commands) {
+    if (!cmd.startsWith("gh ")) {
+      log("execute", `skipping non-gh: ${cmd.slice(0, 50)}`);
+      continue;
+    }
+    const result = run(cmd, { timeout: 60000 });
+    if (result !== null) { executed++; log("execute", `gh ok: ${cmd.slice(0, 60)}`); }
+    else log("execute", `gh failed: ${cmd.slice(0, 60)}`);
+  }
+  return { ok: executed === commands.length, executed, total: commands.length };
+}
+
+// Phase 4 helper: heavy task — SDK-native
+async function runHeavy(prompt, model, timeout = 300000) {
+  const modelConfig = parseModel(model) || parseModel(MODELS.heavy);
+
+  try {
+    const sessionResp = await opencodeClient.session.create({}, { timeout: 15000 });
+    if (sessionResp.error) return { ok: false, error: `session create failed: ${JSON.stringify(sessionResp.error).slice(0, 100)}` };
+    const sessionId = sessionResp.data.id;
+
+    const resp = await opencodeClient.session.prompt({
+      body: {
+        model: modelConfig,
+        parts: [{ type: "text", text: prompt }],
+      },
+      path: { id: sessionId },
+    }, { timeout });
+
+    if (resp.error) return { ok: false, error: JSON.stringify(resp.error).slice(0, 200) };
+    return { ok: true, stdout: extractText(resp.data), info: resp.data.info };
+  } catch (e) {
+    return { ok: false, error: e.message };
+  }
+}
+
+// Phase helpers
 function shouldRunPhase(n) {
   return PHASES.includes(n);
 }
+
+// ─── cycle orchestrator ───────────────────────────────────────────────────────
 
 async function runCycle(cycle) {
   console.log(`\n=== Cycle ${cycle} ===`);
@@ -353,46 +414,30 @@ async function runCycle(cycle) {
   let repliesSent = 0;
   let repliesFailed = 0;
 
-  if (shouldRunPhase(1)) {
-    hbOk = await heartbeat();
-  } else {
-    log("phase1", "skipped");
-  }
+  if (shouldRunPhase(1)) { hbOk = await heartbeat(); }
+  else log("phase1", "skipped");
 
-  if (shouldRunPhase(2)) {
-    messages = await fetchInbox();
-  } else {
-    log("phase2", "skipped");
-  }
+  if (shouldRunPhase(2)) { messages = await fetchInbox(); }
+  else log("phase2", "skipped");
 
-  if (shouldRunPhase(3)) {
-    Object.assign(result, await decide(cycle, messages));
-  } else {
-    log("phase3", "skipped");
-  }
+  if (shouldRunPhase(3)) { Object.assign(result, await decide(cycle, messages)); }
+  else log("phase3", "skipped");
 
   if (shouldRunPhase(4)) {
-    const executor = new Executor();
     if (result.github && result.github.length > 0) {
       log("execute", `running ${result.github.length} gh command(s)...`);
-      const ghResult = await executor.runGithub(result.github);
+      const ghResult = runGithubSync(result.github);
       log("execute", `gh: ${ghResult.executed}/${ghResult.total} commands succeeded`);
     }
-
     if (result.heavyPrompt) {
       log("execute", "delegating to heavy model...");
-      const heavyResult = await executor.runHeavy(result.heavyPrompt, MODELS.heavy, 300000);
-      if (heavyResult.ok) {
-        log("execute", `heavy: completed`);
-      } else {
-        log("execute", `heavy: failed - ${heavyResult.error}`);
-      }
+      const heavyResult = await runHeavy(result.heavyPrompt, MODELS.heavy, 300000);
+      if (heavyResult.ok) log("execute", "heavy: completed");
+      else log("execute", `heavy: failed - ${heavyResult.error}`);
     } else if (result.action) {
       log("execute", result.action.slice(0, 100));
     }
-  } else {
-    log("phase4", "skipped");
-  }
+  } else log("phase4", "skipped");
 
   if (shouldRunPhase(5)) {
     if (result.replies && result.replies.length > 0) {
@@ -409,59 +454,43 @@ async function runCycle(cycle) {
       }
       log("deliver", `replies: ${repliesSent} sent, ${repliesFailed} failed`);
     }
-  } else {
-    log("phase5", "skipped");
-  }
+  } else log("phase5", "skipped");
 
   if (shouldRunPhase(6)) {
     log("outreach", "checking for pending follow-ups...");
     const outreachResult = await outreach.run();
-    if (outreachResult.sent > 0) {
-      log("outreach", `sent ${outreachResult.sent} message(s)`);
-    } else if (outreachResult.budgetExhausted) {
-      log("outreach", "budget exhausted");
-    } else {
-      log("outreach", "no messages sent");
-    }
-  } else {
-    log("phase6", "skipped");
-  }
+    if (outreachResult.sent > 0) log("outreach", `sent ${outreachResult.sent} message(s)`);
+    else if (outreachResult.budgetExhausted) log("outreach", "budget exhausted");
+    else log("outreach", "no messages sent");
+  } else log("phase6", "skipped");
 
   if (shouldRunPhase(7)) {
     const writer = new Writer();
     const writeResult = await writer.run(cycle, result, hbOk, messages.length, repliesSent, repliesFailed);
     log("write", `wrote: ${writeResult.written.join(", ")}`);
-  } else {
-    log("phase7", "skipped");
-  }
+  } else log("phase7", "skipped");
 
   if (shouldRunPhase(8)) {
     const syncer = new Syncer();
     const syncResult = await syncer.run(cycle, result.action?.slice(0, 60) || "idle cycle");
-    if (syncResult.skipped) {
-      log("sync", "nothing to commit");
-    } else if (syncResult.pushed) {
-      log("sync", "committed + pushed");
-    } else if (syncResult.error) {
-      log("sync", `error: ${syncResult.error}`);
-    }
-  } else {
-    log("phase8", "skipped");
-  }
+    if (syncResult.skipped) log("sync", "nothing to commit");
+    else if (syncResult.pushed) log("sync", "committed + pushed");
+    else if (syncResult.error) log("sync", `error: ${syncResult.error}`);
+  } else log("phase8", "skipped");
 
   log("done", `cycle ${cycle} complete`);
 }
+
+// ─── main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
   process.on("SIGTERM", cleanupOnExit);
   process.on("SIGINT", cleanupOnExit);
   process.on("exit", () => {
-    try {
-      execSync(`pkill -9 -P ${process.pid} 2>/dev/null || true`);
-    } catch (e) {}
+    try { execSync(`pkill -9 -P ${process.pid} 2>/dev/null || true`); } catch (e) {}
   });
 
-  if (!await initOpencode({ verbose: VERBOSE, directory: ROOT })) {
+  if (!await initOpencode({ verbose: VERBOSE })) {
     console.error("Failed to initialize opencode SDK");
     process.exit(1);
   }
@@ -492,11 +521,8 @@ async function main() {
   let cycle = (health?.cycle || 0) + 1;
 
   if (SINGLE_CYCLE) {
-    try {
-      await runCycle(cycle);
-    } finally {
-      cleanupOnExit();
-    }
+    try { await runCycle(cycle); }
+    finally { cleanupOnExit(); }
     return;
   }
 
