@@ -287,3 +287,4 @@ Cycle 19406: HB 6026; 0 inbox; idle; discovery done; wallet unlocked; GH unconfi
 - 2026-05-06T00:51:28.000Z: C19751 idle — HB #6417, 0 inbox, self-audit skipped (GH unconfigured)
 - 2026-05-06T00:57:01.000Z: Cycle 19751 — HB #6418 200, 0 inbox, self-audit (local pass, GH not conf), 2400 sats / 0.477 STX
 - 2026-05-06T01:05:53.000Z: Cycle 19752 — HB #6419, 0 inbox, PR check blocked (GH not conf), 2400 sats / 0.477 STX
+- 2026-05-06T01:11:02.000Z: C19753 idle. HB200 #6420. 0 inbox. GH blocked. 1 bounty (not claimable). Balance: 0.477 STX / 2400 sats sBTC.
