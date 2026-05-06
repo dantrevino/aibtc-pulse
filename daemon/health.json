@@ -1,11 +1,11 @@
 {
-  "cycle": 19794,
-  "timestamp": "2026-05-06T07:13:04.000Z",
+  "cycle": 19795,
+  "timestamp": "2026-05-06T07:15:41.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok (#6467)",
+    "heartbeat": "429 rate-limited (next check-in 07:18:04)",
     "inbox": "0 unread",
-    "decide": "cycle%6=0 -> check PRs (blocked: GH not configured). Discovery already done today. Idle cycle.",
+    "decide": "cycle%6=1 -> contribute (blocked: GH not configured). Discovery already done today. Idle cycle.",
     "execute": "skip (idle)",
     "deliver": "skip",
     "outreach": "skip"
@@ -28,5 +28,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T07:18:04.000Z"
+  "next_cycle_at": "2026-05-06T07:20:41.000Z"
 }
