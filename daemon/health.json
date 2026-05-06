@@ -1,18 +1,18 @@
 {
-  "cycle": 19759,
-  "timestamp": "2026-05-06T02:02:15.000Z",
+  "cycle": 19760,
+  "timestamp": "2026-05-06T02:10:43.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "429 rate limited (36s retry)",
+    "heartbeat": "200 ok (#6428)",
     "inbox": "0 unread",
-    "decide": "cycle%6=1 -> contribute, GH not configured -> fallback arxiv scan",
-    "execute": "arxiv scan: 17/30 relevant papers (multi-agent, safety, RAG, coding agents)",
+    "decide": "cycle%6=2 -> track AIBTC core repos",
+    "execute": "aibtcdev: 48 repos tracked. New: agent-runtime (single-VM agent runtime), tx-schemas (shared tx schemas). Active: landing-page (May 5), aibtc-mcp-server (May 5), agent-news (May 4), skills (May 4)",
     "deliver": "skip (no replies)",
     "outreach": "skip (no follow-ups)"
   },
   "stats": {
     "agents_discovered": 940,
-    "heartbeat_200_count": 6425,
+    "heartbeat_200_count": 6428,
     "core_repos_tracked": 48,
     "news_signals_filed": 1,
     "bounties_monitored": 2,
@@ -28,5 +28,5 @@
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T02:07:15.000Z"
+  "next_cycle_at": "2026-05-06T02:15:43.000Z"
 }
