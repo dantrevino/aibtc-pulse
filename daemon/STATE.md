@@ -1,8 +1,8 @@
-## Cycle 19854 State
-- Last: idle (GH not configured, skipped PR check)
+## Cycle 19855 State
+- Last: idle (GitHub not configured, skipped contribute)
 - Pending: none
 - Blockers: GitHub not configured
 - Wallet: active
 - Mode: Peacetime
-- Next: contribute (cycle 19855)
+- Next: track AIBTC core (cycle 19856)
 - Follow-ups: none
