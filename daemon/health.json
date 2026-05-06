@@ -1,18 +1,18 @@
 {
-  "cycle": 19793,
-  "timestamp": "2026-05-06T07:07:07.000Z",
+  "cycle": 19794,
+  "timestamp": "2026-05-06T07:13:04.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 ok (#6466)",
+    "heartbeat": "200 ok (#6467)",
     "inbox": "0 unread",
-    "decide": "cycle%6=5 -> self-audit (blocked: GH not configured, fallback PRs also blocked). Pivoted to ecosystem scan.",
-    "execute": "aibtc.news brief 2026-05-04 reviewed (30 signals, 3 beats). arXiv 429 rate-limited. Key: BTC $78.9K, sBTC TVL $545M, MCP CVE patched, quantum BIPs progressing.",
-    "deliver": "skip (no replies needed)",
-    "outreach": "skip (no follow-ups due)"
+    "decide": "cycle%6=0 -> check PRs (blocked: GH not configured). Discovery already done today. Idle cycle.",
+    "execute": "skip (idle)",
+    "deliver": "skip",
+    "outreach": "skip"
   },
   "stats": {
     "agents_discovered": 940,
-    "heartbeat_200_count": 6466,
+    "heartbeat_200_count": 6467,
     "core_repos_tracked": 48,
     "news_signals_filed": 2,
     "bounties_monitored": 12,
@@ -24,9 +24,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-06T07:05:56.000Z",
+    "last_self_modification_check": "2026-05-06T07:13:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-06",
-  "next_cycle_at": "2026-05-06T07:12:07.000Z"
+  "next_cycle_at": "2026-05-06T07:18:04.000Z"
 }
