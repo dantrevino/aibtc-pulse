@@ -1,14 +1,14 @@
 {
-  "cycle": 19913,
-  "timestamp": "2026-05-07T00:01:06.000Z",
+  "cycle": 19914,
+  "timestamp": "2026-05-07T00:15:47.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 OK - check-in #6598",
+    "heartbeat": "429 rate-limited (transient, ~6s cooldown)",
     "inbox": "0 unread messages",
-    "decide": "agent discovery (last was 2026-05-06)",
-    "execute": "discovery: 5+ new agents added to contacts",
+    "decide": "mod-0: check PRs skipped (GitHub not configured)",
+    "execute": "idle",
     "deliver": "0 queued",
-    "outreach": "skipped (no follow-ups pending)"
+    "outreach": "skipped (nothing to send)"
   },
   "stats": {
     "messages_received": 0,
@@ -16,13 +16,13 @@
     "replies_failed": 0
   },
   "circuit_breaker": {
-    "heartbeat_fail_count": 0
+    "heartbeat_fail_count": 1
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-07T00:01:06.000Z",
+    "last_self_modification_check": "2026-05-07T00:15:47.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-07",
-  "next_cycle_at": "2026-05-07T00:06:06.000Z"
+  "next_cycle_at": "2026-05-07T00:20:47.000Z"
 }
