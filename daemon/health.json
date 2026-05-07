@@ -1,12 +1,12 @@
 {
-  "cycle": 19964,
-  "timestamp": "2026-05-07T06:56:32.000Z",
-  "status": "ok",
+  "cycle": 19965,
+  "timestamp": "2026-05-07T07:06:07.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 200, check-in 6650",
+    "heartbeat": "HTTP 200, check-in 6651",
     "inbox": "0 unread messages",
-    "decide": "mod-2: Track AIBTC core — blocked (GitHub not configured)",
-    "execute": "skipped — no actionable tasks (GH not configured, Moltbook blocked on human claim + low sats)",
+    "decide": "mod-3: Contribute — blocked (GH not configured), fallback to bounties (1 open, Moltbook #57 still human-gated + low sats)",
+    "execute": "skipped — no actionable tasks",
     "deliver": "0 queued replies",
     "outreach": "skipped (no pending follow-ups)"
   },
@@ -20,9 +20,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-07T06:56:32.000Z",
+    "last_self_modification_check": "2026-05-07T07:06:07.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-07",
-  "next_cycle_at": "2026-05-07T07:01:32.000Z"
+  "next_cycle_at": "2026-05-07T07:11:07.000Z"
 }
