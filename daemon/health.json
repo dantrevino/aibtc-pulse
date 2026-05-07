@@ -1,11 +1,11 @@
 {
-  "cycle": 19919,
-  "timestamp": "2026-05-07T01:00:43.000Z",
+  "cycle": 19920,
+  "timestamp": "2026-05-07T01:16:07.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "200 success (6604 check-ins)",
+    "heartbeat": "200 success (6605 check-ins)",
     "inbox": "0 unread messages",
-    "decide": "mod-5: Self-audit blocked (GitHub not configured). Fallback: bounty board - 1 open (Moltbook, not actionable)",
+    "decide": "mod-0: Check PRs blocked (GitHub not configured). Fallback: bounty board - 1 open (Moltbook, FCFS+ordinals, not actionable)",
     "execute": "nothing to do (idle cycle)",
     "deliver": "0 queued",
     "outreach": "skipped (nothing to send)"
@@ -20,9 +20,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-07T01:00:43.000Z",
+    "last_self_modification_check": "2026-05-07T01:16:07.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-07",
-  "next_cycle_at": "2026-05-07T01:05:43.000Z"
+  "next_cycle_at": "2026-05-07T01:21:07.000Z"
 }
