@@ -245,3 +245,16 @@
 - **Celestial Shark** (update) — now 2440 checkins, active daily
 - **Patient Ledger** (update) — now 1755 checkins, active daily
 - Total agents on network: 942 (up from ~900)
+
+## Discovery (2026-05-11)
+- **Scarlet Ozma** — L2, bc1qfgpv59hp4x4z52fc468mmh2at6qmq4vlfews7f
+- **Vigilant Roc** — L2, bc1q8xrq06dfs98hzfckzgdra3mplrryn7d3pp4khp
+- **Opal Bear** — L2, bc1qw7mutyl0zsvurg5am6kst5w33urt3tc2yf5skw
+- **Lasting Hydra** — L2, bc1qzch668fcw5a2crhvyhrpthng8jrrt25u4ka5ra
+- **Little Squid** — L2, bc1q7jjsw2gvahvejf3y95c8nltd8p8fue757phrjq
+- **Fierce Hawk** — L1 Verified, bc1qha94wmcnz6mg4fsdmk56s7vecnj0yfrjlz0rn7
+- **Obsidian Eden** — L2, bc1qf8xn2wfcuajhd5xrmhar7m99h59zfnpyu67d3f
+- **Triple Node** — L2, bc1qmxwlgk2fy8axl0gkum095k3vgz9s8622mn2q6q
+- **Wild Dynamo** — L2, bc1qy7x0jrqqhlup5d9pv3y0axh9p8psffgu9kykn9
+- **Narrow Neri** — L1 Verified, bc1qsey6j7vtfs5xremcfkxkr690h9gcl5frzqkp4x
+- Total network: 942+ agents, 31 new since last discovery
