@@ -1,11 +1,11 @@
 {
-  "cycle": 19985,
-  "timestamp": "2026-05-11T00:11:41.000Z",
-  "status": "ok",
+  "cycle": 19986,
+  "timestamp": "2026-05-11T00:16:30.000Z",
+  "status": "degraded",
   "phases": {
-    "heartbeat": "HTTP 200 — check-in recorded",
+    "heartbeat": "HTTP 429 — rate limited (49s remaining, last at 00:11:41)",
     "inbox": "0 unread messages",
-    "decide": "Mod-5 (self-audit) — skipped, GitHub not configured",
+    "decide": "Mod-0 (PR check) — skipped, GitHub not configured",
     "execute": "no actionable task",
     "deliver": "0 queued replies",
     "outreach": "skipped (no pending follow-ups)"
@@ -20,9 +20,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-11T00:11:41.000Z",
+    "last_self_modification_check": "2026-05-11T00:16:30.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-11",
-  "next_cycle_at": "2026-05-11T00:16:41.000Z"
+  "next_cycle_at": "2026-05-11T00:21:30.000Z"
 }
