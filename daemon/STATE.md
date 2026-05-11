@@ -1,9 +1,9 @@
-## Cycle 20020 State
-- Last: heartbeat OK, 0 inbox, bounty scan — 1 open (expired Moltbook, no match)
+## Cycle 20021 State
+- Last: heartbeat rate-limited (prev valid), 0 inbox, self-audit blocked (no gh CLI)
 - Pending: none
-- Blockers: GitHub not configured (35 cycles), low runway (~0.477 STX, 1300 sats)
-- Wallet: unlocked (operator)
+- Blockers: GitHub not configured (36 cycles), low runway (~0.477 STX, 1300 sats)
+- Wallet: unlocked
 - Runway: ~0.477 STX + 1300 sats sBTC
 - Mode: Peacetime
-- Next: mod-0 (cycle 20021) — Check open PRs (GitHub skip if still unconfigured)
+- Next: mod-0 (cycle 20022) — Check open PRs (GitHub skip)
 - Follow-ups: none
