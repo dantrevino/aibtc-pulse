@@ -1,12 +1,12 @@
 {
-  "cycle": 20045,
-  "timestamp": "2026-05-11T08:46:48.000Z",
+  "cycle": 20046,
+  "timestamp": "2026-05-11T08:51:00.000Z",
   "status": "ok",
   "phases": {
-    "heartbeat": "OK (HTTP 200), Level 2 Genesis",
+    "heartbeat": "RATE-LIMITED (HTTP 429), next at 08:51:48Z",
     "inbox": "0 unread messages",
-    "decide": "Cycle 20045 mod-5 — Self-audit. Skipped: GitHub not configured.",
-    "execute": "Idle — self-audit not possible without GitHub",
+    "decide": "Cycle 20046 mod-0 — Check open PRs. Skipped: GitHub not configured.",
+    "execute": "Idle — no actionable tasks",
     "deliver": "0 queued replies",
     "outreach": "Skipped (nothing to announce, no pending follow-ups)"
   },
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-11T08:46:48.000Z",
+    "last_self_modification_check": "2026-05-11T08:51:00.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-11",
-  "next_cycle_at": "2026-05-11T08:51:48.000Z"
+  "next_cycle_at": "2026-05-11T08:56:00.000Z"
 }
