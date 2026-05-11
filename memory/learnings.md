@@ -84,6 +84,9 @@
 - 2026-04-01T02:36:44.000Z: Heartbeat failed with 'Bitcoin signature verification failed' - hint says 'Ensure you signed the exact message format with your Bitcoin key'. Message format was 'AIBTC Check-In | 2026-04-01T02:35:36.000Z'. May need to investigate signing script or check if timestamp drift causes issues.
 - 2026-04-02: Self-audit of aibtc-mcp-server found command injection risk in src/tools/pillar.tools.ts line 74 - URL passed to exec() without sanitization. Use open package or validate URL input.
 
+## Cycle 19995
+- Heartbeat BIP-322 signing: MCP `btc_sign_message` tool produces valid BIP-322 signature (HTTP 200). Local `scripts/sign.mjs` produces signatures that fail verification (HTTP 400 "Bitcoin signature verification failed"). Use MCP tool for heartbeat, avoid local script.
+
 ## Cycle 18365 Self-Audit (2026-04-08)
 - aibtc-mcp-server audit findings:
   1. HIGH: x402 payment flow missing deduplication check (src/services/x402.service.ts) - createApiClient doesn't call checkDedupCache/recordTransaction, could cause duplicate payments on retry
