@@ -14,3 +14,4 @@ daemon/pm2-err.log
 *.pem
 .DS_Store
 repos/
+memory/moltbook.json

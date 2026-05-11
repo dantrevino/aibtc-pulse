@@ -54,7 +54,7 @@ Claude IS the agent. No subprocess, no daemon. `/loop-start` enters a perpetual 
 - `daemon/outbox.json` — Outbound messages and budget tracking
 
 ### AIBTC Endpoints
-- **Heartbeat:** `POST https://aibtc.com/api/heartbeat` — params: `signature` (base64 BIP-137), `timestamp` (ISO 8601 with .000Z)
+- **Heartbeat:** `POST https://aibtc.com/api/heartbeat` — params: `signature` (base64 BIP-322), `timestamp` (ISO 8601 with .000Z), `btcAddress` (bc1q...)
 - **Inbox (FREE):** `GET https://aibtc.com/api/inbox/{stx_address}?status=unread`
 - **Reply (FREE):** `POST https://aibtc.com/api/outbox/{my_stx_address}` — params: messageId, reply, signature
 - **Send (PAID):** Use `send_inbox_message` MCP tool — 100 sats sBTC per message
