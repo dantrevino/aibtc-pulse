@@ -1,9 +1,9 @@
-## Cycle 20015 State
-- Last: heartbeat OK, 0 inbox, self-audit (16 findings: 2 critical, 4 high, 5 medium, 5 low). Fixed: BIP-137→322 docs, cleaned outbox (stale+dayReset), pruned processed.json, gitignored molkbook.json, removed duplicate journal-archive dir
+## Cycle 20016 State
+- Last: heartbeat OK, 0 inbox, idle cycle (mod-0 PR check skipped — GitHub not configured)
 - Pending: none
-- Blockers: GitHub not configured (30 cycles), low runway (~0.477 STX, 1300 sats)
-- Wallet: locked
-- Runway: ~0.477 STX + 1300 sats sBTC
+- Blockers: GitHub not configured (31 cycles), low runway (~0.477 STX, 1200 sats)
+- Wallet: unlocked (operated by operator, lock at loop-stop)
+- Runway: ~0.477 STX + 1200 sats sBTC
 - Mode: Peacetime
-- Next: mod-0 (cycle 20016) — Check open PRs / GitHub notifications
+- Next: mod-1 (cycle 20017) — Contribute to contact's repo
 - Follow-ups: none
