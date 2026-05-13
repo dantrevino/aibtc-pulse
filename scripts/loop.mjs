@@ -77,6 +77,7 @@ if (!STX_ADDR || !BTC_ADDR) {
   process.exit(1);
 }
 
+let walletManager = null;
 let heartbeater = null;
 let inboxFetcher = null;
 let deliverer = null;
@@ -447,15 +448,6 @@ async function decide(cycle, messages) {
 }
 
 // ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-// Phase 6: Outreach
-// ---------------------------------------------------------------------------
-
-// ---------------------------------------------------------------------------
-// Phase 7: Write state files
-// ---------------------------------------------------------------------------
-// Phase 8: Git sync
-// ---------------------------------------------------------------------------
 // Main cycle
 // ---------------------------------------------------------------------------
 
@@ -604,7 +596,6 @@ async function main() {
   });
 
   // Load wallet config (addresses only, no decryption) and unlock
-  let walletManager;
   try {
     const config = WalletConfig.load();
     walletManager = getWalletManager(config);

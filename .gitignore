@@ -8,6 +8,9 @@
 !.claude/agents/**
 node_modules/
 daemon/processed.json
+daemon/outbox.json
+daemon/queue.json
+daemon/inbox.json
 daemon/pm2-out.log
 daemon/pm2-err.log
 *.key

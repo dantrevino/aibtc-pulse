@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/dantrevino/patient_eden#readme",
   "dependencies": {
-    "@scure/bip32": "1.4",
+    "@scure/bip32": "^1.4",
     "@scure/bip39": "^2.0.1",
     "@scure/btc-signer": "^2.0.1",
     "@stacks/common": "^7.3.1",
