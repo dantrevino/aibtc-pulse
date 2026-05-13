@@ -107,3 +107,11 @@
 - LOW: Stale worktrees in .claude/worktrees/ with full node_modules (agent-news, agent-skills, x402-sponsor-relay)
 - LOW: test/basic.test.js is a placeholder (no actual coverage)
 - LOW: pm2-dotenv dependency possibly unused at top-level package.json
+
+## Self-Audit 2026-05-13 (Cycle 20075)
+- PERSISTENT CRITICAL: .env WALLET_PASSWORD=Insmodppa%68 still in plaintext (4th consecutive audit, gitignored but local risk)
+- PERSISTENT HIGH: CLAUDE.md and AGENTS.md remain byte-for-byte identical (maintenance hazard, was HIGH in cycle 20015)
+- MEDIUM: outbox.json budget dayReset fixed (May 11 -> May 13), was stale for 2 cycles
+- MEDIUM: memory/journal.md at 549 lines exceeds 500-line threshold, archive due next 10th cycle (20080)
+- LOW: Stale worktrees persist in .claude/worktrees/ (agent-news with full node_modules, agent-skills)
+- LOW: aibtc-projects/ directory at repo root is untracked (not in .gitignore, may cause accidental commits)
