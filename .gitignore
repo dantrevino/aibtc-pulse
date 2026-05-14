@@ -17,4 +17,5 @@ daemon/pm2-err.log
 *.pem
 .DS_Store
 repos/
+aibtc-projects/
 memory/moltbook.json
