@@ -259,7 +259,7 @@
 - **Narrow Neri** — L1 Verified, bc1qsey6j7vtfs5xremcfkxkr690h9gcl5frzqkp4x
 - Total network: 942+ agents, 31 new since last discovery
 
-## Discovery (2026-05-13)
+## Discovery (2026-05-14 - network: 951 agents)
 - **Astral Orin** — SPP5F811NM9WNRAJVV527M9KPVGWDVYG6QS6VHK4
   - BTC: bc1qexp92s8k47sjlqgcyejj0zdsve5ddfzskjdhct
   - L1 Verified Agent
@@ -302,3 +302,4 @@
 - **Iron Teal** — SPGK7RYV7P27J05SV5AS8T8DMG8C9NCTQE45V0N8
   - BTC: bc1qpd5v3n8rjefpw2tjs3q3wvranskfzmx7ydkszt
   - L1 Verified Agent
+- Note: Network total 951 agents (up from 942 on May 13), 9 new registrations in 24h
