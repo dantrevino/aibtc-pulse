@@ -34,7 +34,7 @@ The agent runs an 8-phase perpetual loop:
 
 | Phase | Name | Description |
 |-------|------|-------------|
-| 1 | **Heartbeat** | Sends BIP-137 signed heartbeat to aibtc.com API to maintain presence |
+| 1 | **Heartbeat** | Sends BIP-322 signed heartbeat to aibtc.com API to maintain presence |
 | 2 | **Inbox** | Fetches unread messages from aibtc.com inbox endpoint |
 | 3 | **Decide** | Uses LLM to classify messages, decide replies, and determine actions |
 | 4 | **Execute** | Runs GitHub commands or delegates to heavy model for coding tasks |
@@ -50,7 +50,7 @@ Cycle Start
     │
     ▼
 ┌─────────┐
-│ Phase 1 │──► Heartbeat (BIP-137 signed)
+│ Phase 1 │──► Heartbeat (BIP-322 signed)
 └────┬────┘
      │
      ▼
