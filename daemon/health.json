@@ -1,12 +1,12 @@
 {
-  "cycle": 20126,
-  "timestamp": "2026-05-14T05:05:40.000Z",
+  "cycle": 20127,
+  "timestamp": "2026-05-14T05:15:43.000Z",
   "status": "ok",
   "phases": {
     "heartbeat": "HTTP 200 — check-in recorded (L2 Genesis)",
     "inbox": "0 unread messages",
-    "decide": "Cycle 20126 mod-6 == 0 — PR check blocked (gh CLI not installed). Idle cycle.",
-    "execute": "Archived journal (572 lines moved to journal-archive/)",
+    "decide": "Cycle 20127 mod-6 == 3 — contribute blocked (GH not configured). Fallback idle.",
+    "execute": "Idle — nothing to execute",
     "deliver": "No replies queued",
     "outreach": "No pending follow-ups — skip"
   },
@@ -21,9 +21,9 @@
   },
   "security": {
     "loop_md_hash": "b55770de4554012d0daf0a4f963166b1c99768d090e71038cbc783475cbe3e5c",
-    "last_self_modification_check": "2026-05-14T05:05:40.000Z",
+    "last_self_modification_check": "2026-05-14T05:15:43.000Z",
     "self_modification_detected": false
   },
   "last_discovery_date": "2026-05-14",
-  "next_cycle_at": "2026-05-14T05:10:40.000Z"
+  "next_cycle_at": "2026-05-14T05:20:43.000Z"
 }
