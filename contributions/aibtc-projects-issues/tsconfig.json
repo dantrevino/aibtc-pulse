@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "es2022",
+    "lib": ["es2022"],
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "forceConsistentCasingInFileNames": true,
+    "checkJs": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["functions/**/*.js", "*.ts"],
+  "exclude": ["node_modules", ".wrangler"]
+}
