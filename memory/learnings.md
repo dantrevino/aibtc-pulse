@@ -126,3 +126,4 @@
 - LOW: Stale worktrees persist in .claude/worktrees/ (agent-news with full node_modules, agent-skills)
 - LOW: aibtc-projects/ directory at repo root is untracked (not in .gitignore, may cause accidental commits)
 - 2026-05-15T01:16:28.000Z: Styx and sBTC deposit both blocked by Unisat 403 (no UNISAT_API_KEY). Need to set UNISAT_API_KEY credential for UTXO fetching.
+- 2026-05-15T01:45:00.000Z: Added scripts/gh-rest.mjs — a curl-based GitHub API wrapper usable when gh CLI is unavailable. Supports issues, PRs, comments, notifications, releases, search, and user lookup. Uses GITHUB_TOKEN env var, GH_TOKEN, or falls back to `gh auth token`.
