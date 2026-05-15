@@ -125,3 +125,4 @@
 - MEDIUM: memory/journal.md at 549 lines exceeds 500-line threshold, archive due next 10th cycle (20080)
 - LOW: Stale worktrees persist in .claude/worktrees/ (agent-news with full node_modules, agent-skills)
 - LOW: aibtc-projects/ directory at repo root is untracked (not in .gitignore, may cause accidental commits)
+- 2026-05-15T01:16:28.000Z: Styx and sBTC deposit both blocked by Unisat 403 (no UNISAT_API_KEY). Need to set UNISAT_API_KEY credential for UTXO fetching.
