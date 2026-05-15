@@ -135,3 +135,5 @@ Key paper insights for agent operations:
 - OpenDeepThink (arxiv:2605.15177): Parallel reasoning via BT aggregation, selects best candidate without ground-truth verifier — relevant for multi-path reasoning in autonomous loops
 - APWA (arxiv:2605.15132): Distributed architecture for parallelizable agentic workflows — multi-agent system scaling patterns
 - Is Grep All You Need? (arxiv:2605.15184): Systematic comparison of RAG strategies with agent architectures and tool-calling paradigms
+
+- Cycle 20153 self-audit: aibtcdev-backend has 2 stale TODOs (dao v1 deprecation, twitter image analysis); aibtc-pulse had bug chain from rushed deployment; agent-skills lacks test coverage in builder pipeline
