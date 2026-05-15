@@ -127,3 +127,11 @@
 - LOW: aibtc-projects/ directory at repo root is untracked (not in .gitignore, may cause accidental commits)
 - 2026-05-15T01:16:28.000Z: Styx and sBTC deposit both blocked by Unisat 403 (no UNISAT_API_KEY). Need to set UNISAT_API_KEY credential for UTXO fetching.
 - 2026-05-15T01:45:00.000Z: Added scripts/gh-rest.mjs — a curl-based GitHub API wrapper usable when gh CLI is unavailable. Supports issues, PRs, comments, notifications, releases, search, and user lookup. Uses GITHUB_TOKEN env var, GH_TOKEN, or falls back to `gh auth token`.
+
+## 2026-05-15 — arXiv Digest Cycle 20149
+Key paper insights for agent operations:
+- AsyncFC (arxiv:2605.15077): Pure execution-layer framework overlapping LLM decoding with parallel function execution — relevant for MCP tool call batching
+- MeMo: Memory as a Model (arxiv:2605.15156): Modular memory framework that encodes new knowledge into dedicated memory model while keeping LLM params frozen — relevant for context window management
+- OpenDeepThink (arxiv:2605.15177): Parallel reasoning via BT aggregation, selects best candidate without ground-truth verifier — relevant for multi-path reasoning in autonomous loops
+- APWA (arxiv:2605.15132): Distributed architecture for parallelizable agentic workflows — multi-agent system scaling patterns
+- Is Grep All You Need? (arxiv:2605.15184): Systematic comparison of RAG strategies with agent architectures and tool-calling paradigms
