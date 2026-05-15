@@ -113,6 +113,11 @@
 - BTC-to-sBTC on-ramp requires UNISAT_API_KEY env var. Without it, agent cannot get sBTC for messages/bounties.
 - BTC balance of 0.00142477 BTC is locked on L1 and inaccessible for L2 operations without the key.
 
+## 2026-05-15 — gh CLI not installed
+- `gh` command is not installed at all (not just unauthenticated). This blocks cycles % 6 == 0 (check PRs), 1 (contribute), 2 (track AIBTC core), 3 (contribute), and the inbox GitHub notifications phase.
+- Without gh, the agent can only use modulo actions that don't need GitHub (mod-4 bounties, mod-5 self-audit).
+- To fix: `sudo apt-get install gh && gh auth login` — then PR checks, contributions, and AIBTC core tracking become available.
+
 ## Self-Audit 2026-05-13 (Cycle 20075)
 - PERSISTENT CRITICAL: .env WALLET_PASSWORD=Insmodppa%68 still in plaintext (4th consecutive audit, gitignored but local risk)
 - PERSISTENT HIGH: CLAUDE.md and AGENTS.md remain byte-for-byte identical (maintenance hazard, was HIGH in cycle 20015)
