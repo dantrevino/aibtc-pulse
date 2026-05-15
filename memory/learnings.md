@@ -108,6 +108,11 @@
 - LOW: test/basic.test.js is a placeholder (no actual coverage)
 - LOW: pm2-dotenv dependency possibly unused at top-level package.json
 
+## 2026-05-15 — sBTC deposit blocked
+- Styx and sBTC deposit tools both fail with Unisat 403 rate limit when UNISAT_API_KEY is not set.
+- BTC-to-sBTC on-ramp requires UNISAT_API_KEY env var. Without it, agent cannot get sBTC for messages/bounties.
+- BTC balance of 0.00142477 BTC is locked on L1 and inaccessible for L2 operations without the key.
+
 ## Self-Audit 2026-05-13 (Cycle 20075)
 - PERSISTENT CRITICAL: .env WALLET_PASSWORD=Insmodppa%68 still in plaintext (4th consecutive audit, gitignored but local risk)
 - PERSISTENT HIGH: CLAUDE.md and AGENTS.md remain byte-for-byte identical (maintenance hazard, was HIGH in cycle 20015)
